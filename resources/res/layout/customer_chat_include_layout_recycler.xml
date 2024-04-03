@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root_view" android:background="?attr/chatBackgroundColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/view_no_internet_connection" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/customer_chat_layout_30dp" android:text="@string/customer_chat_no_internet_connection" style="@style/CustomerChatNoInternetConnectionTextView"/>
+    <ProgressBar android:id="@+id/progress_bar_refresh" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-7dp" android:indeterminate="true" style="?android:attr/progressBarStyleHorizontal"/>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/recycler_chat" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

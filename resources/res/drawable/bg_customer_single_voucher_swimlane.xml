@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="@dimen/voucher_swimlane_height" android:width="@dimen/single_voucher_swimlane_width" android:autoMirrored="true" android:viewportWidth="@dimen/single_voucher_swimlane_view_port_width" android:viewportHeight="@dimen/voucher_swimlane_view_port_height">
+    <group>
+        <clip-path android:pathData="M12,0         H331         C337.627 0 343 5.37258 343 12V52         C343 58.6274 337.627 64 331 64         H12         C5.37258 64 0 58.6274 0 52V12         C0 5.37258 5.37258 0 12 0         M64,64 m-7,0 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0         M64,0 m-7,0 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0Z"/>
+        <path android:fillColor="@color/neutral_white" android:pathData="M12,0         H331         C337.627 0 343 5.37258 343 12V52         C343 58.6274 337.627 64 331 64         H12         C5.37258 64 0 58.6274 0 52V12         C0 5.37258 5.37258 0 12 0         M64,64 m-7,0 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0         M64,0 m-7,0 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0Z" android:strokeColor="@color/ds_neutral_10" android:strokeWidth="2"/>
+    </group>
+</vector>

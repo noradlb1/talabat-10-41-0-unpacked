@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/infomap_dialog_round_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/text_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+            <com.talabat.TalabatTextView android:textSize="16dp" android:textColor="@color/talabat_black" android:gravity="center" android:id="@+id/talabatTextView10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/delivery_popup_title" style="@style/textViewMedium"/>
+            <com.talabat.TalabatTextView android:textSize="14dp" android:textColor="@color/talabat_black" android:gravity="center" android:id="@+id/address_update_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/delivery_details_of_your_pinned" style="@style/textViewRegular"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_my_order" android:layout_below="@+id/text_section">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/buttons_view" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="@dimen/_8margin" android:layout_marginRight="@dimen/_8margin" android:layout_marginBottom="@dimen/_16margin" android:weightSum="1" android:layout_marginStart="@dimen/_8margin" android:layout_marginEnd="@dimen/_8margin">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/new_address_view" android:background="@drawable/rounded_button_stroke" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/_8margin" android:layout_weight="0.5" android:layout_marginEnd="@dimen/_8margin">
+                    <com.talabat.TalabatTextView android:textColor="@color/stroke_button_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_address" android:textAllCaps="false" style="@style/Content14Medium"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/continue_view" android:background="@drawable/rounded_button_fill" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5" android:elevation="@dimen/card_elevation">
+                    <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes_update" android:textAllCaps="false" style="@style/Content16Medium"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="end" android:id="@+id/close_popup_button" android:paddingLeft="14dp" android:paddingTop="14dp" android:paddingRight="14dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close_popup" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:paddingStart="14dp" android:paddingEnd="14dp"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,196 @@
+{
+  "type": "AddressForm2",
+  "defaultLayout": "Apartment",
+  "data": {
+    "addressId": null,
+    "isPharmacyTempAddressScreen": true
+  },
+  "layouts": [
+    {
+      "name": "Apartment",
+      "rows": [
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "building_apartment"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "apartment",
+          "sizeL_horizontal_spacing",
+          "floor_apartment"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "street"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "additional_directions"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "phone"
+        ]
+      ],
+      "footer": [
+        [
+          "save_btn"
+        ]
+      ]
+    }
+  ],
+  "widgets": {
+    "phone": {
+      "type": "InputTextFormField",
+      "data": {
+        "title": "Phone number",
+        "input_type": "phone",
+        "max_chars": 20,
+        "selected_country": {
+          "code": "AE",
+          "request_key": "country_code",
+          "name": "United Arab Emirates",
+          "prefix": "+971",
+          "nameTranslations": {
+            "ar": "الإمارات العربية المتحدة"
+          }
+        },
+        "request_key": "mobile_number",
+        "validation": [
+          {
+            "error_message": "",
+            "regex": "^.+$"
+          }
+        ],
+        "autovalidateMode": "onUserInteraction",
+        "hint": null,
+        "prefixSearchEmptyStateTitle": "Nothing found",
+        "prefixSearchEmptyStateDetails": "Modify your search to find what you're looking for",
+        "prefixSearchHint": "Search by country or code"
+      }
+    },
+    "building_apartment": {
+      "type": "InputTextFormField",
+      "data": {
+        "title": "Building name",
+        "value": "",
+        "input_type": "streetAddress",
+        "max_chars": 50,
+        "validation": [
+          {
+            "error_message": "",
+            "regex": "^.+$"
+          }
+        ],
+        "autovalidateMode": "onUserInteraction",
+        "request_key": "building_no",
+        "hint": null,
+        "input_action": "next"
+      }
+    },
+    "apartment": {
+      "type": "InputTextFormField",
+      "flex": 12,
+      "data": {
+        "title": "Apt. no.",
+        "value": "",
+        "input_type": "streetAddress",
+        "max_chars": 30,
+        "validation": [
+          {
+            "error_message": "",
+            "regex": "^.+$"
+          }
+        ],
+        "autovalidateMode": "onUserInteraction",
+        "request_key": "suite",
+        "hint": null,
+        "input_action": "next"
+      }
+    },
+    "floor_apartment": {
+      "type": "InputTextFormField",
+      "flex": 12,
+      "data": {
+        "title": "Floor",
+        "value": "",
+        "input_type": "streetAddress",
+        "max_chars": 30,
+        "validation": [
+          {
+            "error_message": "",
+            "regex": "^.+$"
+          }
+        ],
+        "autovalidateMode": "onUserInteraction",
+        "request_key": "floor",
+        "hint": null,
+        "input_action": "next"
+      }
+    },
+    "street": {
+      "type": "InputTextFormField",
+      "data": {
+        "title": "Street",
+        "value": "",
+        "input_type": "streetAddress",
+        "max_chars": 100,
+        "validation": [
+          {
+            "error_message": "",
+            "regex": "^.+$"
+          }
+        ],
+        "autovalidateMode": "onUserInteraction",
+        "request_key": "street",
+        "hint": null,
+        "input_action": "next"
+      }
+    },
+    "additional_directions": {
+      "type": "InputTextFormField",
+      "data": {
+        "title": "Additional directions (optional)",
+        "input_type": "streetAddress",
+        "max_chars": 200,
+        "request_key": "extra_directions",
+        "hint": "eg. near metro station",
+        "input_action": "next"
+      }
+    },
+    "save_btn": {
+      "type": "DSPrimaryButton",
+      "data": {
+        "text": "Checkout",
+        "actions": [
+          {
+            "type": "checkout",
+            "args": null
+          }
+        ]
+      }
+    },
+    "small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 12.001
+      }
+    },
+    "sizeL_horizontal_spacing": {
+      "type": "Spacing",
+      "style": {
+        "width": 12.001
+      }
+    }
+  }
+}

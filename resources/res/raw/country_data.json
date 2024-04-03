@@ -1,0 +1,1954 @@
+[
+  {
+    "code": "AF",
+    "name": "Afghanistan",
+    "prefix": "+93",
+    "nameTranslations": {
+      "ar": "أفغانستان"
+    }
+  },
+  {
+    "code": "AX",
+    "name": "Åland Islands",
+    "prefix": "+358",
+    "nameTranslations": {
+      "ar": "جزر أولاند"
+    }
+  },
+  {
+    "code": "AL",
+    "name": "Albania",
+    "prefix": "+355",
+    "nameTranslations": {
+      "ar": "ألبانيا"
+    }
+  },
+  {
+    "code": "DZ",
+    "name": "Algeria",
+    "prefix": "+213",
+    "nameTranslations": {
+      "ar": "الجزائر"
+    }
+  },
+  {
+    "code": "AS",
+    "name": "American Samoa",
+    "prefix": "+1684",
+    "nameTranslations": {
+      "ar": "ساموا الأمريكية"
+    }
+  },
+  {
+    "code": "AD",
+    "name": "Andorra",
+    "prefix": "+376",
+    "nameTranslations": {
+      "ar": "أندورا"
+    }
+  },
+  {
+    "code": "AO",
+    "name": "Angola",
+    "prefix": "+244",
+    "nameTranslations": {
+      "ar": "أنغولا"
+    }
+  },
+  {
+    "code": "AI",
+    "name": "Anguilla",
+    "prefix": "+1264",
+    "nameTranslations": {
+      "ar": "أنغويلا"
+    }
+  },
+  {
+    "code": "AQ",
+    "name": "Antarctica",
+    "prefix": "+672",
+    "nameTranslations": {
+      "ar": "القارة القطبية الجنوبية"
+    }
+  },
+  {
+    "code": "AG",
+    "name": "Antigua and Barbuda",
+    "prefix": "+1268",
+    "nameTranslations": {
+      "ar": "أنتيغوا وباربودا"
+    }
+  },
+  {
+    "code": "AR",
+    "name": "Argentina",
+    "prefix": "+54",
+    "nameTranslations": {
+      "ar": "الأرجنتين"
+    }
+  },
+  {
+    "code": "AM",
+    "name": "Armenia",
+    "prefix": "+374",
+    "nameTranslations": {
+      "ar": "أرمينيا"
+    }
+  },
+  {
+    "code": "AW",
+    "name": "Aruba",
+    "prefix": "+297",
+    "nameTranslations": {
+      "ar": "أروبا"
+    }
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "prefix": "+61",
+    "nameTranslations": {
+      "ar": "أستراليا"
+    }
+  },
+  {
+    "code": "AT",
+    "name": "Austria",
+    "prefix": "+43",
+    "nameTranslations": {
+      "ar": "النمسا"
+    }
+  },
+  {
+    "code": "AZ",
+    "name": "Azerbaijan",
+    "prefix": "+994",
+    "nameTranslations": {
+      "ar": "أذربيجان"
+    }
+  },
+  {
+    "code": "BS",
+    "name": "Bahamas",
+    "prefix": "+1242",
+    "nameTranslations": {
+      "ar": "باهاماس"
+    }
+  },
+  {
+    "code": "BH",
+    "name": "Bahrain",
+    "prefix": "+973",
+    "nameTranslations": {
+      "ar": "البحرين"
+    }
+  },
+  {
+    "code": "BD",
+    "name": "Bangladesh",
+    "prefix": "+880",
+    "nameTranslations": {
+      "ar": "بنغلاديش"
+    }
+  },
+  {
+    "code": "BB",
+    "name": "Barbados",
+    "prefix": "+1246",
+    "nameTranslations": {
+      "ar": "باربادوس"
+    }
+  },
+  {
+    "code": "BY",
+    "name": "Belarus",
+    "prefix": "+375",
+    "nameTranslations": {
+      "ar": "بيلاروس"
+    }
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "prefix": "+32",
+    "nameTranslations": {
+      "ar": "بلجيكا"
+    }
+  },
+  {
+    "code": "BZ",
+    "name": "Belize",
+    "prefix": "+501",
+    "nameTranslations": {
+      "ar": "بليز"
+    }
+  },
+  {
+    "code": "BJ",
+    "name": "Benin",
+    "prefix": "+229",
+    "nameTranslations": {
+      "ar": "بنين"
+    }
+  },
+  {
+    "code": "BM",
+    "name": "Bermuda",
+    "prefix": "+1441",
+    "nameTranslations": {
+      "ar": "برمودا"
+    }
+  },
+  {
+    "code": "BT",
+    "name": "Bhutan",
+    "prefix": "+975",
+    "nameTranslations": {
+      "ar": "بوتان"
+    }
+  },
+  {
+    "code": "BO",
+    "name": "Bolivia (Plurinational State of)",
+    "prefix": "+591",
+    "nameTranslations": {
+      "ar": "بوليفيا"
+    }
+  },
+  {
+    "code": "BA",
+    "name": "Bosnia and Herzegovina",
+    "prefix": "+387",
+    "nameTranslations": {
+      "ar": "البوسنة والهرسك"
+    }
+  },
+  {
+    "code": "BW",
+    "name": "Botswana",
+    "prefix": "+267",
+    "nameTranslations": {
+      "ar": "بوتسوانا"
+    }
+  },
+  {
+    "code": "BV",
+    "name": "Bouvet Island",
+    "prefix": "+47",
+    "nameTranslations": {
+      "ar": "جزيرة بوفيه"
+    }
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "prefix": "+55",
+    "nameTranslations": {
+      "ar": "البرازيل"
+    }
+  },
+  {
+    "code": "IO",
+    "name": "British Indian Ocean Territory",
+    "prefix": "+246",
+    "nameTranslations": {
+      "ar": "إقليم المحيط الهندي البريطاني"
+    }
+  },
+  {
+    "code": "BN",
+    "name": "Brunei Darussalam",
+    "prefix": "+673",
+    "nameTranslations": {
+      "ar": "بروناي"
+    }
+  },
+  {
+    "code": "BG",
+    "name": "Bulgaria",
+    "prefix": "+359",
+    "nameTranslations": {
+      "ar": "بلغاريا"
+    }
+  },
+  {
+    "code": "BF",
+    "name": "Burkina Faso",
+    "prefix": "+226",
+    "nameTranslations": {
+      "ar": "بوركينا فاسو"
+    }
+  },
+  {
+    "code": "BI",
+    "name": "Burundi",
+    "prefix": "+257",
+    "nameTranslations": {
+      "ar": "بوروندي"
+    }
+  },
+  {
+    "code": "CV",
+    "name": "Cabo Verde",
+    "prefix": "+238",
+    "nameTranslations": {
+      "ar": "الرأس الأخضر"
+    }
+  },
+  {
+    "code": "KH",
+    "name": "Cambodia",
+    "prefix": "+855",
+    "nameTranslations": {
+      "ar": "كمبوديا"
+    }
+  },
+  {
+    "code": "CM",
+    "name": "Cameroon",
+    "prefix": "+237",
+    "nameTranslations": {
+      "ar": "الكاميرون"
+    }
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "prefix": "+1",
+    "nameTranslations": {
+      "ar": "كندا"
+    }
+  },
+  {
+    "code": "KY",
+    "name": "Cayman Islands",
+    "prefix": "+1345",
+    "nameTranslations": {
+      "ar": "جزر كايمان"
+    }
+  },
+  {
+    "code": "CF",
+    "name": "Central African Republic",
+    "prefix": "+236",
+    "nameTranslations": {
+      "ar": "جمهورية أفريقيا الوسطى"
+    }
+  },
+  {
+    "code": "TD",
+    "name": "Chad",
+    "prefix": "+235",
+    "nameTranslations": {
+      "ar": "تشاد"
+    }
+  },
+  {
+    "code": "CL",
+    "name": "Chile",
+    "prefix": "+56",
+    "nameTranslations": {
+      "ar": "تشيلي"
+    }
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "prefix": "+86",
+    "nameTranslations": {
+      "ar": "الصين"
+    }
+  },
+  {
+    "code": "CX",
+    "name": "Christmas Island",
+    "prefix": "+61",
+    "nameTranslations": {
+      "ar": "جزيرة عيد الميلاد"
+    }
+  },
+  {
+    "code": "CC",
+    "name": "Cocos (Keeling) Islands",
+    "prefix": "+61",
+    "nameTranslations": {
+      "ar": "جزر كوكوس"
+    }
+  },
+  {
+    "code": "CO",
+    "name": "Colombia",
+    "prefix": "+57",
+    "nameTranslations": {
+      "ar": "كولومبيا"
+    }
+  },
+  {
+    "code": "KM",
+    "name": "Comoros",
+    "prefix": "+269",
+    "nameTranslations": {
+      "ar": "جزر القمر"
+    }
+  },
+  {
+    "code": "CG",
+    "name": "Congo (Republic of the)",
+    "prefix": "+242",
+    "nameTranslations": {
+      "ar": "جمهورية الكونغو"
+    }
+  },
+  {
+    "code": "CD",
+    "name": "Congo (Democratic Republic of the)",
+    "prefix": "+243",
+    "nameTranslations": {
+      "ar": "جمهورية الكونغو الديمقراطية"
+    }
+  },
+  {
+    "code": "CK",
+    "name": "Cook Islands",
+    "prefix": "+682",
+    "nameTranslations": {
+      "ar": "جزر كوك"
+    }
+  },
+  {
+    "code": "CR",
+    "name": "Costa Rica",
+    "prefix": "+506",
+    "nameTranslations": {
+      "ar": "كوستاريكا"
+    }
+  },
+  {
+    "code": "CI",
+    "name": "Côte d'Ivoire",
+    "prefix": "+225",
+    "nameTranslations": {
+      "ar": "ساحل العاج"
+    }
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "prefix": "+385",
+    "nameTranslations": {
+      "ar": "كرواتيا"
+    }
+  },
+  {
+    "code": "CU",
+    "name": "Cuba",
+    "prefix": "+53",
+    "nameTranslations": {
+      "ar": "كوبا"
+    }
+  },
+  {
+    "code": "CY",
+    "name": "Cyprus",
+    "prefix": "+357",
+    "nameTranslations": {
+      "ar": "قبرص"
+    }
+  },
+  {
+    "code": "CZ",
+    "name": "Czech Republic",
+    "prefix": "+420",
+    "nameTranslations": {
+      "ar": "جمهورية التشيك"
+    }
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "prefix": "+45",
+    "nameTranslations": {
+      "ar": "الدنمارك"
+    }
+  },
+  {
+    "code": "DJ",
+    "name": "Djibouti",
+    "prefix": "+253",
+    "nameTranslations": {
+      "ar": "جيبوتي"
+    }
+  },
+  {
+    "code": "DM",
+    "name": "Dominica",
+    "prefix": "+1767",
+    "nameTranslations": {
+      "ar": "دومينيكا"
+    }
+  },
+  {
+    "code": "DO",
+    "name": "Dominican Republic",
+    "prefix": "+1",
+    "nameTranslations": {
+      "ar": "جمهورية الدومينيكان"
+    }
+  },
+  {
+    "code": "EC",
+    "name": "Ecuador",
+    "prefix": "+593",
+    "nameTranslations": {
+      "ar": "الإكوادور"
+    }
+  },
+  {
+    "code": "EG",
+    "name": "Egypt",
+    "prefix": "+20",
+    "nameTranslations": {
+      "ar": "مصر"
+    }
+  },
+  {
+    "code": "SV",
+    "name": "El Salvador",
+    "prefix": "+503",
+    "nameTranslations": {
+      "ar": "السلفادور"
+    }
+  },
+  {
+    "code": "GQ",
+    "name": "Equatorial Guinea",
+    "prefix": "+240",
+    "nameTranslations": {
+      "ar": "غينيا الاستوائية"
+    }
+  },
+  {
+    "code": "ER",
+    "name": "Eritrea",
+    "prefix": "+291",
+    "nameTranslations": {
+      "ar": "إريتريا"
+    }
+  },
+  {
+    "code": "EE",
+    "name": "Estonia",
+    "prefix": "+372",
+    "nameTranslations": {
+      "ar": "إستونيا"
+    }
+  },
+  {
+    "code": "ET",
+    "name": "Ethiopia",
+    "prefix": "+251",
+    "nameTranslations": {
+      "ar": "إثيوبيا"
+    }
+  },
+  {
+    "code": "FK",
+    "name": "Falkland Islands (Malvinas)",
+    "prefix": "+500",
+    "nameTranslations": {
+      "ar": "جزر فوكلاند"
+    }
+  },
+  {
+    "code": "FO",
+    "name": "Faroe Islands",
+    "prefix": "+298",
+    "nameTranslations": {
+      "ar": "جزر فارو"
+    }
+  },
+  {
+    "code": "FJ",
+    "name": "Fiji",
+    "prefix": "+679",
+    "nameTranslations": {
+      "ar": "فيجي"
+    }
+  },
+  {
+    "code": "FI",
+    "name": "Finland",
+    "prefix": "+358",
+    "nameTranslations": {
+      "ar": "فنلندا"
+    }
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "prefix": "+33",
+    "nameTranslations": {
+      "ar": "فرنسا"
+    }
+  },
+  {
+    "code": "GF",
+    "name": "French Guiana",
+    "prefix": "+594",
+    "nameTranslations": {
+      "ar": "غويانا الفرنسية"
+    }
+  },
+  {
+    "code": "PF",
+    "name": "French Polynesia",
+    "prefix": "+689",
+    "nameTranslations": {
+      "ar": "بولينزيا الفرنسية"
+    }
+  },
+  {
+    "code": "TF",
+    "name": "French Southern Territories",
+    "prefix": "+262",
+    "nameTranslations": {
+      "ar": "أراض فرنسية جنوبية وأنتارتيكية"
+    }
+  },
+  {
+    "code": "GA",
+    "name": "Gabon",
+    "prefix": "+241",
+    "nameTranslations": {
+      "ar": "الغابون"
+    }
+  },
+  {
+    "code": "GM",
+    "name": "Gambia",
+    "prefix": "+220",
+    "nameTranslations": {
+      "ar": "غامبيا"
+    }
+  },
+  {
+    "code": "GE",
+    "name": "Georgia",
+    "prefix": "+995",
+    "nameTranslations": {
+      "ar": "جورجيا"
+    }
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "prefix": "+49",
+    "nameTranslations": {
+      "ar": "ألمانيا"
+    }
+  },
+  {
+    "code": "GH",
+    "name": "Ghana",
+    "prefix": "+233",
+    "nameTranslations": {
+      "ar": "غانا"
+    }
+  },
+  {
+    "code": "GI",
+    "name": "Gibraltar",
+    "prefix": "+350",
+    "nameTranslations": {
+      "ar": "جبل طارق"
+    }
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "prefix": "+30",
+    "nameTranslations": {
+      "ar": "اليونان"
+    }
+  },
+  {
+    "code": "GL",
+    "name": "Greenland",
+    "prefix": "+299",
+    "nameTranslations": {
+      "ar": "جرينلاند"
+    }
+  },
+  {
+    "code": "GD",
+    "name": "Grenada",
+    "prefix": "+1473",
+    "nameTranslations": {
+      "ar": "غرينادا"
+    }
+  },
+  {
+    "code": "GP",
+    "name": "Guadeloupe",
+    "prefix": "+590",
+    "nameTranslations": {
+      "ar": "غوادلوب"
+    }
+  },
+  {
+    "code": "GU",
+    "name": "Guam",
+    "prefix": "+1671",
+    "nameTranslations": {
+      "ar": "غوام"
+    }
+  },
+  {
+    "code": "GT",
+    "name": "Guatemala",
+    "prefix": "+502",
+    "nameTranslations": {
+      "ar": "غواتيمالا"
+    }
+  },
+  {
+    "code": "GG",
+    "name": "Guernsey",
+    "prefix": "+44",
+    "nameTranslations": {
+      "ar": "غيرنزي"
+    }
+  },
+  {
+    "code": "GN",
+    "name": "Guinea",
+    "prefix": "+224",
+    "nameTranslations": {
+      "ar": "غينيا"
+    }
+  },
+  {
+    "code": "GW",
+    "name": "Guinea-Bissau",
+    "prefix": "+245",
+    "nameTranslations": {
+      "ar": "غينيا بيساو"
+    }
+  },
+  {
+    "code": "GY",
+    "name": "Guyana",
+    "prefix": "+592",
+    "nameTranslations": {
+      "ar": "غيانا"
+    }
+  },
+  {
+    "code": "HT",
+    "name": "Haiti",
+    "prefix": "+509",
+    "nameTranslations": {
+      "ar": "هايتي"
+    }
+  },
+  {
+    "code": "HM",
+    "name": "Heard Island and McDonald Islands",
+    "prefix": "+0",
+    "nameTranslations": {
+      "ar": "جزيرة هيرد وجزر ماكدونالد"
+    }
+  },
+  {
+    "code": "VA",
+    "name": "Vatican City State",
+    "prefix": "+379",
+    "nameTranslations": {
+      "ar": "الفاتيكان"
+    }
+  },
+  {
+    "code": "HN",
+    "name": "Honduras",
+    "prefix": "+504",
+    "nameTranslations": {
+      "ar": "هندوراس"
+    }
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "prefix": "+852",
+    "nameTranslations": {
+      "ar": "هونغ كونغ"
+    }
+  },
+  {
+    "code": "HU",
+    "name": "Hungary",
+    "prefix": "+36",
+    "nameTranslations": {
+      "ar": "المجر"
+    }
+  },
+  {
+    "code": "IS",
+    "name": "Iceland",
+    "prefix": "+354",
+    "nameTranslations": {
+      "ar": "آيسلندا"
+    }
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "prefix": "+91",
+    "nameTranslations": {
+      "ar": "الهند"
+    }
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "prefix": "+62",
+    "nameTranslations": {
+      "ar": "إندونيسيا"
+    }
+  },
+  {
+    "code": "IR",
+    "name": "Iran",
+    "prefix": "+98",
+    "nameTranslations": {
+      "ar": "إيران"
+    }
+  },
+  {
+    "code": "IQ",
+    "name": "Iraq",
+    "prefix": "+964",
+    "nameTranslations": {
+      "ar": "العراق"
+    }
+  },
+  {
+    "code": "IE",
+    "name": "Ireland",
+    "prefix": "+353",
+    "nameTranslations": {
+      "ar": "أيرلندا"
+    }
+  },
+  {
+    "code": "IM",
+    "name": "Isle of Man",
+    "prefix": "+44",
+    "nameTranslations": {
+      "ar": "جزيرة مان"
+    }
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "prefix": "+972",
+    "nameTranslations": {
+      "ar": "إسرائيل"
+    }
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "prefix": "+39",
+    "nameTranslations": {
+      "ar": "إيطاليا"
+    }
+  },
+  {
+    "code": "JM",
+    "name": "Jamaica",
+    "prefix": "+1876",
+    "nameTranslations": {
+      "ar": "جامايكا"
+    }
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "prefix": "+81",
+    "nameTranslations": {
+      "ar": "اليابان"
+    }
+  },
+  {
+    "code": "JE",
+    "name": "Jersey",
+    "prefix": "+44",
+    "nameTranslations": {
+      "ar": "جيرزي"
+    }
+  },
+  {
+    "code": "JO",
+    "name": "Jordan",
+    "prefix": "+962",
+    "nameTranslations": {
+      "ar": "الأردن"
+    }
+  },
+  {
+    "code": "KZ",
+    "name": "Kazakhstan",
+    "prefix": "+7",
+    "nameTranslations": {
+      "ar": "كازاخستان"
+    }
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "prefix": "+254",
+    "nameTranslations": {
+      "ar": "كينيا"
+    }
+  },
+  {
+    "code": "KI",
+    "name": "Kiribati",
+    "prefix": "+686",
+    "nameTranslations": {
+      "ar": "كيريباتي"
+    }
+  },
+  {
+    "code": "KP",
+    "name": "Korea (Democratic People's Republic of)",
+    "prefix": "+850",
+    "nameTranslations": {
+      "ar": "كوريا الشمالية"
+    }
+  },
+  {
+    "code": "KR",
+    "name": "Korea (Republic of)",
+    "prefix": "+82",
+    "nameTranslations": {
+      "ar": "كوريا الجنوبية"
+    }
+  },
+  {
+    "code": "KW",
+    "name": "Kuwait",
+    "prefix": "+965",
+    "nameTranslations": {
+      "ar": "الكويت"
+    }
+  },
+  {
+    "code": "KG",
+    "name": "Kyrgyzstan",
+    "prefix": "+996",
+    "nameTranslations": {
+      "ar": "قيرغيزستان"
+    }
+  },
+  {
+    "code": "LA",
+    "name": "Lao People's Democratic Republic",
+    "prefix": "+856",
+    "nameTranslations": {
+      "ar": "لاوس"
+    }
+  },
+  {
+    "code": "LV",
+    "name": "Latvia",
+    "prefix": "+371",
+    "nameTranslations": {
+      "ar": "لاتفيا"
+    }
+  },
+  {
+    "code": "LB",
+    "name": "Lebanon",
+    "prefix": "+961",
+    "nameTranslations": {
+      "ar": "لبنان"
+    }
+  },
+  {
+    "code": "LS",
+    "name": "Lesotho",
+    "prefix": "+266",
+    "nameTranslations": {
+      "ar": "ليسوتو"
+    }
+  },
+  {
+    "code": "LR",
+    "name": "Liberia",
+    "prefix": "+231",
+    "nameTranslations": {
+      "ar": "ليبيريا"
+    }
+  },
+  {
+    "code": "LY",
+    "name": "Libya",
+    "prefix": "+218",
+    "nameTranslations": {
+      "ar": "ليبيا"
+    }
+  },
+  {
+    "code": "LI",
+    "name": "Liechtenstein",
+    "prefix": "+423",
+    "nameTranslations": {
+      "ar": "ليختنشتاين"
+    }
+  },
+  {
+    "code": "LT",
+    "name": "Lithuania",
+    "prefix": "+370",
+    "nameTranslations": {
+      "ar": "ليتوانيا"
+    }
+  },
+  {
+    "code": "LU",
+    "name": "Luxembourg",
+    "prefix": "+352",
+    "nameTranslations": {
+      "ar": "لوكسمبورغ"
+    }
+  },
+  {
+    "code": "MO",
+    "name": "Macao",
+    "prefix": "+853",
+    "nameTranslations": {
+      "ar": "ماكاو"
+    }
+  },
+  {
+    "code": "MK",
+    "name": "Macedonia (the former Yugoslav Republic of)",
+    "prefix": "+389",
+    "nameTranslations": {
+      "ar": "مقدونيا"
+    }
+  },
+  {
+    "code": "MG",
+    "name": "Madagascar",
+    "prefix": "+261",
+    "nameTranslations": {
+      "ar": "مدغشقر"
+    }
+  },
+  {
+    "code": "MW",
+    "name": "Malawi",
+    "prefix": "+265",
+    "nameTranslations": {
+      "ar": "مالاوي"
+    }
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "prefix": "+60",
+    "nameTranslations": {
+      "ar": "ماليزيا"
+    }
+  },
+  {
+    "code": "MV",
+    "name": "Maldives",
+    "prefix": "+960",
+    "nameTranslations": {
+      "ar": "جزر المالديف"
+    }
+  },
+  {
+    "code": "ML",
+    "name": "Mali",
+    "prefix": "+223",
+    "nameTranslations": {
+      "ar": "مالي"
+    }
+  },
+  {
+    "code": "MT",
+    "name": "Malta",
+    "prefix": "+356",
+    "nameTranslations": {
+      "ar": "مالطا"
+    }
+  },
+  {
+    "code": "MH",
+    "name": "Marshall Islands",
+    "prefix": "+692",
+    "nameTranslations": {
+      "ar": "جزر مارشال"
+    }
+  },
+  {
+    "code": "MQ",
+    "name": "Martinique",
+    "prefix": "+596",
+    "nameTranslations": {
+      "ar": "مارتينيك"
+    }
+  },
+  {
+    "code": "MR",
+    "name": "Mauritania",
+    "prefix": "+222",
+    "nameTranslations": {
+      "ar": "موريتانيا"
+    }
+  },
+  {
+    "code": "MU",
+    "name": "Mauritius",
+    "prefix": "+230",
+    "nameTranslations": {
+      "ar": "موريشيوس"
+    }
+  },
+  {
+    "code": "YT",
+    "name": "Mayotte",
+    "prefix": "+262",
+    "nameTranslations": {
+      "ar": "مايوت"
+    }
+  },
+  {
+    "code": "MX",
+    "name": "Mexico",
+    "prefix": "+52",
+    "nameTranslations": {
+      "ar": "المكسيك"
+    }
+  },
+  {
+    "code": "FM",
+    "name": "Micronesia (Federated States of)",
+    "prefix": "+691",
+    "nameTranslations": {
+      "ar": "ولايات ميكرونيسيا المتحدة"
+    }
+  },
+  {
+    "code": "MD",
+    "name": "Moldova (Republic of)",
+    "prefix": "+373",
+    "nameTranslations": {
+      "ar": "مولدوفا"
+    }
+  },
+  {
+    "code": "MC",
+    "name": "Monaco",
+    "prefix": "+377",
+    "nameTranslations": {
+      "ar": "موناكو"
+    }
+  },
+  {
+    "code": "MN",
+    "name": "Mongolia",
+    "prefix": "+976",
+    "nameTranslations": {
+      "ar": "منغوليا"
+    }
+  },
+  {
+    "code": "ME",
+    "name": "Montenegro",
+    "prefix": "+382",
+    "nameTranslations": {
+      "ar": "الجبل الأسود"
+    }
+  },
+  {
+    "code": "MS",
+    "name": "Montserrat",
+    "prefix": "+1664",
+    "nameTranslations": {
+      "ar": "مونتسرات"
+    }
+  },
+  {
+    "code": "MA",
+    "name": "Morocco",
+    "prefix": "+212",
+    "nameTranslations": {
+      "ar": "المغرب"
+    }
+  },
+  {
+    "code": "MZ",
+    "name": "Mozambique",
+    "prefix": "+258",
+    "nameTranslations": {
+      "ar": "موزمبيق"
+    }
+  },
+  {
+    "code": "MM",
+    "name": "Myanmar",
+    "prefix": "+95",
+    "nameTranslations": {
+      "ar": "ميانمار"
+    }
+  },
+  {
+    "code": "NA",
+    "name": "Namibia",
+    "prefix": "+264",
+    "nameTranslations": {
+      "ar": "ناميبيا"
+    }
+  },
+  {
+    "code": "NR",
+    "name": "Nauru",
+    "prefix": "+674",
+    "nameTranslations": {
+      "ar": "ناورو"
+    }
+  },
+  {
+    "code": "NP",
+    "name": "Nepal",
+    "prefix": "+977",
+    "nameTranslations": {
+      "ar": "نيبال"
+    }
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "prefix": "+31",
+    "nameTranslations": {
+      "ar": "هولندا"
+    }
+  },
+  {
+    "code": "NC",
+    "name": "New Caledonia",
+    "prefix": "+687",
+    "nameTranslations": {
+      "ar": "كاليدونيا الجديدة"
+    }
+  },
+  {
+    "code": "NZ",
+    "name": "New Zealand",
+    "prefix": "+64",
+    "nameTranslations": {
+      "ar": "نيوزيلندا"
+    }
+  },
+  {
+    "code": "NI",
+    "name": "Nicaragua",
+    "prefix": "+505",
+    "nameTranslations": {
+      "ar": "نيكاراغوا"
+    }
+  },
+  {
+    "code": "NE",
+    "name": "Niger",
+    "prefix": "+227",
+    "nameTranslations": {
+      "ar": "النيجر"
+    }
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "prefix": "+234",
+    "nameTranslations": {
+      "ar": "نيجيريا"
+    }
+  },
+  {
+    "code": "NU",
+    "name": "Niue",
+    "prefix": "+683",
+    "nameTranslations": {
+      "ar": "نييوي"
+    }
+  },
+  {
+    "code": "NF",
+    "name": "Norfolk Island",
+    "prefix": "+672",
+    "nameTranslations": {
+      "ar": "جزيرة نورفولك"
+    }
+  },
+  {
+    "code": "MP",
+    "name": "Northern Mariana Islands",
+    "prefix": "+1670",
+    "nameTranslations": {
+      "ar": "جزر ماريانا الشمالية"
+    }
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "prefix": "+47",
+    "nameTranslations": {
+      "ar": "النرويج"
+    }
+  },
+  {
+    "code": "OM",
+    "name": "Oman",
+    "prefix": "+968",
+    "nameTranslations": {
+      "ar": "عمان"
+    }
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "prefix": "+92",
+    "nameTranslations": {
+      "ar": "باكستان"
+    }
+  },
+  {
+    "code": "PW",
+    "name": "Palau",
+    "prefix": "+680",
+    "nameTranslations": {
+      "ar": "بالاو"
+    }
+  },
+  {
+    "code": "PS",
+    "name": "Palestine, State of",
+    "prefix": "+970",
+    "nameTranslations": {
+      "ar": "فلسطين"
+    }
+  },
+  {
+    "code": "PA",
+    "name": "Panama",
+    "prefix": "+507",
+    "nameTranslations": {
+      "ar": "بنما"
+    }
+  },
+  {
+    "code": "PG",
+    "name": "Papua New Guinea",
+    "prefix": "+675",
+    "nameTranslations": {
+      "ar": "بابوا غينيا الجديدة"
+    }
+  },
+  {
+    "code": "PY",
+    "name": "Paraguay",
+    "prefix": "+595",
+    "nameTranslations": {
+      "ar": "باراغواي"
+    }
+  },
+  {
+    "code": "PE",
+    "name": "Peru",
+    "prefix": "+51",
+    "nameTranslations": {
+      "ar": "بيرو"
+    }
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "prefix": "+63",
+    "nameTranslations": {
+      "ar": "الفلبين"
+    }
+  },
+  {
+    "code": "PN",
+    "name": "Pitcairn",
+    "prefix": "+64",
+    "nameTranslations": {
+      "ar": "جزر بيتكيرن"
+    }
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "prefix": "+48",
+    "nameTranslations": {
+      "ar": "بولندا"
+    }
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "prefix": "+351",
+    "nameTranslations": {
+      "ar": "البرتغال"
+    }
+  },
+  {
+    "code": "PR",
+    "name": "Puerto Rico",
+    "prefix": "+1939",
+    "nameTranslations": {
+      "ar": "بورتوريكو"
+    }
+  },
+  {
+    "code": "QA",
+    "name": "Qatar",
+    "prefix": "+974",
+    "nameTranslations": {
+      "ar": "قطر"
+    }
+  },
+  {
+    "code": "RE",
+    "name": "Réunion",
+    "prefix": "+262",
+    "nameTranslations": {
+      "ar": "لا ريونيون"
+    }
+  },
+  {
+    "code": "RO",
+    "name": "Romania",
+    "prefix": "+40",
+    "nameTranslations": {
+      "ar": "رومانيا"
+    }
+  },
+  {
+    "code": "RU",
+    "name": "Russian Federation",
+    "prefix": "+7",
+    "nameTranslations": {
+      "ar": "روسيا"
+    }
+  },
+  {
+    "code": "RW",
+    "name": "Rwanda",
+    "prefix": "+250",
+    "nameTranslations": {
+      "ar": "رواندا"
+    }
+  },
+  {
+    "code": "BL",
+    "name": "Saint Barthélemy",
+    "prefix": "+590",
+    "nameTranslations": {
+      "ar": "سان بارتيلمي"
+    }
+  },
+  {
+    "code": "SH",
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "prefix": "+290",
+    "nameTranslations": {
+      "ar": "سانت هيلانة وأسينشين وتريستان دا كونا"
+    }
+  },
+  {
+    "code": "KN",
+    "name": "Saint Kitts and Nevis",
+    "prefix": "+1869",
+    "nameTranslations": {
+      "ar": "سانت كيتس ونيفيس"
+    }
+  },
+  {
+    "code": "LC",
+    "name": "Saint Lucia",
+    "prefix": "+1758",
+    "nameTranslations": {
+      "ar": "سانت لوسيا"
+    }
+  },
+  {
+    "code": "MF",
+    "name": "Saint Martin (French part)",
+    "prefix": "+590",
+    "nameTranslations": {
+      "ar": "تجمع سان مارتين"
+    }
+  },
+  {
+    "code": "PM",
+    "name": "Saint Pierre and Miquelon",
+    "prefix": "+508",
+    "nameTranslations": {
+      "ar": "سان بيير وميكلون"
+    }
+  },
+  {
+    "code": "VC",
+    "name": "Saint Vincent and the Grenadines",
+    "prefix": "+1784",
+    "nameTranslations": {
+      "ar": "سانت فينسنت والغرينادين"
+    }
+  },
+  {
+    "code": "WS",
+    "name": "Samoa",
+    "prefix": "+685",
+    "nameTranslations": {
+      "ar": "ساموا"
+    }
+  },
+  {
+    "code": "SM",
+    "name": "San Marino",
+    "prefix": "+378",
+    "nameTranslations": {
+      "ar": "سان مارينو"
+    }
+  },
+  {
+    "code": "ST",
+    "name": "Sao Tome and Principe",
+    "prefix": "+239",
+    "nameTranslations": {
+      "ar": "ساو تومي وبرينسيب"
+    }
+  },
+  {
+    "code": "SA",
+    "name": "Saudi Arabia",
+    "prefix": "+966",
+    "nameTranslations": {
+      "ar": "السعودية"
+    }
+  },
+  {
+    "code": "SN",
+    "name": "Senegal",
+    "prefix": "+221",
+    "nameTranslations": {
+      "ar": "السنغال"
+    }
+  },
+  {
+    "code": "RS",
+    "name": "Serbia",
+    "prefix": "+381",
+    "nameTranslations": {
+      "ar": "صربيا"
+    }
+  },
+  {
+    "code": "SC",
+    "name": "Seychelles",
+    "prefix": "+248",
+    "nameTranslations": {
+      "ar": "سيشل"
+    }
+  },
+  {
+    "code": "SL",
+    "name": "Sierra Leone",
+    "prefix": "+232",
+    "nameTranslations": {
+      "ar": "سيراليون"
+    }
+  },
+  {
+    "code": "SG",
+    "name": "Singapore",
+    "prefix": "+65",
+    "nameTranslations": {
+      "ar": "سنغافورة"
+    }
+  },
+  {
+    "code": "SK",
+    "name": "Slovakia",
+    "prefix": "+421",
+    "nameTranslations": {
+      "ar": "سلوفاكيا"
+    }
+  },
+  {
+    "code": "SI",
+    "name": "Slovenia",
+    "prefix": "+386",
+    "nameTranslations": {
+      "ar": "سلوفينيا"
+    }
+  },
+  {
+    "code": "SB",
+    "name": "Solomon Islands",
+    "prefix": "+677",
+    "nameTranslations": {
+      "ar": "جزر سليمان"
+    }
+  },
+  {
+    "code": "SO",
+    "name": "Somalia",
+    "prefix": "+252",
+    "nameTranslations": {
+      "ar": "الصومال"
+    }
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "prefix": "+27",
+    "nameTranslations": {
+      "ar": "جنوب أفريقيا"
+    }
+  },
+  {
+    "code": "GS",
+    "name": "South Georgia and the South Sandwich Islands",
+    "prefix": "+500",
+    "nameTranslations": {
+      "ar": "جورجيا الجنوبية وجزر ساندويتش الجنوبية"
+    }
+  },
+  {
+    "code": "SS",
+    "name": "South Sudan",
+    "prefix": "+211",
+    "nameTranslations": {
+      "ar": "جنوب السودان"
+    }
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "prefix": "+34",
+    "nameTranslations": {
+      "ar": "إسبانيا"
+    }
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "prefix": "+94",
+    "nameTranslations": {
+      "ar": "سريلانكا"
+    }
+  },
+  {
+    "code": "SD",
+    "name": "Sudan",
+    "prefix": "+249",
+    "nameTranslations": {
+      "ar": "السودان"
+    }
+  },
+  {
+    "code": "SR",
+    "name": "Suriname",
+    "prefix": "+597",
+    "nameTranslations": {
+      "ar": "سورينام"
+    }
+  },
+  {
+    "code": "SJ",
+    "name": "Svalbard and Jan Mayen",
+    "prefix": "+47",
+    "nameTranslations": {
+      "ar": "سفالبارد ويان ماين"
+    }
+  },
+  {
+    "code": "SZ",
+    "name": "Swaziland",
+    "prefix": "+268",
+    "nameTranslations": {
+      "ar": "إسواتيني"
+    }
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "prefix": "+46",
+    "nameTranslations": {
+      "ar": "السويد"
+    }
+  },
+  {
+    "code": "CH",
+    "name": "Switzerland",
+    "prefix": "+41",
+    "nameTranslations": {
+      "ar": "سويسرا"
+    }
+  },
+  {
+    "code": "SY",
+    "name": "Syrian Arab Republic",
+    "prefix": "+963",
+    "nameTranslations": {
+      "ar": "سوريا"
+    }
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "prefix": "+886",
+    "nameTranslations": {
+      "ar": "تايوان"
+    }
+  },
+  {
+    "code": "TJ",
+    "name": "Tajikistan",
+    "prefix": "+992",
+    "nameTranslations": {
+      "ar": "طاجيكستان"
+    }
+  },
+  {
+    "code": "TZ",
+    "name": "Tanzania, United Republic of",
+    "prefix": "+255",
+    "nameTranslations": {
+      "ar": "تنزانيا"
+    }
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "prefix": "+66",
+    "nameTranslations": {
+      "ar": "تايلاند"
+    }
+  },
+  {
+    "code": "TL",
+    "name": "Timor-Leste",
+    "prefix": "+670",
+    "nameTranslations": {
+      "ar": "تيمور الشرقية"
+    }
+  },
+  {
+    "code": "TG",
+    "name": "Togo",
+    "prefix": "+228",
+    "nameTranslations": {
+      "ar": "توغو"
+    }
+  },
+  {
+    "code": "TK",
+    "name": "Tokelau",
+    "prefix": "+690",
+    "nameTranslations": {
+      "ar": "توكيلاو"
+    }
+  },
+  {
+    "code": "TO",
+    "name": "Tonga",
+    "prefix": "+676",
+    "nameTranslations": {
+      "ar": "تونغا"
+    }
+  },
+  {
+    "code": "TT",
+    "name": "Trinidad and Tobago",
+    "prefix": "+1868",
+    "nameTranslations": {
+      "ar": "ترينيداد وتوباغو"
+    }
+  },
+  {
+    "code": "TN",
+    "name": "Tunisia",
+    "prefix": "+216",
+    "nameTranslations": {
+      "ar": "تونس"
+    }
+  },
+  {
+    "code": "TR",
+    "name": "Turkey",
+    "prefix": "+90",
+    "nameTranslations": {
+      "ar": "تركيا"
+    }
+  },
+  {
+    "code": "TM",
+    "name": "Turkmenistan",
+    "prefix": "+993",
+    "nameTranslations": {
+      "ar": "تركمانستان"
+    }
+  },
+  {
+    "code": "TC",
+    "name": "Turks and Caicos Islands",
+    "prefix": "+1649",
+    "nameTranslations": {
+      "ar": "جزر توركس وكايكوس"
+    }
+  },
+  {
+    "code": "TV",
+    "name": "Tuvalu",
+    "prefix": "+688",
+    "nameTranslations": {
+      "ar": "توفالو"
+    }
+  },
+  {
+    "code": "UG",
+    "name": "Uganda",
+    "prefix": "+256",
+    "nameTranslations": {
+      "ar": "أوغندا"
+    }
+  },
+  {
+    "code": "UA",
+    "name": "Ukraine",
+    "prefix": "+380",
+    "nameTranslations": {
+      "ar": "أوكرانيا"
+    }
+  },
+  {
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "prefix": "+971",
+    "nameTranslations": {
+      "ar": "الإمارات العربية المتحدة"
+    }
+  },
+  {
+    "code": "GB",
+    "name": "United Kingdom of Great Britain and Northern Ireland",
+    "prefix": "+44",
+    "nameTranslations": {
+      "ar": "المملكة المتحدة"
+    }
+  },
+  {
+    "code": "US",
+    "name": "United States of America",
+    "prefix": "+1",
+    "nameTranslations": {
+      "ar": "الولايات المتحدة"
+    }
+  },
+  {
+    "code": "UY",
+    "name": "Uruguay",
+    "prefix": "+598",
+    "nameTranslations": {
+      "ar": "الأوروغواي"
+    }
+  },
+  {
+    "code": "UZ",
+    "name": "Uzbekistan",
+    "prefix": "+998",
+    "nameTranslations": {
+      "ar": "أوزبكستان"
+    }
+  },
+  {
+    "code": "VU",
+    "name": "Vanuatu",
+    "prefix": "+678",
+    "nameTranslations": {
+      "ar": "فانواتو"
+    }
+  },
+  {
+    "code": "VE",
+    "name": "Venezuela (Bolivarian Republic of)",
+    "prefix": "+58",
+    "nameTranslations": {
+      "ar": "فنزويلا"
+    }
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "prefix": "+84",
+    "nameTranslations": {
+      "ar": "فيتنام"
+    }
+  },
+  {
+    "code": "VG",
+    "name": "Virgin Islands (British)",
+    "prefix": "+1284",
+    "nameTranslations": {
+      "ar": "جزر العذراء البريطانية"
+    }
+  },
+  {
+    "code": "VI",
+    "name": "Virgin Islands (U.S.)",
+    "prefix": "+1340",
+    "nameTranslations": {
+      "ar": "جزر العذراء الأمريكية"
+    }
+  },
+  {
+    "code": "WF",
+    "name": "Wallis and Futuna",
+    "prefix": "+681",
+    "nameTranslations": {
+      "ar": "والس وفوتونا"
+    }
+  },
+  {
+    "code": "YE",
+    "name": "Yemen",
+    "prefix": "+967",
+    "nameTranslations": {
+      "ar": "اليمن"
+    }
+  },
+  {
+    "code": "ZM",
+    "name": "Zambia",
+    "prefix": "+260",
+    "nameTranslations": {
+      "ar": "زامبيا"
+    }
+  },
+  {
+    "code": "ZW",
+    "name": "Zimbabwe",
+    "prefix": "+263",
+    "nameTranslations": {
+      "ar": "زيمبابوي"
+    }
+  }
+]

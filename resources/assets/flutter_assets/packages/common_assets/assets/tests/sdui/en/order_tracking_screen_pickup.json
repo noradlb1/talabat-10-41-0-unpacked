@@ -1,0 +1,192 @@
+{
+  "type": "OrderTrackingScreen",
+  "composition": {
+    "body": {
+      "extend_behind_app_bar": false,
+      "background_color": "neutralWhite",
+      "app_bar_background_color": "neutralWhite",
+      "close_button": null,
+      "show_rounded_background": true,
+      "status_bar_brightness": "light",
+      "close_button_icon_color": "neutral100",
+      "layout": "body"
+    },
+    "bottom_sheet": null,
+    "floating_action_button": null
+  },
+  "common_tracking_event_attributes": {
+    "shop_name": "Waragz",
+    "order_id": "939865887",
+    "order_pickup": true
+  },
+  "widgets": {
+    "order_progress_update": {
+      "type": "OrderProgress",
+      "data": {
+        "progress_badge": {
+          "text": null,
+          "color": null
+        },
+        "header": "Please arrive by",
+        "title": "12:07PM-12:14PM",
+        "footer": "Time for pickup! Come in the restaurant and just grab your order",
+        "progress_bars": [
+          {
+            "width": 1,
+            "fill": 1.0
+          },
+          {
+            "width": 2,
+            "fill": 1.0
+          },
+          {
+            "width": 1,
+            "fill": 0.98
+          }
+        ]
+      }
+    },
+    "order_delivering_map": {
+      "type": "Map",
+      "data": {
+        "pins": [
+          {
+            "type": "destination",
+            "latitude": 24.474708,
+            "longitude": 54.351264,
+            "rotation": 0.0,
+            "text": "Waragz",
+            "link": "https://www.google.com/maps?saddr=My+Location&daddr=24.474708,54.351264",
+            "link_text": "Get Directions ❯",
+            "linkText": "Get Directions ❯",
+            "icon": "https://images.deliveryhero.io/image/talabat/poh/DESTINATION_MAP_IMAGE.png",
+            "leading_content": null,
+            "style": {
+              "link_text_color": "primary100",
+              "text_color": "neutral100",
+              "background_color": "neutralWhite",
+              "corner_radius": 8.0,
+              "image_height": null
+            }
+          }
+        ],
+        "paths": []
+      }
+    },
+    "order_details": {
+      "type": "OrderDetails",
+      "data": {
+        "header": "Your order from",
+        "title": "Waragz",
+        "subtitle": "Order #939865887",
+        "text": null,
+        "image_url": "https://images.deliveryhero.io/image/talabat/restaurants/Logo_636669144257305580.jpg",
+        "items": [
+          {
+            "text": "Fatteh Waragz",
+            "quantity": 1,
+            "subtext": ""
+          }
+        ],
+        "actions": [
+          {
+            "type": "Dialer",
+            "text": "Call",
+            "args": {
+              "phone_number": "+9710506230892",
+              "tracking_event_name": "contact_option_clicked",
+              "tracking_event_attributes": {
+                "contactOption": "call_shop"
+              }
+            }
+          }
+        ],
+        "actions_messages": [
+          {
+            "type": "DSAlert",
+            "data": {
+              "alert_type": "Warning",
+              "title": null,
+              "descriptor": "Dine in is not available for this order"
+            }
+          }
+        ]
+      }
+    },
+    "xx_small_divider": {
+      "type": "Divider",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "payment_details": {
+      "type": "ListInfo",
+      "data": {
+        "title": "Payment details",
+        "rows": [
+          {
+            "label": "Total",
+            "value": "AED 18.36",
+            "text": "AED 18.36"
+          }
+        ]
+      }
+    },
+    "support": {
+      "type": "BasicInfo",
+      "data": {
+        "header": null,
+        "title": "Support",
+        "subtitle": null,
+        "text": null,
+        "image_url": null,
+        "actions": [
+          {
+            "type": "DeepLink",
+            "text": "Help Center",
+            "args": {
+              "link": "talabat://?s=ghc&i=939865887",
+              "tracking_event_name": "helpcentre_link_clicked",
+              "tracking_event_attributes": {}
+            }
+          }
+        ],
+        "actions_messages": []
+      },
+      "style": {
+        "text_color": null,
+        "background_color": null,
+        "corner_radius": 0.0,
+        "image_height": null
+      }
+    }
+  },
+  "layouts": [
+    {
+      "name": "body",
+      "column": [
+        "order_progress_update",
+        "order_delivering_map",
+        "order_details",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support"
+      ],
+      "header": null
+    },
+    {
+      "name": "order_tracking_screen_default_layout",
+      "column": [
+        "order_progress_update",
+        "order_delivering_map",
+        "order_details",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support"
+      ],
+      "header": null
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.talabat.talabatcommon.views.TalabatImageView android:layout_width="@dimen/loyalty_icon_width_height" android:layout_height="@dimen/loyalty_icon_width_height" android:layout_marginStart="@dimen/loyalty_text_icon_margin" android:layout_marginEnd="@dimen/loyalty_text_icon_margin" app:srcCompat="@drawable/ic_gift"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/loyaltySummaryTotalPointsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/inter_text_margin" android:layout_marginEnd="@dimen/inter_text_margin" style="@style/DSTextAppearance.Heading0"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loyalty_points_summary" style="@style/DSTextAppearance.Heading0"/>
+        </LinearLayout>
+        <TextView android:textColor="@color/ds_neutral_30" android:id="@+id/loyaltySummaryPointsExpirationTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_quarter_margin" android:text="@string/loyalty_points_desc" style="@style/DSTextAppearance.Caption"/>
+        <TextView android:textColor="@color/ds_primary_100" android:id="@+id/loyaltySummaryHowItWorksTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_half_margin" android:text="@string/loyalty_Learn" style="@style/DSTextAppearance.Subheading1"/>
+    </LinearLayout>
+</LinearLayout>

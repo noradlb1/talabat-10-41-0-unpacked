@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/learn_more_card_container" android:paddingTop="@dimen/ds_xxxl" android:paddingBottom="@dimen/ds_xxxl" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/ds_xl" android:paddingEnd="@dimen/ds_xl">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/ds_xxxs" android:paddingBottom="@dimen/ds_xxxs" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:gravity="center" android:id="@+id/tvTitle" android:layout_width="@dimen/ds_zero" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/DSTextAppearance.Heading1"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvLearnMoreContent" android:layout_width="@dimen/ds_zero" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xs" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/choose_country" android:background="@color/app_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.talabat.talabatcommon.views.TalabatToolBar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/tool_bar_height" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/toolbar_elevation" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/talabat_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/toolbar_background_style">
+            <com.talabat.talabatcommon.views.TalabatToolBarImageButton android:id="@+id/back" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/toolbar_back_button_style"/>
+            <com.talabat.talabatcommon.views.TalabatToolBarTextView android:id="@+id/title" app:layout_constraintBottom_toBottomOf="@+id/back" app:layout_constraintStart_toEndOf="@+id/back" app:layout_constraintTop_toTopOf="0" style="@style/toolbar_text_style_center_back"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.talabat.talabatcommon.views.TalabatToolBar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="@+id/toolbar" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

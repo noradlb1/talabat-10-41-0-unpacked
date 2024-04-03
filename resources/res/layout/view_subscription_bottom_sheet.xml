@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_view" android:background="@color/gem_dialog_backgounf" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/bottom_sheet_behavior">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container_all" android:background="@drawable/bg_top_rounded_corner" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <FrameLayout android:id="@+id/card_fragment_container" android:visibility="visible" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

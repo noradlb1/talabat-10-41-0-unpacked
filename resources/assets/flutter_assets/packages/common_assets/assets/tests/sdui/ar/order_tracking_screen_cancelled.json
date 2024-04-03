@@ -1,0 +1,119 @@
+{
+  "type": "OrderTrackingScreen",
+  "layouts": [
+    {
+      "name": "order_tracking_screen_default_layout",
+      "column": [
+        "order_cancelled",
+        "xx_small_divider",
+        "delivery_address",
+        "xx_small_divider",
+        "order_details",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support",
+        "xx_small_vertical_spacing"
+      ]
+    }
+  ],
+  "widgets": {
+    "order_cancelled": {
+      "type": "OrderCompleted",
+      "data": {
+        "header": "Order cancelled",
+        "title": "We're sad to see you go!"
+      }
+    },
+    "delivery_address": {
+      "type": "BasicInfo",
+      "data": {
+        "header": "Delivered to",
+        "title": "\uD83C\uDFE2 Work",
+        "text": "Level 25, Single Business Tower 153, Sheikh Zayed Road"
+      }
+    },
+    "payment_details": {
+      "type": "ListInfo",
+      "data": {
+        "title": "Payment details",
+        "rows": [
+          {
+            "label": "Total cost",
+            "text": "AED 300"
+          },
+          {
+            "label": "Payment method",
+            "text": "xxxx-1738"
+          }
+        ]
+      }
+    },
+    "support": {
+      "type": "BasicInfo",
+      "data": {
+        "title": "Support",
+        "text": "Order #5678093898",
+        "actions": [
+          {
+            "type": "DeepLink",
+            "text": "Help Center",
+            "args": {
+              "link": "talabat://?s=ghc&i=12345"
+            }
+          }
+        ]
+      }
+    },
+    "order_details": {
+      "type": "OrderDetails",
+      "data": {
+        "header": "Your order from",
+        "title": "Domino’s Pizza",
+        "subtitle": "Business bay",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+        "items": [
+          {
+            "quantity": 2,
+            "text": "Cesar Salad"
+          },
+          {
+            "quantity": 1,
+            "text": "Tuscan chicken mac and cheese",
+            "subtext": "extra pesto"
+          },
+          {
+            "quantity": 1,
+            "text": "Tuscan chicken mac and cheese",
+            "subtext": "extra pesto"
+          },
+          {
+            "quantity": 1,
+            "text": "Vegetarian garlic bread"
+          }
+        ],
+        "actions": [
+          {
+            "type": "Dialer",
+            "text": "Call",
+            "args": {
+              "phone_number": "+971501231231"
+            }
+          }
+        ]
+      }
+    },
+    "xx_small_divider": {
+      "type": "Divider",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "xx_small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 8.0
+      }
+    }
+  }
+}

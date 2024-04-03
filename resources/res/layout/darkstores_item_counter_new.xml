@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/llCounter" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/item_counter_new_remove" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/ds_xxs" android:visibility="gone" android:layout_width="@dimen/ds_xxl" android:layout_height="@dimen/ds_xxl" android:src="@drawable/ic_add_to_cart_remove" app:tint="@color/ds_primary_100"/>
+            <TextView android:textColor="@color/add_to_cart_text_color" android:gravity="center" android:id="@+id/item_counter_new_quantity" android:visibility="gone" android:layout_width="@dimen/ds_zero" android:layout_height="wrap_content" android:minWidth="@dimen/ds_xxl" android:minHeight="@dimen/ds_xxl" android:layout_weight="1" style="@style/DSTextAppearance.Subheading1"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/item_counter_new_add" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/ds_xxs" android:layout_width="@dimen/ds_xxl" android:layout_height="@dimen/ds_xxl" android:src="@drawable/ds_plus" app:tint="@color/ds_primary_100"/>
+        </LinearLayout>
+        <View android:id="@+id/overlayView" android:background="@color/gem_white_opacity30" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/ds_zero" android:layout_height="@dimen/ds_zero" app:layout_constraintBottom_toBottomOf="@+id/llCounter" app:layout_constraintEnd_toEndOf="@+id/llCounter" app:layout_constraintStart_toStartOf="@+id/llCounter" app:layout_constraintTop_toTopOf="@+id/llCounter"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

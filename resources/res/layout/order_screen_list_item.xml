@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?android:attr/selectableItemBackground" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8margin" app:cardBackgroundColor="@android:color/white" app:cardElevation="@dimen/empty_card_elevation" app:cardMaxElevation="@dimen/empty_card_elevation">
+    <RelativeLayout android:id="@+id/convertView" android:background="@android:color/white" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:layout_centerVertical="true">
+        <LinearLayout android:id="@+id/order_screen_rest_image_view" android:background="@drawable/item_image_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_marginStart="15dp">
+            <com.android.volley.toolbox.NetworkImageView android:id="@+id/order_screen_rest_image" android:layout_width="@dimen/rest_logo_size" android:layout_height="@dimen/rest_logo_size" android:layout_margin="@dimen/_4margin"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/details_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_12margin" android:layout_toRightOf="@+id/order_screen_rest_image_view" android:layout_toEndOf="@+id/order_screen_rest_image_view">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin" android:layout_marginEnd="@dimen/margin">
+                    <com.talabat.TalabatTextView android:ellipsize="end" android:id="@+id/order_screen_restaurant_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:maxLines="1" android:lines="1" android:singleLine="true" android:layout_marginStart="@dimen/ds_s" style="@style/DSTextAppearance.Heading2"/>
+                    <com.talabat.TalabatTextView android:textColor="@color/success" android:id="@+id/order_screen_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/MarginLeft" android:layout_marginTop="@dimen/_4margin" android:layout_marginStart="@dimen/MarginLeft" style="@style/Content14Regular"/>
+                    <com.talabat.TalabatTextView android:textSize="14dp" android:textColor="@color/neutral_grey" android:id="@+id/order_screen_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/MarginLeft" android:layout_marginTop="@dimen/_4margin" android:layout_marginStart="@dimen/MarginLeft" style="@style/Content14Regular"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/MarginLeft" android:layout_marginTop="@dimen/_4margin" android:layout_marginStart="@dimen/MarginLeft">
+                        <com.talabat.TalabatTextView android:textColor="@color/neutral_grey" android:id="@+id/order_id" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Content14Regular"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:id="@+id/order_screen_arrow" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_16margin" android:src="@drawable/ic_m_arrow_forward_grey" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_16margin" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_my_order" android:layout_below="@+id/details_container">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/buttons_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="45dp" android:weightSum="1">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/order_screen_reorder_view" android:background="?android:attr/selectableItemBackground" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5" android:elevation="@dimen/card_elevation">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="8dp" android:src="@drawable/ic_m_reorder" android:layout_marginEnd="8dp"/>
+                    <com.talabat.TalabatTextView android:textColor="@color/colorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_orders_reorder" android:textAllCaps="false" style="@style/Content14Regular"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/order_screen_livetracking_view" android:background="?android:attr/selectableItemBackground" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5" android:elevation="@dimen/card_elevation">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="8dp" android:src="@drawable/icon_track_order_list" android:layout_marginEnd="8dp"/>
+                    <com.talabat.TalabatTextView android:textSize="@dimen/txt_size_14" android:textColor="@color/colorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/track_order" android:textAllCaps="false" style="@style/Content14Regular"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/order_screen_rate_view" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5" android:elevation="@dimen/card_elevation">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="8dp" android:src="@drawable/ic_m_order_list_rate" android:layout_marginEnd="8dp"/>
+                    <com.talabat.TalabatTextView android:textSize="@dimen/txt_size_14" android:textColor="@color/colorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rate_order" android:textAllCaps="false" style="@style/Content14Regular"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

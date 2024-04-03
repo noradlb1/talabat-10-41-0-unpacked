@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cv_parent_view" android:layout_width="wrap_content" android:layout_height="@dimen/capsule_image_item" android:layout_marginTop="@dimen/ds_xs" android:minWidth="@dimen/_245" app:cardCornerRadius="@dimen/ds_xxxl">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/cl_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_capsule" android:layout_width="@dimen/capsule_image_item" android:layout_height="@dimen/capsule_image_item" android:layout_marginStart="-1dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ds_s" android:layout_marginRight="@dimen/ds_s" android:layout_marginHorizontal="@dimen/ds_s" app:layout_constraintBottom_toBottomOf="@+id/iv_capsule" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/iv_capsule" app:layout_constraintTop_toTopOf="@+id/iv_capsule" style="@style/DSTextAppearance.Heading0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

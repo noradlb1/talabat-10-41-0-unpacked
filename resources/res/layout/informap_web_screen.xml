@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.talabat.helpers.TalabatToolBar android:id="@+id/toolbar" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/toolbar_elevation" app:contentInsetLeft="@dimen/ds_zero" app:contentInsetStart="@dimen/ds_zero" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <RelativeLayout style="@style/toolbar_background_style">
+                <RelativeLayout style="@style/toolbar_items_holder_style">
+                    <com.talabat.helpers.TalabatToolBarImageButton android:id="@+id/webview_back" android:src="@drawable/ds_arrow_back" style="@style/toolbar_back_button_style"/>
+                    <com.talabat.helpers.TalabatToolBarTextView android:gravity="center" android:id="@+id/webview_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/delivery_map_title" android:layout_centerInParent="true" style="@style/DSTextAppearance.Heading2"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.talabat.helpers.TalabatToolBar>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+            <ProgressBar android:id="@+id/webview_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <WebView android:id="@+id/webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/show_case_view" android:background="@color/ds_neutral_white" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ds_illustration_home_location" android:scaleType="fitXY"/>
+            <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_100" android:gravity="center" android:id="@+id/text_user_guide" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/ds_m" android:layout_marginRight="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s" style="@style/DSTextAppearance.Subheading1"/>
+        </LinearLayout>
+        <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_100" android:gravity="center" android:id="@+id/tap_here" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp" android:text="@string/continue_by_tapping_here" android:layout_alignParentBottom="true" style="@style/DSTextAppearance.Button"/>
+    </RelativeLayout>
+</RelativeLayout>

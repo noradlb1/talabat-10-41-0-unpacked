@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ds_s" android:paddingEnd="@dimen/ds_s">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_l" app:srcCompat="@drawable/ds_close"/>
+    <include android:id="@+id/llOptions" layout="@layout/layout_options"/>
+    <include android:id="@+id/clSelectedOption" layout="@layout/layout_option_selected"/>
+</LinearLayout>

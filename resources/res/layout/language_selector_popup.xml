@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/infomap_dialog_round_background" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.talabat.TalabatTextView android:textColor="@color/text_black" android:gravity="start" android:layout_gravity="center" android:id="@+id/faq_details_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin" android:layout_marginTop="@dimen/_24margin" android:layout_marginRight="@dimen/margin" android:layout_marginBottom="@dimen/_12margin" android:text="@string/change_language" android:layout_marginStart="@dimen/margin" android:layout_marginEnd="@dimen/margin" style="@style/Titles20Bold"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/language_recyclerView" android:padding="@dimen/_3padding" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/MarginLeft"/>
+    </LinearLayout>
+</RelativeLayout>

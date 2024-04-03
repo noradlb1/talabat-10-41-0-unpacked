@@ -1,0 +1,36 @@
+{
+  "boolean_experiments": {
+    "tpro-flow-multiplan": {
+      "true": true,
+      "false": false
+    },
+    "show-new-tpro-brand": {
+      "true": true,
+      "false": false
+    },
+    "tpro_free_coffee_experiment": {
+      "true": true,
+      "false": false
+    },
+    "ff_killswitch_vendorlist_tpro": {
+      "true": true,
+      "false": false
+    },
+    "subscriptions-android-savings-cancel-flow": {
+      "true": true,
+      "false": false
+    },
+    "subscriptions-android-savings-account-banner": {
+      "true": true,
+      "false": false
+    }
+  },
+  "string_experiments": {
+    "tpro-multiplan-duration": {
+      "1": true,
+      "1,6": false,
+      "1,12": false,
+      "1,6,12": false
+    }
+  }
+}

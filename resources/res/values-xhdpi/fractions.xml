@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="button_height_percentage">35%</fraction>
+    <fraction name="margin_top_percentage">2%</fraction>
+    <fraction name="restaurant_name_percent">70%</fraction>
+    <fraction name="status_percent">30%</fraction>
+</resources>

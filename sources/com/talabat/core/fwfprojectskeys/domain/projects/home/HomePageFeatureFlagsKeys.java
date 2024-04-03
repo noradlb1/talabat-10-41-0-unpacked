@@ -1,0 +1,41 @@
+package com.talabat.core.fwfprojectskeys.domain.projects.home;
+
+import com.talabat.core.fwfprojectskeys.domain.FWFKey;
+import com.talabat.core.fwfprojectskeys.domain.FWFProjectName;
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0011\b\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u00012\u00020\u0002B\u0019\b\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0006¢\u0006\u0002\u0010\u0007R\u0014\u0010\u0005\u001a\u00020\u0006X\u0004¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0014\u0010\u0003\u001a\u00020\u0004X\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014j\u0002\b\u0015j\u0002\b\u0016¨\u0006\u0017"}, d2 = {"Lcom/talabat/core/fwfprojectskeys/domain/projects/home/HomePageFeatureFlagsKeys;", "", "Lcom/talabat/core/fwfprojectskeys/domain/FWFKey;", "value", "", "projectName", "Lcom/talabat/core/fwfprojectskeys/domain/FWFProjectName;", "(Ljava/lang/String;ILjava/lang/String;Lcom/talabat/core/fwfprojectskeys/domain/FWFProjectName;)V", "getProjectName", "()Lcom/talabat/core/fwfprojectskeys/domain/FWFProjectName;", "getValue", "()Ljava/lang/String;", "INCENTIVES_REFER_A_FRIEND", "INCENTIVES_REFER_A_FRIEND_ENTRY_POINT", "INCENTIVES_REFER_A_FRIEND_NEW_PACKAGE", "VOUCHER_CAMPAIGN_DEBUG", "VOUCHER_ENTRY_POINT", "VOUCHER_LIST_FLUTTER", "FF_HOMEPAGE_AREAS_UL_ENDPOINT", "FF_HOMEPAGE_WFP_SWIMLANE", "ENABLE_TRACE_LOGS", "PARALLEL_API_CALLS", "HOME_OF_OFFERS_FILTERS", "com_talabat_core_fwf-projects-keys_domain_domain"}, k = 1, mv = {1, 6, 0}, xi = 48)
+public enum HomePageFeatureFlagsKeys implements FWFKey {
+    INCENTIVES_REFER_A_FRIEND("ff_homepage_incentive_refer_a_friend", (int) null, 2, (FWFProjectName) null),
+    INCENTIVES_REFER_A_FRIEND_ENTRY_POINT("ff_homepage_incentive_raf_entry_point", (int) null, 2, (FWFProjectName) null),
+    INCENTIVES_REFER_A_FRIEND_NEW_PACKAGE("ff_homepage_refer_a_friend_package", (int) null, 2, (FWFProjectName) null),
+    VOUCHER_CAMPAIGN_DEBUG("ff_homepage_voucher_campaign_debug", (int) null, 2, (FWFProjectName) null),
+    VOUCHER_ENTRY_POINT("ff_homepage_voucher_entry_point", (int) null, 2, (FWFProjectName) null),
+    VOUCHER_LIST_FLUTTER("ff_homepage_voucher_list_flutter", (int) null, 2, (FWFProjectName) null),
+    FF_HOMEPAGE_AREAS_UL_ENDPOINT("ff_homepage_areas_ul_endpoint", (int) null, 2, (FWFProjectName) null),
+    FF_HOMEPAGE_WFP_SWIMLANE("ff_homepage_wfp_swimlane", (int) null, 2, (FWFProjectName) null),
+    ENABLE_TRACE_LOGS("ff_homepage_enable_trace_logs", (int) null, 2, (FWFProjectName) null),
+    PARALLEL_API_CALLS("ff_homepage_parallel_api_calls", (int) null, 2, (FWFProjectName) null),
+    HOME_OF_OFFERS_FILTERS("ff_homepage_home_of_offers_filters", (int) null, 2, (FWFProjectName) null);
+    
+    @NotNull
+    private final FWFProjectName projectName;
+    @NotNull
+    private final String value;
+
+    private HomePageFeatureFlagsKeys(String str, FWFProjectName fWFProjectName) {
+        this.value = str;
+        this.projectName = fWFProjectName;
+    }
+
+    @NotNull
+    public FWFProjectName getProjectName() {
+        return this.projectName;
+    }
+
+    @NotNull
+    public String getValue() {
+        return this.value;
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="@dimen/talabat_ai_button_size" android:width="@dimen/talabat_ai_button_size" android:viewportWidth="56" android:viewportHeight="56">
+    <path android:fillColor="@color/ds_blue_50" android:pathData="M28,0L28,0A28,28 0,0 1,56 28L56,28A28,28 0,0 1,28 56L28,56A28,28 0,0 1,0 28L0,28A28,28 0,0 1,28 0z"/>
+    <group>
+        <clip-path android:pathData="M12,13h32v32h-32z"/>
+        <path android:fillColor="@color/neutral_white" android:pathData="M28.956,13.738L30.741,20.568C31.469,23.354 33.645,25.53 36.431,26.258L43.261,28.043C44.246,28.3 44.246,29.699 43.261,29.956L36.431,31.741C33.645,32.469 31.469,34.645 30.741,37.431L28.956,44.261C28.699,45.246 27.3,45.246 27.043,44.261L25.258,37.431C24.53,34.645 22.354,32.469 19.568,31.741L12.738,29.956C11.753,29.699 11.753,28.3 12.738,28.043L19.568,26.258C22.354,25.53 24.53,23.354 25.258,20.568L27.043,13.738C27.3,12.753 28.699,12.753 28.956,13.738Z"/>
+        <path android:fillColor="@color/neutral_white" android:pathData="M39.551,13.226L40.078,15.242C40.293,16.065 40.935,16.707 41.757,16.922L43.774,17.449C44.064,17.524 44.064,17.937 43.774,18.013L41.757,18.54C40.935,18.755 40.293,19.397 40.078,20.219L39.551,22.236C39.475,22.527 39.062,22.527 38.986,22.236L38.46,20.219C38.245,19.397 37.603,18.755 36.78,18.54L34.764,18.013C34.473,17.937 34.473,17.524 34.764,17.449L36.78,16.922C37.603,16.707 38.245,16.065 38.46,15.242L38.986,13.226C39.062,12.935 39.475,12.935 39.551,13.226Z"/>
+    </group>
+</vector>

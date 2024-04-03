@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="choose_discounted_item">
+        <item quantity="one">Choose %d discounted item</item>
+        <item quantity="other">Choose %d discounted items</item>
+    </plurals>
+    <plurals name="choose_free_item">
+        <item quantity="one">Choose %d free item</item>
+        <item quantity="other">Choose %d free items</item>
+    </plurals>
+    <plurals name="discount_campaign_can_add">
+        <item quantity="one">Score! Choose your discounted item below</item>
+        <item quantity="other">Score! Choose your discounted items below</item>
+    </plurals>
+    <plurals name="ds_item_cart_free_item">
+        <item quantity="one">Free item</item>
+        <item quantity="other">Free items</item>
+    </plurals>
+    <plurals name="empty_query_title">
+        <item quantity="one">%1d Product</item>
+        <item quantity="other">%1d Products</item>
+    </plurals>
+    <plurals name="free_item_campaign_can_add">
+        <item quantity="one">Score! Choose your free item below</item>
+        <item quantity="other">Score! Choose your free items below</item>
+    </plurals>
+    <plurals name="free_item_campaign_limit">
+        <item quantity="one">This offer is limited to %d use</item>
+        <item quantity="other">This offer is limited to %d uses</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_days_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_hours_ago">
+        <item quantity="one">%d hr ago</item>
+        <item quantity="other">%d hrs ago</item>
+    </plurals>
+    <plurals name="instabug_feature_rq_str_minutes_ago">
+        <item quantity="one">%d min ago</item>
+        <item quantity="other">%d mins ago</item>
+    </plurals>
+    <plurals name="more_item_or_items">
+        <item quantity="one">+ %d more item.</item>
+        <item quantity="other">+ %d more items</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="numberOfCuisinesSelected">
+        <item quantity="one">%d cuisine selected</item>
+        <item quantity="other">%d cuisines selected</item>
+    </plurals>
+    <plurals name="numberOfFiltersSelected">
+        <item quantity="one">%d filter selected</item>
+        <item quantity="other">%d filters selected</item>
+    </plurals>
+    <plurals name="numberOfRatings">
+        <item quantity="one">(%s rating)</item>
+        <item quantity="other">(%s ratings)</item>
+    </plurals>
+    <plurals name="query_title">
+        <item quantity="one">%2$d Result found for %1$s</item>
+        <item quantity="other">%2$d Results found for %1$s</item>
+    </plurals>
+</resources>

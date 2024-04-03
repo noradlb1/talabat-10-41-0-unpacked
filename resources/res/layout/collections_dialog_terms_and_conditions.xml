@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageButton android:layout_gravity="end" android:id="@+id/imageButton_close" android:background="@drawable/bg_close_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/radius_dialog" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="17dp" android:layout_marginBottom="17dp" android:paddingStart="3dp" android:paddingEnd="3dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp">
+        <WebView android:textSize="16sp" android:textColor="#de000000" android:id="@+id/webview_terms" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ds_s" android:lineSpacingExtra="12sp" style="@style/textViewMedium"/>
+        <TextView android:textSize="21sp" android:textColor="#de000000" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/terms_amp_conditions" style="@style/textViewBold"/>
+    </LinearLayout>
+</FrameLayout>

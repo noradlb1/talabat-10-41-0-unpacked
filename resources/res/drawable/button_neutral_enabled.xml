@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <padding android:left="7dp" android:top="7dp" android:right="7dp" android:bottom="7dp"/>
+    <stroke android:width="@dimen/customer_chat_layout_2dp" android:color="@color/customer_chat_primary"/>
+    <corners android:radius="8dp"/>
+</shape>

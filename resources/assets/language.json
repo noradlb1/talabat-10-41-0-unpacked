@@ -1,0 +1,16 @@
+{
+  "languages" : [
+    {
+      "name" : "English",
+      "code" : "en-US",
+      "isRTL" : false,
+      "bundledFileCode" : "en"
+    },
+    {
+      "name" : "العربية",
+      "code" : "ar-KW",
+      "isRTL" : true,
+      "bundledFileCode" : "ar"
+    }
+  ]
+}

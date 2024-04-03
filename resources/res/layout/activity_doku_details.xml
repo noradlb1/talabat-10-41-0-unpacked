@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/standard_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <com.adyen.checkout.ui.internal.common.view.CustomTextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:customTextInputLayout_caption="@string/checkout_doku_email_address">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/editText_shopperEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none|text|textNoSuggestions|textEmailAddress"/>
+        </com.adyen.checkout.ui.internal.common.view.CustomTextInputLayout>
+        <com.adyen.checkout.ui.internal.common.view.CustomTextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin" app:customTextInputLayout_caption="@string/checkout_doku_last_name">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/editText_lastName" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none|text|textCapWords|textEmailAddress|textShortMessage|textPersonName"/>
+        </com.adyen.checkout.ui.internal.common.view.CustomTextInputLayout>
+        <com.adyen.checkout.ui.internal.common.view.CustomTextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin" app:customTextInputLayout_caption="@string/checkout_doku_first_name">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/editText_firstName" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none|text|textCapWords|textEmailAddress|textShortMessage|textPersonName"/>
+        </com.adyen.checkout.ui.internal.common.view.CustomTextInputLayout>
+        <Button android:id="@+id/button_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin"/>
+        <TextView android:layout_gravity="center_horizontal" android:id="@+id/textView_surcharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false" style="@style/Checkout.TextAppearance.Tertiary"/>
+    </LinearLayout>
+</ScrollView>

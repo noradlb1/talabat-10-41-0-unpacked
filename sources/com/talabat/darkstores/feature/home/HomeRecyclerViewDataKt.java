@@ -1,0 +1,20 @@
+package com.talabat.darkstores.feature.home;
+
+import kotlin.Metadata;
+
+@Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\b\n\u0002\b\r\"\u000e\u0010\u0000\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000\"\u000e\u0010\b\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000\"\u000e\u0010\f\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\u0001XT¢\u0006\u0002\n\u0000¨\u0006\u000e"}, d2 = {"ITEM_PRIORITY_CATEGORY", "", "ITEM_PRIORITY_HERO_BANNER", "ITEM_PRIORITY_LIFESTYLE_MISSION_V1", "ITEM_PRIORITY_LIFESTYLE_MISSION_V2", "ITEM_PRIORITY_PRIMARY_MISSION", "ITEM_PRIORITY_PROGRESS_BAR", "ITEM_PRIORITY_REWARD_MISSION", "ITEM_PRIORITY_SEARCH_VIEW", "ITEM_PRIORITY_SMALL_BANNER", "ITEM_PRIORITY_SWIMLANE", "ITEM_PRIORITY_TPRO_SUBSCRIPTION", "ITEM_PRIORITY_TPRO_SUBSCRIPTION_V2", "ITEM_PRIORITY_VENDOR_INFO", "com_talabat_NewArchi_darkstores_darkstores"}, k = 2, mv = {1, 6, 0}, xi = 48)
+public final class HomeRecyclerViewDataKt {
+    public static final int ITEM_PRIORITY_CATEGORY = 10;
+    public static final int ITEM_PRIORITY_HERO_BANNER = 11;
+    public static final int ITEM_PRIORITY_LIFESTYLE_MISSION_V1 = 8;
+    public static final int ITEM_PRIORITY_LIFESTYLE_MISSION_V2 = 9;
+    public static final int ITEM_PRIORITY_PRIMARY_MISSION = 7;
+    public static final int ITEM_PRIORITY_PROGRESS_BAR = 4;
+    public static final int ITEM_PRIORITY_REWARD_MISSION = 6;
+    public static final int ITEM_PRIORITY_SEARCH_VIEW = 1;
+    public static final int ITEM_PRIORITY_SMALL_BANNER = 13;
+    public static final int ITEM_PRIORITY_SWIMLANE = 12;
+    public static final int ITEM_PRIORITY_TPRO_SUBSCRIPTION = 2;
+    public static final int ITEM_PRIORITY_TPRO_SUBSCRIPTION_V2 = 0;
+    public static final int ITEM_PRIORITY_VENDOR_INFO = 3;
+}

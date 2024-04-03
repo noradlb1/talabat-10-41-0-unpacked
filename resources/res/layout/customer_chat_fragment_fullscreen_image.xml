@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.github.chrisbanes.photoview.PhotoView android:id="@+id/fullscreen_image" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <ImageView android:id="@+id/close_full_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_chat_layout_16dp" android:src="@drawable/customer_chat_ic_close_icon" android:layout_marginStart="@dimen/customer_chat_layout_16dp" app:layout_constraintLeft_toLeftOf="@+id/fullscreen_image" app:layout_constraintTop_toTopOf="@+id/fullscreen_image"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

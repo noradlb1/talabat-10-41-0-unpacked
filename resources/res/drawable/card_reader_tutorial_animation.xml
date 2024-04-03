@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/$card_reader_tutorial_animation__0">
+    <target android:name="group" android:animation="@drawable/$card_reader_tutorial_animation__1"/>
+    <target android:name="path_12" android:animation="@drawable/$card_reader_tutorial_animation__2"/>
+    <target android:name="path_11" android:animation="@drawable/$card_reader_tutorial_animation__3"/>
+    <target android:name="group_3" android:animation="@drawable/$card_reader_tutorial_animation__4"/>
+</animated-vector>

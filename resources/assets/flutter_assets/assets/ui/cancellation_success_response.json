@@ -1,0 +1,9 @@
+{
+  "type": "Api",
+  "args": {
+    "url": "https://track.talabat.com/vX/bff/get_cancellation_survey",
+    "method": "GET",
+    "tracking_event_name": "cancel_order_success",
+    "feature_name": "order_tracking"
+  }
+}

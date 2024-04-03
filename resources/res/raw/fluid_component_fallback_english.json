@@ -1,0 +1,111 @@
+{
+  "data": {
+    "components": [
+      {
+        "id": "entrypoints",
+        "template_id": "entrypoint-container",
+        "template_hash": "a72f03154a9a2b4834180cc18bb34904a40ca1fdb293a1b017298d800edbef27",
+        "items": [
+          {
+            "id": "food",
+            "template_id": "entrypoint-item-vertical-medium",
+            "template_hash": "a72f03154a9a2b4834180cc18bb34904a40ca1fdb293a1b017298d800edbef17",
+            "properties": {
+              "height": 120,
+              "width": 0.5,
+              "image": "https://images.deliveryhero.io/image/talabat/home/entrypoints/Food_New.png",
+              "title": "Food",
+              "sub_title": "$EPFoodSubTitle",
+              "background": "@neutral4",
+              "on_click": "food",
+              "showTag": false,
+              "id": "food_tag"
+            },
+            "metadata": {
+              "shopName": "Food",
+              "position": 1,
+              "verticalItem": "{\"id\":0,\"deeplink\":\"food\",\"name\":\"Food\",\"verticalIds\":[0]}",
+              "component": "entry_point",
+              "navigation_type": "custom",
+              "tracking_type": "vertical"
+            }
+          },
+          {
+            "id": "grocery",
+            "template_id": "entrypoint-item-vertical-medium",
+            "template_hash": "a72f03154a9a2b4834180cc18bb34904a40ca1fdb293a1b017298d800edbef17",
+            "properties": {
+              "height": 120,
+              "width": 0.5,
+              "image": "https://images.deliveryhero.io/image/talabat/home/entrypoints/Groceries_New.png",
+              "title": "Groceries",
+              "on_click": "grocery",
+              "showTag": false,
+              "image_alignment": "bottom",
+              "id": "grocery_tag"
+            },
+            "metadata": {
+              "shopName": "Groceries",
+              "position": 3,
+              "verticalItem": "{\"id\":1,\"deeplink\":\"grocery\",\"name\":\"Groceries\",\"verticalIds\":[1]}",
+              "component": "entry_point",
+              "navigation_type": "custom",
+              "tracking_type": "vertical"
+            }
+          }
+        ],
+        "properties": {
+          "padding_top": 0,
+          "padding_bottom": 8,
+          "padding_leading": 16,
+          "padding_trailing": 16,
+          "item_spacing": 0,
+          "rows": 0,
+          "stick_to": "none",
+          "accessibility": false,
+          "header_text": "Hey"
+        },
+        "metadata": {
+          "component": "entrypoint_container"
+        }
+      },
+      {
+        "id": "collections",
+        "template_id": "collection-container",
+        "template_hash": "a72f03154a9a2b4834180cc18bb34904a40ca1fdb293a1b017298d800edbef30",
+        "items": [
+          {
+            "id": "past-orders",
+            "template_id": "collection-item",
+            "template_hash": "a72f03154a9a2b4834180cc18bb34904a40ca1fdb293a1b017298d800edbef31",
+            "properties": {
+              "height": 1,
+              "width": 72,
+              "image": "https://images.deliveryhero.io/image/talabat/home/collections/en/PastOrders.png",
+              "title": "Past orders",
+              "on_click": "talabat://?s=t"
+            },
+            "metadata": {
+              "position": 1,
+              "component": "collection_item",
+              "channel": "past-orders"
+            }
+          }
+        ],
+        "properties": {
+          "title": "Top picks",
+          "padding_top": 0,
+          "padding_bottom": 8,
+          "padding_leading": 16,
+          "padding_trailing": 16,
+          "item_spacing": 0,
+          "rows": 1
+        },
+        "metadata": {
+          "component": "collection_container",
+          "collections_items": "Past orders"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+package com.talabat.gem.samples;
+
+import android.text.Editable;
+import android.text.TextWatcher;
+import androidx.appcompat.app.AppCompatActivity;
+import com.talabat.gem.adapters.R;
+import com.talabat.gem.adapters.presentation.menu.GemMenuFooterView;
+import kotlin.Metadata;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(d1 = {"\u0000'\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0012\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u0016J*\u0010\u0006\u001a\u00020\u00032\b\u0010\u0007\u001a\u0004\u0018\u00010\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\nH\u0016J*\u0010\r\u001a\u00020\u00032\b\u0010\u0007\u001a\u0004\u0018\u00010\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000e\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\nH\u0016¨\u0006\u000f¸\u0006\u0000"}, d2 = {"androidx/core/widget/TextViewKt$addTextChangedListener$textWatcher$1", "Landroid/text/TextWatcher;", "afterTextChanged", "", "s", "Landroid/text/Editable;", "beforeTextChanged", "text", "", "start", "", "count", "after", "onTextChanged", "before", "core-ktx_release"}, k = 1, mv = {1, 6, 0}, xi = 48)
+public final class SampleGemMenuActivity$initialize$1$1$invoke$$inlined$addTextChangedListener$default$1 implements TextWatcher {
+
+    /* renamed from: b  reason: collision with root package name */
+    public final /* synthetic */ SampleGemMenuActivity f60518b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final /* synthetic */ AppCompatActivity f60519c;
+
+    public SampleGemMenuActivity$initialize$1$1$invoke$$inlined$addTextChangedListener$default$1(SampleGemMenuActivity sampleGemMenuActivity, AppCompatActivity appCompatActivity) {
+        this.f60518b = sampleGemMenuActivity;
+        this.f60519c = appCompatActivity;
+    }
+
+    public void afterTextChanged(@Nullable Editable editable) {
+        this.f60518b.calculatedSubTotal = SampleGemMenuActivityKt.calculateSubTotal(editable);
+        ((GemMenuFooterView) this.f60519c.findViewById(R.id.gemMenuFooterView)).invoke(new SampleGemMenuActivity$initialize$1$1$1$1(this.f60518b));
+    }
+
+    public void beforeTextChanged(@Nullable CharSequence charSequence, int i11, int i12, int i13) {
+    }
+
+    public void onTextChanged(@Nullable CharSequence charSequence, int i11, int i12, int i13) {
+    }
+}

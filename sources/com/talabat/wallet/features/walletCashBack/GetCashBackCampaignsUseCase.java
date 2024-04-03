@@ -1,0 +1,43 @@
+package com.talabat.wallet.features.walletCashBack;
+
+import com.talabat.configuration.ConfigurationLocalRepository;
+import com.talabat.talabatcore.exception.Failure;
+import com.talabat.talabatcore.functional.Either;
+import com.talabat.talabatcore.interactor.UseCase;
+import com.talabat.wallet.features.walletCashBack.model.response.WalletCashBackCampaignResponse;
+import com.talabat.wallet.features.walletCashBack.repository.WalletCashBackRepository;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.CoroutineDispatcher;
+import kotlinx.coroutines.CoroutineScope;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B%\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b¢\u0006\u0002\u0010\fJ%\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u00020\u000e2\u0006\u0010\u0010\u001a\u00020\u0003H@ø\u0001\u0000¢\u0006\u0002\u0010\u0011R\u000e\u0010\u0006\u001a\u00020\u0007X\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0004¢\u0006\u0002\n\u0000\u0002\u0004\n\u0002\b\u0019¨\u0006\u0012"}, d2 = {"Lcom/talabat/wallet/features/walletCashBack/GetCashBackCampaignsUseCase;", "Lcom/talabat/talabatcore/interactor/UseCase;", "Lcom/talabat/wallet/features/walletCashBack/model/response/WalletCashBackCampaignResponse;", "", "walletCashBackRepository", "Lcom/talabat/wallet/features/walletCashBack/repository/WalletCashBackRepository;", "configurationLocalRepository", "Lcom/talabat/configuration/ConfigurationLocalRepository;", "scope", "Lkotlinx/coroutines/CoroutineScope;", "dispatcher", "Lkotlinx/coroutines/CoroutineDispatcher;", "(Lcom/talabat/wallet/features/walletCashBack/repository/WalletCashBackRepository;Lcom/talabat/configuration/ConfigurationLocalRepository;Lkotlinx/coroutines/CoroutineScope;Lkotlinx/coroutines/CoroutineDispatcher;)V", "run", "Lcom/talabat/talabatcore/functional/Either;", "Lcom/talabat/talabatcore/exception/Failure;", "params", "(ILkotlin/coroutines/Continuation;)Ljava/lang/Object;", "com_talabat_NewArchi_WalletSquad_WalletSquad"}, k = 1, mv = {1, 6, 0}, xi = 48)
+public final class GetCashBackCampaignsUseCase extends UseCase<WalletCashBackCampaignResponse, Integer> {
+    @NotNull
+    private final ConfigurationLocalRepository configurationLocalRepository;
+    @NotNull
+    private final WalletCashBackRepository walletCashBackRepository;
+
+    /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+    public GetCashBackCampaignsUseCase(@NotNull WalletCashBackRepository walletCashBackRepository2, @NotNull ConfigurationLocalRepository configurationLocalRepository2, @NotNull CoroutineScope coroutineScope, @NotNull CoroutineDispatcher coroutineDispatcher) {
+        super(coroutineScope, coroutineDispatcher);
+        Intrinsics.checkNotNullParameter(walletCashBackRepository2, "walletCashBackRepository");
+        Intrinsics.checkNotNullParameter(configurationLocalRepository2, "configurationLocalRepository");
+        Intrinsics.checkNotNullParameter(coroutineScope, "scope");
+        Intrinsics.checkNotNullParameter(coroutineDispatcher, "dispatcher");
+        this.walletCashBackRepository = walletCashBackRepository2;
+        this.configurationLocalRepository = configurationLocalRepository2;
+    }
+
+    public /* bridge */ /* synthetic */ Object run(Object obj, Continuation continuation) {
+        return run(((Number) obj).intValue(), (Continuation<? super Either<? extends Failure, WalletCashBackCampaignResponse>>) continuation);
+    }
+
+    @Nullable
+    public Object run(int i11, @NotNull Continuation<? super Either<? extends Failure, WalletCashBackCampaignResponse>> continuation) {
+        return this.walletCashBackRepository.getCashBackCampaigns(this.configurationLocalRepository.selectedCountry().getCountryId(), i11);
+    }
+}

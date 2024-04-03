@@ -1,0 +1,22 @@
+{
+  "languages" : [
+    {
+      "name" : "English",
+      "code" : "en-US",
+      "isRTL" : false,
+      "bundledFileCode" : "en"
+    },
+    {
+      "name" : "العربية",
+      "code" : "ar-KW",
+      "isRTL" : true,
+      "bundledFileCode" : "ar"
+    },
+    {
+      "name" : "کوردی",
+      "code" : "ku-SO",
+      "isRTL" : true,
+      "bundledFileCode" : "ckb-IQ"
+    }
+  ]
+}

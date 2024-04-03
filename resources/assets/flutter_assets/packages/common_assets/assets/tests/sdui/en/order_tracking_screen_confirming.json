@@ -1,0 +1,1052 @@
+{
+  "type": "OrderTrackingScreen",
+  "layouts": [
+    {
+      "name": "body",
+      "column": [
+        "story_header"
+      ]
+    },
+    {
+      "name": "bottom_sheet",
+      "column": [
+        "xx_small_vertical_spacing",
+        "order_progress_update",
+        "entry_basic_action",
+        "xx_small_divider",
+        "delivery_address",
+        "talabat_unwrapped_banner",
+        "xx_small_divider",
+        "tag_banner",
+        "pro_reward_banner",
+        "xx_small_divider",
+        "reward_banner",
+        "order_details",
+        "grocery_looking_glass",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "compensation_banner",
+        "support",
+        "xx_small_vertical_spacing"
+      ],
+      "header": []
+    },
+    {
+      "name": "default_body",
+      "column": [
+        "animation_header",
+        "order_progress_update",
+        "entry_basic_action",
+        "xx_small_divider",
+        "compensation_banner",
+        "tag_banner",
+        "pro_reward_banner",
+        "xx_small_divider",
+        "reward_banner",
+        "delivery_address",
+        "xx_small_divider",
+        "order_details",
+        "grocery_looking_glass",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support",
+        "xx_small_vertical_spacing"
+      ]
+    }
+  ],
+  "composition": {
+    "body": {
+      "extend_behind_app_bar": true,
+      "background_color": "transparent",
+      "app_bar_background_color": "transparent",
+      "show_rounded_background": false,
+      "close_button": null,
+      "status_bar_brightness": "dark",
+      "close_button_icon_color": "neutralWhite",
+      "layout": "body"
+    },
+    "bottom_sheet": {
+      "layout": "bottom_sheet",
+      "initial_state": "closed"
+    },
+    "floating_action_button": "tala_game_floating_button"
+  },
+  "widgets": {
+    "notification_message": {
+      "type": "NotificationMessage",
+      "data": {
+        "title": "Message Title",
+        "text": "Your rider is handling multiple orders and will arrive at your door at the estimated time.",
+        "leading_icon": "dsPromo",
+        "leading_image": "https://cdn-icons-png.flaticon.com/512/114/114931.png"
+      },
+      "style": {
+        "background_gradient": {
+          "begin": "center_left",
+          "end": "center_right",
+          "colors": [
+            "alert30",
+            "primary30"
+          ],
+          "stops": [
+            0.7,
+            1.0
+          ]
+        },
+        "title_font_color": "neutral100",
+        "text_font_color": "neutral100"
+      },
+      "can_close": true
+    },
+    "animation_header": {
+      "type": "ImageBanner",
+      "data": {
+        "background": {
+          "url": "https://images.deliveryhero.io/image/talabat/poh/animations/cropped/order_tracking_confirming.gif",
+          "style": {
+            "background_color": "primary10"
+          }
+        }
+      }
+    },
+    "story_header": {
+      "type": "Story",
+      "data": {
+        "stories": [
+          {
+            "heading": "Top picks near you",
+            "billboard_image": "https://images.deliveryhero.io/image/talabat/poh/restaurants/storiestest.png",
+            "billboard_thumbnail": "https://images.deliveryhero.io/image/talabat/poh/restaurants/storiestest.png?width=60",
+            "logo": "https://images.deliveryhero.io/image/talabat/restaurants/lafarina_pizza_LOGO_637105505328650665.jpg?width=180",
+            "title": "Lafarina",
+            "text": "Italian, pizza, pasta",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?s=re",
+                "tracking_event_name": "banner_shown",
+                "feature_name": "order_tracking",
+                "tracking_event_attributes": {
+                  "screenType": "order_confirmation",
+                  "screenName": "Order Confirmation Screen",
+                  "bannerName": "inappcompensation",
+                  "bannerid": "OT-1000"
+                }
+              }
+            },
+            "on_visible": {
+              "tracking": {
+                "tracking_event_name": "story_lafarina_shown",
+                "feature_name": "happy_billboard",
+                "tracking_event_attributes": {
+                  "screenType": "order_confirmation",
+                  "screenName": "Order Confirmation Screen",
+                  "bannerName": "...",
+                  "bannerid": "..."
+                }
+              }
+            }
+          },
+          {
+            "heading": "Discover similar tastes",
+            "billboard_image": "https://images.deliveryhero.io/image/talabat/poh/billboard/billboard-vendor-24647.jpg",
+            "billboard_thumbnail": "https://images.deliveryhero.io/image/talabat/poh/billboard/billboard-vendor-24647.jpg?width=60",
+            "logo": "https://images.deliveryhero.io/image/talabat/restaurants/Logo637796122578996844.jpg?width=180",
+            "title": "Wow Katsu",
+            "text": "Asian, Japanese",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?s=re",
+                "tracking_event_name": "banner_shown",
+                "feature_name": "order_tracking",
+                "tracking_event_attributes": {
+                  "screenType": "order_confirmation",
+                  "screenName": "Order Confirmation Screen",
+                  "bannerName": "inappcompensation",
+                  "bannerid": "OT-1000"
+                }
+              }
+            },
+            "on_visible": {
+              "tracking": {
+                "tracking_event_name": "story_lafarina_shown",
+                "feature_name": "happy_billboard",
+                "tracking_event_attributes": {
+                  "screenType": "order_confirmation",
+                  "screenName": "Order Confirmation Screen",
+                  "bannerName": "...",
+                  "bannerid": "..."
+                }
+              }
+            }
+          },
+          {
+            "heading": "Discover similar tastes",
+            "billboard_image": "https://images.deliveryhero.io/image/talabat/poh/billboard/billboard-vendor-11277.jpg",
+            "billboard_thumbnail": "https://images.deliveryhero.io/image/talabat/poh/billboard/billboard-vendor-11277.jpg?width=60",
+            "logo": "https://images.deliveryhero.io/image/talabat/restaurants/Logo637796122578996844.jpg?width=180",
+            "title": "Wow Rizwan",
+            "text": "Punjabi, Pakistani",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?s=re",
+                "tracking_event_name": "banner_shown",
+                "feature_name": "order_tracking",
+                "tracking_event_attributes": {
+                  "screenType": "order_confirmation",
+                  "screenName": "Order Confirmation Screen",
+                  "bannerName": "inappcompensation",
+                  "bannerid": "OT-1000"
+                }
+              }
+            },
+            "on_visible": {
+              "tracking": {
+                "tracking_event_name": "story_lafarina_shown",
+                "feature_name": "happy_billboard",
+                "tracking_event_attributes": {
+                  "screenType": "order_confirmation",
+                  "screenName": "Order Confirmation Screen",
+                  "bannerName": "...",
+                  "bannerid": "..."
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "order_progress_update": {
+      "type": "OrderProgress",
+      "data": {
+        "header": "Estimated arrival",
+        "title": "08:00 pm - 08:35 pm",
+        "subtitle": "It’s busy at the moment. Stay with us, we’re doing our best to get you the next rider available",
+        "footer": "Arrives in 9 minutes",
+        "badge": {
+          "style": {
+            "text_color": "success100",
+            "background_color": "success10",
+            "border_color": "success100"
+          },
+          "data": {
+            "text": "On time 🥳"
+          }
+        },
+        "progress_bars": [
+          {
+            "width": 1,
+            "fill": 0.5
+          },
+          {
+            "width": 2,
+            "fill": 0.0
+          },
+          {
+            "width": 1,
+            "fill": 0.0
+          }
+        ]
+      }
+    },
+    "entry_basic_action": {
+      "type": "EntryBasicAction",
+      "data": {
+        "title": "Combine and Save",
+        "tag": {
+          "style": {
+            "background_color": "primary10",
+            "text_color": "primary100"
+          },
+          "data": {
+            "text": "New"
+          }
+        },
+        "on_click":
+          {
+            "type": "ShowBottomSheet",
+            "args": {
+              "tracking_event_name": "multi_basket_display",
+              "feature_name": "order_tracking",
+              "layouts": [
+                {
+                  "name": "default_layout",
+                  "column": [
+                    "multi_basket_survey_entry"
+                  ]
+                }
+              ],
+              "widgets": {
+                "multi_basket_survey_entry": {
+                  "type": "DynamicBottomSheet",
+                  "data": {
+                    "body": [
+                      {
+                        "type": "BasicInfo",
+                        "style": {
+                          "background_color": "colorNeutralWhite"
+                        },
+                        "data": {
+                          "title": "Something cool is coming...",
+                          "text": "Combined orders isn't available yet, but we're working on brining it to you soon"
+
+                        }
+                      },
+                      {
+                        "type": "BasicListItem",
+                        "data": {
+                          "label": "Order from multiple restaurants",
+                          "display_divider": false,
+                          "leading_icon": "dsHomeFilled",
+                          "leading_icon_color": "orange50"
+                        }
+                      },
+                      {
+                        "type": "BasicListItem",
+                        "data": {
+                          "label": "Get your combined order in single delivery",
+                          "display_divider": false,
+                          "leading_icon": "dsMultiBasket",
+                          "leading_icon_color": "orange50"
+                        }
+                      },
+                      {
+                        "type": "ImageBanner",
+                        "data": {
+                          "background": {
+                            "url": "https://images.deliveryhero.io/image/talabat/poh/billboard/billboard-vendor-11277.jpg",
+                            "style": {
+                              "image_height": 300.0
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "type": "Divider",
+                        "style": {
+                          "type": "thick"
+                        }
+                      },
+                      {
+                        "type": "BasicInfo",
+                        "style": {
+                          "background_color": "colorNeutralWhite"
+                        },
+                        "data": {
+                          "subtitle": "Want to be notified when this feature is available?"
+                        }
+                      }
+
+                    ],
+                    "footer": {
+                      "type": "HorizontalButtons",
+                      "data": {
+                        "buttons": [
+                          {
+                            "type": "SecondaryButton",
+                            "data": {
+                              "text": "No, Thanks",
+                              "on_click": [
+                                {
+                                  "type": "Dismiss",
+                                  "args": {
+                                    "tracking_event_name": "multi_basket_survey_no",
+                                    "feature_name": "order_tracking"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "PrimaryButton",
+                            "data": {
+                              "text": "I'm interested",
+                              "on_click": [
+                                {
+                                  "type": "Dismiss",
+                                  "args": {
+                                    "tracking_event_name": "multi_basket_survey_yes"
+                                  }
+                                },
+                                {
+                                  "type": "ShowBottomSheet",
+                                  "args": {
+                                    "layouts": [
+                                      {
+                                        "name": "default_layout",
+                                        "column": [
+                                          "cancellation_confirmation"
+                                        ]
+                                      }
+                                    ],
+                                    "widgets": {
+                                      "cancellation_confirmation": {
+                                        "type": "DynamicBottomSheet",
+                                        "data": {
+                                          "body": [
+                                            {
+                                              "type": "ImageBanner",
+                                              "data": {
+                                                "background": {
+                                                  "url": "https://images.deliveryhero.io/image/talabat/poh/billboard/billboard-vendor-11277.jpg",
+                                                  "style": {
+                                                    "image_height": 300.0
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          ],
+                                          "max_height_ratio": 1.0,
+                                          "with_navigation_bar": true
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "max_height_ratio": 1.0,
+                    "with_navigation_bar": true
+                  }
+                }
+              }
+            }
+          },
+        "on_visible": {
+          "tracking": {
+            "tracking_event_name": "entry_action_widget_shown",
+            "feature_name": "order_tracking",
+            "tracking_event_attributes": {
+              "screenType": "order_confirmation",
+              "screenName": "Order Confirmation Screen",
+              "bannerName": "...",
+              "bannerid": "..."
+            }
+          }
+        }
+      }
+    },
+    "order_delivering_map": {
+      "type": "Map",
+      "data": {
+        "pins": [
+          {
+            "type": "source",
+            "latitude": 25.065381789979327,
+            "longitude": 55.14141608248746,
+            "text": "Talabat Rider",
+            "description": "",
+            "icon": "https://images.deliveryhero.io/image/talabat/poh/RIDER_MAP_IMAGE.png"
+          },
+          {
+            "type": "destination",
+            "latitude": 25.067428,
+            "longitude": 55.161875,
+            "text": "\uD83C\uDFE1 Home",
+            "description": "3 mins away",
+            "icon": "https://images.deliveryhero.io/image/talabat/poh/DESTINATION_MAP_IMAGE.png"
+          }
+        ]
+      }
+    },
+    "pro_reward_banner": {
+      "type": "BasicBanner",
+      "style": {
+        "image_height": 115.0,
+        "background_color": "secondary10"
+      },
+      "data": {
+        "title": "Moiza, you are a pro",
+        "text": "You earned 1200 points on this order plus free delivery",
+        "image_url": "https://images.deliveryhero.io/image/talabat/poh/pro_reward.png",
+        "link_text": "View rewards",
+        "on_click": {
+          "type": "DeepLink",
+          "args": {
+            "link": "talabat://?s=re"
+          }
+        }
+      }
+    },
+    "tmp_banner": {
+      "type": "BasicBanner",
+      "style": {
+        "background_color": "alert30"
+      },
+      "data": {
+        "title": "Order delivered by Domino's pizza",
+        "text": "Rider call, chat, and live tracking unavailable",
+        "background_color": "alert30",
+        "image_url": "https://images.deliveryhero.io/image/talabat/poh/RIDER_TMP_IMAGE.png"
+      }
+    },
+    "reward_banner": {
+      "type": "BasicBanner",
+      "style": {
+        "image_height": 90.0,
+        "background_color": "primary10"
+      },
+      "data": {
+        "text": "You earned 308 points for this order",
+        "image_url": "https://images.deliveryhero.io/image/talabat/poh/reward.png",
+        "link_text": "View rewards",
+        "on_click": {
+          "type": "DeepLink",
+          "args": {
+            "link": "talabat://?s=re"
+          }
+        }
+      }
+    },
+    "talabat_unwrapped_banner": {
+      "type": "BasicBanner",
+      "style": {
+        "image_height": 90.0,
+        "background_color": "primary10"
+      },
+      "data": {
+        "text": "Find out fun facts about talabat and your usage of it.",
+        "image_url": "https://images.deliveryhero.io/image/talabat/poh/reward.png",
+        "link_text": "Explore",
+        "on_click": {
+          "type": "DeepLink",
+          "args": {
+            "link": "talabat://?s=/talabat-unwrapped"
+          }
+        }
+      }
+    },
+    "compensation_banner": {
+      "type": "BasicBanner",
+      "style": {
+        "background_color": "primary10"
+      },
+      "data": {
+        "title": "We are sorry for the delay",
+        "text": "We want to make up for it with AED 20 voucher",
+        "image_url": "https://images.deliveryhero.io/image/talabat/poh/RIDER_COMPENSATION.png",
+        "link_text": "Claim voucher",
+        "on_click": {
+          "type": "Api",
+          "args": {
+            "url": "https://track-dev.dhhmena.com/order-tracking/v3/order-tracking/132991/compensate",
+            "method": "POST",
+            "payload": {},
+            "tracking_event_name": "banner_clicked",
+            "tracking_event_attributes": {}
+          }
+        },
+        "on_visible": {
+          "tracking": {
+            "tracking_event_name": "banner_shown",
+            "feature_name": "order_tracking",
+            "tracking_event_attributes": {
+              "screenType": "order_confirmation",
+              "screenName": "Order Confirmation Screen",
+              "bannerName": "inappcompensation",
+              "bannerid": "OT-1000"
+            }
+          }
+        }
+      }
+    },
+    "tag_banner": {
+      "type": "BasicTagBanner",
+      "style": {
+        "background_color": "secondary10"
+      },
+      "data": {
+        "title": "2x rewards with",
+        "image_url": "https://images.deliveryhero.io/image/talabat/poh/protag.png"
+      }
+    },
+    "delivery_address": {
+      "type": "BasicInfo",
+      "data": {
+        "header": "Delivering to",
+        "title": "\uD83C\uDFE2 Work",
+        "text": "Level 25, Single Business Tower 153, Sheikh Zayed Road"
+      }
+    },
+    "payment_details": {
+      "type": "ListInfo",
+      "data": {
+        "title": "Payment details",
+        "rows": [
+          {
+            "label": "Total cost",
+            "text": "AED 300"
+          },
+          {
+            "label": "Payment method",
+            "text": "xxxx-1738"
+          }
+        ]
+      }
+    },
+    "grocery_looking_glass": {
+      "type": "LookingGlass",
+      "style": {
+        "background_color": "alert30"
+      },
+      "data": {
+        "title": "Groceries for 30 mins",
+        "text": "Shop from talabat's own store",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+        "on_click": {
+          "type": "DeepLink",
+          "args": {
+            "link": "talabat://?c=kw&s=ds",
+            "tracking_event_name": "shop.clicked",
+            "tracking_event_attributes": {
+              "screenType": "order_tracking",
+              "eventOrigin": "looking_glass",
+              "shopClickOrigin": "looking_glass"
+            }
+          }
+        },
+        "on_load": {
+          "tracking": {
+            "uri": "tracking:<order_tracking>.<looking_glass_on_load>",
+            "attributes": {
+              "shop_id": "123",
+              "listing_page_type": "12345"
+            }
+          }
+        },
+        "items": [
+          {
+            "title": "AED 30",
+            "text": "Egyptian fat banana",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?c=kw&s=ds",
+                "tracking_event_name": "shop.clicked",
+                "tracking_event_attributes": {
+                  "screenType": "order_tracking",
+                  "eventOrigin": "looking_glass",
+                  "shopClickOrigin": "looking_glass"
+                }
+              }
+            }
+          },
+          {
+            "title": "AED 10",
+            "text": "Indian longtail papaya",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?c=kw&s=ds",
+                "tracking_event_name": "shop.clicked",
+                "tracking_event_attributes": {
+                  "screenType": "order_tracking",
+                  "eventOrigin": "looking_glass",
+                  "shopClickOrigin": "looking_glass"
+                }
+              }
+            }
+          },
+          {
+            "title": "AED 3",
+            "text": "Egyptian importee tomatoes",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?c=kw&s=ds",
+                "tracking_event_name": "shop.clicked",
+                "tracking_event_attributes": {
+                  "screenType": "order_tracking",
+                  "eventOrigin": "looking_glass",
+                  "shopClickOrigin": "looking_glass"
+                }
+              }
+            }
+          },
+          {
+            "title": "AED 5",
+            "text": "Iranian potatoes",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?c=kw&s=ds",
+                "tracking_event_name": "shop.clicked",
+                "tracking_event_attributes": {
+                  "screenType": "order_tracking",
+                  "eventOrigin": "looking_glass",
+                  "shopClickOrigin": "looking_glass"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "support": {
+      "type": "BasicInfo",
+      "data": {
+        "title": "Support",
+        "text": "Order #5678093898",
+        "actions": [
+          {
+            "type": "DeepLink",
+            "text": "Help Center",
+            "args": {
+              "link": "talabat://?s=ghc&i=12345",
+              "deeplink": "helpcenter/home?orderId=12345",
+              "tracking_event_name": "helpcentre_link_clicked",
+              "feature_name": "order_tracking"
+            }
+          },
+          {
+            "type": "DeepLink",
+            "text": "Where is my order?",
+            "args": {
+              "link": "talabat://?s=usc&orderId=202025",
+              "tracking_event_name": "chat_gpt_clicked",
+              "feature_name": "order_tracking",
+              "tracking_event_attributes": {
+                "screenType": "order_confirmation",
+                "screenName": "Order Confirmation Screen"
+              }
+            }
+          },
+          {
+            "type": "ShowBottomSheet",
+            "text": "Cancel Order",
+            "args": {
+              "tracking_event_name": "cancel_order_clicked",
+              "feature_name": "order_tracking",
+              "layouts": [
+                {
+                  "name": "default_layout",
+                  "column": [
+                    "cancellation_confirmation"
+                  ]
+                }
+              ],
+              "widgets": {
+                "cancellation_confirmation": {
+                  "type": "DynamicBottomSheet",
+                  "data": {
+                    "body": [
+                      {
+                        "type": "BasicInfo",
+                        "style": {
+                          "background_color": "colorNeutralWhite"
+                        },
+                        "data": {
+                          "title": "Are you sure you want to cancel?",
+                          "text": "You can cancel orders for free within a few mintues after you’ve placed it. You’ll get a full refund in your talabat Wallet\n"
+                        }
+                      },
+                      {
+                        "type": "Divider",
+                        "style": {
+                          "height": 2.0
+                        }
+                      },
+                      {
+                        "type": "ListInfo",
+                        "data": {
+                          "rows": [
+                            {
+                              "label": "Total Refund",
+                              "text": "AED 30"
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "footer": {
+                      "type": "HorizontalButtons",
+                      "data": {
+                        "buttons": [
+                          {
+                            "type": "SecondaryButton",
+                            "data": {
+                              "text": "Keep order",
+                              "on_click": [
+                                {
+                                  "type": "Dismiss",
+                                  "args": {
+                                    "tracking_event_name": "cancel_order_declined",
+                                    "feature_name": "order_tracking"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "PrimaryButton",
+                            "data": {
+                              "text": "Cancel order",
+                              "on_click": [
+                                {
+                                  "type": "Dismiss",
+                                  "args": {
+                                    "tracking_event_name": "cancel_order_confirmed",
+                                    "feature_name": "order_tracking"
+                                  }
+                                },
+                                {
+                                  "type": "Api",
+                                  "args": {
+                                    "url": "https://poe-qa.dhhmena.com/api/v1/orders/123308/cancel",
+                                    "method": "POST"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "max_height_ratio": 1.0,
+                    "with_navigation_bar": true
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "tala_game_floating_button": {
+      "type": "FloatingActionButton",
+      "data": {
+        "icon": "dsDeliveryBike"
+      },
+      "style": {
+        "text_color": null,
+        "background_color": "primary30",
+        "image_height": null
+      },
+      "on_click": {
+        "type": "DeepLink",
+        "args": {
+          "link": "talabat://?s=tlg",
+          "tracking_event_name": "tala_gotcha_game_clicked",
+          "feature_name": "order_tracking",
+          "tracking_event_attributes": {
+            "screenType": "order_confirmation",
+            "screenName": "Order Confirmation Screen"
+          }
+        }
+      }
+    },
+    "order_details": {
+      "type": "OrderDetails",
+      "data": {
+        "header": "Your order from",
+        "title": "Domino's Pizza",
+        "subtitle": "Business bay",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+        "items": [
+          {
+            "quantity": 2,
+            "text": "Cesar Salad"
+          },
+          {
+            "quantity": 1,
+            "text": "Tuscan chicken mac and cheese",
+            "subtext": "extra pesto"
+          },
+          {
+            "quantity": 1,
+            "text": "Tuscan chicken mac and cheese",
+            "subtext": "extra pesto"
+          },
+          {
+            "quantity": 1,
+            "text": "Vegetarian garlic bread"
+          }
+        ],
+        "actions": [
+          {
+            "type": "Dialer",
+            "text": "Call",
+            "args": {
+              "phone_number": "+971501231231",
+              "tracking_event_name": "contact_option_clicked",
+              "tracking_event_attributes": {
+                "contactOption": "call_shop"
+              }
+            }
+          },
+          {
+            "type": "ShowBottomSheet",
+            "text": "Edit items",
+            "tag": {
+              "style": {
+                "background_color": "primary10",
+                "text_color": "primary100"
+              },
+              "data": {
+                "text": "New"
+              }
+            },
+            "args": {
+              "tracking_event_name": "cancel_order_clicked",
+              "feature_name": "order_tracking",
+              "layouts": [
+                {
+                  "name": "default_layout",
+                  "column": [
+                    "cancellation_confirmation"
+                  ]
+                }
+              ],
+              "widgets": {
+                "cancellation_confirmation": {
+                  "type": "DynamicBottomSheet",
+                  "data": {
+                    "body": [
+                      {
+                        "type": "BasicInfo",
+                        "style": {
+                          "background_color": "colorNeutralWhite"
+                        },
+                        "data": {
+                          "title": "How to edit your items"
+                        }
+                      },
+                      {
+                        "type": "BasicListItem",
+                        "data": {
+                          "label": "Your order will be canceled",
+                          "leading_image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+                          "image_border_radius": 0.0,
+                          "display_divider": false
+                        }
+                      },
+                      {
+                        "type": "BasicListItem",
+                        "data": {
+                          "label": "Add, remove, or customize items",
+                          "leading_image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+                          "image_border_radius": 0.0,
+                          "display_divider": true
+                        }
+                      },
+                      {
+                        "type": "BasicListItem",
+                        "data": {
+                          "label": "Place your edited order",
+                          "leading_image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+                          "image_border_radius": 0.0,
+                          "display_divider": true
+                        }
+                      },
+                      {
+                        "type": "DSAlert",
+                        "data": {
+                          "alert_type": "warning",
+                          "descriptor": "If you used a voucher or a discount you might not be able to use it again",
+                          "with_leading_icon": false
+                        },
+                        "style": {
+                          "vertical_padding": 16.0,
+                          "horizontal_padding": 16.0
+                        }
+                      }
+                    ],
+                    "footer": {
+                      "type": "HorizontalButtons",
+                      "data": {
+                        "buttons": [
+                          {
+                            "type": "PrimaryButton",
+                            "data": {
+                              "text": "Edit Items",
+                              "on_click": [
+                                {
+                                  "type": "Dismiss",
+                                  "args": {
+                                    "tracking_event_name": "cancel_order_confirmed",
+                                    "feature_name": "order_tracking"
+                                  }
+                                },
+                                {
+                                  "type": "SyncCart",
+                                  "args": {
+                                    "cart_id": 204394297
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "max_height_ratio": 1.0,
+                    "with_navigation_bar": true
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "actions_messages": [
+          {
+            "type": "DSAlert",
+            "data": {
+              "alert_type": "warning",
+              "descriptor": "Call unavailable, a number hasn’t been provided"
+            }
+          }
+        ]
+      }
+    },
+    "xx_small_divider": {
+      "type": "Divider",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "xx_small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "delay_message_space": {
+      "type": "Spacing",
+      "style": {
+        "height": 90.0
+      }
+    }
+  },
+  "common_tracking_event_attributes": {
+    "shopId": 123,
+    "shopName": "12345",
+    "chainId": 123,
+    "orderId": "12345",
+    "liveTrackingOrderCode": 12345678,
+    "orderPaymentMethod": "12345",
+    "orderPickup": true,
+    "reOrder": true,
+    "orderPreorder": true,
+    "shopDeliveryTime": 12,
+    "deliveryProvider": "12345",
+    "deliveryStatus": "12345",
+    "deliveryTime": 12,
+    "experiment_name": "rider_tip",
+    "experimentVariation": "variantA"
+  },
+  "meta": {
+    "polling_interval_milliseconds": 200000000
+  }
+}

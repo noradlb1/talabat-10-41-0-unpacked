@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/gemBasketLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="Gem Basket Screen Sample" android:layout_alignParentTop="true"/>
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@+id/restaurantIdTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+        <EditText android:id="@+id/basketSubTotalEditText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Sub Total" android:ems="10" android:layout_below="@+id/restaurantIdTextView" android:layout_centerHorizontal="true" android:inputType="number"/>
+        <Button android:id="@+id/openCheckoutButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Open Checkout Screen" android:layout_below="@+id/basketSubTotalEditText" android:layout_centerHorizontal="true"/>
+        <com.talabat.gem.adapters.presentation.checkout.GemCheckoutDiscountView android:id="@+id/gemBasketDiscountView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_below="@+id/openCheckoutButton"/>
+    </RelativeLayout>
+    <com.talabat.gem.adapters.presentation.checkout.GemCheckoutFooterView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/gemBasketFooterView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

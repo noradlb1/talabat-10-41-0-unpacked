@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="150dp" android:layout_height="250dp" android:layout_marginRight="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="3dp" app:cardElevation="2dp" app:cardUseCompatPadding="true">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/fl_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="76dp">
+            <ImageView android:id="@+id/civ_item_image" android:layout_width="match_parent" android:layout_height="match_parent" android:transitionName="profile"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45dp" android:layout_marginBottom="45dp">
+            <com.talabat.TalabatTextView android:textSize="14dp" android:gravity="center" android:id="@+id/tv_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="alskdjasld" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" style="@style/MUXRtextViewMedium"/>
+            <TextView android:textSize="12dp" android:textStyle="normal" android:textColor="@color/muxr_text_color_light" android:gravity="center" android:id="@+id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="Buy 10 KD and get free Petit four chocolate" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" style="@style/MUXRtextViewLight"/>
+            <com.talabat.TalabatTextView android:textSize="11dp" android:textColor="@color/status_open" android:gravity="center" android:id="@+id/tv_select" android:background="@drawable/round_price_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/select" android:paddingStart="10dp" android:paddingEnd="10dp" style="@style/MUXRtextViewRegular"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,23 @@
+{
+  "boolean_experiments": {
+    "canShowGroceryHomeScreen": {
+      "true": true
+    },
+    "useVerticalIdIdInRequest": {
+      "true": true
+    },
+    "homeGroceryUseMissionControl": {
+      "true": true
+    }
+  },
+  "string_experiments": {
+    "promotionWidgetGroceryHomeTag": {
+      "grocery1": true
+    }
+  },
+  "int_experiments": {
+    "homeGrocerySwimlaneVariant": {
+      "1": true
+    }
+  }
+}

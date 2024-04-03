@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="choose_discounted_item">
+        <item quantity="other">بابەتە داشکێنراوەکەت هەڵبژێرە</item>
+    </plurals>
+    <plurals name="choose_free_item">
+        <item quantity="other">‏ بابەتی بێبەرامبەر هەڵبژێرە %d</item>
+    </plurals>
+    <plurals name="discount_campaign_can_add">
+        <item quantity="other">بابەتەکە داشکێنراوەکەت هەڵبژێرە</item>
+    </plurals>
+    <plurals name="ds_item_cart_free_item">
+        <item quantity="one">بابەتی بێبەرامبەر</item>
+        <item quantity="other">بابەتی بێبەرامبەر</item>
+    </plurals>
+    <plurals name="empty_query_title">
+        <item quantity="one">%1d به‌رهه‌م</item>
+        <item quantity="other">%1d به‌رهه‌م</item>
+    </plurals>
+    <plurals name="free_item_campaign_can_add">
+        <item quantity="other">بابەتە بێبەرامبەرەکەت هەڵبژێرە لە خوارەوە</item>
+    </plurals>
+    <plurals name="free_item_campaign_limit">
+        <item quantity="other">ئەم ئۆفەرە سنووردارە بۆ %d بەکارهێنان</item>
+    </plurals>
+    <plurals name="more_item_or_items">
+        <item quantity="one">+ %dبابەتی زیاتر.</item>
+        <item quantity="other">+ %d بابەتی زیاتر</item>
+    </plurals>
+    <plurals name="numberOfCuisinesSelected">
+        <item quantity="one">%d چێشت هەڵبژێردراوە</item>
+        <item quantity="other">%d چێشت هەڵبژێردراوە</item>
+    </plurals>
+    <plurals name="numberOfFiltersSelected">
+        <item quantity="one">%d فلته‌ر دانراوه‌</item>
+        <item quantity="other">%d فلته‌ر دانراوه‌</item>
+    </plurals>
+    <plurals name="query_title">
+        <item quantity="one">%2$d ئه‌نجام دۆزرایه‌وه‌ بۆ %1$s</item>
+        <item quantity="other">%2$d ئه‌نجام دۆزرایه‌وه‌ بۆ %1$s</item>
+    </plurals>
+</resources>

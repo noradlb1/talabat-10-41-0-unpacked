@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbarAlwaysDrawVerticalTrack="true" android:orientation="vertical" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/ds_xl">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_xs" android:layout_marginEnd="@dimen/ds_xs" app:cardCornerRadius="@dimen/ds_s">
+        <LinearLayout android:scrollbarAlwaysDrawVerticalTrack="true" android:orientation="vertical" android:id="@+id/main_layout" android:background="@color/ds_neutral_white" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <androidx.cardview.widget.CardView android:id="@+id/cardViewHeader" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardElevation="@dimen/ds_zero">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/gem_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_l" android:layout_marginBottom="@dimen/ds_s" android:layout_alignParentTop="true">
+                    <ImageView android:id="@+id/imageView_close" android:clickable="true" android:layout_width="@dimen/ds_l" android:layout_height="@dimen/ds_l" android:src="@drawable/ds_chevron_down" android:layout_marginStart="@dimen/ds_s"/>
+                    <TextView android:textColor="@color/ds_neutral_100" android:ellipsize="end" android:id="@+id/titleHeaderTextView" android:visibility="gone" android:layout_width="@dimen/ds_zero" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:layout_marginStart="@dimen/ds_m" style="@style/DSTextAppearance.Heading2"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.core.widget.NestedScrollView android:id="@+id/nestedScrollView" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/text_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/gem_view">
+                    <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s">
+                        <TextView android:textColor="@color/ds_neutral_100" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/titleTextView" android:layout_width="@dimen/ds_zero" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" style="@style/DSTextAppearance.Heading1"/>
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/sand_timer" android:layout_width="@dimen/ds_l" android:layout_height="@dimen/ds_m" android:src="@drawable/gem_logo_small" android:layout_marginEnd="@dimen/ds_xxxs"/>
+                        <TextView android:textColor="@color/ds_danger_100" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/counterTextView" android:layout_width="@dimen/_50txtSize" android:layout_height="wrap_content" style="@style/TextAppearance.Heading2"/>
+                    </LinearLayout>
+                    <TextView android:textColor="@color/ds_neutral_100" android:id="@+id/subTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxs" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s" style="@style/DSTextAppearance.Body1"/>
+                    <View android:background="@color/ds_neutral_10" android:layout_width="match_parent" android:layout_height="@dimen/stroke_1dp" android:layout_marginTop="@dimen/ds_s" android:layout_marginBottom="@dimen/ds_xxs"/>
+                    <RelativeLayout android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <FrameLayout android:id="@+id/frameLayout_recyclerViewContainer" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <androidx.recyclerview.widget.RecyclerView android:id="@+id/restaurantsRecyclerView" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </FrameLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

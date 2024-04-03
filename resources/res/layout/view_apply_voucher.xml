@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/voucherView" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s">
+            <TextView android:id="@+id/applyVoucherViewAddCodeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/applyVoucherViewTitleTextView" android:layout_marginStart="@dimen/standard_internal_margin" android:layout_alignParentEnd="true" style="@style/text_actionable_medium_14sp"/>
+            <TextView android:id="@+id/applyVoucherViewTitleTextView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/standard_quarter_margin" android:text="@string/apply_voucher_save_on_order" android:layout_toStartOf="@+id/applyVoucherViewAddCodeTextView" android:layout_alignParentStart="true" style="@style/text_black_bold_20sp"/>
+            <TextView android:id="@+id/applyVoucherViewDescriptionTextView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/apply_voucher_get_more" android:layout_below="@+id/applyVoucherViewTitleTextView" style="@style/text_grey_12sp"/>
+        </RelativeLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_s">
+            <androidx.viewpager.widget.ViewPager android:id="@+id/applyVoucherViewViewPager" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/possible_voucher_item_height" android:layout_marginTop="@dimen/ds_xs"/>
+            <com.talabat.talabatcommon.views.vouchers.applyVoucherView.views.AddVoucherCodeView android:id="@+id/addVoucherCodeView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xs" android:layout_marginEnd="@dimen/ds_s"/>
+            <com.talabat.talabatcommon.views.vouchers.lifecycle.BasketLifecycleVoucherView android:id="@+id/basketLifecycleVoucherView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xs" android:layout_marginEnd="@dimen/ds_s"/>
+        </FrameLayout>
+    </LinearLayout>
+    <include android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/ds_zero" android:layout_alignBottom="@+id/voucherView" android:layout_alignParentTop="true" android:layout_centerInParent="true" layout="@layout/generic_progress_bar"/>
+</RelativeLayout>

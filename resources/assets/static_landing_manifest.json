@@ -1,0 +1,80 @@
+{
+  "id": "page-vlp-test",
+  "title": "Best Offers",
+  "config_name": "vlp-test",
+  "name": "Vendor landing page",
+  "is_default": true,
+  "blocks": [
+    {
+      "widgets": [
+        {
+          "location_required": false,
+          "id": "banner-000",
+          "type": "banner",
+          "position": 1,
+          "authorization_status": "ANY"
+        },
+        {
+          "location_required": false,
+          "id": "swimlane-000",
+          "type": "swimlane",
+          "position": 1,
+          "authorization_status": "ANY"
+        },
+        {
+          "location_required": false,
+          "id": "category_tree-000",
+          "type": "category_tree",
+          "position": 0,
+          "authorization_status": "ANY"
+        },
+        {
+          "location_required": false,
+          "id": "banner-001",
+          "type": "banner",
+          "position": 4,
+          "authorization_status": "ANY"
+        },
+        {
+          "location_required": false,
+          "id": "banner-002",
+          "type": "banner",
+          "position": 5,
+          "authorization_status": "ANY"
+        }
+      ],
+      "data_source": {
+        "payload": {
+          "is_darkstore": true,
+          "vendor_id": "ba511e05-c97c-4ef1-8766-d3cc60054743",
+          "include_fields": [
+            "feed"
+          ],
+          "category_id": "b25810c6-9e4b-41b2-91bb-b4d6373c2c8c",
+          "brand": "talabat",
+          "language_code": "en_GB",
+          "platform": "ios",
+          "include_component_types": [
+            "multi_list",
+            "past_orders"
+          ],
+          "location": {
+            "point": {
+              "longitude": 25.188095000000001,
+              "latitude": 25.188095000000001
+            }
+          },
+          "is_migrated_vendor": false,
+          "config_selector": "disco-floor-dmarts/darkstores-config-b",
+          "country_code": "kw"
+        },
+        "method": "POST",
+        "url": {
+          "base": "https://api.talabat.com",
+          "relative_path": "/api/v3/verticals/feed"
+        },
+        "requires_auth": true
+      }
+    }
+  ]
+}

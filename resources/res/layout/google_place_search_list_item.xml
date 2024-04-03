@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:minHeight="?android:attr/listPreferredItemHeight">
+    <RelativeLayout android:layout_gravity="center_vertical" android:paddingTop="@dimen/ds_xxs" android:paddingBottom="@dimen/ds_xxs" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/places_image" android:padding="15dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ds_location" android:scaleType="fitCenter"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/text_layout" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_zero" android:layout_marginRight="@dimen/ds_s" android:layout_toRightOf="@+id/places_image" android:layout_marginStart="@dimen/ds_zero" android:layout_marginEnd="@dimen/ds_s" android:layout_toEndOf="@+id/places_image">
+            <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_100" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/place_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DSTextAppearance.Subheading1"/>
+            <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_55" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DSTextAppearance.Body1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

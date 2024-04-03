@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbarAlwaysDrawVerticalTrack="true" android:orientation="vertical" android:background="@android:color/transparent" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="@dimen/margin_12dp">
+    <RelativeLayout android:scrollbarAlwaysDrawVerticalTrack="true" android:orientation="vertical" android:id="@+id/main_layout" android:background="@android:color/transparent" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_12margin" android:layout_marginTop="@dimen/gem_container_margin_top" android:layout_marginRight="@dimen/_12margin" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/_12margin" android:layout_marginEnd="@dimen/_12margin">
+        <FrameLayout android:orientation="vertical" android:id="@+id/gem_view" android:background="@drawable/gem_res_alert_blue_bg" android:paddingBottom="@dimen/_4padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/imageView_close" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8margin" android:layout_marginRight="@dimen/_8margin" android:src="@drawable/ic_minimize_gem" android:layout_marginEnd="@dimen/_8margin"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/text_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/timerContainer" android:layout_below="@+id/gem_view">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/gem_footer_blue" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/talabat_white" android:ellipsize="end" android:id="@+id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" style="@style/Titles18Medium"/>
+                <TextView android:textSize="13sp" android:textColor="@color/talabat_white" android:ellipsize="end" android:id="@+id/subTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4margin" android:layout_marginBottom="@dimen/_12margin" android:lines="1" android:singleLine="true" style="@style/Content14Regular"/>
+            </LinearLayout>
+            <include layout="@layout/v2_gem_tiers_layout"/>
+            <LinearLayout android:gravity="center" android:id="@+id/how_it_works_click" android:background="@color/talabat_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="36dp">
+                <TextView android:textColor="@color/neutral_black" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:text="@string/how_it_works" android:layout_marginStart="16dp" style="@style/Content14Regular"/>
+                <ImageView android:id="@+id/up_down_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+            </LinearLayout>
+            <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="300dp">
+                <FrameLayout android:id="@+id/frameLayout_recyclerViewContainer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/restaurantsRecyclerView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/howItWorksDetailsLayout" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="300dp" android:layout_centerInParent="true">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_24margin">
+                        <ImageView android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/ds_bag" android:layout_marginStart="16dp"/>
+                        <TextView android:textColor="#262626" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="36dp" android:text="@string/add_items_reach_minimum" android:includeFontPadding="false" android:layout_marginStart="8dp" android:layout_marginEnd="36dp" style="@style/Content14Regular"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/ds_cash" android:layout_marginStart="16dp"/>
+                        <TextView android:textColor="#262626" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="36dp" android:text="@string/the_more_you_order" android:includeFontPadding="false" android:layout_marginStart="8dp" android:layout_marginEnd="36dp" style="@style/Content14Regular"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/ds_check" android:layout_marginStart="16dp"/>
+                        <TextView android:textColor="#262626" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="36dp" android:text="@string/checkout_before_15_minutes" android:includeFontPadding="false" android:layout_marginStart="8dp" android:layout_marginEnd="36dp" style="@style/Content14Regular"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                        <ImageView android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/ds_vendor" android:layout_marginStart="16dp"/>
+                        <TextView android:textColor="#262626" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="36dp" android:text="@string/once_you_choose_a_restaurant" android:includeFontPadding="false" android:layout_marginStart="8dp" android:layout_marginEnd="36dp" style="@style/Content14Regular"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <include layout="@layout/v2_gem_footer_counter"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/gem_logo" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/ic_gem_logo" android:maxWidth="@dimen/gem_big_logo_max_width" android:maxHeight="@dimen/gem_big_logo_max_height" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

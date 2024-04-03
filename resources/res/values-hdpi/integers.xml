@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="connectorHeight">3</integer>
+    <integer name="delivered_connectorHeight">6</integer>
+    <integer name="order_progress_stroke">10</integer>
+    <integer name="stroke">8</integer>
+    <integer name="subtitleAdjustment">29</integer>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:shimmer_auto_start="true" app:shimmer_color="@color/white">
+        <View android:background="@color/shimmer_bg_color" android:layout_width="match_parent" android:layout_height="257dp"/>
+    </com.talabat.talabatcommon.views.ShimmerLayout>
+    <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxl" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/header" app:shimmer_auto_start="true" app:shimmer_color="@color/white">
+        <View android:background="@drawable/bg_shimmer_placeholder_orange" android:layout_width="match_parent" android:layout_height="@dimen/ds_xl"/>
+    </com.talabat.talabatcommon.views.ShimmerLayout>
+    <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/subText1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/text1" app:layout_constraintWidth_percent="0.45" app:shimmer_auto_start="true" app:shimmer_color="@color/white">
+        <View android:background="@drawable/bg_shimmer_placeholder_orange" android:layout_width="match_parent" android:layout_height="@dimen/ds_l"/>
+    </com.talabat.talabatcommon.views.ShimmerLayout>
+    <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s" app:layout_constraintStart_toStartOf="@+id/subText1" app:layout_constraintTop_toBottomOf="@+id/subText1" app:shimmer_auto_start="true" app:shimmer_color="@color/white">
+        <View android:background="@drawable/bg_shimmer_placeholder_orange" android:layout_width="match_parent" android:layout_height="@dimen/ds_xl"/>
+    </com.talabat.talabatcommon.views.ShimmerLayout>
+    <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/subText2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/text2" app:layout_constraintWidth_percent="0.45" app:shimmer_auto_start="true" app:shimmer_color="@color/white">
+        <View android:background="@drawable/bg_shimmer_placeholder_orange" android:layout_width="match_parent" android:layout_height="@dimen/ds_l"/>
+    </com.talabat.talabatcommon.views.ShimmerLayout>
+    <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s" app:layout_constraintStart_toStartOf="@+id/subText2" app:layout_constraintTop_toBottomOf="@+id/subText2" app:shimmer_auto_start="true" app:shimmer_color="@color/white">
+        <View android:background="@drawable/bg_shimmer_placeholder_orange" android:layout_width="match_parent" android:layout_height="@dimen/ds_xl"/>
+    </com.talabat.talabatcommon.views.ShimmerLayout>
+    <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxl" android:layout_marginBottom="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:shimmer_auto_start="true" app:shimmer_color="@color/white">
+        <View android:background="@drawable/bg_shimmer_placeholder_orange" android:layout_width="match_parent" android:layout_height="@dimen/tab_height"/>
+    </com.talabat.talabatcommon.views.ShimmerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?attr/deliveryInfoSectionTopMargin" android:layout_marginBottom="?attr/deliveryInfoSectionBottomMargin" android:layout_marginStart="?attr/deliveryInfoSectionHorizontalMargin" android:layout_marginEnd="?attr/deliveryInfoSectionHorizontalMargin" app:cardCornerRadius="@dimen/customer_chat_layout_2dp">
+    <LinearLayout android:orientation="vertical" android:background="?attr/orderInfoSectionBackgroundColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="?android:attr/listDivider" android:showDividers="middle" android:dividerPadding="@dimen/customer_chat_margin_16dp">
+        <include layout="@layout/customer_chat_include_viewholder_delivery_address"/>
+        <include layout="@layout/customer_chat_include_viewholder_delivery_comments"/>
+        <include layout="@layout/customer_chat_include_viewholder_delivery_info"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

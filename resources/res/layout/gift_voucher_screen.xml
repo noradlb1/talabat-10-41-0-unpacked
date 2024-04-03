@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/app_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.talabat.helpers.TalabatToolBar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/toolbar_elevation" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <RelativeLayout style="@style/toolbar_background_style">
+            <RelativeLayout style="@style/toolbar_items_holder_style">
+                <com.talabat.helpers.TalabatToolBarImageButton android:id="@+id/back" style="@style/toolbar_back_button_style"/>
+                <com.talabat.helpers.TalabatToolBarTextView android:id="@+id/title" android:text="@string/buy_gift_voucher" style="@style/toolbar_text_style"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.talabat.helpers.TalabatToolBar>
+    <RelativeLayout android:id="@+id/loading_layout" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:layout_gravity="fill_vertical" android:id="@+id/gift_voucher_content_view" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_0" android:layout_marginRight="@dimen/margin_0">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/white" app:cardElevation="0dp" app:cardMaxElevation="0dp">
+                    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.talabat.TalabatTextView android:textSize="@dimen/text_view_text_size" android:textColor="@color/talabat_rebrand_paragraphs" android:gravity="start" android:id="@+id/buy_voucher_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gift_voucher_screen_txt_margin" android:layout_marginTop="@dimen/gift_voucher_screen_txt_margin_top_bottom" android:layout_marginRight="@dimen/gift_voucher_screen_txt_margin" android:layout_marginBottom="@dimen/gift_voucher_screen_txt_margin_top_bottom" android:text="@string/gift_voucher_text" android:layout_marginStart="@dimen/gift_voucher_screen_txt_margin" android:layout_marginEnd="@dimen/gift_voucher_screen_txt_margin" style="@style/textViewRegular"/>
+                        <com.talabat.TalabatTextView android:textSize="@dimen/text_view_text_size" android:textColor="@color/talabat_black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:text="@string/choose_voucher_heading" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" style="@style/textViewRegular"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <FrameLayout android:background="@color/app_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="8dp"/>
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="1dp" app:cardBackgroundColor="@android:color/white" app:cardElevation="@dimen/card_elevation" app:cardMaxElevation="@dimen/card_elevation">
+                    <RelativeLayout android:orientation="vertical" android:id="@+id/gift_voucher_content_amount" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/gift_voucher_screen_txt_margin_top_bottom">
+                        <LinearLayout android:id="@+id/top_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gift_voucher_screen_txt_margin" android:layout_centerHorizontal="true">
+                            <ImageButton android:id="@+id/voucher1" android:background="@android:color/transparent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/gift_voucher_img_margin_left_right" android:src="@drawable/gift_kd5" android:layout_marginEnd="@dimen/gift_voucher_img_margin_left_right"/>
+                            <ImageButton android:id="@+id/voucher2" android:background="@android:color/transparent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gift_voucher_medium_margin" android:src="@drawable/gift_kd10" android:layout_marginStart="@dimen/gift_voucher_medium_margin"/>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/middle_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_below="@+id/top_layout" android:layout_centerHorizontal="true">
+                            <ImageButton android:id="@+id/voucher3" android:background="@android:color/transparent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/gift_voucher_img_margin_left_right" android:src="@drawable/gift_kd20" android:layout_marginEnd="@dimen/gift_voucher_img_margin_left_right"/>
+                            <ImageButton android:id="@+id/voucher4" android:background="@android:color/transparent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gift_voucher_medium_margin" android:src="@drawable/gift_kd50" android:layout_marginStart="@dimen/gift_voucher_medium_margin"/>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/bottom_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_below="@+id/middle_layout" android:layout_centerHorizontal="true">
+                            <ImageButton android:id="@+id/voucher5" android:background="@android:color/transparent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/gift_voucher_img_margin_left_right" android:src="@drawable/gift_kd100" android:layout_marginEnd="@dimen/gift_voucher_img_margin_left_right"/>
+                            <ImageButton android:id="@+id/voucher6" android:background="@android:color/transparent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gift_voucher_medium_margin" android:src="@drawable/gift_kd200" android:layout_marginStart="@dimen/gift_voucher_medium_margin"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

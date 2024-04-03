@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/layout_delivery_comments" android:background="?attr/selectableItemBackground" android:padding="@dimen/customer_chat_padding_16dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/image_view_comments" android:layout_width="@dimen/customer_chat_layout_30dp" android:layout_height="@dimen/customer_chat_layout_30dp" android:layout_marginStart="@dimen/customer_chat_margin_6dp" android:layout_marginEnd="@dimen/customer_chat_margin_6dp" style="@style/ChatDeliveryInfoCommentIcon"/>
+    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/text_view_comments" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/customer_chat_margin_10dp" style="@style/ChatDeliveryInfoCommentText"/>
+</LinearLayout>

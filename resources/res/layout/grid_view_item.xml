@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/gridItemContainer" android:layout_width="match_parent" android:layout_height="144dp" android:layout_margin="6dp" app:cardCornerRadius="@dimen/ds_xxs" app:cardElevation="@dimen/ds_zero">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/gridItemImage" android:layout_width="102dp" android:layout_height="94dp" android:layout_margin="@dimen/ds_xxs" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <androidx.appcompat.widget.AppCompatTextView android:ellipsize="end" android:gravity="center" android:id="@+id/gridItemName" android:layout_width="@dimen/ds_zero" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_xs" android:lines="1" android:singleLine="true" android:textAlignment="center" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" style="@style/TextAppearance.Subheading2"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

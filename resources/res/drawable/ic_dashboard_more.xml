@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="48dp" android:width="48dp" android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="#ffffff" android:pathData="M24,0L24,0A24,24 0,0 1,48 24L48,24A24,24 0,0 1,24 48L24,48A24,24 0,0 1,0 24L0,24A24,24 0,0 1,24 0z"/>
+    <path android:fillColor="#262626" android:pathData="M15.75,21.75C14.507,21.75 13.5,22.758 13.5,24C13.5,25.243 14.507,26.25 15.75,26.25C16.992,26.25 18,25.242 18,24C18,22.758 16.992,21.75 15.75,21.75Z" android:fillType="1"/>
+    <path android:fillColor="#262626" android:pathData="M24,21.75C22.757,21.75 21.75,22.758 21.75,24C21.75,25.243 22.757,26.25 24,26.25C25.242,26.25 26.25,25.242 26.25,24C26.25,22.758 25.242,21.75 24,21.75Z" android:fillType="1"/>
+    <path android:fillColor="#262626" android:pathData="M32.25,21.75C31.008,21.75 30,22.758 30,24C30,25.243 31.007,26.25 32.25,26.25C33.492,26.25 34.5,25.242 34.5,24C34.5,22.758 33.492,21.75 32.25,21.75Z" android:fillType="1"/>
+</vector>

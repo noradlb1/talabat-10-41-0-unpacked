@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <FrameLayout android:background="@drawable/item_image_bg_res_list" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginRight="16dp" android:layout_marginEnd="16dp">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar" android:layout_width="@dimen/cart_item_progress_bar_height_width" android:layout_height="@dimen/cart_item_progress_bar_height_width" style="?android:attr/progressBarStyleSmall"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/imageView_itemImage" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#262626" android:id="@+id/textView_dishName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Titles18Medium"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <com.talabat.TalabatTextView android:textSize="14sp" android:textColor="#ff9f00" android:id="@+id/textView_restaurantStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" style="@style/textViewRegular"/>
+                <TextView android:textColor="#838383" android:id="@+id/textView_restaurantName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_marginStart="@dimen/ds_xxs" android:layout_marginEnd="@dimen/ds_xxs" style="@style/Content14Regular"/>
+            </LinearLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <TextView android:textColor="#262626" android:layout_gravity="center_vertical" android:id="@+id/textView_itemPrice" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Content14Medium"/>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:id="@+id/linearLayout_similarContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginEnd="16dp">
+                    <TextView android:textColor="@color/ds_primary_100" android:id="@+id/textView_dishSimilar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/Content14Medium"/>
+                </LinearLayout>
+            </FrameLayout>
+            <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

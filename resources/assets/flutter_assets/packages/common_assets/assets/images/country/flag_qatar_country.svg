@@ -1,0 +1,13 @@
+<svg id="vector" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 66 66">
+    <defs>
+        <clipPath id="clip_path_0">
+            <circle cx="33" cy="33" r="31.6" />
+        </clipPath>
+    </defs>
+    <circle cx="33" cy="33" r="32" fill="transparent" stroke="#F5F5F5" stroke-width="1" />
+    <g id="g_0" clip-path="url(#clip_path_0)">
+        <path fill="#8D1B3D" d="M135.655,1.24H-25.6891V64.7613H135.655V1.24Z" />
+        <path fill="#ffffff"
+            d="M-25.6891,1.2394V64.7607H25.128L38.0372,61.2337L25.128,57.7003L38.0372,54.1733L25.128,50.6463L38.0372,47.1129L25.128,43.5859L38.0372,40.0589L25.128,36.5254L38.0372,32.9984L25.128,29.4714L38.0372,25.938L25.128,22.411L38.0372,18.884L25.128,15.3506L38.0372,11.8236L25.128,8.2966L38.0372,4.7631L25.128,1.2362H-25.6891V1.2394Z" />
+    </g>
+</svg>

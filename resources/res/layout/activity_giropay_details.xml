@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/standard_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_half_margin" android:animateLayoutChanges="true">
+            <FrameLayout android:id="@+id/frameLayout_searchContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.adyen.checkout.ui.internal.common.view.CustomTextInputLayout android:id="@+id/customTextInputLayout_searchString" android:layout_width="match_parent" android:layout_height="wrap_content" app:customTextInputLayout_caption="@string/checkout_giropay_search_hint">
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:id="@+id/autoCompleteTextView_searchString" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapWords"/>
+                </com.adyen.checkout.ui.internal.common.view.CustomTextInputLayout>
+                <androidx.core.widget.ContentLoadingProgressBar android:layout_gravity="end" android:id="@+id/contentLoadingProgressBar" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/Widget.AppCompat.ProgressBar"/>
+            </FrameLayout>
+            <include android:id="@+id/item_two_line" android:layout_width="match_parent" android:layout_height="@dimen/payment_method_item_height" layout="@layout/item_two_line"/>
+        </LinearLayout>
+        <TextView android:textAppearance="@style/Checkout.TextAppearance.Error" android:id="@+id/textView_error" android:paddingLeft="@dimen/standard_quarter_margin" android:paddingRight="@dimen/standard_quarter_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/standard_quarter_margin" android:paddingEnd="@dimen/standard_quarter_margin"/>
+        <Button android:id="@+id/button_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin"/>
+        <TextView android:layout_gravity="center_horizontal" android:id="@+id/textView_surcharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false" style="@style/Checkout.TextAppearance.Tertiary"/>
+    </LinearLayout>
+</ScrollView>

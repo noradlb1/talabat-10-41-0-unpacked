@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <TextView android:ellipsize="end" android:id="@+id/compact_swimlane_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_xs" android:singleLine="true" style="@style/DSTextAppearance.Heading2"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/compact_swimlane_recycler_view" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:splitMotionEvents="false" android:nestedScrollingEnabled="false"/>
+</merge>

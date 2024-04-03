@@ -1,0 +1,79 @@
+{
+  "type": "Padding",
+  "padding": "16,16,16,16",
+  "child": {
+    "type": "Column",
+    "children": [
+      {
+        "type": "OrderProgressUpdate",
+        "data": {
+          "header": "Estimated Arrival",
+          "title": "20:00 - 20:35",
+          "footer": "Order placed! We're on it",
+          "progress_bars": [
+            {
+              "width": 1,
+              "fill": 0.5
+            },
+            {
+              "width": 2,
+              "fill": 0.0
+            },
+            {
+              "width": 1,
+              "fill": 0.0
+            }
+          ]
+        },
+        "style": {
+          "padding": [
+            16,
+            16,
+            16,
+            16
+          ]
+        }
+      },
+      {
+        "type": "BasicInfo",
+        "data": {
+          "title": "Abdel Rehman",
+          "text": "Delivering to your :house: home.",
+          "actions": [
+            {
+              "type": "Dialer",
+              "name": "Call",
+              "args": [
+                "+971501231231"
+              ]
+            },
+            {
+              "type": "Url",
+              "name": "Chat",
+              "args": [
+                "Coding Infinite",
+                "https://codinginfinite.com/wp-content/uploads/2019/04/dotnet-core-libraries.jpg"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "BasicInfo",
+        "data": {
+          "title": "New 5 Napkin",
+          "text": "Salmia, Kuwait City",
+          "actions": [
+            {
+              "type": "Dialer",
+              "name": "Call",
+              "args": [
+                "+971501231231"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

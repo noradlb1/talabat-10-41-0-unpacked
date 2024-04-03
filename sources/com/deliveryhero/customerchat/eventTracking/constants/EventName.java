@@ -1,0 +1,79 @@
+package com.deliveryhero.customerchat.eventTracking.constants;
+
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b!\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u0004XT¢\u0006\u0002\n\u0000¨\u0006%"}, d2 = {"Lcom/deliveryhero/customerchat/eventTracking/constants/EventName;", "", "()V", "CAMERA_LAUNCHED", "", "CHAT_CLIENT_DISCONNECTED", "CHAT_UI_CLOSED", "CHAT_UI_OPENED", "ERROR_SENDING_MESSAGE", "FEATURE_FLAG_SET", "GALLERY_LAUNCHED", "GRID_LAUNCHED", "IMAGE_SELECTED", "IMAGE_UPLOADED", "IMAGE_UPLOAD_CANCELED", "IN_APP_CALL_BUTTON_CLICKED", "IN_APP_CALL_BUTTON_SHOWN", "IN_APP_CALL_CANCELLED", "IN_APP_CALL_ENDED", "IN_APP_CALL_ERROR_CAUSED", "IN_APP_CALL_MUTE_BUTTON_CLICKED", "IN_APP_CALL_PICKED_UP", "IN_APP_CALL_REJECTED", "IN_APP_CALL_RING_STARTED", "IN_APP_CALL_SPEAKER_BUTTON_CLICKED", "IN_APP_CALL_SURVEY_DISPLAYED", "IN_APP_CALL_SURVEY_SUBMITTED", "IN_APP_CALL_TIMED_OUT", "IN_APP_CALL_USER_REGISTERED", "LOCATION_CLICKED", "LOCATION_PICKER_LAUNCHED", "MESSAGE_DELIVERED", "MESSAGE_QUICK_RESPONSE_SELECTED", "MESSAGE_SENT", "TRADITIONAL_CALL_BUTTON_CLICKED", "TRANSLATION_ACTIVATED", "TRANSLATION_DEACTIVATED", "customerchat_basicRelease"}, k = 1, mv = {1, 6, 0}, xi = 48)
+public final class EventName {
+    @NotNull
+    public static final String CAMERA_LAUNCHED = "CAMERA_LAUNCHED";
+    @NotNull
+    public static final String CHAT_CLIENT_DISCONNECTED = "CHAT_CLIENT_DISCONNECTED";
+    @NotNull
+    public static final String CHAT_UI_CLOSED = "CHAT_UI_CLOSED";
+    @NotNull
+    public static final String CHAT_UI_OPENED = "CHAT_UI_OPENED";
+    @NotNull
+    public static final String ERROR_SENDING_MESSAGE = "ERROR_SENDING_MESSAGE";
+    @NotNull
+    public static final String FEATURE_FLAG_SET = "FEATURE_FLAG_SET";
+    @NotNull
+    public static final String GALLERY_LAUNCHED = "GALLERY_LAUNCHED";
+    @NotNull
+    public static final String GRID_LAUNCHED = "GRID_LAUNCHED";
+    @NotNull
+    public static final String IMAGE_SELECTED = "IMAGE_SELECTED";
+    @NotNull
+    public static final String IMAGE_UPLOADED = "IMAGE_UPLOADED";
+    @NotNull
+    public static final String IMAGE_UPLOAD_CANCELED = "IMAGE_UPLOAD_CANCELED";
+    @NotNull
+    public static final EventName INSTANCE = new EventName();
+    @NotNull
+    public static final String IN_APP_CALL_BUTTON_CLICKED = "IN_APP_CALL_BUTTON_CLICKED";
+    @NotNull
+    public static final String IN_APP_CALL_BUTTON_SHOWN = "IN_APP_CALL_BUTTON_SHOWN";
+    @NotNull
+    public static final String IN_APP_CALL_CANCELLED = "IN_APP_CALL_CANCELLED";
+    @NotNull
+    public static final String IN_APP_CALL_ENDED = "IN_APP_CALL_ENDED";
+    @NotNull
+    public static final String IN_APP_CALL_ERROR_CAUSED = "IN_APP_CALL_ERROR_CAUSED";
+    @NotNull
+    public static final String IN_APP_CALL_MUTE_BUTTON_CLICKED = "IN_APP_CALL_MUTE_BUTTON_CLICKED";
+    @NotNull
+    public static final String IN_APP_CALL_PICKED_UP = "IN_APP_CALL_PICKED_UP";
+    @NotNull
+    public static final String IN_APP_CALL_REJECTED = "IN_APP_CALL_REJECTED";
+    @NotNull
+    public static final String IN_APP_CALL_RING_STARTED = "IN_APP_CALL_RING_STARTED";
+    @NotNull
+    public static final String IN_APP_CALL_SPEAKER_BUTTON_CLICKED = "IN_APP_CALL_SPEAKER_BUTTON_CLICKED";
+    @NotNull
+    public static final String IN_APP_CALL_SURVEY_DISPLAYED = "IN_APP_CALL_SURVEY_DISPLAYED";
+    @NotNull
+    public static final String IN_APP_CALL_SURVEY_SUBMITTED = "IN_APP_CALL_SURVEY_SUBMITTED";
+    @NotNull
+    public static final String IN_APP_CALL_TIMED_OUT = "IN_APP_CALL_TIMED_OUT";
+    @NotNull
+    public static final String IN_APP_CALL_USER_REGISTERED = "IN_APP_CALL_USER_REGISTERED";
+    @NotNull
+    public static final String LOCATION_CLICKED = "LOCATION_CLICKED";
+    @NotNull
+    public static final String LOCATION_PICKER_LAUNCHED = "LOCATION_PICKER_LAUNCHED";
+    @NotNull
+    public static final String MESSAGE_DELIVERED = "MESSAGE_DELIVERED";
+    @NotNull
+    public static final String MESSAGE_QUICK_RESPONSE_SELECTED = "MESSAGE_QUICK_RESPONSE_SELECTED";
+    @NotNull
+    public static final String MESSAGE_SENT = "MESSAGE_SENT";
+    @NotNull
+    public static final String TRADITIONAL_CALL_BUTTON_CLICKED = "TRADITIONAL_CALL_BUTTON_CLICKED";
+    @NotNull
+    public static final String TRANSLATION_ACTIVATED = "TRANSLATION_ACTIVATED";
+    @NotNull
+    public static final String TRANSLATION_DEACTIVATED = "TRANSLATION_DEACTIVATED";
+
+    private EventName() {
+    }
+}

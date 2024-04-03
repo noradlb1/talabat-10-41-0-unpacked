@@ -1,0 +1,223 @@
+{
+  "type": "OrderTrackingScreen",
+  "layouts": [
+    {
+      "name": "order_tracking_screen_default_layout",
+      "column": [
+        "order_status",
+        "order_progress_update",
+        "tmp_banner",
+        "delivery_address",
+        "order_details",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support",
+        "where_is_my_order",
+        "cancel_order",
+        "help_center",
+        "xx_small_vertical_spacing"
+      ]
+    }
+  ],
+  "composition": {
+    "body": {
+      "extend_behind_app_bar": false,
+      "app_bar_background_color": "neutralWhite",
+      "background_color": "neutralWhite",
+      "show_rounded_background": true,
+      "status_bar_brightness": "light",
+      "close_button_icon_color": "neutral100",
+      "layout": "body"
+    },
+    "bottom_sheet": null
+  },
+  "widgets": {
+    "order_status": {
+      "type": "Tag",
+      "style": {
+        "text_color": "neutralWhite",
+        "background_color": "success100"
+      },
+      "data": {
+        "text": "Confirmed"
+      }
+    },
+    "order_progress_update": {
+      "type": "OrderProgress",
+      "data": {
+        "header": "Estimated arrival",
+        "title": "8:15PM-8:45PM"
+      }
+    },
+    "tmp_banner": {
+      "type": "BasicBanner",
+      "style": {
+        "background_color": "alert30"
+      },
+      "data": {
+        "title": "Order delivered by Domino's pizza",
+        "text": "Rider call, chat, and live tracking unavailable",
+        "image_url": "https://images.deliveryhero.io/image/talabat/poh/RIDER_TMP_IMAGE.png"
+      }
+    },
+    "delivery_address": {
+      "type": "BasicInfo",
+      "data": {
+        "header": "Delivering to",
+        "title": "🏢 Office ",
+        "text": "Talabat, Floor 25, Single Business Tower, Sheikh Zayed Road, Business Bay"
+      }
+    },
+    "payment_details": {
+      "type": "ListInfo",
+      "data": {
+        "title": "Payment details",
+        "rows": [
+          {
+            "label": "Total",
+            "text": "AED 300"
+          },
+          {
+            "label": "Payment method",
+            "text": "xxxx-1738"
+          }
+        ]
+      }
+    },
+    "support": {
+      "type": "BasicInfo",
+      "data": {
+        "title": "Need support?",
+        "text": "Order #5678093898"
+      }
+    },
+    "where_is_my_order": {
+      "type": "BasicListItem",
+      "data": {
+        "label": "Where is my order?",
+        "descriptor": "Call Domino's Pizza",
+        "leading_image": "https://i.pinimg.com/736x/1b/ee/08/1bee08aa56544de70e0c6bffe4a944a4.jpg"
+      },
+      "trailing_widget": {
+        "type": "RatioImage",
+        "style": {
+          "width": 36.0,
+          "height": 36.0
+        },
+        "data": {
+          "image_url": "https://images.deliveryhero.io/image/talabat/poh/TMP_VENDOR_PHONE_CALL_ICON.png",
+          "image_ratio": "oneToOne",
+          "placeholder_image_url": "https://images.deliveryhero.io/image/talabat/poh/TMP_VENDOR_PHONE_CALL_ICON.png"
+        }
+      },
+      "on_tap": {
+        "type": "Dialer",
+        "text": "Call",
+        "args": {
+          "phone_number": "+971501231231",
+          "tracking_event_name": "contact_option_clicked",
+          "tracking_event_attributes": {
+            "contactOption": "call_shop"
+          }
+        }
+      }
+    },
+    "cancel_order": {
+      "type": "BasicListItem",
+      "data": {
+        "label": "Cancel my order"
+      },
+      "trailing_widget": {
+        "type": "Icon",
+        "style": {},
+        "data": {
+          "icon": "dsChevronForward"
+        }
+      },
+      "on_tap": {
+        "type": "CancelOrder",
+        "args": {
+          "title": "Are you sure you want to cancel?",
+          "text": "If you cancel your order, you will receive a refund directly to your talabat credit.",
+          "secondary_button_text": "No, keep order",
+          "primary_button_text": "Yes, cancel order",
+          "api_url": "https://poe-qa.dhhmena.com/api/v1/orders/123308/cancel"
+        }
+      }
+    },
+    "help_center": {
+      "type": "BasicListItem",
+      "data": {
+        "label": "Help Center"
+      },
+      "trailing_widget": {
+        "type": "Icon",
+        "style": {
+          "color": "neutral100"
+        },
+        "data": {
+          "icon": "dsChevronForward"
+        }
+      },
+      "on_tap": {
+        "type": "DeepLink",
+        "args": {
+          "link": "talabat://?s=ghc&i=12345",
+          "tracking_event_name": "helpcentre_link_clicked"
+        }
+      }
+    },
+    "order_details": {
+      "type": "OrderDetails",
+      "data": {
+        "header": "Your order from",
+        "title": "Domino's Pizza",
+        "subtitle": "Business bay",
+        "image_url": "https://i.pinimg.com/736x/1b/ee/08/1bee08aa56544de70e0c6bffe4a944a4.jpg",
+        "items": [
+          {
+            "quantity": 2,
+            "text": "Cesar Salad"
+          },
+          {
+            "quantity": 1,
+            "text": "Tuscan chicken mac and cheese",
+            "subtext": "extra pesto"
+          },
+          {
+            "quantity": 1,
+            "text": "Vegetarian garlic bread"
+          }
+        ]
+      }
+    },
+    "xx_small_divider": {
+      "type": "Divider",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "xx_small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 8.0
+      }
+    }
+  },
+  "common_tracking_event_attributes": {
+    "shopId": 123,
+    "shopName": "12345",
+    "chainId": 123,
+    "orderId": "12345",
+    "liveTrackingOrderCode": 12345678,
+    "orderPaymentMethod": "12345",
+    "orderPickup": true,
+    "reOrder": true,
+    "orderPreorder": true,
+    "shopDeliveryTime": 12,
+    "deliveryProvider": "12345",
+    "deliveryStatus": "12345",
+    "deliveryTime": 12
+  }
+}

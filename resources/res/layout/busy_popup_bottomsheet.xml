@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/busy_popup_bottom_sheet" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/button_view">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/pale_orange_top_rounded" android:paddingBottom="@dimen/_24margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_30margin" android:layout_marginTop="@dimen/_32margin" android:layout_marginRight="@dimen/_30margin" android:layout_marginStart="@dimen/_30margin" android:layout_marginEnd="@dimen/_30margin" style="@style/Titles20Bold"/>
+                <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/secondary_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_44margin" android:layout_marginTop="@dimen/_4margin" android:layout_marginRight="@dimen/_44margin" android:layout_marginStart="@dimen/_44margin" android:layout_marginEnd="@dimen/_44margin" style="@style/Content14Regular"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/list_container" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginTop="@dimen/_24margin" android:layout_marginRight="@dimen/standard_margin" android:layout_marginBottom="@dimen/_16margin" android:text="@string/check_out_similar_restaurants" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" style="@style/Titles20Bold"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/restaurant_list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/no_restaurants_view" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center" android:background="@android:color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_70margin" android:src="@drawable/ic_m_vendor_empty_state"/>
+                <TextView android:textStyle="normal" android:textColor="#262626" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="@dimen/_70margin" android:text="@string/no_result_found" style="@style/Titles24Bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/error_notification" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/progress_bar_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:theme="@style/TalabatTheme" android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/button_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.talabat.talabatcommon.views.TalabatFillButton android:textColor="@color/brand_cta_primary_color" android:id="@+id/view_all_restaurants" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/_16margin" android:text="@string/view_similar_restaurants" android:textAllCaps="false" style="@style/Content16Medium"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.talabat.helpers.TalabatToolBar android:id="@+id/toolbar" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/toolbar_elevation" app:contentInsetLeft="@dimen/ds_zero" app:contentInsetStart="@dimen/ds_zero" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <RelativeLayout style="@style/toolbar_background_style">
+            <RelativeLayout style="@style/toolbar_items_holder_style">
+                <com.talabat.helpers.TalabatToolBarImageButton android:id="@+id/back" android:visibility="gone" android:src="@drawable/ds_arrow_back" style="@style/toolbar_back_button_style"/>
+                <com.talabat.helpers.TalabatToolBarTextView android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_m" android:text="@string/title_activity_choose_branch" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ds_m" style="@style/DSTextAppearance.Heading2"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.talabat.helpers.TalabatToolBar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/restaurantlist" android:background="@color/ds_neutral_white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/common_margin" android:layout_marginRight="@dimen/common_margin" android:divider="@color/ds_transparent_fill" android:dividerHeight="@dimen/ds_xxs"/>
+</LinearLayout>

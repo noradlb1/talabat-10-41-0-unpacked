@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/toolbar_elevation" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/tool_bar_height" android:layout_centerVertical="true">
+            <ImageButton android:id="@+id/backButton" style="@style/toolbar_black_back_button_style"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/redeemAndPayRedeemButton" android:layout_below="@+id/toolbar" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/vendor_offers" layout="@layout/view_redeem_and_pay_vendor_offers"/>
+            <include android:id="@+id/payment" layout="@layout/view_redeem_and_pay_payment"/>
+            <View android:id="@+id/paymentSummarySpacer" android:visibility="gone" android:layout_width="@dimen/_1spacer" android:layout_height="@dimen/_0spacer" android:layout_weight="1"/>
+            <include android:id="@+id/payment_summary" layout="@layout/view_redeem_and_pay_payment_summary"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/redeemAndPayRedeemButton" android:layout_width="match_parent" android:layout_margin="@dimen/standard_margin" android:layout_alignParentBottom="true" style="@style/action_button">
+        <TextView android:layout_gravity="center" android:id="@+id/redeemAndPayButtonLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_margin" android:text="@string/redeemAndPay" style="@style/text_white_medium_16sp"/>
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/progressAnimation" android:layout_width="60dp" android:layout_height="60dp" android:layout_centerInParent="true" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/talabat_spinner"/>
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/paymentProgressAnimation" android:background="@drawable/bg_rounded_corners" android:visibility="invisible" android:layout_width="250dp" android:layout_height="250dp" android:layout_centerInParent="true" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/lottie_card_swipe"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/errorNotifyLinearLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="42dp"/>
+</RelativeLayout>

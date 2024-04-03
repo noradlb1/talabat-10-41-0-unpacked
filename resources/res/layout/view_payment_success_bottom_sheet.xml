@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/redeemConformationAnimationRelativeLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+    <com.airbnb.lottie.LottieAnimationView android:layout_width="@dimen/_60margin" android:layout_height="@dimen/_60margin" android:layout_marginTop="@dimen/_72margin" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:lottie_autoPlay="true" app:lottie_rawRes="@raw/lottie_tick"/>
+</RelativeLayout>

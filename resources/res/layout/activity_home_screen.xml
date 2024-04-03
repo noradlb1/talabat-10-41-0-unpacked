@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/homeToolbar" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" app:cardElevation="0dp">
+        <com.talabat.homescreen.widget.HomeScreenHeaderView android:id="@+id/header_view" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    </androidx.cardview.widget.CardView>
+    <FrameLayout android:id="@+id/homeScreenContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottomNavContainer" android:layout_below="@+id/homeToolbar">
+        <include android:id="@+id/loadingLayout" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/fluid_home_loading"/>
+        <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@+id/navHostFragment" android:layout_width="match_parent" android:layout_height="match_parent" app:defaultNavHost="true"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottomNavContainer" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/ds_neutral_10" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/home_nav" android:background="@color/ds_neutral_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/home_bottom_nav_min_height" app:elevation="@dimen/ds_xxxs" app:itemIconTint="@color/bottom_nav_color" app:itemTextAppearanceActive="@style/DSTextAppearance.Tag" app:itemTextAppearanceInactive="@style/DSTextAppearance.Caption" app:itemTextColor="@color/bottom_nav_color" app:labelVisibilityMode="1" app:menu="@menu/home_bottom_menu" app:theme="@style/Theme.MaterialComponents.Light.Bridge"/>
+    </LinearLayout>
+</RelativeLayout>

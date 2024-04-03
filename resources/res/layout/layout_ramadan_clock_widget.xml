@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <com.talabat.talabatcommon.views.ramadan.RamadanView android:id="@+id/ramadanView" android:layout_width="match_parent" android:layout_height="wrap_content" app:headerBackgroundColor="@color/ds_neutral_white" app:headerIconIftar="@drawable/ic_ramadan_iftar" app:headerIconSuhoor="@drawable/ic_ramadan_suhoor" app:headerTextColor="@color/ds_neutral_100" app:showBody="false" app:showClockIcon="false" app:shownLocation="0"/>
+    <View android:background="@color/ds_neutral_10" android:layout_width="match_parent" android:layout_height="@dimen/stroke_1dp" android:layout_marginLeft="@dimen/ds_s" android:layout_marginRight="@dimen/ds_s" android:layout_marginHorizontal="@dimen/ds_s"/>
+</merge>

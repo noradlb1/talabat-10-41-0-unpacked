@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_l">
+    <TextView android:id="@+id/headerTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_s" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/DSTextAppearance.Heading1"/>
+    <TextView android:textColor="@color/ds_neutral_55" android:id="@+id/subHeaderTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs" android:layout_marginStart="@dimen/ds_s" style="@style/DSTextAppearance.Subheading2"/>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/swimlanesRv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_m" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

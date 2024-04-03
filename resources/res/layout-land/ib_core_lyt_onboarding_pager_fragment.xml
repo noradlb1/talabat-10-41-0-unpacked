@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/ib_core_lyt_onboarding_pager_fragment" android:paddingLeft="16dp" android:paddingTop="20dp" android:paddingRight="16dp" android:paddingBottom="48dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/ib_core_img_onboarding" android:layout_width="120dp" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_weight="1">
+            <TextView android:textSize="20sp" android:textColor="?attr/ib_core_attr_onboarding_color_title" android:id="@+id/ib_core_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2dp"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/ib_core_attr_onboarding_color_sub_title" android:id="@+id/ib_core_tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:lineSpacingExtra="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bottom_sheet" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container_all" android:background="@drawable/bg_top_rounded_corner" android:paddingTop="@dimen/standard_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/vendorBottomSheetUseButtonLinearLayout">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginRight="@dimen/standard_margin" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="4dp" android:layout_marginBottom="24dp">
+                <View android:background="@drawable/bg_pull_tab" android:layout_width="80dp" android:layout_height="4dp" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="32dp" android:text="@string/vouchers_use_on_order" style="@style/text_black_bold_20sp"/>
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginRight="@dimen/standard_margin" android:layout_marginBottom="32dp" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin">
+                    <EditText android:theme="@style/TalabatTheme" android:id="@+id/voucherBottomSheetVoucherEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/vouchers_enter_voucher_code" android:inputType="text" android:textAlignment="viewStart" android:importantForAutofill="2"/>
+                    <ImageView android:id="@+id/voucherItemCheckBoxImageView" android:visibility="invisible" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="@dimen/standard_margin" android:src="@drawable/bg_voucher_item_check_mark" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/standard_margin" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <TextView android:id="@+id/voucherBottomSheetAvailableVouchersTextView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginRight="@dimen/standard_margin" android:text="@string/vouchers_available" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" style="@style/text_grey_14sp"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/voucherBottomSheetRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin" android:nestedScrollingEnabled="false"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@+id/errorNotifyLinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/vendorBottomSheetUseButtonLinearLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:enabled="false" android:id="@+id/vendorBottomSheetUseButton" android:layout_width="match_parent" android:layout_margin="@dimen/standard_margin" style="@style/action_button">
+            <TextView android:layout_gravity="center" android:id="@+id/riderBottomSheetUseButtonTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vouchers_use" style="@style/text_white_medium_16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/genericProgressBarRootRelativeLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:theme="@style/TalabatTheme" android:id="@+id/genericProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

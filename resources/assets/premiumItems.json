@@ -1,0 +1,802 @@
+[
+ {
+   "source ID": 44,
+   "chain ID": 6,
+   "Item ID": 85687702,
+   "Price": 1.45,
+   "Name": "KFC",
+   "Item Name": "Twister Combo - Spicy"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 4,
+   "Item ID": 85185734,
+   "Price": 1.95,
+   "Name": "Hardee's",
+   "Item Name": "Chicken Fillet"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2,
+   "Item ID": 70863983,
+   "Price": 2.3,
+   "Name": "Pizza Hut",
+   "Item Name": "Personal Feast"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 11666,
+   "Item ID": 79039410,
+   "Price": 1.8,
+   "Name": "McDonald's",
+   "Item Name": "McChicken Medium Meal"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1070,
+   "Item ID": 84500243,
+   "Price": 0.95,
+   "Name": "Rock House Sliders",
+   "Item Name": "ORIGINAL CHICKEN"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1286,
+   "Item ID": 85328922,
+   "Price": 1.25,
+   "Name": "Naif Chicken Restaurant",
+   "Item Name": "Puri Fillet Sandwich"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 3,
+   "Item ID": 83276123,
+   "Price": 1,
+   "Name": "Burger King",
+   "Item Name": "Kids Chicken Burger Meal "
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2994,
+   "Item ID": 69784100,
+   "Price": 1.35,
+   "Name": "Subway",
+   "Item Name": "Oven Roasted Chicken 6 Inch"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 5982,
+   "Item ID": 68786443,
+   "Price": 2,
+   "Name": "Freej swaeleh",
+   "Item Name": "Machboos Dijaj"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 338,
+   "Item ID": 119393,
+   "Price": 1.5,
+   "Name": "PICK",
+   "Item Name": "SMALL  Cup  :- With Toppings"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2100,
+   "Item ID": 86518599,
+   "Price": 2,
+   "Name": "Domino's Pizza",
+   "Item Name": "Kuwait National Day Offer"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 712,
+   "Item ID": 84298122,
+   "Price": 1.9,
+   "Name": "FroYo",
+   "Item Name": "Mini Waffle"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2377,
+   "Item ID": 73734206,
+   "Price": 1.55,
+   "Name": "Steers",
+   "Item Name": "Original Chicken"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 3635,
+   "Item ID": 67031120,
+   "Price": 2.75,
+   "Name": "Police Steak",
+   "Item Name": "Chicken Fillet Meal"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 8323,
+   "Item ID": 71004347,
+   "Price": 2,
+   "Name": "Shake Shack",
+   "Item Name": "Cheese Fries"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 6966,
+   "Item ID": 77202443,
+   "Price": 0.75,
+   "Name": "Shawarma Factory",
+   "Item Name": "Grilled Chicken Shawarma"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1958,
+   "Item ID": 65766090,
+   "Price": 4.95,
+   "Name": "Biryani Express",
+   "Item Name": "Chicken Biryani"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1196,
+   "Item ID": 67147519,
+   "Price": 1.55,
+   "Name": "Mr Subs and Wraps",
+   "Item Name": "Classic Chicken "
+ },
+ {
+   "source ID": 44,
+   "chain ID": 25,
+   "Item ID": 68824235,
+   "Price": 1.95,
+   "Name": "Shrimpy",
+   "Item Name": "Classic Chicken Fillet Combo"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2364,
+   "Item ID": 66516692,
+   "Price": 2.5,
+   "Name": "Achar Chefna",
+   "Item Name": "Grape Leaves in pomegranate dips"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 93,
+   "Item ID": 2523947,
+   "Price": 1.05,
+   "Name": "Baskin Robbins",
+   "Item Name": "Double Kids (5 Oz) (Cup) Without Topping"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 6237,
+   "Item ID": 68903775,
+   "Price": 1.65,
+   "Name": "Arnies Sliders",
+   "Item Name": "Loaded Fries"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 7510,
+   "Item ID": 69996337,
+   "Price": 1.85,
+   "Name": "Chicken Choice",
+   "Item Name": "Chicken Fillet Joice Sandwich "
+ },
+ {
+   "source ID": 44,
+   "chain ID": 4026,
+   "Item ID": 69114529,
+   "Price": 1.5,
+   "Name": "COLPOP",
+   "Item Name": "Shrimpo"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 94,
+   "Item ID": 66074820,
+   "Price": 3.5,
+   "Name": "Krispy Kreme",
+   "Item Name": "Mini Assorted (20Pcs.)"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 6088,
+   "Item ID": 71355150,
+   "Price": 2.5,
+   "Name": "Monasabat",
+   "Item Name": "Chicken Machboos"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1389,
+   "Item ID": 68413615,
+   "Price": 4.9,
+   "Name": "Papa John's",
+   "Item Name": "Meal 2"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 5507,
+   "Item ID": 68419362,
+   "Price": 2.75,
+   "Name": "Ghraeyf",
+   "Item Name": "Machboos Chicken"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1042,
+   "Item ID": 65939778,
+   "Price": 0.75,
+   "Name": "Shawarma Matic",
+   "Item Name": "Chicken Shawarma"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 47,
+   "Item ID": 82078510,
+   "Price": 3.45,
+   "Name": "Pastamania",
+   "Item Name": "Creamy Chicken"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2384,
+   "Item ID": 66062600,
+   "Price": 0.75,
+   "Name": "Grillz",
+   "Item Name": "Classic Chicken Shawarma "
+ },
+ {
+   "source ID": 44,
+   "chain ID": 477,
+   "Item ID": 74734214,
+   "Price": 1.25,
+   "Name": "Taco Bell",
+   "Item Name": "Grilled Chicken Quesadilla"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 9547,
+   "Item ID": 73649797,
+   "Price": 1.5,
+   "Name": "Manhattan Burger",
+   "Item Name": "Manhattan Fries"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 8126,
+   "Item ID": 75481136,
+   "Price": 1,
+   "Name": "Loz wa Moz juice",
+   "Item Name": "Red Bull All Flavors"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 119,
+   "Item ID": 75184067,
+   "Price": 1.25,
+   "Name": "CINNABON",
+   "Item Name": "Pecan Bites"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2819,
+   "Item ID": 68592526,
+   "Price": 1.95,
+   "Name": "L'amour Burger",
+   "Item Name": "Lamour Fries"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 3067,
+   "Item ID": 66606788,
+   "Price": 0.95,
+   "Name": "Proper Sliders",
+   "Item Name": "Proper Crispy Chicken Slider"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 11449,
+   "Item ID": 76441280,
+   "Price": 1.75,
+   "Name": "Slice",
+   "Item Name": "Create Your Own Beef Doner"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1589,
+   "Item ID": 77155546,
+   "Price": 2.55,
+   "Name": "TGI FRIDAYS",
+   "Item Name": "Southwest Potato Twisters"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 12,
+   "Item ID": 75835253,
+   "Price": 0.95,
+   "Name": "Kababji",
+   "Item Name": "Shish Tawook"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 118,
+   "Item ID": 66321700,
+   "Price": 2.95,
+   "Name": "The Kitchen",
+   "Item Name": "Penne creamy mushroom sauce with grilled chicken"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 977,
+   "Item ID": 65424603,
+   "Price": 2.25,
+   "Name": "Mustard Burger",
+   "Item Name": "Rocket Fries"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1620,
+   "Item ID": 65560323,
+   "Price": 1.85,
+   "Name": "Batriq",
+   "Item Name": "Chicken Fillet Meal"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 8,
+   "Item ID": 30653,
+   "Price": 0.95,
+   "Name": "Mais Alghanim",
+   "Item Name": "Hummus"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2292,
+   "Item ID": 77431504,
+   "Price": 1,
+   "Name": "Baqal",
+   "Item Name": "2 Red Bull"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 30,
+   "Item ID": 70012887,
+   "Price": 1.75,
+   "Name": "Zaatar W Zeit",
+   "Item Name": "Cheese Sambousek"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 18098,
+   "Item ID": 87436221,
+   "Price": 0.75,
+   "Name": "Sheel W Mashi",
+   "Item Name": "Mosh Momken Mosh Maqool Sandwich"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 9519,
+   "Item ID": 74365359,
+   "Price": 2.95,
+   "Name": "Raising Cane's",
+   "Item Name": "Box Combo"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 6642,
+   "Item ID": 69157097,
+   "Price": 1.35,
+   "Name": "Wien Burger",
+   "Item Name": "Chicken Plate"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 100,
+   "Item ID": 72310132,
+   "Price": 3,
+   "Name": "BURGER BOUTIQUE",
+   "Item Name": "Commando"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 9273,
+   "Item ID": 73022329,
+   "Price": 5.5,
+   "Name": "Meme's Curry",
+   "Item Name": "Meme's Monster"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 5546,
+   "Item ID": 68445000,
+   "Price": 11.5,
+   "Name": "Lavena",
+   "Item Name": "Chicken Musakhan Crispy & Vine Leaves"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 427,
+   "Item ID": 83231763,
+   "Price": 3.75,
+   "Name": "The Chocolate Bar",
+   "Item Name": "Pasta In A Pink Sauce"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 188,
+   "Item ID": 66577521,
+   "Price": 2.15,
+   "Name": "Johnny Rockets",
+   "Item Name": "The Original"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 99,
+   "Item ID": 77646996,
+   "Price": 1.5,
+   "Name": "Great Steak",
+   "Item Name": "The King"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 9040,
+   "Item ID": 71822536,
+   "Price": 0.9,
+   "Name": "Extra Slider",
+   "Item Name": "Extra Slider Chicken"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2990,
+   "Item ID": 85645897,
+   "Price": 3,
+   "Name": "Dipndip",
+   "Item Name": "Triple Chocolate Crepe"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1195,
+   "Item ID": 2103181,
+   "Price": 1,
+   "Name": "Herfy",
+   "Item Name": "Chicken Burger Kids Meal"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 4094,
+   "Item ID": 67472959,
+   "Price": 5,
+   "Name": "Zaina Pies",
+   "Item Name": "Small Jat"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 5,
+   "Item ID": 65576762,
+   "Price": 1.9,
+   "Name": "Chicken Tikka",
+   "Item Name": "Tikka Snack - Spicy"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 8656,
+   "Item ID": 71511515,
+   "Price": 2.25,
+   "Name": "Burger And Pasta",
+   "Item Name": "pasta white sauce"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 75,
+   "Item ID": 111324,
+   "Price": 1.9,
+   "Name": "China Garden",
+   "Item Name": "Chicken Noodles"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1608,
+   "Item ID": 69898585,
+   "Price": 2.5,
+   "Name": "Aseer Time (Fresh Juices)",
+   "Item Name": "Chocolate Strawberry 5 Pcs"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 9003,
+   "Item ID": 71794741,
+   "Price": 1.65,
+   "Name": "Mama's Chicken",
+   "Item Name": "Mamas Chicken Fries"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 9496,
+   "Item ID": 73680402,
+   "Price": 1.5,
+   "Name": "Shamam Restaurant",
+   "Item Name": "Meat Kabab"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2981,
+   "Item ID": 69854208,
+   "Price": 1.75,
+   "Name": "Crepe Pistachio",
+   "Item Name": "Mini Pancake"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 4061,
+   "Item ID": 67417517,
+   "Price": 0.75,
+   "Name": "Morano",
+   "Item Name": "Cheese Group Morano"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 12031,
+   "Item ID": 77165467,
+   "Price": 1.6,
+   "Name": "Mishmash",
+   "Item Name": "Classic Chicken Fillet"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1194,
+   "Item ID": 70167585,
+   "Price": 5.5,
+   "Name": "AlKanafani",
+   "Item Name": " Om Ali"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 165,
+   "Item ID": 67172876,
+   "Price": 2.9,
+   "Name": "Steek",
+   "Item Name": "Twins Chicken Fillet Meal"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 7448,
+   "Item ID": 69958948,
+   "Price": 0.85,
+   "Name": "Shawarma & Grill",
+   "Item Name": "Chicken Shawerma Sandwich"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 6784,
+   "Item ID": 70169689,
+   "Price": 3.2,
+   "Name": "Mughal Mahal",
+   "Item Name": "Murg Tikka Lababdar"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1836,
+   "Item ID": 67070292,
+   "Price": 1.85,
+   "Name": "Humble Burgers",
+   "Item Name": "Humble Fries"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 9053,
+   "Item ID": 71833157,
+   "Price": 1.1,
+   "Name": "88 Burger",
+   "Item Name": "Special Fries  Sp.Sa ,  Cheese"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 7598,
+   "Item ID": 70096044,
+   "Price": 1.35,
+   "Name": "Solo Burger",
+   "Item Name": "Solo Fries"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1681,
+   "Item ID": 70220636,
+   "Price": 1.75,
+   "Name": "Crazy Chicken",
+   "Item Name": "Chicken Chapati"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 6876,
+   "Item ID": 82029060,
+   "Price": 1,
+   "Name": "Loqmat Al Afya",
+   "Item Name": "Chicken Tortilla"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 164,
+   "Item ID": 66246129,
+   "Price": 6,
+   "Name": "Triangle",
+   "Item Name": "Triangle Club Platter"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 9,
+   "Item ID": 66586342,
+   "Price": 5.75,
+   "Name": "Maki",
+   "Item Name": "Issa 1 Mame Maki 6 Pieces"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 115,
+   "Item ID": 2028,
+   "Price": 2.95,
+   "Name": "Babak",
+   "Item Name": "kabab kubideh with rice"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1138,
+   "Item ID": 70076543,
+   "Price": 14,
+   "Name": "Istanbuliyah",
+   "Item Name": "Ward"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 5873,
+   "Item ID": 71011751,
+   "Price": 4.75,
+   "Name": "Lanoisette Sweets & Pastries",
+   "Item Name": "Biscuit Sweets "
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2847,
+   "Item ID": 66413853,
+   "Price": 1.35,
+   "Name": "Shawarma Shuwaikh",
+   "Item Name": "Shawarma 1961"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 7828,
+   "Item ID": 70343691,
+   "Price": 2.5,
+   "Name": "Skewer Doner",
+   "Item Name": "Doner Chicken Meal"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2726,
+   "Item ID": 66503811,
+   "Price": 3.25,
+   "Name": "Biryani Pot",
+   "Item Name": "Biryani Chicken "
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2027,
+   "Item ID": 65808520,
+   "Price": 2.95,
+   "Name": "Malas Bo Khamas",
+   "Item Name": "Machboos Chicken"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 23,
+   "Item ID": 66629387,
+   "Price": 1.6,
+   "Name": "New York Fries",
+   "Item Name": "Slider Fillet-3pcs"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1911,
+   "Item ID": 65719530,
+   "Price": 1.75,
+   "Name": "Mr. Kuwaiti",
+   "Item Name": "Kabab Iraqi Meal"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 172,
+   "Item ID": 69591353,
+   "Price": 2.05,
+   "Name": "Turkish Grill",
+   "Item Name": "Tawook Shish (Single) "
+ },
+ {
+   "source ID": 44,
+   "chain ID": 9820,
+   "Item ID": 74015982,
+   "Price": 1.75,
+   "Name": "Misto Restaurant",
+   "Item Name": "Misto Texas Fries"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 9396,
+   "Item ID": 73349473,
+   "Price": 1.75,
+   "Name": "Another Slider",
+   "Item Name": "Filled Rich Fries"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 4199,
+   "Item ID": 68778660,
+   "Price": 2.45,
+   "Name": "Chicken Express",
+   "Item Name": "Chicken Express Meal"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1805,
+   "Item ID": 72987680,
+   "Price": 5.5,
+   "Name": "Kalha",
+   "Item Name": "Breakfast Box For 5"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 7231,
+   "Item ID": 69789667,
+   "Price": 1,
+   "Name": "Classic Burger Joint",
+   "Item Name": "Fries Box"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 2509,
+   "Item ID": 81987523,
+   "Price": 4.95,
+   "Name": "Finger Sushi",
+   "Item Name": "Movie Night Special "
+ },
+ {
+   "source ID": 44,
+   "chain ID": 7883,
+   "Item ID": 70445558,
+   "Price": 11.5,
+   "Name": "Lava cake",
+   "Item Name": "Molten Chocolate Cake"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1344,
+   "Item ID": 71988582,
+   "Price": 12,
+   "Name": "Chocolateness",
+   "Item Name": "Mix Molten Cakes"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 1422,
+   "Item ID": 68829669,
+   "Price": 6,
+   "Name": "Monkey Cookies",
+   "Item Name": "Monkey Mix"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 8138,
+   "Item ID": 70748914,
+   "Price": 2.95,
+   "Name": "Emberech",
+   "Item Name": "Machboos  Chicken"
+ },
+ {
+   "source ID": 44,
+   "chain ID": 3774,
+   "Item ID": 87177898,
+   "Price": 1.45,
+   "Name": "Farooj Republic",
+   "Item Name": "Magic Sandwich Spicy Regular Flavor "
+ }
+]

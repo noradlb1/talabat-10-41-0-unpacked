@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_s">
+    <androidx.cardview.widget.CardView android:layout_width="@dimen/swimlane_logo_image_width" android:layout_height="@dimen/swimlane_logo_image_height" app:cardBackgroundColor="@color/ds_primary_10" app:cardCornerRadius="@dimen/ds_xxs" app:cardElevation="@dimen/ds_zero"/>
+    <androidx.cardview.widget.CardView android:layout_width="@dimen/swimlane_logo_image_width" android:layout_height="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxs" app:cardBackgroundColor="@color/ds_primary_10" app:cardCornerRadius="@dimen/ds_xxs" app:cardElevation="@dimen/ds_zero"/>
+    <androidx.cardview.widget.CardView android:layout_width="@dimen/swimlane_shimmer_hint_width" android:layout_height="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxs" app:cardBackgroundColor="@color/ds_primary_10" app:cardCornerRadius="@dimen/ds_xxs" app:cardElevation="@dimen/ds_zero"/>
+</LinearLayout>

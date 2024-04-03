@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/instabug_survey_dialog_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <include layout="@layout/layout_shadow"/>
+        <RelativeLayout android:orientation="vertical" android:background="?attr/survey_container_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/item_close_survey_button"/>
+            <RelativeLayout android:id="@+id/thanks_container_layout" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/instabug_dialog_container_padding" android:layout_marginRight="@dimen/instabug_dialog_container_padding" android:layout_centerInParent="true" android:importantForAccessibility="yes" android:focusedByDefault="true" android:screenReaderFocusable="true">
+                <ImageView android:id="@+id/instabug_img_thanks" android:background="@drawable/ibg_survey_ic_thanks_background" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginTop="16dp" android:src="@drawable/ibg_survey_ic_survey_thankyou" android:layout_centerHorizontal="true" android:importantForAccessibility="no"/>
+                <TextView android:textSize="@dimen/survey_rate_us_title_text_size" android:gravity="center" android:id="@+id/txt_rate_us_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="2" android:layout_below="@+id/instabug_img_thanks" android:layout_centerHorizontal="true" android:importantForAccessibility="no" android:screenReaderFocusable="false" app:autoSizeMaxTextSize="@dimen/survey_rate_us_title_text_size" style="@style/InstabugResizableText"/>
+                <TextView android:id="@+id/txt_rate_us_question" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/txt_rate_us_title" android:importantForAccessibility="no" android:screenReaderFocusable="false" style="@style/InstabugSurveyThanksMessage"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

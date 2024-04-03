@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+        <com.talabat.TalabatTextView android:textColor="@color/text_black" android:id="@+id/item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/MarginLeft" android:layout_marginTop="@dimen/city_list_margin_right" android:layout_marginRight="@dimen/MarginRight" android:layout_marginBottom="@dimen/city_list_margin_right" android:layout_centerVertical="true" style="@style/Content16Regular"/>
+        <ImageView android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/MarginRight" android:src="@drawable/icon_tick" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/MarginRight" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/seperator_bottom" android:background="#dcdcdc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/city_list_header_txt_margin_right_left" android:layout_marginRight="@dimen/city_list_header_txt_margin_right_left"/>
+</LinearLayout>

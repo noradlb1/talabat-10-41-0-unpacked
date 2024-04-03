@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.designsystem.ds_checkbox_v2.DSCheckbox android:id="@+id/checkbox_1" android:paddingTop="@dimen/ds_s" android:paddingBottom="@dimen/ds_s" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cb_is_checked="true" app:cb_is_enabled="true"/>
+        <com.designsystem.ds_checkbox_v2.DSCheckbox android:id="@+id/checkbox_2" android:paddingBottom="@dimen/ds_s" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cb_is_checked="true" app:cb_is_enabled="false"/>
+        <com.designsystem.ds_checkbox_v2.DSCheckbox android:id="@+id/checkbox_3" android:paddingBottom="@dimen/ds_s" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cb_is_checked="false" app:cb_is_enabled="true"/>
+        <com.designsystem.ds_checkbox_v2.DSCheckbox android:id="@+id/checkbox_4" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cb_is_checked="false" app:cb_is_enabled="false"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

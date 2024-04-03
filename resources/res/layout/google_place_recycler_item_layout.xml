@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/place_item_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center_vertical" android:paddingTop="@dimen/margin_8" android:paddingBottom="@dimen/margin_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/places_image" android:padding="15dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_m_address_location_pin" android:scaleType="fitCenter"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/text_layout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="@dimen/MarginLeft" android:layout_toRightOf="@+id/places_image" android:layout_marginStart="0dp" android:layout_marginEnd="@dimen/MarginLeft" android:layout_toEndOf="@+id/places_image">
+            <com.talabat.TalabatTextView android:textSize="@dimen/txt_size_16" android:textColor="@color/talabat_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/place_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/textViewRegular"/>
+            <com.talabat.TalabatTextView android:textSize="@dimen/txt_size_14" android:textColor="@color/talabat_grey" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/textViewRegular"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

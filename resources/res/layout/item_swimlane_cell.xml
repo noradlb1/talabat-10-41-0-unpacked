@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="300dp" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/vendorImage" android:layout_width="match_parent" android:layout_height="120dp"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <TextView android:textSize="18sp" android:ellipsize="end" android:id="@+id/vendorName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="Johnny Rockets" android:maxLines="1" android:layout_toLeftOf="@+id/vendorDeliverTime" android:layout_alignParentLeft="true" android:layout_marginEnd="16dp" android:layout_toStartOf="@+id/vendorDeliverTime" android:layout_alignParentStart="true" style="@style/DSTextAppearance.Subheading1"/>
+        <TextView android:gravity="end" android:id="@+id/vendorDeliverTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/DSTextAppearance.Body1"/>
+    </RelativeLayout>
+    <TextView android:textColor="@color/ds_neutral_55" android:id="@+id/vendorCuisines" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Burgers, Sandwiches, American" android:lineSpacingExtra="6sp" style="@style/DSTextAppearance.Body1"/>
+    <com.talabat.talabatcommon.views.TalabatRateView android:id="@+id/vendorRateWidget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" app:statusFontSize="14sp"/>
+</LinearLayout>

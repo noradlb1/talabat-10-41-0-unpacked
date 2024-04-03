@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/tStarIcon" android:layout_width="@dimen/ds_m" android:layout_height="@dimen/ds_m" android:layout_marginEnd="@dimen/ds_xxxs" app:layout_constraintBottom_toBottomOf="@+id/tStarLabel" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/tStarLabel" app:srcCompat="@drawable/ic_tstar_icon"/>
+    <TextView android:layout_gravity="center_vertical" android:id="@+id/tStarLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toEndOf="@+id/tStarIcon" app:layout_constraintTop_toTopOf="0" style="@style/DSTextAppearance.Body1"/>
+</merge>

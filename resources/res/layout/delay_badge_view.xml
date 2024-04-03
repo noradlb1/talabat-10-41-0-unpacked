@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/bg_delay_badge" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/delayIcon" android:layout_width="@dimen/ds_s" android:layout_height="@dimen/ds_s" android:src="@drawable/ds_error_filled" app:layout_constraintBottom_toBottomOf="@+id/delayLabel" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/delayLabel" app:tint="@color/ds_danger_100"/>
+    <TextView android:textColor="@color/ds_neutral_100" android:layout_gravity="center_vertical" android:id="@+id/delayLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ds_xxxs" app:layout_constraintStart_toEndOf="@+id/delayIcon" app:layout_constraintTop_toTopOf="0" style="@style/DSTextAppearance.Caption"/>
+</merge>

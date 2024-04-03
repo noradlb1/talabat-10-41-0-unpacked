@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/filters" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.MaterialToolbar android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:id="@+id/toolbar" android:background="@drawable/bg_white_raduis_8dp" android:layout_width="0dp" android:layout_height="wrap_content" app:contentInsetStart="0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/ds_s" android:layout_marginRight="@dimen/ds_s">
+            <ImageButton android:id="@+id/closeBtn" android:background="@drawable/bg_gray_circle" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginEnd="@dimen/ds_xs" android:layout_alignParentStart="true" app:srcCompat="@drawable/ds_close"/>
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filters_title" android:layout_centerVertical="true" android:lineSpacingExtra="8sp" android:layout_toStartOf="@+id/resetBtn" android:layout_toEndOf="@+id/closeBtn" style="@style/DSTextAppearance.Heading1"/>
+            <TextView android:textColor="@color/ds_primary_100" android:layout_gravity="center" android:id="@+id/resetBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_clear_all" android:layout_centerVertical="true" android:textAllCaps="false" android:layout_alignParentEnd="true" android:stateListAnimator="@null" style="@style/DSTextAppearance.Body0"/>
+        </RelativeLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+    <androidx.core.widget.NestedScrollView android:background="@color/ds_neutral_white" android:paddingTop="@dimen/ds_xs" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/buttonsContainer" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_s">
+            <LinearLayout android:orientation="vertical" android:id="@+id/popularFilterContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xl">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_xxs" android:text="@string/vl_popular_filters" style="@style/DSTextAppearance.Heading1"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/popularFilterRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/filterContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xl">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_xxs" android:text="@string/vl_deals_and_offers" style="@style/DSTextAppearance.Heading1"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/filtersRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/sortContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xl">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_xxs" android:text="@string/vendor_sort_by" style="@style/DSTextAppearance.Heading1"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/sortRecycleView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/buttonsContainer" android:background="@color/ds_neutral_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="84dp" android:weightSum="1" android:paddingStart="@dimen/ds_s" android:paddingEnd="@dimen/ds_s" android:elevation="8dp" app:elevation="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <com.talabat.talabatcommon.views.twolinesbutton.TwoLinesButton android:textColor="@color/ds_neutral_white" android:id="@+id/doneBtn" android:background="@drawable/bg_filter_apply" android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:lineSpacingExtra="0dp" android:textAllCaps="false" android:stateListAnimator="@null" app:firstLineText="@string/filter_apply" app:secondLineFontSize="@dimen/ds_xs" style="@style/DSTextAppearance.Body0"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

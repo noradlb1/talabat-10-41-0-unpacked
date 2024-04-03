@@ -1,0 +1,94 @@
+{
+  "int_experiments": {
+    "item_details_header": {
+      "1": true,
+      "2": false,
+      "3": false,
+      "4": false
+    },
+    "grocerySwimlane": {
+      "0": true,
+      "1": false
+    },
+    "VerticalLauncherExperiment": {
+      "1": false,
+      "0": true,
+      "2": false
+    }
+  },
+  "string_experiments": {
+    "promotionWidgetTag": {
+      "snacks": true,
+      "campaign-offer": true
+    }
+  },
+  "boolean_experiments": {
+    "showItemDetailsBottomSheet": {
+      "true": false,
+      "false": true
+    },
+    "showTMartBannerGroceryList": {
+      "true": true,
+      "false": false
+    },
+    "hideToggleView": {
+      "true": false,
+      "false": true
+    },
+    "canShowBusyBottomSheet": {
+      "true": false,
+      "false": true
+    },
+    "canShowLocationWelcome": {
+      "true": true,
+      "false": false
+    },
+    "canShowNewGemComponent": {
+      "true": false,
+      "false": true
+    },
+    "canEnableNewRankingService": {
+      "true": false,
+      "false": true
+    },
+    "canShowOnboardingRevamp": {
+      "true": false,
+      "false": true
+    },
+    "groceryCollection": {
+      "true": false,
+      "false": true
+    },
+    "knet status check": {
+      "true": true,
+      "false": false
+    },
+    "qpay_payments_enabled": {
+      "true": true,
+      "false": false
+    },
+    "canShowDishSuggestion": {
+      "true": true,
+      "false": false
+    },
+    "canShowDeliveryAddressMapCheckout": {
+      "true": true,
+      "false": false
+    },
+    "showNewVendorReviews": {
+      "true": false,
+      "false": true
+    },
+    "canShowFlutterItemDetails": {
+      "true": false,
+      "false": true
+    },
+    "canShowFlutterItemDetailsWithChoice": {
+      "true": false,
+      "false": true
+    },
+    "exp_menu_bff_offers_loading_time": {
+      "Control": true
+    }
+  }
+}

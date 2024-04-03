@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/ds_primary_10" android:layout_width="match_parent" android:layout_height="@dimen/toggle_tag_icon_1dp"/>
+    <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/filtersShimmer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xs" app:shimmer_angle="@integer/shimmer_angel" app:shimmer_animation_duration="@integer/shimmer_duration_800" app:shimmer_color="@color/ds_white">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/shimmer_filter_view"/>
+            <include layout="@layout/shimmer_filter_view"/>
+            <include layout="@layout/shimmer_filter_view"/>
+        </LinearLayout>
+    </com.talabat.talabatcommon.views.ShimmerLayout>
+    <View android:background="@color/ds_primary_10" android:layout_width="match_parent" android:layout_height="@dimen/toggle_tag_icon_1dp" android:layout_marginTop="@dimen/ds_xs"/>
+    <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/valuePropShimmer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/value_prop_shimmer_height" app:shimmer_angle="@integer/shimmer_angel" app:shimmer_animation_duration="@integer/shimmer_duration_800" app:shimmer_color="@color/ds_white">
+        <FrameLayout android:background="@color/ds_primary_10" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.talabat.talabatcommon.views.ShimmerLayout>
+    <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/swimlanesShimmer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_l" app:shimmer_angle="@integer/shimmer_angel" app:shimmer_animation_duration="@integer/shimmer_duration_800" app:shimmer_color="@color/ds_white">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:layout_width="@dimen/section_title_shimmer_width" android:layout_height="@dimen/ds_m" android:layout_marginStart="@dimen/ds_s" app:cardBackgroundColor="@color/ds_primary_10" app:cardCornerRadius="@dimen/ds_xxxs" app:cardElevation="@dimen/ds_zero"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xs">
+                <include layout="@layout/shimmer_swimlane_view"/>
+                <include layout="@layout/shimmer_swimlane_view"/>
+                <include layout="@layout/shimmer_swimlane_view"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.talabat.talabatcommon.views.ShimmerLayout>
+    <androidx.cardview.widget.CardView android:layout_width="@dimen/section_title_shimmer_width" android:layout_height="@dimen/ds_m" android:layout_marginTop="@dimen/ds_l" android:layout_marginStart="@dimen/ds_s" app:cardBackgroundColor="@color/ds_primary_10" app:cardCornerRadius="@dimen/ds_xxxs" app:cardElevation="@dimen/ds_zero"/>
+    <include android:id="@+id/shimmer1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" layout="@layout/shimmer_vendor_list_view"/>
+    <include android:id="@+id/shimmer2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xl" layout="@layout/shimmer_vendor_list_view"/>
+    <include android:id="@+id/shimmer3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xl" layout="@layout/shimmer_vendor_list_view"/>
+    <include android:id="@+id/shimmer4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xl" layout="@layout/shimmer_vendor_list_view"/>
+    <include android:id="@+id/shimmer5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xl" layout="@layout/shimmer_vendor_list_view"/>
+    <include android:id="@+id/shimmer6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xl" layout="@layout/shimmer_vendor_list_view"/>
+</LinearLayout>

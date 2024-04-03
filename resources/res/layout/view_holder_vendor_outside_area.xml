@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_half_margin" android:layout_marginBottom="@dimen/standard_margin">
+    <TextView android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/more_restaurants_around" style="@style/text_black_bold_20sp"/>
+    <TextView android:id="@+id/vendorOutSideAreaTextView" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/text_black_bold_20sp"/>
+</LinearLayout>

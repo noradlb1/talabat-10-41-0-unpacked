@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/tabsContainer" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="48dp">
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tabsLayout" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="match_parent" app:tabGravity="0" app:tabIndicator="@null" app:tabMaxWidth="@dimen/ds_zero" app:tabMinWidth="@dimen/ds_zero" app:tabPaddingEnd="@dimen/ds_zero" app:tabPaddingStart="@dimen/ds_zero" app:tabRippleColor="@null"/>
+</LinearLayout>

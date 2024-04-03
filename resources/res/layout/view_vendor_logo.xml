@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_width="56dp" android:layout_height="56dp">
+    <RelativeLayout android:background="@drawable/item_image_bg_res_list" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/progressBar" android:layout_width="@dimen/cart_item_progress_bar_height_width" android:layout_height="@dimen/cart_item_progress_bar_height_width" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall"/>
+        <ImageView android:id="@+id/vendorLogoImg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/imageView_overlay" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/frameLayout_statusContainer" android:background="@drawable/bg_m_vendor_status" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textColor="@color/white" android:id="@+id/vendorStatusTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Content14Medium"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

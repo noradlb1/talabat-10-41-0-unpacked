@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="24dp" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/swimlaneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:lineSpacingExtra="6sp" android:layout_marginStart="16dp" style="@style/DSTextAppearance.Heading1"/>
+    <FrameLayout android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/swimlaneList" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

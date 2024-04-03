@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.talabat.helpers.TalabatToolBar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/tool_bar_height">
+            <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <com.talabat.helpers.TalabatToolBarImageButton android:id="@+id/back" style="@style/toolbar_back_button_style"/>
+                <com.talabat.helpers.TalabatToolBarTextView android:textSize="@dimen/title_size" android:textColor="@color/txt_with_bg_primary" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_activity_login" style="@style/toolbar_text_style_center_back"/>
+                <Button android:textColor="@color/brand_color" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/express_checkout" android:visibility="gone" android:layout_marginRight="@dimen/MarginRight" android:text="@string/login_screen_guest_btn_text" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="false" android:layout_marginEnd="@dimen/MarginRight" android:layout_alignParentEnd="true" android:elevation="@dimen/card_elevation" style="@style/toolbar_done_button"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.talabat.helpers.TalabatToolBar>
+    <com.talabat.helpers.TalabatNestedScrollView android:id="@+id/loginScrollView" android:background="@color/app_background" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_login_main_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_login_social_container" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include android:id="@+id/defaultLoginInfoView" android:visibility="gone" layout="@layout/login_info_container"/>
+                    <com.talabat.growth.ui.lifecyclevoucher.LoginLifecycleVoucherView android:id="@+id/lifeCycleVoucherLoginInfoView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </FrameLayout>
+                <ViewStub android:id="@+id/login_buttons_stub" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/ll_login_with_email_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/login_with_email_container"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/login_with_mobile" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/layout_login_with_mobile"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.talabat.helpers.TalabatNestedScrollView>
+</LinearLayout>

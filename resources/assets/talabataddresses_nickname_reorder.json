@@ -1,0 +1,276 @@
+[
+    {
+        "countryId": "1",
+        "house":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Block", "nameAr":"قطعة", "numeric":"false", "optional":"false", "key":"blk", "max":"30" },
+            { "nameEn": "Street", "nameAr":"الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Avenue (Optional)", "nameAr":"جادة (إختياري)", "numeric":"false", "optional":"true", "key":"jd", "max":"30" },
+            { "nameEn": "House", "nameAr":"المنزل", "numeric":"false", "optional":"false", "key":"bno", "max":"30" }
+        ],
+        "building":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Block", "nameAr":"قطعة", "numeric":"false", "optional":"false", "key":"blk", "max":"30" },
+            { "nameEn": "Street", "nameAr":"الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Avenue (Optional)", "nameAr":"جادة (إختياري)", "numeric":"false", "optional":"true", "key":"jd", "max":"30" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Apartment No.", "nameAr":"رقم الشقة", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ],
+        "office":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Block", "nameAr":"قطعة", "numeric":"false", "optional":"false", "key":"blk", "max":"30" },
+            { "nameEn": "Street", "nameAr":"الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Avenue (Optional)", "nameAr":"جادة(إختياري)", "numeric":"false", "optional":"true", "key":"jd", "max":"30" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Office", "nameAr":"المكتب", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ]
+    },
+    {
+        "countryId": "2",
+        "house":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street", "nameAr":"الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Lane / Pathway (Optional)", "nameAr":"ممر (إختياري)", "numeric":"false", "optional":"true", "key":"jd", "max":"100" },
+            { "nameEn": "Neighborhood", "nameAr":"حي", "numeric":"false", "optional":"false", "key":"blk", "max":"100" },
+            { "nameEn": "House", "nameAr":"المنزل", "numeric":"false", "optional":"false", "key":"bno", "max":"30" }
+        ],
+        "building":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street", "nameAr":"الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Lane / Pathway (Optional)", "nameAr":"ممر (إختياري)", "numeric":"false", "optional":"true", "key":"jd", "max":"100" },
+            { "nameEn": "Neighborhood", "nameAr":"حي", "numeric":"false", "optional":"false", "key":"blk", "max":"100" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Apartment No.", "nameAr":"رقم الشقة", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ],
+        "office":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street", "nameAr":"الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Lane / Pathway (Optional)", "nameAr":"ممر (إختياري)", "numeric":"false", "optional":"true", "key":"jd", "max":"100" },
+            { "nameEn": "Neighborhood", "nameAr":"حي", "numeric":"false", "optional":"false", "key":"blk", "max":"100" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"50" },
+            { "nameEn": "Office", "nameAr":"المكتب", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ]
+    },
+    {
+        "countryId": "3",
+        "house":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Block", "nameAr":"مجمع", "numeric":"false", "optional":"false", "key":"blk", "max":"30" },
+            { "nameEn": "Street", "nameAr":"الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "House", "nameAr":"المنزل", "numeric":"false", "optional":"false", "key":"bno", "max":"30" }
+        ],
+        "building":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Block", "nameAr":"مجمع", "numeric":"false", "optional":"false", "key":"blk", "max":"30" },
+            { "nameEn": "Street", "nameAr":"الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Apartment No.", "nameAr":"رقم الشقة", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ],
+        "office":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Block", "nameAr":"مجمع", "numeric":"false", "optional":"false", "key":"blk", "max":"30" },
+            { "nameEn": "Street", "nameAr":"الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Office", "nameAr":"المكتب", "numeric":"false", "optional":"false", "key":"bno", "max":"30" }
+        ]
+    },
+    {
+        "countryId": "4",
+        "house":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street", "nameAr":"شارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "House", "nameAr":"المنزل", "numeric":"false", "optional":"false", "key":"bno", "max":"30" }
+        ],
+        "building":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street", "nameAr":"شارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Apartment No.", "nameAr":"رقم الشقة", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ],
+        "office":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street", "nameAr":"شارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Office", "nameAr":"المكتب", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ]
+    },
+    {
+        "countryId": "5",
+        "house":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Block", "nameAr":"قطعة", "numeric":"false", "optional":"true", "key":"blk", "max":"30" },
+            { "nameEn": "Street", "nameAr":"شارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Way", "nameAr":"السكة", "numeric":"false", "optional":"true", "key":"jd", "max":"30" },
+            { "nameEn": "House", "nameAr":"المنزل", "numeric":"false", "optional":"false", "key":"bno", "max":"30" }
+        ],
+        "building":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Block", "nameAr":"قطعة", "numeric":"false", "optional":"true", "key":"blk", "max":"30" },
+            { "nameEn": "Street", "nameAr":"شارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Way", "nameAr":"السكة", "numeric":"false", "optional":"true", "key":"jd", "max":"30" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Apartment No.", "nameAr":"رقم الشقة", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ],
+        "office":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Block", "nameAr":"قطعة", "numeric":"false", "optional":"true", "key":"blk", "max":"30" },
+            { "nameEn": "Street", "nameAr":"شارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Way", "nameAr":"السكة", "numeric":"false", "optional":"true", "key":"jd", "max":"30" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Office", "nameAr":"المكتب", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ]
+    },
+    {
+        "countryId": "6",
+        "house":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street", "nameAr":"شارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "House", "nameAr":"المنزل", "numeric":"false", "optional":"false", "key":"bno", "max":"30" }
+        ],
+        "building":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street", "nameAr":"شارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Apartment No.", "nameAr":"رقم الشقة", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ],
+        "office":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street", "nameAr":"شارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Office", "nameAr":"المكتب", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ]
+    },
+    {
+        "countryId": "7",
+        "house":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"false", "key":"pn", "max":"20" },
+            { "nameEn": "Street", "nameAr":"شارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "House", "nameAr":"المنزل", "numeric":"false", "optional":"false", "key":"bno", "max":"20" }
+        ],
+        "building":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"false", "key":"pn", "max":"20" },
+            { "nameEn": "Street", "nameAr":"شارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"true", "optional":"false", "key":"fl", "max":"20" },
+            { "nameEn": "Apartment", "nameAr":"الشقة", "numeric":"true", "optional":"false", "key":"su", "max":"20" }
+        ],
+        "office":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"false", "key":"pn", "max":"20" },
+            { "nameEn": "Street", "nameAr":"شارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Company Name", "nameAr":"اسم الشركة", "numeric":"false", "optional":"false", "key":"jd", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"true", "optional":"false", "key":"fl", "max":"20" },
+            { "nameEn": "Office Number", "nameAr":"رقم المكتب", "numeric":"true", "optional":"false", "key":"su", "max":"20" }
+        ]
+    },
+    {
+        "countryId": "8",
+        "house":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"20" },
+            { "nameEn": "Street", "nameAr":"الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "House", "nameAr":"المنزل", "numeric":"false", "optional":"false", "key":"bno", "max":"20" }
+        ],
+        "building":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"20" },
+            { "nameEn": "Street", "nameAr":"الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"true", "optional":"false", "key":"fl", "max":"20" },
+            { "nameEn": "Apartment", "nameAr":"الشقة", "numeric":"true", "optional":"false", "key":"su", "max":"20" }
+        ],
+        "office":
+        [
+            { "nameEn": "Give your address a name (e.g Home)", "nameAr":"اختر اسمًا لهذا العنوان (المنزل مثلًا)", "numeric":"false", "optional":"true", "key":"pn", "max":"20" },
+            { "nameEn": "Street", "nameAr":"الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building", "nameAr":"البناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Company Name", "nameAr":"اسم الشركة", "numeric":"false", "optional":"false", "key":"jd", "max":"50" },
+            { "nameEn": "Floor", "nameAr":"الطابق", "numeric":"true", "optional":"false", "key":"fl", "max":"20" },
+            { "nameEn": "Office", "nameAr":"المكتب", "numeric":"true", "optional":"false", "key":"su", "max":"20" }
+        ]
+    },
+    {
+        "countryId": "9",
+        "house":
+        [
+            { "nameEn": "Address type (home/work/etc.)", "nameAr":"طبيعة العُنوان (منزل/ عمل/ إلخ)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street name", "nameAr":"اسم الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "House", "nameAr":"المنزل", "numeric":"false", "optional":"false", "key":"bno", "max":"30" }
+        ],
+        "building":
+        [
+            { "nameEn": "Address type (home/work/etc.)", "nameAr":"طبيعة العُنوان (منزل/ عمل/ إلخ)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street name", "nameAr":"اسم الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building name/number", "nameAr":"اسم أو رقم البِناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor number", "nameAr":"رقم الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Apartment number", "nameAr":"رقم الشقة", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ],
+        "office":
+        [
+            { "nameEn": "Address type (home/work/etc.)", "nameAr":"طبيعة العُنوان (منزل/ عمل/ إلخ)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street name", "nameAr":"اسم الشارع", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building name/number", "nameAr":"اسم أو رقم البِناية", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor number", "nameAr":"رقم الطابق", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Office", "nameAr":"المكتب", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ]
+    },
+    
+    {
+        "countryId": "10",
+        "house":
+        [
+            { "nameEn": "Address type (home/work/etc.)", "nameAr":"طبيعة العُنوان (منزل/ عمل/ إلخ)","nameSo":"جۆری ناونیشان (ماڵەوە/کار/هتد.)","nameBa":"جۆری ناونیشان (ماڵەوە/کار/هتد.)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street name", "nameAr":"اسم الشارع","nameSo":"ناوی شەقام","nameBa":"ناوی شەقام", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "House", "nameAr":"المنزل","nameSo":"ژمارەی خانوو","nameBa":"ژمارەی خانوو", "numeric":"false", "optional":"false", "key":"bno", "max":"30" }
+        ],
+        "building":
+        [
+            { "nameEn": "Address type (home/work/etc.)", "nameAr":"طبيعة العُنوان (منزل/ عمل/ إلخ)","nameSo":"جۆری ناونیشان (ماڵەوە/کار/هتد.)","nameBa":"جۆری ناونیشان (ماڵەوە/کار/هتد.)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street name", "nameAr":"اسم الشارع","nameSo":"ناوی شەقام","nameBa":"ناوی شەقام", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building name/number", "nameAr":"اسم أو رقم البِناية","nameSo":"ناو / ژمارەی بینا","nameBa":"ناو / ژمارەی بینا", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor number", "nameAr":"رقم الطابق","nameSo":"ژمارە نهۆم","nameBa":"ژمارە نهۆم", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Apartment number", "nameAr":"رقم الشقة","nameSo":"ڕەقەم شوقە","nameBa":"ڕەقەم شوقە", "numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ],
+        "office":
+        [
+            { "nameEn": "Address type (home/work/etc.)", "nameAr":"طبيعة العُنوان (منزل/ عمل/ إلخ)", "nameSo":"جۆری ناونیشان (ماڵەوە/کار/هتد.)", "nameBa":"جۆری ناونیشان (ماڵەوە/کار/هتد.)", "numeric":"false", "optional":"true", "key":"pn", "max":"30" },
+            { "nameEn": "Street name", "nameAr":"اسم الشارع","nameSo":"ناوی شەقام","nameBa":"ناوی شەقام", "numeric":"false", "optional":"false", "key":"st", "max":"100" },
+            { "nameEn": "Building name/number", "nameAr":"اسم أو رقم البِناية","nameSo":"ناو / ژمارەی بینا","nameBa":"ناو / ژمارەی بینا", "numeric":"false", "optional":"false", "key":"bno", "max":"50" },
+            { "nameEn": "Floor number", "nameAr":"رقم الطابق","nameSo":"ژمارە نهۆم","nameBa":"ژمارە نهۆم", "numeric":"false", "optional":"false", "key":"fl", "max":"30" },
+            { "nameEn": "Office", "nameAr":"المكتب", "nameSo":"نوسینگە","nameBa":"نوسینگە","numeric":"false", "optional":"false", "key":"su", "max":"30" }
+        ]
+    }
+]

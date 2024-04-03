@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/suggestionsContainer" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/restaurantsSuggestionContainer" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+                <TextView android:textSize="@dimen/suggestion_search_header" android:textColor="@color/suggestions_search_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Restaurants"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/vendorsSuggestionsList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+                <Button android:textSize="@dimen/suggestion_search_see_more" android:textColor="@color/suggestions_search_see_more" android:id="@+id/seeMoreVendors" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="See more" android:textAllCaps="false" android:stateListAnimator="@null"/>
+            </LinearLayout>
+            <View android:id="@+id/separator" android:background="#ededf3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/itemsSuggestionContainer" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+                <TextView android:textSize="@dimen/suggestion_search_header" android:textColor="@color/suggestions_search_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dishes"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/itemSuggestionList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+                <Button android:textSize="@dimen/suggestion_search_see_more" android:textColor="@color/suggestions_search_see_more" android:id="@+id/seeMoreItemsBtn" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="see more" android:textAllCaps="false" android:stateListAnimator="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <com.talabat.darkstores.common.customScrollingViews.CustomVerticalNestedScrollView android:id="@+id/darkstore_home_container" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.talabat.darkstores.feature.home.tpro.TProView android:id="@+id/subscription_header_top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxxs" android:layout_marginRight="@dimen/ds_s" android:layout_marginHorizontal="@dimen/ds_s"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/header_title_search" android:background="@color/ds_neutral_white" android:paddingTop="@dimen/ds_s" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@+id/backgroundImage" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s" layout="@layout/darkstores_search_field_non_editable"/>
+                <LinearLayout android:id="@+id/search_bottom_view" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:background="@drawable/bg_vlp_header_bottom" android:layout_width="match_parent" android:layout_height="@dimen/ds_l"/>
+                </LinearLayout>
+            </LinearLayout>
+            <include android:id="@+id/subscription_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/tpro_subscription_header"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/delivery_campaign_row" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ds_m" android:paddingTop="@dimen/ds_s" android:paddingBottom="@dimen/ds_s" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ds_m">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/parallel_bin_image" android:layout_width="@dimen/ds_m" android:layout_height="@dimen/ds_m" app:tint="@color/ds_promo_100"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/ds_promo_100" android:ellipsize="end" android:gravity="start" android:layout_gravity="center" android:id="@+id/delivery_campaign_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:text="@string/delivery_campaign_home_row_text" android:maxLines="1" android:lines="1" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ds_s" style="@style/DSTextAppearance.Body1"/>
+                </LinearLayout>
+                <View android:background="@color/ds_neutral_10" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+            <include android:id="@+id/vouchers_swimlane" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/darkstores_view_customer_vouchers_swimlane"/>
+            <com.talabat.feature.rewards.presentation.mission.RewardsMissionView android:id="@+id/rewardsMissionView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:original="2"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+            <com.talabat.feature.mission.control.presentation.PrimaryMissionView android:id="@+id/primaryMissionView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.talabat.feature.mission.control.presentation.LifeStyleMissionView android:id="@+id/lifeStyleMission" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.talabat.feature.mission.control.presentation.LifeStyleMissionV2View android:id="@+id/lifeStyleMissionV2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/s"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/topCompactSwimlanesContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.talabat.darkstores.common.view.GridSwimlaneView android:id="@+id/gridCategoriesSwimlane" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:grid_title="@string/categories_title_new" app:span_count="4"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/midCompactSwimlanesContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.talabat.darkstores.feature.home.banner.BannerView android:id="@+id/heroBanner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" android:layout_marginBottom="@dimen/ds_s"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/swimlanesContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.talabat.darkstores.feature.home.banner.BannerView android:id="@+id/banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" android:layout_marginBottom="@dimen/ds_s"/>
+            <View android:id="@+id/talabatAiBottomOffset" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/margin_48dp"/>
+        </LinearLayout>
+    </com.talabat.darkstores.common.customScrollingViews.CustomVerticalNestedScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/homeRecyclerView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/talabatAiButton" android:visibility="gone" android:layout_width="@dimen/talabat_ai_button_size" android:layout_height="@dimen/talabat_ai_button_size" android:layout_margin="@dimen/ds_s" android:src="@drawable/ic_talabat_ai"/>
+</FrameLayout>

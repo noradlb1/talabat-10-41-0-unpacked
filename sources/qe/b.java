@@ -1,0 +1,4 @@
+package qe;
+
+public final /* synthetic */ class b {
+}

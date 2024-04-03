@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/white" app:cardElevation="@dimen/card_elevation" app:cardMaxElevation="@dimen/card_elevation">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/order_details_screen_rel_margin" android:layout_marginTop="@dimen/footer_margin_4" android:layout_marginRight="@dimen/order_details_screen_rel_margin" android:layout_marginBottom="@dimen/footer_margin_4" android:weightSum="3" android:layout_marginStart="@dimen/order_details_screen_rel_margin" android:layout_marginEnd="@dimen/order_details_screen_rel_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:layout_marginEnd="2dp">
+                    <TextView android:textSize="@dimen/txt_size_14" android:textColor="@color/talabat_grey" android:id="@+id/item_quantity" android:layout_width="25dp" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:layout_marginEnd="1dp">
+                    <TextView android:textSize="@dimen/txt_size_14" android:textColor="@color/talabat_grey" android:layout_width="6dp" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="x" android:layout_marginEnd="12dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/txt_size_14" android:textColor="@color/talabat_grey" android:id="@+id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/txt_size_12" android:textColor="@color/talabat_grey" android:id="@+id/item_choices_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/txt_size_12" android:textColor="@color/talabat_grey" android:id="@+id/item_special_request" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/txt_size_14" android:textColor="@color/talabat_grey" android:gravity="end" android:layout_gravity="top" android:id="@+id/item_price" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

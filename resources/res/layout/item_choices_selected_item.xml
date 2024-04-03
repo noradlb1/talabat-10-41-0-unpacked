@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/white">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.talabat.TalabatTextView android:textSize="@dimen/text_view_text_size" android:id="@+id/selected_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textViewMedium"/>
+        <ImageView android:id="@+id/delete_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:src="@drawable/icon_delete_choices" android:layout_marginStart="2dp" android:layout_marginEnd="2dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

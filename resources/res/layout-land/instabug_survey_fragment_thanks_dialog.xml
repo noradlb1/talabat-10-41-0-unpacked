@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:background="?attr/survey_container_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="48dp">
+        <include layout="@layout/item_close_survey_button"/>
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:background="?attr/survey_container_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/survey_shadow" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <LinearLayout android:id="@+id/imgLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/instabug_img_thanks" android:layout_width="104dp" android:layout_height="104dp" android:src="@drawable/ibg_survey_ic_survey_thankyou"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_toRightOf="@+id/imgLayout" android:layout_alignTop="@+id/imgLayout" android:layout_alignBottom="@+id/imgLayout">
+                <TextView android:textSize="@dimen/ib_survey_thanks_title" android:textColor="#006fff" android:id="@+id/txt_thanks_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+                <TextView android:textSize="@dimen/ib_survey_thanks_subtitle" android:textColor="@color/instabug_text_color_light_grey" android:gravity="start" android:id="@+id/txtSubTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_alignParentBottom="true" layout="@layout/instabug_lyt_pbi"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/progressDialogLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:paddingLeft="23dp" android:paddingTop="8dp" android:paddingRight="32dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ProgressBar android:id="@+id/progressBar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginEnd="16dp" style="?android:attr/progressBarStyle"/>
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feature_requests_new_adding_your_suggestion"/>
+    </LinearLayout>
+</RelativeLayout>

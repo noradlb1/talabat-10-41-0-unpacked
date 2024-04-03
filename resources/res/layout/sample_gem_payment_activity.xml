@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/paymentProgressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/gemPaymentLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="Gem Payment Sample"/>
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@+id/paymentTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_alignParentTop="true"/>
+        <TextView android:id="@+id/flowResultTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Flow not finished yet" android:ems="10" android:layout_below="@+id/paymentTextView"/>
+        <Button android:id="@+id/finishFlowButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Finish Flow" android:layout_below="@+id/flowResultTextView"/>
+    </RelativeLayout>
+    <com.talabat.gem.adapters.presentation.menu.GemMenuFooterView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/gemPaymentView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

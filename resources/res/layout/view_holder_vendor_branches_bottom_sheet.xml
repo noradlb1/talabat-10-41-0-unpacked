@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/vendorBranchesRootLinearLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/selector_vendor_offers" android:padding="@dimen/standard_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/vendorBranchesIconImageView" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="@dimen/standard_half_margin" android:src="@drawable/ic_vendor_branch" android:layout_marginEnd="@dimen/standard_half_margin"/>
+        <TextView android:id="@+id/vendorBranchesDistanceTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_half_margin" android:maxLines="2" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/standard_half_margin" android:layout_alignParentEnd="true" style="@style/text_grey_14sp"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/vendorBranchesDistanceTextView" android:layout_toRightOf="@+id/vendorBranchesIconImageView" android:layout_centerVertical="true" android:layout_toStartOf="@+id/vendorBranchesDistanceTextView" android:layout_toEndOf="@+id/vendorBranchesIconImageView">
+            <TextView android:id="@+id/vendorBranchesTitleTextView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/standard_quarter_margin" android:maxLines="1" style="@style/text_black_medium_16sp"/>
+            <TextView android:id="@+id/vendorBranchesSubTitleTextView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/standard_quarter_margin" android:maxLines="2" style="@style/text_grey_14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View style="@style/separator"/>
+</LinearLayout>

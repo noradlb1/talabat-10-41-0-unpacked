@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/ds_s" android:paddingRight="@dimen/ds_s" android:layout_width="match_parent" android:layout_height="52dp" android:animateLayoutChanges="true" android:paddingStart="@dimen/ds_s" android:paddingEnd="@dimen/ds_s">
+    <include android:id="@+id/buttonCounter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ds_xxs" layout="@layout/btn_counter"/>
+    <TextView android:ellipsize="end" android:id="@+id/startTextView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_toStartOf="@+id/endTextView" android:layout_toEndOf="@+id/buttonCounter" style="@style/DSTextAppearance.Button"/>
+    <TextView android:id="@+id/endTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_xs" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ds_xs" android:layout_alignParentEnd="true" style="@style/DSTextAppearance.Button"/>
+    <ImageView android:id="@+id/socialIconImageView" android:visibility="gone" android:layout_width="@dimen/ds_l" android:layout_height="@dimen/ds_l" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iconImageView" android:visibility="gone" android:layout_width="@dimen/ds_m" android:layout_height="@dimen/ds_m" android:layout_marginRight="@dimen/ds_xxxs" android:layout_marginEnd="@dimen/ds_xxxs"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/centerTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Button"/>
+            <TextView android:id="@+id/detailsTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Caption"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

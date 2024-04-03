@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/country_list" android:background="@android:color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/common_margin" android:layout_marginTop="@dimen/country_choose_row_margin_left_right" android:layout_marginRight="@dimen/common_margin" android:layout_marginBottom="@dimen/country_choose_row_margin_left_right" android:drawSelectorOnTop="true"/>
+</LinearLayout>

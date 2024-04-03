@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scrollView_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/standard_margin" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/layout_ssnLookup" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/textView_ssnLookupTitle" android:text="@string/checkout_personal_details_social_security_number" style="@style/Checkout.TextAppearance.Section.Title"/>
+            <EditText android:id="@+id/editText_ssnLookup" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/checkout_personal_details_social_security_number_hint" android:maxLength="13" android:digits="1234567890 " android:layout_below="@+id/textView_ssnLookupTitle" android:inputType="number"/>
+            <androidx.core.widget.ContentLoadingProgressBar android:id="@+id/progressBar_ssnLookup" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="@dimen/standard_half_margin" android:layout_alignRight="@+id/editText_ssnLookup" android:layout_alignBottom="@+id/editText_ssnLookup" android:layout_alignEnd="@+id/editText_ssnLookup" style="@style/Widget.AppCompat.ProgressBar"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_details_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <include android:id="@+id/layout_personal_details_input" android:visibility="gone" layout="@layout/layout_personal_details_input"/>
+            <include android:id="@+id/layout_billing_address_input" android:visibility="gone" layout="@layout/layout_address_details_input"/>
+            <LinearLayout android:id="@+id/layout_separate_delivery_address" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_half_margin" android:layout_marginBottom="@dimen/standard_half_margin">
+                <androidx.appcompat.widget.SwitchCompat android:textSize="16sp" android:id="@+id/switch_separate_delivery_address" android:padding="@dimen/standard_quarter_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/checkout_separate_delivery_address"/>
+            </LinearLayout>
+            <include android:id="@+id/layout_delivery_address_input" android:visibility="gone" layout="@layout/layout_address_details_input"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_terms_and_conditions" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_half_margin" android:layout_marginBottom="@dimen/standard_half_margin">
+                <TextView android:text="@string/checkout_terms_and_conditions_title" style="@style/Checkout.TextAppearance.Section.Title"/>
+                <TextView android:textSize="12sp" android:id="@+id/textView_terms_and_conditions" android:background="?attr/selectableItemBackground" android:padding="@dimen/standard_quarter_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/checkout_klarna_terms_and_conditions_text" android:textIsSelectable="false"/>
+                <androidx.appcompat.widget.SwitchCompat android:textSize="16sp" android:id="@+id/switch_terms_and_conditions" android:padding="@dimen/standard_quarter_margin" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/checkout_terms_and_conditions_toggle"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@+id/button_pay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_half_margin" android:layout_marginBottom="@dimen/standard_half_margin"/>
+        <TextView android:layout_gravity="center_horizontal" android:id="@+id/textView_surcharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false" style="@style/Checkout.TextAppearance.Tertiary"/>
+        <Button android:id="@+id/button_more_information" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/checkout_klarna_more_information" android:textAllCaps="false" style="@style/Checkout.Button.Inverse"/>
+    </LinearLayout>
+</ScrollView>

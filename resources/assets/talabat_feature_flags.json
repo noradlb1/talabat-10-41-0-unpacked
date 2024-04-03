@@ -1,0 +1,921 @@
+{
+  "android-disable-observability-feature": {
+    "true": false,
+    "false": true
+  },
+  "consume-ul-new-reverse-geocoding-micro-service-android": {
+    "true": false,
+    "false": true
+  },
+  "enable-soft-pos-android": {
+    "true": true,
+    "false": true
+  },
+  "tlife-andy-enabled-qat": {
+    "true": true,
+    "false": false
+  },
+  "vouchers-andy-enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "vouchers-andy-enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "ff_ecosystems_is_rewards_enabled": {
+    "true": true,
+    "false": false
+  },
+  "change-retrofit-base-url": {
+    "true": true,
+    "false": false
+  },
+  "filtergemusingrate": {
+    "true": true,
+    "false": false
+  },
+  "filter_gem_by_mov_android": {
+    "true": true,
+    "false": false
+  },
+  "filter_gem_by_cuisine_android": {
+    "true": true,
+    "false": false
+  },
+  "new_vendor_api": {
+    "true": true,
+    "false": false
+  },
+  "disable_shake_app_feedback_android": {
+    "true": true,
+    "false": false
+  },
+  "ff_user_google_sign_in": {
+    "true": true,
+    "false": false
+  },
+  "enable-android-smartlock": {
+    "true": true,
+    "false": false
+  },
+  "android_enable_help_center_order_refresh": {
+    "true": true,
+    "false": false
+  },
+  "android-registration-consent-checkbox": {
+    "false": true,
+    "true": false
+  },
+  "show-social-responsibility-and-about-us": {
+    "true": true,
+    "false": false
+  },
+  "tlife-tdine-early-access-enabled-android-bhr": {
+    "true": true,
+    "false": false
+  },
+  "tlife-android-cashenabled-bhr": {
+    "true": true,
+    "false": false
+  },
+  "tlife-android-optionalcardenabled-bhr": {
+    "true": true,
+    "false": false
+  },
+  "vouchers-andy-basket_enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "vouchers-andy-tmart_enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "vouchers-andy-codes_enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "ridertip-andy-enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "perseus_enable_disable": {
+    "true": true,
+    "false": false
+  },
+  "darkstores_integration_v2": {
+    "true": true,
+    "false": false
+  },
+  "verticals_dynamic_launcher_v3": {
+    "true": true,
+    "false": false
+  },
+  "darkstores_favorites_list_feature_v2": {
+    "true": true,
+    "false": false
+  },
+  "verticals_launcher_api_active": {
+    "true": true,
+    "false": false
+  },
+  "darkstores_delivery_fee_feature": {
+    "true": true,
+    "false": false
+  },
+  "darkstores_delivery_discount_campaign": {
+    "true": true,
+    "false": false
+  },
+  "darkstores_vouchers_enabled": {
+    "true": true,
+    "false": false
+  },
+  "can_open_is_migrated_vendors": {
+    "true": true,
+    "false": false
+  },
+  "darkstores_enable_verticals_api": {
+    "true": true,
+    "false": false
+  },
+  "nfv_new_relic_observability": {
+    "true": true,
+    "false": false
+  },
+  "android_darkstores_disable_favourites_migrated": {
+    "true": true,
+    "false": false
+  },
+  "android_darkstores_enable_promotions_widget_v2": {
+    "true": true,
+    "false": false
+  },
+  "hide-home-safety-message-kuwait-android": {
+    "true": true,
+    "false": false
+  },
+  "hide-home-safety-message-uae-android": {
+    "true": true,
+    "false": false
+  },
+  "hide-home-safety-message-ksa-android": {
+    "true": true,
+    "false": false
+  },
+  "hide-home-safety-message-bahrain-android": {
+    "true": true,
+    "false": false
+  },
+  "hide-home-safety-message-qatar-android": {
+    "true": true,
+    "false": false
+  },
+  "hide-home-safety-message-oman-android": {
+    "true": true,
+    "false": false
+  },
+  "hide-home-safety-message-jordan-android": {
+    "true": true,
+    "false": false
+  },
+  "hide-home-safety-message-egypt-android": {
+    "true": true,
+    "false": false
+  },
+  "hide-home-safety-message-iraq-android": {
+    "true": true,
+    "false": false
+  },
+  "enable-perimeter-x-sdk-android": {
+    "true": true,
+    "false": false
+  },
+  "android-can-check-area-split": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-sendgift-enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-sendgift-enabled-ksa": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-sendgift-enabled-bhr": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-sendgift-enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-sendgift-enabled-omn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-sendgift-enabled-qat": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-sendgift-enabled-lbn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-sendgift-enabled-jor": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-sendgift-enabled-egypt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-sendgift-enabled-irq": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-topup-enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-topup-enabled-ksa": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-topup-enabled-bhr": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-topup-enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-topup-enabled-omn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-topup-enabled-qat": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-topup-enabled-lbn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-topup-enabled-jor": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-topup-enabled-egypt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-topup-enabled-irq": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cardmanagement-enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cardmanagement-enabled-ksa": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cardmanagement-enabled-bhr": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cardmanagement-enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cardmanagement-enabled-omn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cardmanagement-enabled-qat": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cardmanagement-enabled-lbn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cardmanagement-enabled-jor": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cardmanagement-enabled-egypt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cardmanagement-enabled-irq": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-enabled-ksa": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-enabled-bhr": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-enabled-omn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-enabled-qat": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-enabled-lbn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-enabled-jor": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-enabled-egypt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-enabled-irq": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-expiringcredit-enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-expiringcredit-enabled-ksa": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-expiringcredit-enabled-bhr": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-expiringcredit-enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-expiringcredit-enabled-omn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-expiringcredit-enabled-qat": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-expiringcredit-enabled-lbn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-expiringcredit-enabled-jor": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-expiringcredit-enabled-egypt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-expiringcredit-enabled-irq": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cashback-enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cashback-enabled-ksa": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cashback-enabled-bhr": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cashback-enabled-uae": {
+    "true": false,
+    "false": true
+  },
+  "wallet-android-cashback-enabled-omn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cashback-enabled-qat": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cashback-enabled-lbn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cashback-enabled-jor": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cashback-enabled-egypt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-cashback-enabled-irq": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcard-enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcard-enabled-ksa": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcard-enabled-bhr": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcard-enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcard-enabled-omn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcard-enabled-qat": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcard-enabled-lbn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcard-enabled-jor": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcard-enabled-egypt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcard-enabled-irq": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-setdefaultcard-enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-setdefaultcard-enabled-ksa": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-setdefaultcard-enabled-bhr": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-setdefaultcard-enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-setdefaultcard-enabled-omn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-setdefaultcard-enabled-qat": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-setdefaultcard-enabled-lbn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-setdefaultcard-enabled-jor": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-setdefaultcard-enabled-egypt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-setdefaultcard-enabled-irq": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-deletecard-enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-deletecard-enabled-ksa": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-deletecard-enabled-bhr": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-deletecard-enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-deletecard-enabled-omn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-deletecard-enabled-qat": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-deletecard-enabled-lbn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-deletecard-enabled-jor": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-deletecard-enabled-egypt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-deletecard-enabled-irq": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-migration": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-top-up-migration": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcardholdername-enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcardholdername-enabled-ksa": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcardholdername-enabled-bhr": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcardholdername-enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcardholdername-enabled-omn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcardholdername-enabled-qat": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcardholdername-enabled-lbn": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcardholdername-enabled-jor": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcardholdername-enabled-egypt": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-addcardholdername-enabled-irq": {
+    "true": true,
+    "false": false
+  },
+  "subscription-android-subscriptionlist-kwt": {
+    "true": true,
+    "false": false
+  },
+  "subscription-android-subscriptionlist-ksa": {
+    "true": true,
+    "false": false
+  },
+  "subscription-android-subscriptionlist-bhr": {
+    "true": true,
+    "false": false
+  },
+  "subscription-android-subscriptionlist-uae": {
+    "true": true,
+    "false": false
+  },
+  "subscription-android-subscriptionlist-omn": {
+    "true": true,
+    "false": false
+  },
+  "subscription-android-subscriptionlist-qat": {
+    "true": true,
+    "false": false
+  },
+  "subscription-android-subscriptionlist-lbn": {
+    "true": true,
+    "false": false
+  },
+  "subscription-android-subscriptionlist-jor": {
+    "true": true,
+    "false": false
+  },
+  "subscription-android-subscriptionlist-egypt": {
+    "true": true,
+    "false": false
+  },
+  "subscription-android-subscriptionlist-irq": {
+    "true": true,
+    "false": false
+  },
+  "wallet-add-card-migration": {
+    "true": true,
+    "false": false
+  },
+  "wallet-card-management-migration": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-omannet-forcecvv": {
+    "true": true,
+    "false": false
+  },
+  "subscription-android-cancellation-feedback": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-knetstatuscheck-enabled": {
+    "true": true,
+    "false": false
+  },
+  "enable-order-tracking-polling-refresh-android": {
+    "false": true
+  },
+  "android-enable-smart-lunch": {
+    "true": true,
+    "false": false
+  },
+  "android_nfv_home_can_use_tiles_api_v2": {
+    "true": true,
+    "false": false
+  },
+  "enable-add-voucher-code-api-on-android": {
+    "true": true,
+    "false": false
+  },
+  "enable-reorder-notification-android": {
+    "true": true,
+    "false": false
+  },
+  "pay-android-qpay-enabled": {
+    "true": true,
+    "false": false
+  },
+  "enable-no-items-bottomsheet-android": {
+    "true": true,
+    "false": false
+  },
+  "android_darkstores_enable_listing_promo_tag": {
+    "true": false,
+    "false": true
+  },
+  "enable-new-help-center-in-progress-android": {
+    "true": true,
+    "false": true
+  },
+  "vouchers-andy-tmart_enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "vouchers-andy-basket_enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "vouchers-andy-codes_enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "android_nfv_darkstores_enable_new_cart_card": {
+    "true": false,
+    "false": true
+  },
+  "tlife-andy-enabled-uae": {
+    "true": true,
+    "false": false
+  },
+  "tlife-andy-enabled-kwt": {
+    "true": true,
+    "false": false
+  },
+  "tlife-andy-enabled-ksa": {
+    "true": true,
+    "false": false
+  },
+  "tlife-andy-enabled-bhr": {
+    "true": false,
+    "false": true
+  },
+  "tlife-andy-enabled-omn": {
+    "true": true,
+    "false": false
+  },
+  "tlife-andy-enabled-lbn": {
+    "true": true,
+    "false": false
+  },
+  "tlife-andy-enabled-jor": {
+    "true": true,
+    "false": false
+  },
+  "tlife-andy-enabled-egy": {
+    "true": true,
+    "false": false
+  },
+  "tlife-tdine-early-access-enabled-android-kwt": {
+    "true": true,
+    "false": false
+  },
+  "tlife-tdine-early-access-enabled-android-ksa": {
+    "true": true,
+    "false": false
+  },
+  "tlife-tdine-early-access-enabled-android-uae": {
+    "true": true,
+    "false": false
+  },
+  "tlife-tdine-early-access-enabled-android-omn": {
+    "true": true,
+    "false": false
+  },
+  "tlife-tdine-early-access-enabled-android-qat": {
+    "true": false,
+    "false": true
+  },
+  "tlife-tdine-early-access-enabled-android-lbn": {
+    "true": true,
+    "false": false
+  },
+  "tlife-tdine-early-access-enabled-android-jor": {
+    "true": true,
+    "false": false
+  },
+  "tlife-tdine-early-access-enabled-android-egy": {
+    "true": true,
+    "false": false
+  },
+  "android_nfv_darkstores_enable_cart_campaigns_progress": {
+    "true": false,
+    "false": true
+  },
+  "android-ox-show-new-vendor-info": {
+    "true": true,
+    "false": false
+  },
+  "android-consume-address-microservice-add-update-delete": {
+    "true": true,
+    "false": false
+  },
+  "android_gsx_migrated_partial_fulfillment_v2": {
+    "true": true,
+    "false": false
+  },
+  "redeem-voucher-bottom-sheet": {
+    "true": true,
+    "false": false
+  },
+  "home-lifecycle-voucher": {
+    "true": false,
+    "false": true
+  },
+  "login-lifecycle-voucher": {
+    "true": false,
+    "false": true
+  },
+  "android_show_more_on_home_search": {
+    "true": true,
+    "false": false
+  },
+  "android_send_vertical_ids_home_search": {
+    "true": true,
+    "false": false
+  },
+  "wallet-android-send-cvv-to-proxy-enabled": {
+    "true": true,
+    "false": false
+  },
+  "sidemenu-vouchers-count": {
+    "true": false,
+    "false": true
+  },
+  "wallet-android-benefit-bin-check-enabled": {
+    "true": false,
+    "false": true
+  },
+  "expo-feature": {
+    "true": false,
+    "false": true
+  },
+  "expo-is-kiosk": {
+    "true": false,
+    "false": true
+  },
+  "offering-collection-dummy": {
+    "true": true,
+    "false": false
+  },
+  "android_darkstores_enable_dynamic_landing": {
+    "true": true,
+    "false": false
+  },
+  "home-of-offers-tabbar-entry-point": {
+    "true": false,
+    "false": true
+  },
+  "enable_aaa_email_login_in_old_screen": {
+    "true": false,
+    "false": true
+  },
+  "wallet-android-bnpl-fake_door_test_enabled": {
+    "true": false,
+    "false": true
+  },
+  "is-compounding-stacked-incentives-enabled": {
+    "true": false,
+    "false": true
+  },
+  "is-bin-restriction-for-applied-voucher-enabled": {
+    "true": false,
+    "false": true
+  },
+  "enable_pickup_blocking_modal": {
+    "true": true,
+    "false": false
+  },
+  "is-service-fee-enabled": {
+    "true": false,
+    "false": true
+  },
+  "enable-dynamic-splash-android": {
+    "true": false,
+    "false": true
+  },
+  "payment_repo_real_checkout_base_url": {
+    "true": false,
+    "false": true
+  },
+  "payment_repo_real_checkout_recur_url": {
+    "true": true,
+    "false": false
+  },
+  "payment_repo_real_is_bin_camp_available": {
+    "true": true,
+    "false": false
+  },
+  "payment_repo_real_visa_checkout_public_key": {
+    "true": true,
+    "false": false
+  },
+  "ff_ordering_auto_apply_discounts": {
+    "true": false,
+    "false": true
+  },
+  "ff_homepage_areas_ul_endpoint": {
+    "true": true,
+    "false": false
+  },
+  "ff_vendorlist_pharmacy": {
+    "true": false,
+    "false": true
+  },
+  "ff_qcommerce_pharmacy_direct_order_flow": {
+    "true": false,
+    "false": true
+  },
+  "ff_platform_peet_disable_apptimize": {
+    "true": true,
+    "false": false
+  },
+  "ff_platform_braze_flutter_sdk": {
+    "true": true,
+    "false": false
+  },
+  "ff_homepage_parallel_api_calls": {
+    "true": true,
+    "false": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+	"int_experiments":{
+		"VerticalLauncherExperiment":{
+			"1":false,
+			"0":true,
+			"2":false
+		}
+	},
+	"string_experiments":{
+	},
+	"boolean_experiments":{
+		"canShowNewGemComponent":{
+			"true":true,
+			"false":false
+		},
+		"showItemDetailsBottomSheet":{
+			"true":true,
+			"false":false
+		}
+	}
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_open_chat_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:paddingBottom="@dimen/customer_chat_padding_4dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/recycler_quick_reply" android:layout_alignParentTop="true" layout="@layout/customer_chat_include_layout_recycler"/>
+    <View android:id="@+id/view_separator" android:background="?attr/sendMessageSectionShadowShape" android:layout_width="match_parent" android:layout_height="?attr/sendMessageSectionShadowShapeHeight" android:layout_above="@+id/recycler_quick_reply"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_quick_reply" android:background="@color/customer_chat_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/layout_compose"/>
+    <include android:orientation="horizontal" android:id="@+id/layout_compose" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/customer_chat_layout_48dp" android:layout_alignParentBottom="true" layout="@layout/customer_chat_include_layout_compose"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/rounded_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="36dp" android:minHeight="36dp" android:paddingStart="@dimen/ds_xxxs" android:paddingEnd="@dimen/ds_xxxs" android:backgroundTint="#33ffffff">
+    <TextView android:textColor="@color/ds_neutral_white" android:layout_gravity="center" android:id="@+id/buttonCountTv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Button"/>
+    <TextView android:textColor="@color/ds_neutral_white" android:layout_gravity="center" android:id="@+id/buttonCountAnimTv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Button"/>
+</FrameLayout>

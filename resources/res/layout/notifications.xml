@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.talabat.helpers.TalabatToolBarLinearLayoutContainer android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/app_background" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.talabat.helpers.TalabatToolBar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/toolbar_elevation" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                <RelativeLayout style="@style/toolbar_background_style">
+                    <RelativeLayout style="@style/toolbar_items_holder_style">
+                        <com.talabat.helpers.TalabatToolBarImageButton android:id="@+id/sidemenu_button" style="@style/toolbar_navigation_icon_style"/>
+                        <com.talabat.helpers.TalabatToolBarTextView android:id="@+id/title" android:text="@string/notifications" style="@style/toolbar_text_style"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </com.talabat.helpers.TalabatToolBar>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.talabat.helpers.TalabatToolBarLinearLayoutContainer>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="start" android:id="@+id/list_slidemenu" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:dividerHeight="1dp" android:choiceMode="singleChoice"/>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,231 @@
+{
+  "type": "OrderTrackingScreen",
+  "layouts": [
+    {
+      "name": "order_tracking_screen_default_layout",
+      "column": [
+        "order_progress_update",
+        "order_delivering_map",
+        "order_details",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support",
+        "large_vertical_spacing"
+      ]
+    }
+  ],
+  "widgets": {
+    "order_progress_update": {
+      "type": "OrderProgress",
+      "data": {
+        "header": "الرجاء الوصول عن طريق",
+        "title": "مساءً 08:00 - مساءً 08:25",
+        "footer": "تم الطلب! في انتظار المطعم لتأكيد ذلك",
+        "progress_bars": [
+          {
+            "width": 1,
+            "fill": 0.5
+          },
+          {
+            "width": 2,
+            "fill": 0.0
+          },
+          {
+            "width": 1,
+            "fill": 0.0
+          }
+        ]
+      }
+    },
+    "order_delivering_map": {
+      "type": "Map",
+      "data": {
+        "pins": [
+          {
+            "type": "destination",
+            "latitude": 25.067428,
+            "longitude": 55.161875,
+            "text": "بيتزا دومينوز",
+            "link": "https://www.google.com/maps?saddr=My+Location&daddr=25.05426778166772,55.20714626134289",
+            "link_text": "احصل على الاتجاهات \u276F",
+            "icon": "http://www.url.com"
+          }
+        ]
+      }
+    },
+    "payment_details": {
+      "type": "ListInfo",
+      "data": {
+        "title": "بيانات الدفع",
+        "rows": [
+          {
+            "label": "التكلفة الإجمالية",
+            "text": "300 درهم إماراتي"
+          },
+          {
+            "label": "طريقة الدفع او السداد",
+            "text": "xxxx-1738"
+          }
+        ]
+      }
+    },
+    "support": {
+      "type": "BasicInfo",
+      "data": {
+        "title": "الدعم",
+        "text": "Order #5678093898",
+        "actions": [
+          {
+            "type": "DeepLink",
+            "text": "مركز المساعدة",
+            "args": {
+              "link": "talabat://?s=ghc&i=12345",
+              "tracking_event_name": "helpcentre_link_clicked"
+            }
+          },
+          {
+            "type": "BottomSheetDialog",
+            "text": "الغاء الطلب",
+            "args": {
+              "type": "DSBottomSheet",
+              "data": {
+                "body": {
+                  "type": "BasicInfo",
+                  "data": {
+                    "title": "هل أنت متأكد أنك تريد إلغاء؟",
+                    "text": "إذا قمت بإلغاء طلبك ، فستتلقى استردادًا مباشرًا إلى رصيد طلبات الخاص بك."
+                  }
+                },
+                "footer": {
+                  "type": "DSFixedFooterWithHorizontalButtons",
+                  "data": {
+                    "elevated": false,
+                    "buttons": [
+                      {
+                        "type": "DSSecondaryButton",
+                        "data": {
+                          "text": "لا ، حافظ على النظام",
+                          "actions": [
+                            {
+                              "type": "Dismiss",
+                              "args": {}
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type": "DSPrimaryButton",
+                        "data": {
+                          "text": "نعم إلغاء",
+                          "actions": [
+                            {
+                              "type": "Dismiss",
+                              "args": {}
+                            },
+                            {
+                              "type": "Api",
+                              "args": {
+                                "verb": "POST",
+                                "url": "https://poe-qa.dhhmena.com/api/v1/orders/123308/cancel",
+                                "body": {},
+                                "loading": {
+                                  "description": "الإلغاء"
+                                },
+                                "success": {
+                                  "title": "نجاح",
+                                  "description": "تم إلغاء حسابك بنجاح.",
+                                  "button_text": "موافق"
+                                },
+                                "error": {
+                                  "title": "خطأ",
+                                  "description": "تعذر إلغاء الطلب ، يرجى المحاولة مرة أخرى!",
+                                  "button_text": "موافق"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "max_height_ratio": 1.0,
+                "with_navigation_bar": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "order_details": {
+      "type": "OrderDetails",
+      "data": {
+        "header": "طلبك من",
+        "title": "بيتزا دومينوز",
+        "subtitle": "#132480385",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+        "items": [
+          {
+            "quantity": 2,
+            "text": "سلطة سيزر"
+          },
+          {
+            "quantity": 1,
+            "text": "توسكان تشيكن ماك اند تشيز",
+            "subtext": "إضافة بيستو"
+          },
+          {
+            "quantity": 1,
+            "text": "توسكان تشيكن ماك اند تشيز",
+            "subtext": "إضافة بيستو"
+          },
+          {
+            "quantity": 1,
+            "text": "خبز بالثوم النباتي"
+          }
+        ],
+
+        "actions_messages": [
+          {
+            "type": "DSAlert",
+            "data": {
+              "alert_type": "warning",
+              "descriptor": "الاتصال غير متاح ، لم يتم توفير الرقم"
+            }
+          }
+        ]
+      }
+    },
+    "xx_small_divider": {
+      "type": "Divider",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "xx_small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 16.0
+      }
+    },
+    "large_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 24.0
+      }
+    },
+    "medium_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 20.0
+      }
+    }
+  }
+}

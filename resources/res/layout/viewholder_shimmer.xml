@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.talabat.designhelpers.shimmer.ShimmerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" app:shimmer_angle="20" app:shimmer_animation_duration="1400" app:shimmer_color="@color/ds_primary_100"/>

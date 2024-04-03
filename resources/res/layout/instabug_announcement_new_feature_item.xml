@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/new_feature_item" android:paddingBottom="@dimen/instabug_container_padding" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+    <ImageView android:id="@+id/new_feature_img" android:layout_width="32dp" android:layout_height="32dp"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/instabug_container_padding" android:paddingRight="@dimen/instabug_container_padding" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/instabug_announcement_feature_title" android:textStyle="bold" android:textColor="?attr/instabug_survey_mcq_text_color" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/new_feature_title" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/instabug_announcement_feature_title" android:textColor="?attr/instabug_survey_mcq_text_color" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/new_feature_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

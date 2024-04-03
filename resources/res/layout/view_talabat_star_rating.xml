@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/star_1" android:layout_width="@dimen/ds_xxxl" android:layout_height="@dimen/ds_xxxl" android:src="@drawable/ds_star" app:tint="@color/grey_disabled"/>
+        <ImageView android:id="@+id/star_2" android:layout_width="@dimen/ds_xxxl" android:layout_height="@dimen/ds_xxxl" android:layout_marginLeft="20dp" android:src="@drawable/ds_star" android:layout_marginStart="20dp" app:tint="@color/grey_disabled"/>
+        <ImageView android:id="@+id/star_3" android:layout_width="@dimen/ds_xxxl" android:layout_height="@dimen/ds_xxxl" android:layout_marginLeft="20dp" android:src="@drawable/ds_star" android:layout_marginStart="20dp" app:tint="@color/grey_disabled"/>
+        <ImageView android:id="@+id/star_4" android:layout_width="@dimen/ds_xxxl" android:layout_height="@dimen/ds_xxxl" android:layout_marginLeft="20dp" android:src="@drawable/ds_star" android:layout_marginStart="20dp" app:tint="@color/grey_disabled"/>
+        <ImageView android:id="@+id/star_5" android:layout_width="@dimen/ds_xxxl" android:layout_height="@dimen/ds_xxxl" android:layout_marginLeft="20dp" android:src="@drawable/ds_star" android:layout_marginStart="20dp" app:tint="@color/grey_disabled"/>
+    </LinearLayout>
+</merge>

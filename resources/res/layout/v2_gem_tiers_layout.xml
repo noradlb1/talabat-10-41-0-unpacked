@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/tier_holder_dynamic" android:background="@color/ds_neutral_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/staticTiersLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4">
+        <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="0.5dp" layout="@layout/v2_gem_tier_item"/>
+        <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="0.5dp" layout="@layout/v2_gem_tier_item"/>
+        <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="0.5dp" layout="@layout/v2_gem_tier_item"/>
+        <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="0.5dp" layout="@layout/v2_gem_tier_item"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@+id/dynamicTiersRecyclerView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_slidemenu_home" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="match_parent" android:choiceMode="singleChoice" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <com.designsystem.ds_alert.DSAlert android:id="@+id/alert_renewal_update_success" android:paddingLeft="@dimen/ds_s" android:paddingRight="@dimen/ds_s" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_s" android:paddingHorizontal="@dimen/ds_s" app:at_alert_type="3" app:at_descriptor="descriptor" app:layout_constraintBottom_toBottomOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

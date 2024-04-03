@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:transitionName="CardListSelection">
+    <include android:id="@+id/bnpl_fake_place_order_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0" layout="@layout/view_bnpl_fake_place_order"/>
+    <include android:id="@+id/bnpl_fake_place_order_success" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0" layout="@layout/view_bnpl_fake_place_order_success"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

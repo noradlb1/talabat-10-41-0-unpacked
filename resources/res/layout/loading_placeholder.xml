@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.talabat.talabatcommon.views.ShimmerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintTop_toTopOf="0" app:shimmer_animation_duration="800" app:shimmer_auto_start="true" app:shimmer_color="@color/ds_neutral_white">
+    <LinearLayout android:orientation="vertical" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@drawable/shimmer_bg" android:layout_width="match_parent" android:layout_height="@dimen/app_bar_height"/>
+        <FrameLayout android:background="@drawable/shimmer_bg" android:layout_width="match_parent" android:layout_height="@dimen/shimmer_item_height" android:layout_marginTop="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_xs">
+            <View android:layout_gravity="bottom" android:background="@drawable/shimmer_bg_2radius_white" android:layout_width="@dimen/item_content_width_small" android:layout_height="@dimen/ds_xxs" android:layout_marginBottom="@dimen/ds_s" android:layout_marginStart="@dimen/ds_xs"/>
+            <View android:layout_gravity="bottom" android:background="@drawable/shimmer_bg_2radius_white" android:layout_width="@dimen/item_content_width_big" android:layout_height="@dimen/ds_xxs" android:layout_marginBottom="@dimen/ds_xl" android:layout_marginStart="@dimen/ds_xs"/>
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/shimmer_bg" android:layout_width="match_parent" android:layout_height="@dimen/shimmer_item_height" android:layout_marginTop="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_xs">
+            <View android:layout_gravity="bottom" android:background="@drawable/shimmer_bg_2radius_white" android:layout_width="@dimen/item_content_width_small" android:layout_height="@dimen/ds_xxs" android:layout_marginBottom="@dimen/ds_s" android:layout_marginStart="@dimen/ds_xs"/>
+            <View android:layout_gravity="bottom" android:background="@drawable/shimmer_bg_2radius_white" android:layout_width="@dimen/item_content_width_big" android:layout_height="@dimen/ds_xxs" android:layout_marginBottom="@dimen/ds_xl" android:layout_marginStart="@dimen/ds_xs"/>
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/shimmer_bg" android:layout_width="match_parent" android:layout_height="@dimen/shimmer_item_height" android:layout_marginTop="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_xs">
+            <View android:layout_gravity="bottom" android:background="@drawable/shimmer_bg_2radius_white" android:layout_width="@dimen/item_content_width_small" android:layout_height="@dimen/ds_xxs" android:layout_marginBottom="@dimen/ds_s" android:layout_marginStart="@dimen/ds_xs"/>
+            <View android:layout_gravity="bottom" android:background="@drawable/shimmer_bg_2radius_white" android:layout_width="@dimen/item_content_width_big" android:layout_height="@dimen/ds_xxs" android:layout_marginBottom="@dimen/ds_xl" android:layout_marginStart="@dimen/ds_xs"/>
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/shimmer_bg" android:layout_width="match_parent" android:layout_height="@dimen/shimmer_item_height" android:layout_marginTop="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_xs">
+            <View android:layout_gravity="bottom" android:background="@drawable/shimmer_bg_2radius_white" android:layout_width="@dimen/item_content_width_small" android:layout_height="@dimen/ds_xxs" android:layout_marginBottom="@dimen/ds_s" android:layout_marginStart="@dimen/ds_xs"/>
+            <View android:layout_gravity="bottom" android:background="@drawable/shimmer_bg_2radius_white" android:layout_width="@dimen/item_content_width_big" android:layout_height="@dimen/ds_xxs" android:layout_marginBottom="@dimen/ds_xl" android:layout_marginStart="@dimen/ds_xs"/>
+        </FrameLayout>
+    </LinearLayout>
+</com.talabat.talabatcommon.views.ShimmerLayout>

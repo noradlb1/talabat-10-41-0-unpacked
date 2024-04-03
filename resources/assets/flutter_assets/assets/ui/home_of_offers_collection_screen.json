@@ -1,0 +1,190 @@
+{
+  "type": "VendorCollectionScreen",
+  "layouts": [
+    {
+      "name": "vendor_collection_layout",
+      "column": [
+        "header",
+        "grid"
+      ]
+    }
+  ],
+  "widgets": {
+    "header": {
+      "type": "VendorCollectionHeader",
+      "data": {
+        "title": "NEWS OFFERS",
+        "title_color": "neutral100",
+        "subtitle": "Great saving in your area",
+        "subtitle_color": "neutral100",
+        "background_color": "primary10"
+      }
+    },
+    "grid": {
+      "type": "VendorGrid",
+      "data": {
+        "title": "Super saver",
+        "subtitle": null,
+        "title_color": "promo4",
+        "subtitle_color": "promo100",
+        "items": [
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Islam tamer",
+              "subtitle": "Pizzas",
+              "offer_hint": "",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/Notes_Cafe_Logo_637383089692698097.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=19743"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Zahr El Rouman",
+              "subtitle": "Arabic, Desserts, Lebanese",
+              "offer_hint": "10% OFF orders above AED 10.00",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/Zahr-El-Rouman-(1)_635912078621727111.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=7995"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "McDonald's",
+              "subtitle": "American, Burgers, Sandwiches",
+              "offer_hint": "50% off up to AED 30.00 discount",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/McdLogoEN_636444496253898433.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=11847"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "talabat mart",
+              "subtitle": "Grocery",
+              "offer_hint": "",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/tmart-logo-square-wh_637329231324335632.png",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=ds"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Aswan Restaurant",
+              "subtitle": "Arabic, Sandwiches",
+              "offer_hint": "40% OFF orders above AED 40.00",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/logo_(1)_637171019580370174.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=19636"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Ayman`s Kitchen",
+              "subtitle": "American, Arabic, Asian",
+              "offer_hint": "",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/download-1_636981781225701146.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=19625"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Mohamed Hossam",
+              "subtitle": "Breakfast, International",
+              "offer_hint": "",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/Capture637848326236849119637849109214683638.png",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=19782"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "tracking_events": {
+    "on_load": {
+      "tracking_event_attributes": {
+        "test":"12345"
+      },
+      "tracking_event_name": "shop_list_loaded_collection"
+    }
+  }
+}

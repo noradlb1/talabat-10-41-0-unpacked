@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/shimmer_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:shimmer_angle="20" app:shimmer_animation_duration="800" app:shimmer_color="@color/ds_neutral_white">
+        <View android:background="@drawable/tmart_growth_loading_background" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </com.talabat.talabatcommon.views.ShimmerLayout>
+</merge>

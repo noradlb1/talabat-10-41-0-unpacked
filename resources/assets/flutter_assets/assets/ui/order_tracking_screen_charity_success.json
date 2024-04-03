@@ -1,0 +1,92 @@
+{
+  "type": "OrderTrackingScreen",
+  "composition": {
+    "body": {
+      "extend_behind_app_bar": false,
+      "background_color": "promo10",
+      "app_bar_background_color": "promo10",
+      "show_rounded_background": true,
+      "close_button": "leading",
+      "status_bar_brightness": "light",
+      "close_button_icon_color": "neutral100",
+      "layout": "body"
+    },
+    "bottom_sheet": {
+      "is_draggable": false,
+      "bottom_sheet_height": 168.0,
+      "layout": "bottom_sheet"
+    },
+    "floating_action_button": null
+  },
+  "common_tracking_event_attributes": {
+    "shop_name": "Emirates Red Crescent",
+    "order_id": "1025974299",
+    "order_pickup": false
+  },
+  "meta": {
+    "polling_interval_milliseconds": 500000
+  },
+  "widgets": {
+    "xxx_large_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 48.0
+      }
+    },
+    "animation_header": {
+      "type": "ImageBanner",
+      "style": {
+        "text_color": null,
+        "background_color": "promo10",
+        "corner_radius": null,
+        "image_height": null
+      },
+      "data": {
+        "name": "https://images.deliveryhero.io/image/talabat/poh/smallheart.png",
+        "background": {
+          "url": "https://images.deliveryhero.io/image/talabat/poh/smallheart.png",
+          "style": {
+            "text_color": null,
+            "background_color": "promo10",
+            "corner_radius": null,
+            "image_height": null
+          }
+        }
+      }
+    },
+    "order_delivered": {
+      "type": "OrderCompleted",
+      "data": {
+        "header": null,
+        "title": "Thank you, Gleb 🥰",
+        "text": "You're one of 6,500 generous customers who stepped up this month to help those in need"
+      }
+    }
+  },
+  "layouts": [
+    {
+      "name": "body",
+      "column": [
+        "xxx_large_vertical_spacing",
+        "animation_header"
+      ],
+      "header": null
+    },
+    {
+      "name": "bottom_sheet",
+      "column": [
+        "order_delivered"
+      ],
+      "header": null
+    },
+    {
+      "name": "order_tracking_screen_default_layout",
+      "column": [
+        "xxx_large_vertical_spacing",
+        "animation_header",
+        "order_delivered"
+      ],
+      "header": null
+    }
+  ]
+}

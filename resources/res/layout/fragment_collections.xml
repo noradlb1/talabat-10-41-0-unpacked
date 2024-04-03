@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinatorLayout_content" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/appbarLayout" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsingToolbar" android:layout_width="match_parent" android:layout_height="170dp" app:collapsedTitleGravity="800003" app:collapsedTitleTextAppearance="@style/collectionCollapseTitleTextAppearance" app:expandedTitleGravity="11" app:expandedTitleTextAppearance="@style/collectionExpandedTitleTextAppearance" app:layout_scrollFlags="13" app:scrimAnimationDuration="200" app:title="mahmoud">
+            <FrameLayout android:orientation="vertical" android:id="@+id/frameLayout_headerContainer" android:background="@color/ds_secondary_10" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_collapseMode="2">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:id="@+id/descriptionTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:maxLines="1" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="@style/DSTextAppearance.Body1"/>
+                </LinearLayout>
+            </FrameLayout>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/mainToolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1">
+                <Button android:textColor="@color/ds_primary_100" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/button_termsAndCondition" android:background="@color/ds_transparent_fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/terms_amp_conditions" android:paddingStart="16dp" android:paddingEnd="16dp" style="@style/DSTextAppearance.Subheading2"/>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@+id/toolbar" android:background="@drawable/collections_radius_white" android:layout_width="match_parent" android:layout_height="44dp" android:elevation="1dp" app:contentInsetStart="0dp" app:elevation="1dp" app:layout_anchor="@+id/appbarLayout" app:layout_anchorGravity="50">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout_filterCuisineContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:id="@+id/filterBtn" android:background="?attr/selectableItemBackground" android:paddingRight="2dp" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingEnd="2dp">
+                <FrameLayout android:layout_width="30dp" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_marginEnd="4dp">
+                    <ImageView android:layout_gravity="center" android:id="@+id/filter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_filter_black"/>
+                    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/filterBubbleContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_filter_bubble"/>
+                </FrameLayout>
+                <TextView android:id="@+id/filterview_filter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vendor_filter_by" android:textAllCaps="false" style="@style/DSTextAppearance.Body1"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameLayout_divider" android:background="@color/seperator_color" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:id="@+id/cuisineBtn" android:background="?attr/selectableItemBackground" android:paddingRight="2dp" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingEnd="2dp">
+                <FrameLayout android:layout_width="30dp" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_marginEnd="4dp">
+                    <ImageView android:layout_gravity="center" android:id="@+id/cusine_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cuisine"/>
+                    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/cuisineBubbleContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cuisine_bubble"/>
+                </FrameLayout>
+                <TextView android:id="@+id/filterview_cuisine_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vendorlist_cuisine" android:textAllCaps="false" style="@style/DSTextAppearance.Body1"/>
+            </LinearLayout>
+            <FrameLayout android:background="@color/seperator_color" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:id="@+id/searchBtn" android:background="?attr/selectableItemBackground" android:paddingRight="2dp" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingEnd="2dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_search" android:layout_marginEnd="10dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vendorslist_search" android:textAllCaps="false" style="@style/DSTextAppearance.Body1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/relativeLayout_searchFilterContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linearLayout_searchContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/linearLayout_filterContainer" android:layout_toStartOf="@+id/linearLayout_filterContainer">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:src="@drawable/ic_s_earch" android:layout_marginStart="12dp"/>
+                <com.talabat.talabatcommon.views.TalabatTextView android:textSize="13sp" android:textColor="@color/ds_neutral_35" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/search_for_dishes_or_restaurants" android:layout_marginStart="8dp"/>
+            </LinearLayout>
+            <FrameLayout android:background="@color/ds_neutral_10" android:layout_width="1dp" android:layout_height="match_parent" android:layout_toRightOf="@+id/linearLayout_searchContainer" android:layout_toEndOf="@+id/linearLayout_searchContainer"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/linearLayout_filterContainer" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:paddingStart="8dp" android:paddingEnd="8dp" android:layout_alignParentEnd="true">
+                <ImageView android:id="@+id/imageView_filterIc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/ic_list_filter" android:layout_marginStart="4dp"/>
+                <com.talabat.talabatcommon.views.TalabatTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="4dp" android:text="@string/filters" android:layout_marginStart="8dp" android:layout_marginEnd="4dp" style="@style/DSTextAppearance.Caption"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/scrollView_noRestaurant" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout_noRestaurantContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/restaurant_list_sub_linear_height">
+            <ImageView android:layout_gravity="center" android:id="@+id/all_res_no_rest_found" android:background="@color/ds_transparent_fill" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:src="@drawable/ic_no_vendors_found"/>
+            <com.talabat.talabatcommon.views.TalabatTextView android:textSize="@dimen/txt_size_20" android:textColor="@color/ds_neutral_100" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:layout_marginRight="20dp" android:layout_marginBottom="8dp" android:text="@string/no_restaurants_found" style="@style/DSTextAppearance.Caption"/>
+            <com.talabat.talabatcommon.views.TalabatTextView android:textColor="@color/ds_neutral_55" android:layout_gravity="center_horizontal" android:id="@+id/all_res_no_filter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="8dp" android:text="@string/please_change_filter" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" style="@style/DSTextAppearance.Caption"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="22dp">
+            <include android:id="@+id/talabat_daily_layout" layout="@layout/layout_talabat_daily_entry_point"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/collectionRecycler" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="always"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

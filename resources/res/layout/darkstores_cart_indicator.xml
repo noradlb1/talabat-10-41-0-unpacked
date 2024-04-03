@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ImageView android:layout_gravity="center" android:id="@+id/cart_indicator_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cart_indicator_state"/>
+    <FrameLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/cart_indicator_count_layout" android:background="@drawable/bg_cart_indicator_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_xxxs" android:minWidth="@dimen/ds_s" android:minHeight="@dimen/ds_s" android:paddingStart="@dimen/cart_indicator_count_padding" android:paddingEnd="@dimen/cart_indicator_count_padding">
+        <TextView android:textColor="@color/ds_neutral_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/cart_indicator_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/cart_indicator_count_margin" android:lines="1" style="@style/DSTextAppearance.Subheading2"/>
+    </FrameLayout>
+</merge>

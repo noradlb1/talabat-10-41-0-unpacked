@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/vendor_branch_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_internal_margin">
+        <ImageView android:padding="2dp" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginRight="@dimen/standard_internal_margin" android:src="@drawable/ic_vendor_branch" android:layout_marginEnd="@dimen/standard_internal_margin"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/vendorBranchCityTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/standard_quarter_margin" style="@style/text_black_medium_16sp"/>
+            <TextView android:id="@+id/vendorBranchAreaTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lines="2" style="@style/text_grey_12sp"/>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_half_margin">
+                <TextView android:id="@+id/vendorBranchLocationTextView" android:paddingRight="@dimen/standard_quarter_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vendorBranchDirections" android:maxLines="1" android:layout_toLeftOf="@+id/vendorBranchDistanceTextView" android:paddingEnd="@dimen/standard_quarter_margin" android:layout_toStartOf="@+id/vendorBranchDistanceTextView" style="@style/text_actionable_medium_14sp"/>
+                <TextView android:gravity="end" android:id="@+id/vendorBranchDistanceTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/text_grey_12sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

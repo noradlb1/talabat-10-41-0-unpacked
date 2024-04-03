@@ -1,0 +1,542 @@
+{
+  "type": "HomeOfOffersScreen",
+  "layouts": [
+    {
+      "name": "home_of_offers_default_layout",
+      "column": [
+        "divider_8",
+        "top_picks",
+        "divider_8",
+        "spacing_32",
+        "vendor_gid_list_1",
+        "spacing_8",
+        "load_more_button_1",
+        "spacing_32",
+        "vendor_gid_list_2",
+        "spacing_8",
+        "load_more_button_2",
+        "spacing_32",
+        "vendor_gid_list_3",
+        "spacing_8",
+        "load_more_button_3",
+        "vendor_gid_list_4"
+      ]
+    }
+  ],
+  "widgets": {
+    "divider_2": {
+      "type": "Divider",
+      "style": {
+        "height": 2.0
+      }
+    },
+    "divider_8": {
+      "type": "Divider",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "spacing_8": {
+      "type": "Spacing",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "spacing_32": {
+      "type": "Spacing",
+      "style": {
+        "height": 32.0
+      }
+    },
+    "top_picks": {
+      "type": "TopPicksSwimlane",
+      "data": {
+        "tracking_events": {
+          "on_load": {
+            "tracking_event_attributes": {
+              "test":"12345"
+            },
+            "tracking_event_name": "carouselLoaded"
+          }
+        },
+        "title": "Latest deals & offers",
+        "items": [
+          {
+            "type": "TopPicksItem",
+            "data": {
+              "title": "NEW OFFERS",
+              "background_color": "promo4",
+              "background_image": "https://images.deliveryhero.io/image/talabat/hoo/super_saver.png",
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=home_of_offers_collection&swimlaneId=2264&collectionType=TopPicks",
+                    "tracking_event_name": "carousel_clicked",
+                    "tracking_event_attributes": {
+                      "listingPageType": "restaurants",
+                      "channelPosition": 1,
+                      "channel": "SuperSaver",
+                      "channelIndex": "3"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "TopPicksItem",
+            "data": {
+              "title": "Grocery Deals",
+              "background_image": "https://images.deliveryhero.io/image/talabat/hoo/hoo_fifty_percent_free_delivery.png",
+              "background_color": "promo4",
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=home_of_offers_collection&swimlaneId=2266&collectionType=TopPicks"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "TopPicksItem",
+            "data": {
+              "title": "Free Delivery",
+              "background_image": "https://images.deliveryhero.io/image/talabat/hoo/hoo_free_delivery.png",
+              "background_color": "promo4",
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=home_of_offers_collection&collectionType=TopPicks"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "TopPicksItem",
+            "data": {
+              "title": "Breakfast Deals",
+              "background_image": "https://images.deliveryhero.io/image/talabat/hoo/hoo_breakfast_deals.png",
+              "background_color": "secondary4",
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=home_of_offers_collection&swimlaneId=2265&collectionType=TopPicks"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "vendor_gid_list_1": {
+      "type": "VendorGrid",
+      "data": {
+        "title": "Super saver",
+        "subtitle": "50% off with a max discount",
+        "title_color": "primary100",
+        "subtitle_color": null,
+        "items": [
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "This Is Hot Dog",
+              "subtitle": "Sandwiches, American",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/This-Is-Hot-Dog_635972810359949537.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [
+                {
+                  "type": "VendorGridItemTag",
+                  "data": {
+                    "icon": "",
+                    "text": "KD 2.00 OFF",
+                    "text_color": "neutralWhite",
+                    "background_color": "promo100"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=13235"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "800 Degrees Neapolitan Pizzeria",
+              "subtitle": "Pizzas, Italian",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/unnamed_(1)_636123878286769127.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=12308"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Aswan Restaurant",
+              "subtitle": "Arabic, Sandwiches",
+              "offer_hint": "40% OFF orders above AED 60.00",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/logo_637171018199789149.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=19635"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Canary Restaurant",
+              "subtitle": "Arabic, Shawarma & Doner, Sandwiches",
+              "offer_hint": "",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/CANARY_Eng_636201784506444367.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=13318"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "vendor_gid_list_4": {
+      "type": "VendorGrid",
+      "data": {
+        "title": "Delivery Hero Offer",
+        "subtitle": "50% off with a max discount",
+        "title_color": "primary100",
+        "subtitle_color": null,
+        "items": [
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "FOod panda",
+              "subtitle": "Sandwiches, American",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/This-Is-Hot-Dog_635972810359949537.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=13235"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Talabat",
+              "subtitle": "Pizzas, Italian",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/unnamed_(1)_636123878286769127.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=12308"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Instashop",
+              "subtitle": "Arabic, Sandwiches",
+              "offer_hint": "40% OFF orders above AED 60.00",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/logo_637171018199789149.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=19635"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Canary Restaurant",
+              "subtitle": "Arabic, Shawarma & Doner, Sandwiches",
+              "offer_hint": "",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/CANARY_Eng_636201784506444367.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=13318"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "load_more_button_1": {
+      "type": "DSFixedFooterWithHorizontalButtons",
+      "data": {
+        "elevated": false,
+        "buttons": [
+          {
+            "type": "DSSecondaryButton",
+            "data": {
+              "text": "Load more restaurants",
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=home_of_offers_collection&swimlaneId=2304&collectionType=VendorGrid"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "vendor_gid_list_2": {
+      "type": "VendorGrid",
+      "data": {
+        "title": "Free Delivery",
+        "subtitle": "Get food delivered for free, no delivery charges.",
+        "title_color": null,
+        "subtitle_color": null,
+        "items": [
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "McDonald's",
+              "subtitle": "American, Burgers, Sandwiches",
+              "offer_hint": "50% off up to AED 30.00 discount",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/McdLogoEN_636444496253898433.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=11847"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "load_more_button_2": {
+      "type": "DSFixedFooterWithHorizontalButtons",
+      "data": {
+        "elevated": false,
+        "buttons": [
+          {
+            "type": "DSSecondaryButton",
+            "data": {
+              "text": "Load more restaurants",
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=home_of_offers_collection&swimlaneId=2305&collectionType=VendorGrid"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "vendor_gid_list_3": {
+      "type": "VendorGrid",
+      "data": {
+        "title": "Breakfast Deals",
+        "subtitle": "Get your breakfast served to you fast and easy",
+        "title_color": null,
+        "subtitle_color": null,
+        "items": [
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Shami Gourmet",
+              "subtitle": "Arabic, Sandwiches",
+              "offer_hint": "50% off up to AED 30.00 discount",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/ShamiGourmet_E_635742880336906980.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=13178"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Zahr El Rouman",
+              "subtitle": "Arabic, Desserts, Lebanese",
+              "offer_hint": "10% OFF orders above AED 10.00",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/Zahr-El-Rouman-(1)_635912078621727111.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=7995"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Islam tamer",
+              "subtitle": "Pizzas",
+              "offer_hint": "",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/Notes_Cafe_Logo_637383089692698097.jpg",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=19743"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "VendorGridItem",
+            "data": {
+              "title": "Mohamed Hossam",
+              "subtitle": "Breakfast, International",
+              "offer_hint": "",
+              "offer_image_url": "https://images.deliveryhero.io/image/talabat-staging/Restaurants/Capture637848326236849119637849109214683638.png",
+              "title_color": null,
+              "subtitle_color": null,
+              "offer_hint_color": null,
+              "tags": [],
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=vendor_menu&branch_id=19782"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "load_more_button_3": {
+      "type": "DSFixedFooterWithHorizontalButtons",
+      "data": {
+        "elevated": false,
+        "buttons": [
+          {
+            "type": "DSSecondaryButton",
+            "data": {
+              "text": "Load more restaurants",
+              "actions": [
+                {
+                  "type": "DeepLink",
+                  "args": {
+                    "link": "talabat://?s=home_of_offers_collection&swimlaneId=2303&collectionType=VendorGrid"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "tracking_events": {
+    "on_load": {
+      "tracking_event_attributes": {
+         "test":"12345"
+      },
+      "tracking_event_name": "shop_list_loaded"
+    }
+  },
+  "common_tracking_event_attributes": {
+    "clientId": "dhu7837bdieh3",
+    "userId": "01246793-9bbd-4ad6-9da7-1ff8d0136f6b",
+    "screenType": "shop_list",
+    "screenName": "Offers List Screen"
+  }
+}

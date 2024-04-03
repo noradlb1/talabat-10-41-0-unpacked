@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:padding="@dimen/ds_xs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_m">
+            <TextView android:textColor="@color/ds_neutral_100" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/categories_title" android:textAlignment="center" style="@style/DSTextAppearance.Heading1"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/category_overview_close" android:background="@drawable/bg_ds_oval_light_gray" android:padding="@dimen/ds_xs" android:layout_width="@dimen/ds_xxl" android:layout_height="@dimen/ds_xxl" android:foreground="?attr/selectableItemBackgroundBorderless" android:src="@drawable/ds_close"/>
+        </FrameLayout>
+        <androidx.appcompat.widget.SearchView android:id="@+id/searchView" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/ds_m" android:layout_marginRight="@dimen/ds_s" android:layout_marginHorizontal="@dimen/ds_s" style="@style/SearchViewStyle"/>
+        <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/loading_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ds_m" android:layout_marginBottom="@dimen/ds_s" android:layout_marginStart="@dimen/ds_xxs" android:layout_marginEnd="@dimen/ds_xxs" app:shimmer_angle="20" app:shimmer_animation_duration="800" app:shimmer_color="@color/ds_neutral_white">
+            <include layout="@layout/darkstores_search_category_placeholder"/>
+        </com.talabat.talabatcommon.views.ShimmerLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/no_results_layout" android:paddingLeft="@dimen/ds_xl" android:paddingRight="@dimen/ds_xl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/ds_xl">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_category_top_margin" android:text="@string/no_results_found" style="@style/DSTextAppearance.Heading1"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxs" android:text="@string/category_search_error_description" style="@style/DSTextAppearance.Body1"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:layout_gravity="center" android:id="@+id/recyclerView" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ds_m" android:layout_marginBottom="@dimen/ds_s" android:splitMotionEvents="false" android:layout_marginStart="@dimen/ds_xxs" android:layout_marginEnd="@dimen/ds_xxs"/>
+    </LinearLayout>
+</RelativeLayout>

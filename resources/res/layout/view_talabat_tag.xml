@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="100dp" app:cardElevation="0dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tagContainer" android:background="@color/ds_promo_10" android:paddingTop="@dimen/ds_xxxs" android:paddingBottom="@dimen/ds_xxxs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ds_xxs" android:paddingEnd="@dimen/ds_xxs">
+        <ImageView android:layout_gravity="center" android:id="@+id/tagImageView" android:visibility="gone" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginEnd="@dimen/ds_xxxs"/>
+        <TextView android:textAppearance="@style/text_white_medium_12sp" android:textColor="@color/ds_promo_100" android:id="@+id/tagTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="@integer/max_tag_length" android:textAlignment="center"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

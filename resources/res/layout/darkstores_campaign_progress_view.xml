@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/campaign_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:indeterminate="false" app:indicatorColor="@color/ds_promo_100" app:trackColor="@color/ds_neutral_10" app:trackCornerRadius="@dimen/ds_xxxs"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/ds_promo_100" android:id="@+id/campaign_progress_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxs" android:drawablePadding="@dimen/ds_xxxs" android:drawableStart="@drawable/ds_promo_filled" app:drawableTint="@color/ds_promo_100" style="@style/DSTextAppearance.Caption"/>
+    <TextView android:textColor="@color/ds_neutral_55" android:id="@+id/campaign_limit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_l" style="@style/DSTextAppearance.Caption"/>
+</merge>

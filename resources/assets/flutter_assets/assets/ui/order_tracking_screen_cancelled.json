@@ -1,0 +1,188 @@
+{
+  "type": "OrderTrackingScreen",
+  "composition": {
+    "body": {
+      "extend_behind_app_bar": false,
+      "background_color": "primary10",
+      "app_bar_background_color": "primary10",
+      "show_rounded_background": true,
+      "close_button": null,
+      "trailing_action": null,
+      "status_bar_brightness": "light",
+      "close_button_icon_color": "neutral100",
+      "layout": "body"
+    },
+    "bottom_sheet": {
+      "layout": "bottom_sheet"
+    },
+    "floating_action_button": null
+  },
+  "common_tracking_event_attributes": {
+    "shop_name": "LuLu Hypermarket",
+    "order_id": "1232602829",
+    "order_pickup": false,
+    "delivery_status": "order_cancelled",
+    "screen_type": "order_confirmation"
+  },
+  "meta": {
+    "polling_interval_milliseconds": 250000
+  },
+  "widgets": {
+    "xx_small_vertical_spacing": {
+      "style": {
+        "height": 8.0
+      },
+      "type": "Spacing"
+    },
+    "animation_header": {
+      "type": "ImageBanner",
+      "style": {
+        "text_color": null,
+        "background_color": "primary10",
+        "text_style": null,
+        "corner_radius": null,
+        "image_height": null
+      },
+      "data": {
+        "name": "https://images.deliveryhero.io/image/talabat/poh/animations/default/order_tracking_cancelled.gif",
+        "background": {
+          "url": "https://images.deliveryhero.io/image/talabat/poh/animations/default/order_tracking_cancelled.gif",
+          "style": {
+            "text_color": null,
+            "background_color": "primary10",
+            "text_style": null,
+            "corner_radius": null,
+            "image_height": null
+          }
+        }
+      }
+    },
+    "small_vertical_spacing": {
+      "style": {
+        "height": 16.0
+      },
+      "type": "Spacing"
+    },
+    "order_delivered": {
+      "type": "OrderCompleted",
+      "data": {
+        "header": "Order cancelled",
+        "title": "See you next time",
+        "text": null
+      }
+    },
+    "xx_small_divider": {
+      "type": "Divider",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "delivery_address": {
+      "type": "BasicInfo",
+      "data": {
+        "header": "Delivering to",
+        "title": ":house: Apartment",
+        "subtitle": null,
+        "text": "abc ,  2nd,  room no 22, abc , Maabela South",
+        "image_url": null,
+        "actions": [],
+        "actions_messages": []
+      },
+      "style": {
+        "text_color": null,
+        "background_color": null,
+        "text_style": null,
+        "corner_radius": null,
+        "image_height": null
+      }
+    },
+    "order_details": {
+      "type": "OrderDetails",
+      "data": {
+        "header": "Your order from",
+        "title": "LuLu Hypermarket",
+        "subtitle": "Maabela South",
+        "text": null,
+        "image_url": "https://images.deliveryhero.io/image/talabat/restaurants/LOGO_2638034152948455505.jpg",
+        "items": [
+          {
+            "text": "Omela Promo Evaporated Milk, 169g X 48 pcs",
+            "quantity": 1,
+            "subtext": ""
+          }
+        ],
+        "actions": [],
+        "actions_messages": []
+      }
+    },
+    "payment_details": {
+      "type": "ListInfo",
+      "data": {
+        "title": "Payment details",
+        "rows": [
+          {
+            "label": "Total",
+            "value": "OMR 7.480",
+            "text": "OMR 7.480"
+          }
+        ]
+      }
+    },
+    "support": {
+      "type": "BasicInfo",
+      "data": {
+        "header": null,
+        "title": "Support",
+        "subtitle": null,
+        "text": "Order #1232602829",
+        "image_url": null,
+        "actions": [
+          {
+            "type": "DeepLink",
+            "text": "Help Center",
+            "args": {
+              "link": "talabat://?s=ghc&i=1232602829",
+              "tracking_event_name": "helpcentre_link_clicked",
+              "feature_name": null,
+              "tracking_event_attributes": {}
+            }
+          }
+        ],
+        "actions_messages": []
+      },
+      "style": {
+        "text_color": null,
+        "background_color": null,
+        "text_style": null,
+        "corner_radius": null,
+        "image_height": null
+      }
+    }
+  },
+  "layouts": [
+    {
+      "name": "body",
+      "column": [
+        "xx_small_vertical_spacing",
+        "animation_header"
+      ],
+      "header": null
+    },
+    {
+      "name": "bottom_sheet",
+      "column": [
+        "small_vertical_spacing",
+        "order_delivered",
+        "xx_small_divider",
+        "delivery_address",
+        "xx_small_divider",
+        "order_details",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support"
+      ],
+      "header": null
+    }
+  ]
+}

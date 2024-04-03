@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:id="@+id/categoryHeroImageRelativeLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginTop="@dimen/standard_margin" android:layout_marginRight="@dimen/standard_margin" android:layout_marginBottom="@dimen/spacing_large" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" app:cardCornerRadius="@dimen/loyalty_burn_image_view_radius" app:cardElevation="4dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.talabat.talabatcommon.views.TalabatImageView android:id="@+id/categoryHeroImageView" android:layout_width="match_parent" android:layout_height="250dp" android:scaleType="fitCenter" android:adjustViewBounds="false"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_internal_margin" android:layout_marginRight="@dimen/standard_margin" android:layout_marginBottom="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin">
+                <TextView android:textColor="@color/ds_primary_100" android:id="@+id/categoryHeroViewAllTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loyalty_view_offers" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/DSTextAppearance.Subheading1"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_toLeftOf="@+id/categoryHeroViewAllTextView" android:layout_alignParentLeft="true" android:layout_marginStart="@dimen/standard_margin" android:layout_toStartOf="@+id/categoryHeroViewAllTextView" android:layout_alignParentStart="true">
+                    <TextView android:id="@+id/categoryHeroTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/DSTextAppearance.Heading1"/>
+                    <TextView android:textColor="@color/ds_neutral_30" android:id="@+id/categoryHeroPointTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_quarter_margin" android:maxLines="2" style="@style/DSTextAppearance.Body1"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

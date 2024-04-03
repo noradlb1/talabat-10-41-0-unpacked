@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/ds_promo_100" android:id="@+id/free_quantity_count" android:background="@drawable/bg_ds_item_promo_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ds_xxxs" android:paddingEnd="@dimen/ds_xxxs" android:layout_marginEnd="@dimen/ds_xxxs" style="@style/DSTextAppearance.Tag"/>
+    <TextView android:textColor="@color/ds_promo_100" android:id="@+id/free_quantity_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Tag"/>
+</LinearLayout>

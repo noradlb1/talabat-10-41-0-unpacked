@@ -1,0 +1,5 @@
+package com.materialedittext.validation;
+
+public abstract class METLengthChecker {
+    public abstract int getLength(CharSequence charSequence);
+}

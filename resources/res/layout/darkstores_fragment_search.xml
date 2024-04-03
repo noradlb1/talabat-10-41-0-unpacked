@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar" android:id="@+id/toolbar" android:paddingTop="@dimen/ds_xxs" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:layout_marginEnd="@dimen/ds_l" app:contentInsetStartWithNavigation="@dimen/ds_zero" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <androidx.appcompat.widget.SearchView android:layout_gravity="center" android:id="@+id/searchView" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SearchViewStyle"/>
+    </androidx.appcompat.widget.Toolbar>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/tvEmpty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_no_items" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ds_illustration_dish"/>
+        <TextView android:textColor="@color/ds_neutral_100" android:layout_gravity="center" android:id="@+id/tvNoResultsTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_m" android:text="@string/no_results_title" style="@style/DSTextAppearance.Heading0"/>
+        <TextView android:textColor="@color/ds_neutral_55" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xs" android:text="@string/no_results_message" style="@style/DSTextAppearance.Body1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/view_all_results" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" android:layout_marginBottom="@dimen/ds_s">
+            <TextView android:textColor="@color/ds_primary_100" android:layout_gravity="center_vertical" android:id="@+id/text_view_all_results" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_view_all_results" android:layout_weight="1" android:layout_marginStart="@dimen/ds_s" style="@style/DSTextAppearance.Subheading1"/>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ds_arrow_forward" android:layout_marginEnd="@dimen/ds_s" app:tint="@color/ds_primary_100"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:splitMotionEvents="false"/>
+    </LinearLayout>
+</LinearLayout>

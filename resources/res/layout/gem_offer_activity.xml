@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinatorLayout_content" android:background="@drawable/gem_offer_background_rounded_white" android:paddingBottom="@dimen/ds_xs" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ds_xs" android:layout_marginRight="@dimen/ds_xs" android:layout_marginBottom="@dimen/ds_xl" android:layout_marginHorizontal="@dimen/ds_xs">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/appbarLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginRight="@dimen/ds_s" android:layout_marginHorizontal="@dimen/ds_s" app:elevation="0dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsingToolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_scrollFlags="3" app:scrimAnimationDuration="50">
+            <FrameLayout android:orientation="vertical" android:id="@+id/expandedHeaderContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" app:layout_collapseMode="2" app:layout_collapseParallaxMultiplier="1">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_m">
+                        <TextView android:textColor="@color/ds_neutral_100" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/titleTextView" android:layout_width="@dimen/ds_zero" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" style="@style/DSTextAppearance.Heading1"/>
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/sand_timer" android:layout_width="@dimen/ds_l" android:layout_height="@dimen/ds_m" android:src="@drawable/gem_logo_small" android:layout_marginEnd="@dimen/ds_xxxs"/>
+                        <TextView android:textColor="@color/ds_danger_100" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/counterTextView" android:layout_width="@dimen/_50txtSize" android:layout_height="wrap_content" style="@style/TextAppearance.Heading2"/>
+                    </LinearLayout>
+                    <TextView android:textColor="@color/ds_neutral_100" android:id="@+id/subTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxs" android:layout_marginBottom="@dimen/ds_s" style="@style/DSTextAppearance.Body1"/>
+                </LinearLayout>
+            </FrameLayout>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/mainToolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_marginStart="-16dp" app:layout_collapseMode="1">
+                <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:id="@+id/gem_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_m" android:layout_marginEnd="@dimen/ds_s">
+                    <ImageView android:id="@+id/imageView_close" android:clickable="true" android:layout_width="@dimen/ds_l" android:layout_height="@dimen/ds_l" android:src="@drawable/ds_chevron_down"/>
+                    <TextView android:textColor="@color/ds_neutral_100" android:ellipsize="end" android:id="@+id/titleHeaderTextView" android:visibility="gone" android:layout_width="@dimen/ds_zero" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:layout_marginStart="@dimen/ds_m" style="@style/DSTextAppearance.Heading2"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:scrollbarAlwaysDrawVerticalTrack="true" android:gravity="center" android:orientation="vertical" android:id="@+id/llContainer" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_anchor="@+id/appbarLayout" app:layout_anchorGravity="50" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <View android:background="@color/ds_neutral_10" android:layout_width="match_parent" android:layout_height="@dimen/stroke_1dp"/>
+        <FrameLayout android:id="@+id/frameLayout_recyclerViewContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/restaurantsRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

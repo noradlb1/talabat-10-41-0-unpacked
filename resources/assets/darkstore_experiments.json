@@ -1,0 +1,12 @@
+{
+  "boolean_experiments":{
+    "canShowDarkstoresNewCategories2": {
+      "true": true,
+      "false": false
+    },
+    "enablePartialFulfillment": {
+      "true": true,
+      "false": false
+    }
+  }
+}

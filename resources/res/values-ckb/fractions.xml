@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="restaurant_name_percent">80%</fraction>
+    <fraction name="status_percent">20%</fraction>
+</resources>

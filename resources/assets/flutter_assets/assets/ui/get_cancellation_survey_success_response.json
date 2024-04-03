@@ -1,0 +1,83 @@
+{
+  "type": "ShowBottomSheet",
+  "args": {
+    "layouts": [
+      {
+        "name": "default_layout",
+        "column": [
+          "cancellation_survey_success"
+        ]
+      }
+    ],
+    "widgets": {
+      "cancellation_survey_success": {
+        "type": "DynamicBottomSheet",
+        "data": {
+          "body": [
+            {
+              "type": "SingleSelectionList",
+              "data": {
+                "title": "Your order has been successfully cancelled. Please select a reason",
+                "rows": [
+                  {
+                    "label": "Voucher wasn’t applied ",
+                    "id": "1",
+                    "isShowTextField": true
+                  },
+                  {
+                    "label": "Placed order by accident",
+                    "id": "2",
+                    "isShowTextField": false
+                  },
+                  {
+                    "label": "Waiting time is too long",
+                    "id": "3",
+                    "isShowTextField": false
+                  },
+                  {
+                    "label": "Unable to edit order",
+                    "id": "4",
+                    "isShowTextField": false
+                  },
+                  {
+                    "label": "Wrong address",
+                    "id": "5",
+                    "isShowTextField": false
+                  },
+                  {
+                    "label": "Other",
+                    "id": "6",
+                    "isShowTextField": true
+                  }
+                ],
+                "submit_button": {
+                  "type": "PrimaryButton",
+                  "data": {
+                    "text": "Submit",
+                    "on_click": [
+                      {
+                        "type": "Dismiss",
+                        "args": {}
+                      },
+                      {
+                        "type": "Api",
+                        "args": {
+                          "url": "https://poe-qa.dhhmena.com/api/v1/orders/123308/submit_cancellation_survey",
+                          "method": "POST",
+                          "body": {
+                            "orderId": "1234"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "with_navigation_bar": false
+        }
+      }
+    }
+  }
+}

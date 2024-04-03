@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxxs" android:layout_marginRight="@dimen/ds_s" android:layout_marginBottom="@dimen/ds_s" android:layout_marginHorizontal="@dimen/ds_s" app:cardCornerRadius="@dimen/ds_xs" app:cardElevation="@dimen/ds_zero">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/ds_xs" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imgIcon" android:layout_width="@dimen/ds_xxl" android:layout_height="@dimen/ds_xxl" android:scaleType="fitCenter"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/ds_neutral_100" android:ellipsize="end" android:id="@+id/txtInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="@dimen/ds_xs" android:layout_marginEnd="@dimen/ds_xxxl" style="@style/DSTextAppearance.Caption"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

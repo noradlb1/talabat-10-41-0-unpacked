@@ -1,0 +1,312 @@
+{
+  "type": "OrderTrackingScreen",
+  "layouts": [
+    {
+      "name": "body",
+      "column": [
+        "animation_header"
+      ]
+    },
+    {
+      "name": "bottom_sheet",
+      "column": [
+        "sliding_up_panel_header_space",
+        "order_progress_update",
+        "delivery_address",
+        "compensation_banner",
+        "tag_banner",
+        "pro_reward_banner",
+        "xx_small_divider",
+        "reward_banner",
+        "rider_info",
+        "xx_small_divider",
+        "rider_tip",
+        "order_details",
+        "grocery_looking_glass",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support"
+      ]
+    },
+    {
+      "name": "default_body",
+      "column": [
+        "animation_header",
+        "order_progress_update",
+        "compensation_banner",
+        "tag_banner",
+        "pro_reward_banner",
+        "xx_small_divider",
+        "reward_banner",
+        "delivery_address",
+        "rider_tip",
+        "xx_small_divider",
+        "order_details",
+        "grocery_looking_glass",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support",
+        "xx_small_vertical_spacing"
+      ]
+    }
+  ],
+  "composition": {
+    "body": {
+      "extend_behind_app_bar": false,
+      "background_color": "primary10",
+      "app_bar_background_color": "primary10",
+      "show_rounded_background": true,
+      "status_bar_brightness": "light",
+      "close_button_icon_color": "neutral100",
+      "layout": "body"
+    },
+    "bottom_sheet": {
+      "layout": "bottom_sheet"
+    }
+  },
+  "widgets": {
+    "animation_header": {
+      "type": "ImageBanner",
+      "data": {
+        "background": {
+          "url": "https://images.deliveryhero.io/image/talabat/poh/animations/default/order_tracking_preparing_food.gif",
+          "style": {
+            "background_color": "primary10"
+          }
+        }
+      }
+    },
+    "order_progress_update": {
+      "type": "OrderProgress",
+      "data": {
+        "header": "Estimated arrival",
+        "title": "08:00 pm - 08:30 pm",
+        "footer": "Order is being prepared",
+        "progress_bars": [
+          {
+            "width": 1,
+            "fill": 1.0
+          },
+          {
+            "width": 2,
+            "fill": 0.5
+          },
+          {
+            "width": 1,
+            "fill": 0.0
+          }
+        ]
+      }
+    },
+    "delivery_address": {
+      "type": "BasicInfo",
+      "data": {
+        "header": "Delivering to",
+        "title": "\uD83C\uDFE2 Work",
+        "text": "Level 25, Single Business Tower 153, Sheikh Zayed Road"
+      }
+    },
+    "payment_details": {
+      "type": "ListInfo",
+      "data": {
+        "title": "Payment details",
+        "rows": [
+          {
+            "label": "Total cost",
+            "text": "AED 300"
+          },
+          {
+            "label": "Payment method",
+            "text": "xxxx-1738"
+          }
+        ]
+      }
+    },
+    "rider_info": {
+      "type": "BasicInfo",
+      "data": {
+        "title": "Abdelrahman",
+        "subtitle": "Is your delivery hero for today",
+        "text": "",
+        "image_url": "RIDER_DEFAULT_IMAGE",
+        "actions": [
+          {
+            "type": "Dialer",
+            "text": "Call",
+            "args": {
+              "phone_number": "+971501231231",
+              "tracking_event_name": "contact_option_clicked",
+              "tracking_event_attributes": {
+                "contactOption": "call_rider"
+              }
+            }
+          },
+          {
+            "type": "DeepLink",
+            "text": "Tip Rider",
+            "args": {
+              "link": "talabat://?s=rt&order_id=12345&tip_value=4",
+              "tracking_event_name": "tip_rider_clicked"
+            }
+          }
+        ],
+        "actions_messages": [
+          {
+            "type": "DSAlert",
+            "data": {
+              "alert_type": "success",
+              "title": "Thanks for the tip!",
+              "descriptor": "You just made Abdelrahman’s day 🎉"
+            }
+          }
+        ]
+      }
+    },
+    "support": {
+      "type": "BasicInfo",
+      "data": {
+        "title": "Support",
+        "text": "Order #5678093898",
+        "actions": [
+          {
+            "type": "DeepLink",
+            "text": "Help Center",
+            "args": {
+              "link": "talabat://?s=ghc&i=12345"
+            }
+          }
+        ],
+        "actions_messages": [
+          {
+            "type": "DSAlert",
+            "data": {
+              "alert_type": "warning",
+              "descriptor": "Call unavailable, a number hasn’t been provided"
+            }
+          }
+        ]
+      }
+    },
+    "order_details": {
+      "type": "OrderDetails",
+      "data": {
+        "header": "Your order from",
+        "title": "Domino’s Pizza",
+        "subtitle": "Business bay",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+        "items": [
+          {
+            "quantity": 2,
+            "text": "Cesar Salad"
+          },
+          {
+            "quantity": 1,
+            "text": "Tuscan chicken mac and cheese",
+            "subtext": "extra pesto"
+          },
+          {
+            "quantity": 1,
+            "text": "Tuscan chicken mac and cheese",
+            "subtext": "extra pesto"
+          },
+          {
+            "quantity": 1,
+            "text": "Vegetarian garlic bread"
+          }
+        ],
+        "actions": [
+          {
+            "type": "Dialer",
+            "text": "Call",
+            "args": {
+              "phone_number": "+971501231231"
+            }
+          }
+        ],
+        "actions_messages": [
+          {
+            "type": "DSAlert",
+            "data": {
+              "alert_type": "warning",
+              "descriptor": "Call unavailable, a number hasn’t been provided"
+            }
+          }
+        ]
+      }
+    },
+    "rider_tip": {
+      "type": "RiderTip",
+      "style": {
+        "background_color": "neutral4"
+      },
+      "data": {
+        "title": "Thank him with a tip",
+        "on_info_click": {
+          "type": "DeepLink",
+          "args": {
+            "link": "talabat://?s=rti&order_id=12345"
+          },
+          "tracking": {
+            "uri": "tracking:<order_tracking>.<rider_tip_on_info_click>",
+            "attributes": {}
+          }
+        },
+        "chips": [
+          {
+            "text": "AED 4",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?s=rt&order_id=12345&tip_value=4",
+                "tracking_event_name": "tip_rider_clicked"
+              }
+            }
+          },
+          {
+            "text": "AED 8",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?s=rt&order_id=12345&tip_value=8",
+                "tracking_event_name": "tip_rider_clicked"
+              }
+            }
+          },
+          {
+            "text": "AED 10",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?s=rt&order_id=12345&tip_value=10",
+                "tracking_event_name": "tip_rider_clicked"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "xx_small_divider": {
+      "type": "Divider",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "xx_small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "sliding_up_panel_header_space": {
+      "type": "Spacing",
+      "style": {
+        "height": 20.0
+      }
+    }
+  },
+  "meta": {
+    "polling_interval_milliseconds": 3000000
+  }
+}

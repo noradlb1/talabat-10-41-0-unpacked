@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search-engine xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <noindex uriPrefix="https://www.talabat.com/(.*)(?aid=)(.*)"/>
+    <noindex uriPrefix="https://www.talabat.com/*contact-us"/>
+    <noindex uriPrefix="https://www.talabat.com/*about-us"/>
+    <noindex uriPrefix="http://marketing.talabatnewsletter.com/*"/>
+    <noindex uriPrefix="https://www.talabat.com/*/reset-password/*/*"/>
+    <noindex uriPrefix="https://www.talabat.com/*/faq"/>
+    <noindex uriPrefix="https://www.talabat.com/*/privacy"/>
+    <noindex uriPrefix="https://www.talabat.com/*/terms"/>
+    <noindex uriPrefix="https://blog.talabat.com/"/>
+</search-engine>

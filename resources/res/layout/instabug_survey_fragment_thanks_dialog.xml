@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:paddingTop="48dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="?attr/survey_container_bg" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <FrameLayout android:background="?attr/survey_container_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/item_close_survey_button"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="?attr/survey_container_bg" android:paddingTop="16dp" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:id="@+id/instabug_img_thanks" android:layout_width="104dp" android:layout_height="104dp" android:layout_marginBottom="32dp" android:src="@drawable/ibg_survey_ic_survey_thankyou"/>
+            <TextView android:textSize="@dimen/ib_survey_thanks_title" android:textColor="@color/instabug_text_color_light_grey" android:gravity="center" android:id="@+id/txt_thanks_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp"/>
+            <TextView android:textSize="@dimen/ib_survey_thanks_subtitle" android:textColor="@color/instabug_text_color_light_grey" android:gravity="center" android:id="@+id/txtSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="84dp" android:layout_marginRight="84dp" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/instabug_lyt_pbi"/>
+    </LinearLayout>
+</LinearLayout>

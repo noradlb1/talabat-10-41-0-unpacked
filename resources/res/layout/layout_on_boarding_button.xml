@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/onBoardingButtonRootLayout" android:background="@color/screen_bg_white" android:paddingTop="@dimen/standard_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+    <TextView android:layout_gravity="center_horizontal" android:id="@+id/onBoardingOldPriceTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_grey_12sp"/>
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/onBoardingWaitListTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/standard_margin" style="@style/text_black_14sp"/>
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/onBoardingPriceTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_quarter_margin" android:layout_marginBottom="@dimen/spacing_large" style="@style/text_black_14sp"/>
+    <LinearLayout android:id="@+id/onBoardingStartButtonLinearLayout" android:layout_width="match_parent" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginRight="@dimen/standard_margin" android:layout_marginBottom="@dimen/standard_internal_margin" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" style="@style/action_button">
+        <TextView android:layout_gravity="center" android:id="@+id/onBoardingStartButtonTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_margin" style="@style/text_white_medium_16sp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/onBoardingDisclaimerLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_large">
+        <TextView android:id="@+id/onBoardingNextBillingTextTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_grey_12sp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tLife_terms_and_conditions_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_4linespacing" android:text="@string/life_terms_and_conditions" android:layout_marginStart="@dimen/_4linespacing" style="@style/link12Medium"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

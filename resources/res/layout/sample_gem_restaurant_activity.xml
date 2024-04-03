@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/gemFloatingButtonLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp">
+        <TextView android:gravity="center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gem Restaurants Screen Sample" android:layout_alignParentTop="true"/>
+        <ImageButton android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/refreshButton" android:background="@color/black" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/com_braze_content_card_icon_read" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/collectionsRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_below="@+id/gemFloatingButtonLabel"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/restaurantsRecyclerView" android:background="@color/white" android:paddingBottom="60dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/collectionsRecyclerView"/>
+    <com.talabat.gem.adapters.presentation.restaurants.GemFloatingView android:id="@+id/gemFloatingButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

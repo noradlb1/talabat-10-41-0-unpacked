@@ -1,0 +1,115 @@
+{
+  "boolean_experiments": {
+    "cancelOrder": {
+      "true": true,
+      "false": true
+    },
+    "showVendorPhone": {
+      "true": true,
+      "false": false
+    },
+    "canShowNewRateSuggestions": {
+      "true": true,
+      "false": false
+    },
+    "CAN_SHOW_NEW_RATE_REASONS": {
+      "true": true,
+      "false": false
+    },
+    "showItemDetailsBottomSheet": {
+      "true": false,
+      "false": true
+    },
+    "showTMartBannerGroceryList": {
+      "true": true,
+      "false": false
+    },
+    "hideToggleView": {
+      "true": false,
+      "false": true
+    },
+    "canShowBusyBottomSheet": {
+      "true": false,
+      "false": true
+    },
+    "canShowLocationWelcome": {
+      "true": true,
+      "false": false
+    },
+    "canShowNewGemComponent": {
+      "true": false,
+      "false": true
+    },
+    "canEnableNewRankingService": {
+      "true": false,
+      "false": true
+    },
+    "canShowOnboardingRevamp": {
+      "true": false,
+      "false": true
+    },
+    "groceryCollection": {
+      "true": false,
+      "false": true
+    },
+    "knet status check": {
+      "true": true,
+      "false": false
+    },
+    "qpay_payments_enabled": {
+      "true": true,
+      "false": false
+    },
+    "canShowDishSuggestion": {
+      "true": true,
+      "false": false
+    },
+    "canShowDeliveryAddressMapCheckout": {
+      "true": true,
+      "false": false
+    },
+    "showNewVendorReviews": {
+      "true": true,
+      "false": false
+    },
+    "canShowFlutterItemDetails": {
+      "true": true,
+      "false": false
+    },
+    "canShowFlutterItemDetailsWithChoice": {
+      "true": true,
+      "false": false
+    },
+    "enable-track-api-v2": {
+      "true": true,
+      "false": true
+    },
+    "shouldShowCompensationFeature": {
+      "true": true,
+      "false": true
+    }
+  },
+  "string_experiments": {
+    "promotionWidgetTag": {
+      "snacks": true,
+      "campaign-offer": true
+    }
+  },
+  "int_experiments": {
+    "VerticalLauncherExperiment": {
+      "1": false,
+      "0": true,
+      "2": false
+    },
+    "item_details_header": {
+      "1": true,
+      "2": false,
+      "3": false,
+      "4": false
+    },
+    "grocerySwimlane": {
+      "0": true,
+      "1": false
+    }
+  }
+}

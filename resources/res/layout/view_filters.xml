@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/filtersViewLayout" android:layout_width="match_parent" android:layout_height="46dp">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_marginEnd="4dp">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/ds_m" android:layout_height="@dimen/ds_m" android:layout_marginTop="2dp" android:layout_marginEnd="2dp" app:srcCompat="@drawable/ds_filter"/>
+        <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/filterBubbleContainer" android:visibility="visible" android:layout_width="24dp" android:layout_height="28dp">
+            <com.talabat.talabatcommon.views.counterpill.CounterPillTextView android:textColor="@color/ds_neutral_white" android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/counterPill" android:paddingTop="2dp" android:layout_width="16dp" android:layout_height="16dp" style="@style/DSTextAppearance.Caption"/>
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vendorlist_filters" style="@style/DSTextAppearance.Body1"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+{
+  "result" : null,
+  "errors" : ["subscription_code_expired"],
+  "errorCode" : 400
+}

@@ -1,0 +1,220 @@
+{
+  "type": "OrderTrackingScreen",
+  "layouts": [
+    {
+      "name": "order_tracking_screen_layout_with_overlap",
+      "hero": "google_maps",
+      "column": [
+        "order_progress_update",
+        "spacing",
+        "rider_info",
+        "spacing",
+        "vendor_info"
+      ]
+    },
+    {
+      "name": "order_tracking_screen_default_layout",
+      "column": [
+        "small_vertical_spacing",
+        "order_progress_update",
+        "small_vertical_spacing",
+        "order_delivering_map",
+        "large_vertical_spacing",
+        "order_delivered",
+        "large_vertical_spacing",
+        "delivery_address",
+        "large_vertical_spacing",
+        "rider_info",
+        "large_vertical_spacing",
+        "support",
+        "large_vertical_spacing"
+      ]
+    }
+  ],
+  "widgets": {
+    "order_progress_update": {
+      "type": "OrderProgress",
+      "data": {
+        "header": "Estimated arrival",
+        "title": "08:00 pm - 08:35 pm",
+        "footer": "Order placed! We're on it",
+        "progress_bars": [
+          {
+            "width": 1,
+            "fill": 0.5
+          },
+          {
+            "width": 2,
+            "fill": 0.0
+          },
+          {
+            "width": 1,
+            "fill": 0.0
+          }
+        ]
+      }
+    },
+    "order_delivered": {
+      "type": "OrderCompleted",
+      "data": {
+        "header": "Order delivered",
+        "title": "Enjoy your meal,\nEmily"
+      }
+    },
+    "rider_info": {
+      "type": "BasicInfo",
+      "data": {
+        "title": "Abdelrahman",
+        "subtitle": "Is your delivery hero for today",
+        "text": "Contactless delivery",
+        "actions": [
+          {
+            "type": "Dialer",
+            "name": "Call",
+            "args": [
+              "+971501231231"
+            ]
+          },
+          {
+            "type": "Url",
+            "name": "Chat",
+            "args": [
+              "Coding Infinite",
+              "https://codinginfinite.com/wp-content/uploads/2019/04/dotnet-core-libraries.jpg"
+            ]
+          }
+        ]
+      }
+    },
+    "order_delivering_map": {
+      "type": "Map",
+      "data": {
+        "pins": [
+          {
+            "type": "source",
+            "latitude": 25.072540,
+            "longitude": 55.158660,
+            "text": "Talabat Rider",
+            "description": "",
+            "icon": "http://www.url.com"
+          },
+          {
+            "type": "destination",
+            "latitude": 25.067428,
+            "longitude": 55.161875,
+            "text": "\uD83C\uDFE0 Home",
+            "description": "3 mins away",
+            "icon": "http://www.url.com"
+          }
+        ]
+      }
+    },
+    "delivery_address": {
+      "type": "BasicInfo",
+      "data": {
+        "title": "Delivering to \uD83C\uDFE2 Work",
+        "text": "Level 25, Single Business Tower \n153, Sheikh Zayed Road"
+      }
+    },
+    "payment_details": {
+      "type": "ListInfo",
+      "data": {
+        "title": "Payment details",
+        "rows": [
+          {
+            "label": "Total cost",
+            "text": "AED 300"
+          },
+          {
+            "label": "Payment method",
+            "text": "xxxx-1738"
+          }
+        ]
+      }
+    },
+    "support": {
+      "type": "BasicInfo",
+      "data": {
+        "title": "Support",
+        "text": "Order #5678093898",
+        "actions": [
+          {
+            "type": "Url",
+            "name": "Help Center",
+            "args": [
+              "www.globalhelpcenter.com"
+            ]
+          },
+          {
+            "type": "Url",
+            "name": "Cancel Order",
+            "args": []
+          }
+        ]
+      }
+    },
+    "order_details": {
+      "type": "OrderDetails",
+      "data": {
+        "header": "Your order from",
+        "title": "Domino’s Pizza",
+        "subtitle": "Business bay",
+        "text": "Order #5678093898",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+        "items": [
+          {
+            "quantity": 2,
+            "name": "Cesar Salad"
+          },
+          {
+            "quantity": 1,
+            "name": "Tuscan chicken mac and cheese",
+            "subtext": "extra pesto"
+          },
+          {
+            "quantity": 1,
+            "name": "Tuscan chicken mac and cheese",
+            "subtext": "extra pesto"
+          },
+          {
+            "quantity": 1,
+            "name": "Vegetarian garlic bread"
+          }
+        ],
+        "actions": [
+          {
+            "type": "Dialer",
+            "name": "Call",
+            "args": [
+              "+971501231231"
+            ]
+          }
+        ]
+      }
+    },
+    "xx_small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 16.0
+      }
+    },
+    "large_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 24.0
+      }
+    },
+    "medium_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 20.0
+      }
+    }
+  }
+}

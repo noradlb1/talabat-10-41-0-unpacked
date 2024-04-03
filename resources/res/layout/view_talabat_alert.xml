@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/alertContainer" android:background="@drawable/bg_alert_notification" android:paddingLeft="@dimen/ds_s" android:paddingTop="@dimen/ds_m" android:paddingRight="@dimen/ds_s" android:paddingBottom="@dimen/ds_m" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/ds_s" android:paddingVertical="@dimen/ds_m">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/alertIconImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu" android:layout_marginEnd="@dimen/ds_m"/>
+    <TextView android:textAppearance="@style/TextAppearance.Body2" android:id="@+id/alertMessageTextView" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="@integer/max_alert_lines" android:layout_weight="1" android:textAlignment="textStart"/>
+</LinearLayout>

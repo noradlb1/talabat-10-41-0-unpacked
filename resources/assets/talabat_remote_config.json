@@ -1,0 +1,11 @@
+{
+  "expo-config": {
+    "variation": {}
+  },
+  "expo-kiosk-configuration-model": {
+    "variation": {}
+  },
+  "expo-home-banner-configuration": {
+    "variation": {}
+  }
+}

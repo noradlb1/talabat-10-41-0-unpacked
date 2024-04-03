@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/gemFloatingLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/gem_footer_blue" app:cardCornerRadius="@dimen/ds_xxs" app:cardElevation="@dimen/ds_s" app:cardMaxElevation="@dimen/ds_zero">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/gemFloatingLogoImageView" android:layout_width="@dimen/ds_xl" android:layout_height="@dimen/ds_l" android:adjustViewBounds="true" android:layout_marginStart="@dimen/ds_xs"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxs" android:layout_marginBottom="@dimen/ds_xxs" android:layout_marginStart="@dimen/ds_xxs" android:layout_marginEnd="@dimen/ds_xs">
+            <TextView android:textColor="@color/ds_neutral_white" android:layout_gravity="center_vertical" android:id="@+id/gemFloatingCounterTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Heading2"/>
+            <TextView android:textColor="@color/ds_neutral_white" android:id="@+id/saveUpToTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Caption"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

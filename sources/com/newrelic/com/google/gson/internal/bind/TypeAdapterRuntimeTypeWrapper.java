@@ -1,0 +1,52 @@
+package com.newrelic.com.google.gson.internal.bind;
+
+import com.newrelic.com.google.gson.Gson;
+import com.newrelic.com.google.gson.TypeAdapter;
+import com.newrelic.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory;
+import com.newrelic.com.google.gson.reflect.TypeToken;
+import com.newrelic.com.google.gson.stream.JsonReader;
+import com.newrelic.com.google.gson.stream.JsonWriter;
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.lang.reflect.TypeVariable;
+
+final class TypeAdapterRuntimeTypeWrapper<T> extends TypeAdapter<T> {
+    private final Gson context;
+    private final TypeAdapter<T> delegate;
+    private final Type type;
+
+    public TypeAdapterRuntimeTypeWrapper(Gson gson, TypeAdapter<T> typeAdapter, Type type2) {
+        this.context = gson;
+        this.delegate = typeAdapter;
+        this.type = type2;
+    }
+
+    private Type getRuntimeTypeIfMoreSpecific(Type type2, Object obj) {
+        if (obj == null) {
+            return type2;
+        }
+        if (type2 == Object.class || (type2 instanceof TypeVariable) || (type2 instanceof Class)) {
+            return obj.getClass();
+        }
+        return type2;
+    }
+
+    public T read(JsonReader jsonReader) throws IOException {
+        return this.delegate.read(jsonReader);
+    }
+
+    public void write(JsonWriter jsonWriter, T t11) throws IOException {
+        TypeAdapter<T> typeAdapter = this.delegate;
+        Type runtimeTypeIfMoreSpecific = getRuntimeTypeIfMoreSpecific(this.type, t11);
+        if (runtimeTypeIfMoreSpecific != this.type) {
+            typeAdapter = this.context.getAdapter(TypeToken.get(runtimeTypeIfMoreSpecific));
+            if (typeAdapter instanceof ReflectiveTypeAdapterFactory.Adapter) {
+                TypeAdapter<T> typeAdapter2 = this.delegate;
+                if (!(typeAdapter2 instanceof ReflectiveTypeAdapterFactory.Adapter)) {
+                    typeAdapter = typeAdapter2;
+                }
+            }
+        }
+        typeAdapter.write(jsonWriter, t11);
+    }
+}

@@ -1,0 +1,58 @@
+package kotlinx.coroutines.flow;
+
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.DelayKt;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(d1 = {"\u0000\n\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0003\u001a\u00020\u0002\"\u0004\b\u0000\u0010\u00002\u0006\u0010\u0001\u001a\u00028\u0000H@"}, d2 = {"T", "it", "", "<anonymous>"}, k = 3, mv = {1, 6, 0})
+@DebugMetadata(c = "kotlinx.coroutines.flow.FlowKt__MigrationKt$delayEach$1", f = "Migration.kt", i = {}, l = {427}, m = "invokeSuspend", n = {}, s = {})
+public final class FlowKt__MigrationKt$delayEach$1 extends SuspendLambda implements Function2<T, Continuation<? super Unit>, Object> {
+
+    /* renamed from: h  reason: collision with root package name */
+    public int f25746h;
+
+    /* renamed from: i  reason: collision with root package name */
+    public final /* synthetic */ long f25747i;
+
+    /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+    public FlowKt__MigrationKt$delayEach$1(long j11, Continuation<? super FlowKt__MigrationKt$delayEach$1> continuation) {
+        super(2, continuation);
+        this.f25747i = j11;
+    }
+
+    @NotNull
+    public final Continuation<Unit> create(@Nullable Object obj, @NotNull Continuation<?> continuation) {
+        return new FlowKt__MigrationKt$delayEach$1(this.f25747i, continuation);
+    }
+
+    @Nullable
+    public final Object invoke(T t11, @Nullable Continuation<? super Unit> continuation) {
+        return ((FlowKt__MigrationKt$delayEach$1) create(t11, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Nullable
+    public final Object invokeSuspend(@NotNull Object obj) {
+        Object coroutine_suspended = IntrinsicsKt__IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i11 = this.f25746h;
+        if (i11 == 0) {
+            ResultKt.throwOnFailure(obj);
+            long j11 = this.f25747i;
+            this.f25746h = 1;
+            if (DelayKt.delay(j11, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else if (i11 == 1) {
+            ResultKt.throwOnFailure(obj);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        return Unit.INSTANCE;
+    }
+}

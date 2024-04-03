@@ -1,0 +1,536 @@
+{
+  "type": "AddressForm2",
+  "defaultLayout": "Apartment",
+  "data": {
+    "addressId": null
+   },  
+  "layouts": [
+    {
+      "name": "Apartment",
+      "rows": [
+        [
+          "location_map"
+        ],
+        [
+          "x_small_vertical_spacing"
+        ],
+        [
+          "area"
+        ],
+        [
+          "large_vertical_spacing"
+        ],
+        [
+          "address_types"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "building"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "apartment",
+          "sizeL_horizontal_spacing",
+          "floor"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "street"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "additional_directions"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "phone"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "local_number"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "profile_name"
+        ], 
+		    [
+          "small_vertical_spacing"
+        ], 
+        [
+          "save_btn"
+        ]
+      ],
+      "footer": [
+      ]
+    },
+    {
+      "name": "Villa",
+      "rows": [
+        [
+          "location_map"
+        ],
+        [
+          "x_small_vertical_spacing"
+        ],
+        [
+          "area"
+        ],
+        [
+          "large_vertical_spacing"
+        ],
+        [
+          "address_types"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "building_villa"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "street"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "additional_directions"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "phone"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "local_number"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "profile_name"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "save_btn"
+        ]
+      ],
+      "footer": [
+      ]
+    },
+    {
+      "name": "Office",
+      "rows": [
+        [
+          "location_map"
+        ],
+        [
+          "x_small_vertical_spacing"
+        ],
+        [
+          "area"
+        ],
+        [
+          "large_vertical_spacing"
+        ],
+        [
+          "address_types"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "building"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "office",
+          "sizeL_horizontal_spacing",
+          "floor"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "street"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "additional_directions"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "phone"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "local_number"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "profile_name"
+        ],
+        [
+          "small_vertical_spacing"
+        ],
+        [
+          "save_btn"
+        ]
+      ],
+      "footer": [
+      ]
+    }
+  ],
+  "widgets": {
+    "location_map": {
+      "type": "StaticMap",
+      "data": {
+        "height": 117.001,
+        "pin": {
+          "type": "address",
+          "latitude": {
+            "request_key": "latitude",
+            "request_value": 0.00
+          },
+          "longitude": {
+            "request_key": "longitude",
+            "request_value": 0.00
+          }
+        }
+      }
+    },
+    "area": {
+      "type": "DSSimpleCard",
+      "data": {
+        "label": "Area",
+        "labelColor": "neutral70",
+        "descriptorColor": "neutral50",
+        "descriptor": "Business Bay",
+        "request_key": "area_id",
+        "request_value": 0.00,
+        "latitude": 0.00,
+        "longitude": 0.00,
+        "icon": "dsLocationPinFilled",
+        "actionText": "Change"
+      }
+    },
+    "phone": {
+      "type": "InputTextFormField",
+      "data": {
+        "title": "Phone number",
+        "input_type": "phone",
+        "max_chars": 20,
+        "selected_country": {
+          "code": "AE",
+          "request_key": "country_code",
+          "name": "United Arab Emirates",
+          "prefix": "+971",
+          "nameTranslations": {
+            "ar": "الإمارات العربية المتحدة"
+          }
+        },
+        "request_key": "mobile_number",
+        "validation": [
+          {
+            "error_message": "",
+            "regex": "^.+$"
+          }
+        ],
+        "autovalidateMode": "onUserInteraction",
+        "hint": null,
+        "prefixSearchEmptyStateTitle": "Nothing found",
+        "prefixSearchEmptyStateDetails": "Modify your search to find what you're looking for",
+        "prefixSearchHint": "Search by country or code"
+      }
+    },
+    "local_number": {
+      "type": "InputTextFormField",
+      "data": {
+        "title": "Landline number (optional)",
+        "input_type": "number",
+        "max_chars": 20,
+        "request_key": "phone_number"
+      }
+    },
+    "building": {
+      "type": "InputTextFormField",
+      "data": {
+        "title": "Building name",
+        "value": "",
+        "input_type": "streetAddress",
+        "max_chars": 50,
+        "validation": [
+          {
+            "error_message": "",
+            "regex": "^.+$"
+          }
+        ],
+        "autovalidateMode": "onUserInteraction",
+        "request_key": "building_no",
+        "hint": "E.g. Burj Heights",
+        "input_action": "next"
+      }
+    },
+    "building_villa": {
+      "type": "InputTextFormField",
+      "data": {
+        "title": "Villa name",
+        "value": "",
+        "input_type": "streetAddress",
+        "max_chars": 50,
+        "validation": [
+          {
+            "error_message": "",
+            "regex": "^.+$"
+          }
+        ],
+        "autovalidateMode": "onUserInteraction",
+        "request_key": "building_no",
+        "hint": "E.g. Burj Heights",
+        "input_action": "next"
+      }
+    },
+    "profile_name": {
+      "type": "InputTextFormField",
+      "data": {
+        "title": "Address label (optional)",
+        "value": "",
+        "input_type": "streetAddress",
+        "max_chars": 50,
+        "autovalidateMode": "onUserInteraction",
+        "request_key": "profile_name",
+        "hint": "E.g. Parent’s house",
+        "helper_text": "Label your addresses to easily choose between them later (e.g. Parent's house)",
+        "input_action": "done"
+      }
+    },
+    "apartment": {
+      "type": "InputTextFormField",
+      "flex": 12,
+      "data": {
+        "title": "Apt. no.",
+        "value": "",
+        "input_type": "streetAddress",
+        "max_chars": 30,
+        "validation": [
+          {
+            "error_message": "",
+            "regex": "^.+$"
+          }
+        ],
+        "autovalidateMode": "onUserInteraction",
+        "request_key": "suite",
+        "hint": null,
+        "input_action": "next"
+      }
+    },
+    "office": {
+      "type": "InputTextFormField",
+      "flex": 12,
+      "data": {
+        "title": "Company",
+        "value": "",
+        "input_type": "streetAddress",
+        "max_chars": 30,
+        "validation": [
+          {
+            "error_message": "",
+            "regex": "^.+$"
+          }
+        ],
+        "autovalidateMode": "onUserInteraction",
+        "request_key": "suite",
+        "hint": null,
+        "input_action": "next"
+      }
+    },
+    "floor": {
+      "type": "InputTextFormField",
+      "flex": 12,
+      "data": {
+        "title": "Floor (optional)",
+        "value": "",
+        "input_type": "streetAddress",
+        "max_chars": 30,
+        "request_key": "floor",
+        "hint": null,
+        "input_action": "next"
+      }
+    },
+    "street": {
+      "type": "InputTextFormField",
+      "data": {
+        "title": "Street",
+        "value": "",
+        "input_type": "streetAddress",
+        "max_chars": 100,
+        "validation": [
+          {
+            "error_message": "",
+            "regex": "^.+$"
+          }
+        ],
+        "autovalidateMode": "onUserInteraction",
+        "request_key": "street",
+        "hint": null,
+        "input_action": "next"
+      }
+    },
+    "additional_directions": {
+      "type": "InputTextFormField",
+      "data": {
+        "title": "Additional directions (optional)",
+        "input_type": "streetAddress",
+        "max_chars": 200,
+        "request_key": "extra_directions",
+        "hint": "eg. near metro station",
+        "input_action": "next"
+      }
+    },
+    "save_btn": {
+      "type": "DSPrimaryButton",
+      "data": {
+        "text": "Save address",
+        "actions": [
+          {
+            "type": "save",
+            "args": null
+          }
+        ]
+      }
+    },
+    "xx_small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 8.001
+      }
+    },
+    "address_types": {
+      "type": "SingleSelectionChips",
+      "orientation": "horizontal",
+      "scrollable": true,
+      "data": {
+        "title": "Address types",
+        "request_key": "type",
+        "request_value": 1,
+        "layout_type":"Apartment",
+        "validation": [
+          {
+            "error_message": "",
+            "regex": "^.+$"
+          }
+        ],
+        "items": [
+          {
+            "type": "ChipsItem",
+            "data": {
+              "title": "Apartment",
+              "leadingIcon": "dsApartment",
+              "trailingIcon": null,
+              "actions": [
+                {
+                  "type": "select",
+                  "args": {
+                    "request_value": 1,
+                    "layout_type": "Apartment"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "ChipsItem",
+            "data": {
+              "title": "Villa",
+              "leadingIcon": "dsHome",
+              "trailingIcon": null,
+              "actions": [
+                {
+                  "type": "select",
+                  "args": {
+                    "request_value": 0,
+                    "layout_type": "Villa"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "ChipsItem",
+            "data": {
+              "title": "Office",
+              "leadingIcon": "dsWork",
+              "trailingIcon": null,
+              "actions": [
+                {
+                  "type": "select",
+                  "args": {
+                    "request_value": 2,
+                    "layout_type": "Office"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 12.001
+      }
+    },
+    "large_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 24.001
+      }
+    },
+    "sizeL_horizontal_spacing": {
+      "type": "Spacing",
+      "style": {
+        "width": 12.001
+      }
+    },
+    "x_small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 4.001
+      }
+    }
+  }
+}

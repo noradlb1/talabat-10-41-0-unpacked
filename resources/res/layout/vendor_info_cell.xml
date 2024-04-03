@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/white" app:cardElevation="@dimen/card_elevation" app:cardMaxElevation="@dimen/card_elevation" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+    <RelativeLayout android:layout_gravity="bottom" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/order_details_logo_view" android:background="@drawable/item_image_bg" android:layout_width="@dimen/order_details_screen_rel_height_width" android:layout_height="@dimen/order_details_screen_rel_height_width" android:layout_marginLeft="@dimen/order_details_screen_rel_margin" android:layout_marginTop="@dimen/order_details_screen_rel_margin_top" android:layout_marginRight="@dimen/order_details_screen_rel_margin" android:layout_centerVertical="true" android:layout_marginStart="@dimen/order_details_screen_rel_margin" android:layout_marginEnd="@dimen/order_details_screen_rel_margin">
+            <ProgressBar android:id="@+id/progressBar" android:layout_width="@dimen/cart_item_progress_bar_height_width" android:layout_height="@dimen/cart_item_progress_bar_height_width" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall"/>
+            <com.talabat.talabatcommon.views.TalabatImageView android:id="@+id/rest_logo_ImageView" android:layout_width="@dimen/order_details_image_height_width" android:layout_height="@dimen/order_details_image_height_width" android:layout_margin="@dimen/order_details_img_margin" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/order_details_screen_rel_margin" android:layout_marginRight="@dimen/order_details_screen_rel_margin" android:layout_marginBottom="@dimen/order_details_screen_rel_margin" android:layout_toRightOf="@+id/order_details_logo_view" android:layout_marginEnd="@dimen/order_details_screen_rel_margin" android:layout_toEndOf="@+id/order_details_logo_view">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_view_text_size" android:textColor="@color/talabat_black" android:id="@+id/order_details_restaurant_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/order_details_screen_txt_margin_bottom"/>
+                <TextView android:textSize="@dimen/txt_size_14" android:id="@+id/order_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/order_details_screen_txt_margin_bottom">
+                    <TextView android:textSize="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_marginEnd="4dp"/>
+                    <TextView android:textSize="@dimen/txt_size_14" android:id="@+id/order_details_orderId" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/txt_size_14" android:id="@+id/order_details_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/MarginLeft" android:text="Successful" android:layout_marginStart="@dimen/MarginLeft"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

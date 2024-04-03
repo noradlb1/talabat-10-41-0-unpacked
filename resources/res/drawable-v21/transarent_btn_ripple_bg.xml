@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <solid android:color="@android:color/transparent"/>
+    <stroke android:width="0.5dp" android:color="#ffffff"/>
+    <corners android:radius="5dp"/>
+    <selector>
+        <item android:state_pressed="true">
+            <shape>
+                <gradient android:startColor="@color/talabat_grey" android:endColor="@color/talabat_grey" android:angle="270"/>
+                <stroke android:width="0.5dp" android:color="#ffffff"/>
+                <corners android:radius="5dp"/>
+            </shape>
+        </item>
+    </selector>
+</shape>

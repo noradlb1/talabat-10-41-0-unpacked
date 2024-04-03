@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/fingerprint_dialog_content"/>
+    </FrameLayout>
+    <Button android:textColor="@color/button_color" android:layout_gravity="right" android:id="@+id/cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:text="@string/vco_fingerprint_cancel" style="?android:attr/buttonBarNegativeButtonStyle"/>
+</LinearLayout>

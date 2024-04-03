@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/upselling_container" android:background="@color/white" android:paddingBottom="16dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/MarginLeft" android:layout_marginTop="20dp" android:layout_marginStart="@dimen/MarginLeft">
+        <ImageView android:layout_gravity="center" android:id="@+id/up_selling_img" android:visibility="visible" android:layout_width="45dp" android:layout_height="15dp" android:layout_marginRight="10dp" android:layout_marginEnd="10dp"/>
+        <com.talabat.TalabatTextView android:textSize="16dp" android:textColor="@color/talabat_black" android:layout_gravity="center" android:id="@+id/up_selling_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/MarginRight" android:layout_marginEnd="@dimen/MarginRight" style="@style/textViewMedium"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/up_selling_vertical_list" android:background="@android:color/white" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:paddingStart="4dp" android:paddingEnd="4dp"/>
+</LinearLayout>

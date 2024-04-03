@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/instabug_survey_dialog_container" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_shadow"/>
+    <RelativeLayout android:orientation="vertical" android:background="?attr/survey_container_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/survey_shadow">
+        <include layout="@layout/survey_question_textview"/>
+        <include layout="@layout/item_close_survey_button"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/instabug_text_view_question">
+            <RelativeLayout android:id="@+id/instabug_survey_mcq_grid_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/instabug_dialog_container_padding" android:layout_marginRight="@dimen/instabug_dialog_container_padding" android:layout_marginBottom="0dp" android:layout_weight="1" android:importantForAccessibility="yes">
+                <GridView android:id="@+id/instabug_survey_mcq_grid_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/survey_mcq_list_top_margin" android:horizontalSpacing="@dimen/instabug_container_padding" android:verticalSpacing="@dimen/instabug_container_padding" android:numColumns="1" android:importantForAccessibility="no"/>
+                <View android:id="@+id/survey_mcq_fade" android:background="@drawable/ibg_survey_mcq_fade_light" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

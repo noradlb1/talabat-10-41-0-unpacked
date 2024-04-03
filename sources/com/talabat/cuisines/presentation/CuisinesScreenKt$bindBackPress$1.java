@@ -1,0 +1,25 @@
+package com.talabat.cuisines.presentation;
+
+import androidx.activity.OnBackPressedCallback;
+import kotlin.Metadata;
+
+@Metadata(d1 = {"\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0016¨\u0006\u0004"}, d2 = {"com/talabat/cuisines/presentation/CuisinesScreenKt$bindBackPress$1", "Landroidx/activity/OnBackPressedCallback;", "handleOnBackPressed", "", "com_talabat_Components_cuisines_cuisines"}, k = 1, mv = {1, 6, 0}, xi = 48)
+public final class CuisinesScreenKt$bindBackPress$1 extends OnBackPressedCallback {
+
+    /* renamed from: a  reason: collision with root package name */
+    public final /* synthetic */ CuisinesFragmentMultipleSelection f56060a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final /* synthetic */ CuisinesViewModel f56061b;
+
+    /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+    public CuisinesScreenKt$bindBackPress$1(CuisinesFragmentMultipleSelection cuisinesFragmentMultipleSelection, CuisinesViewModel cuisinesViewModel) {
+        super(true);
+        this.f56060a = cuisinesFragmentMultipleSelection;
+        this.f56061b = cuisinesViewModel;
+    }
+
+    public void handleOnBackPressed() {
+        CuisinesScreenKt.handleCancel(this.f56060a, this.f56061b);
+    }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/rider_tip_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_26margin" android:text="@string/talabat_pay" android:layout_marginStart="@dimen/_26margin" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/text_black_16sp"/>
+    <TextView android:gravity="end" android:id="@+id/rider_tip_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_26margin" android:layout_marginEnd="@dimen/_26margin" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/text_black_16sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

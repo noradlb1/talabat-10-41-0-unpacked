@@ -1,0 +1,176 @@
+{
+  "type": "OrderTrackingScreen",
+  "layouts": [
+    {
+      "name": "body",
+      "column": [
+        "animation_header"
+      ]
+    },
+    {
+      "name": "bottom_sheet",
+      "column": [
+        "order_delivered",
+        "delivery_address",
+        "xx_small_divider",
+        "rider_tip",
+        "xx_small_divider",
+        "order_details",
+        "grocery_looking_glass",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support"
+      ]
+    },
+    {
+      "name": "default_body",
+      "column": [
+        "animation_header",
+        "order_delivered",
+        "compensation_banner",
+        "tag_banner",
+        "pro_reward_banner",
+        "xx_small_divider",
+        "reward_banner",
+        "delivery_address",
+        "rider_tip",
+        "xx_small_divider",
+        "order_details",
+        "grocery_looking_glass",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support",
+        "xx_small_vertical_spacing"
+      ]
+    }
+  ],
+  "composition": {
+    "body": {
+      "extend_behind_app_bar": false,
+      "background_color": "primary10",
+      "app_bar_background_color": "primary10",
+      "show_rounded_background": true,
+      "status_bar_brightness": "light",
+      "close_button_icon_color": "neutral100",
+      "layout": "body"
+    },
+    "bottom_sheet": {
+      "layout": "bottom_sheet"
+    }
+  },
+  "widgets": {
+    "animation_header": {
+      "type": "ImageBanner",
+      "data": {
+        "background": {
+          "url": "https://images.deliveryhero.io/image/talabat/poh/animations/default/order_tracking_delivered.gif",
+          "style": {
+            "background_color": "primary10"
+          }
+        }
+      }
+    },
+    "order_delivered": {
+      "type": "OrderCompleted",
+      "data": {
+        "header": "Order delivered",
+        "title": "Enjoy your meal,\nEmily"
+      }
+    },
+    "delivery_address": {
+      "type": "BasicInfo",
+      "data": {
+        "header": "Delivered to",
+        "title": "\uD83C\uDFE2 Work",
+        "text": "Level 25, Single Business Tower 153, Sheikh Zayed Road"
+      }
+    },
+    "payment_details": {
+      "type": "ListInfo",
+      "data": {
+        "title": "Payment details",
+        "rows": [
+          {
+            "label": "Total cost",
+            "text": "AED 300"
+          },
+          {
+            "label": "Payment method",
+            "text": "xxxx-1738"
+          }
+        ]
+      }
+    },
+    "support": {
+      "type": "BasicInfo",
+      "data": {
+        "title": "Support",
+        "text": "Order #5678093898",
+        "actions": [
+          {
+            "type": "DeepLink",
+            "text": "Help Center",
+            "args": {
+              "link": "talabat://?s=ghc&i=12345"
+            }
+          }
+        ]
+      }
+    },
+    "order_details": {
+      "type": "OrderDetails",
+      "data": {
+        "header": "Your order from",
+        "title": "Domino’s Pizza",
+        "subtitle": "Business bay",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+        "items": [
+          {
+            "quantity": 2,
+            "text": "Cesar Salad"
+          },
+          {
+            "quantity": 1,
+            "text": "Tuscan chicken mac and cheese",
+            "subtext": "extra pesto"
+          },
+          {
+            "quantity": 1,
+            "text": "Tuscan chicken mac and cheese",
+            "subtext": "extra pesto"
+          },
+          {
+            "quantity": 1,
+            "text": "Vegetarian garlic bread"
+          }
+        ],
+        "actions": [
+          {
+            "type": "Dialer",
+            "text": "Call",
+            "args": {
+              "phone_number": "+971501231231"
+            }
+          }
+        ]
+      }
+    },
+    "xx_small_divider": {
+      "type": "Divider",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "xx_small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 8.0
+      }
+    }
+  },
+  "meta": {
+    "polling_interval_milliseconds": 40000
+  }
+}

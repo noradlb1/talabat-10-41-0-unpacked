@@ -1,0 +1,50 @@
+{
+  "components": [
+    {
+      "items": [
+        {
+          "id": "one",
+          "image_url": "https://images.deliveryhero.io/image/darkstores/campaign-banners/tMart%20UAE_AL%20AIN%20FARMS_AUG%20'23.png",
+          "tracking": {
+            "is_sponsored": false,
+            "title": "title1"
+          }
+        },
+        {
+          "id": "two",
+          "image_url": "https://images.deliveryhero.io/image/darkstores/campaign-banners/tMart%20UAE_AL%20AIN%20FARMS_AUG%20'23.png",
+          "tracking": {
+            "is_sponsored": false,
+            "title": "title2"
+          }
+          
+          
+        }
+      ],
+      "type": "banners",
+      "tracking": {
+        "banner_type": "top_banner"
+      }
+    },
+    {
+      "items": [
+        {
+          "id": "three",
+          "image_url": "https://images.deliveryhero.io/image/darkstores/campaign-banners/tMart%20UAE_AL%20AIN%20FARMS_AUG%20'23.png",
+          "tracking": {
+            "is_sponsored": false,
+            "title": "title3"
+          }
+        }
+      ],
+      "type": "banners",
+      "tracking": {
+        "banner_type": "top_banner"
+      }
+    }
+  ],
+  "page_info": {
+    "page_number": 0,
+    "last": false
+  }
+}

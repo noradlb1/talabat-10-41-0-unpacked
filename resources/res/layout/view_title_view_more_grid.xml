@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/titleViewMoreTitleRelativeLayout" android:paddingTop="@dimen/margin" android:paddingBottom="@dimen/margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/titleViewMoreTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Heading1"/>
+        <TextView android:id="@+id/titleViewMoreViewMoreTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/DSTextAppearance.Link"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/titleViewMoreRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+</merge>

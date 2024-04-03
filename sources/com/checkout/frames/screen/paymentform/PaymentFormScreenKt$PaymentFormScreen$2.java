@@ -1,0 +1,30 @@
+package com.checkout.frames.screen.paymentform;
+
+import androidx.compose.runtime.Composer;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Lambda;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(k = 3, mv = {1, 7, 1}, xi = 48)
+public final class PaymentFormScreenKt$PaymentFormScreen$2 extends Lambda implements Function2<Composer, Integer, Unit> {
+    final /* synthetic */ int $$changed;
+    final /* synthetic */ PaymentFormConfig $config;
+
+    /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+    public PaymentFormScreenKt$PaymentFormScreen$2(PaymentFormConfig paymentFormConfig, int i11) {
+        super(2);
+        this.$config = paymentFormConfig;
+        this.$$changed = i11;
+    }
+
+    public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+        invoke((Composer) obj, ((Number) obj2).intValue());
+        return Unit.INSTANCE;
+    }
+
+    public final void invoke(@Nullable Composer composer, int i11) {
+        PaymentFormScreenKt.PaymentFormScreen(this.$config, composer, this.$$changed | 1);
+    }
+}

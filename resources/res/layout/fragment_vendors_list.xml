@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.MaterialToolbar android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:id="@+id/toolbar" android:background="@color/ds_neutral_white" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:navigationIcon="@drawable/ic_back">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/ds_neutral_55" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delivering to" android:lineSpacingExtra="6sp" style="@style/DSTextAppearance.Body1"/>
+            <TextView android:textColor="@color/toolbar_title_color" android:gravity="center_horizontal" android:id="@+id/vendorAreaName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4sp" style="@style/DSTextAppearance.Subheading1"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+    <androidx.cardview.widget.CardView android:id="@+id/filtersContainer" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardElevation="2dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp" android:weightSum="3">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/filterBtn" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_marginEnd="4dp">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_filter_black"/>
+                    <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/filterBubbleContainer" android:visibility="visible" android:layout_width="24dp" android:layout_height="28dp">
+                        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_filter_bubble"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vendorlist_filters" style="@style/DSTextAppearance.Body1"/>
+            </LinearLayout>
+            <View android:background="@color/vendor_separator" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/cuisineBtn" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_marginEnd="4dp">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cuisine"/>
+                    <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/cuisineBubbleContainer" android:visibility="gone" android:layout_width="27dp" android:layout_height="24dp">
+                        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_filter_bubble"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <TextView android:textColor="@color/ds_neutral_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vendorlist_cuisine" style="@style/DSTextAppearance.Body1"/>
+            </LinearLayout>
+            <View android:background="@color/vendor_separator" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/searchBtn" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_width="28dp" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:src="@drawable/ic_search" android:layout_marginEnd="4dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vendorslist_search" style="@style/DSTextAppearance.Body1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/vendorsRecycler" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/filtersContainer"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/noVendorsFoundContainer" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/filtersContainer">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="57dp" android:src="@drawable/ic_no_restuarant_fount"/>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="No results found" style="@style/DSTextAppearance.Heading0"/>
+        <TextView android:textColor="@color/ds_neutral_55" android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Please change filter / cuisine selected criteria" style="@style/DSTextAppearance.Body1"/>
+    </LinearLayout>
+    <com.talabat.sdsquad.ui.customviews.LoadingView android:id="@+id/loadingView" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/filtersContainer"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

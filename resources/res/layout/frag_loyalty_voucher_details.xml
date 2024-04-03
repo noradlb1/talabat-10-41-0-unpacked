@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/toolbar_elevation" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/tool_bar_height">
+            <ImageButton android:id="@+id/voucherDetailsBackButton" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" style="@style/toolbar_white_back_button_style"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/voucherDetailsLinearLayout">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp">
+            <com.talabat.talabatcommon.views.TalabatImageView android:id="@+id/voucherDetailsImageView" android:layout_width="match_parent" android:layout_height="200dp" android:scaleType="fitXY"/>
+            <View android:background="@drawable/burn_option_image_shadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/voucherDetailsImageView" android:layout_alignBottom="@+id/voucherDetailsImageView"/>
+            <androidx.cardview.widget.CardView android:id="@+id/voucherDetailsIconCardView" android:layout_width="@dimen/loyalty_burn_details_icon_width_height" android:layout_height="@dimen/loyalty_burn_details_icon_width_height" android:layout_marginTop="155dp" android:layout_marginEnd="@dimen/ds_s" android:layout_alignParentEnd="true" app:cardCornerRadius="8dp" app:cardElevation="4dp">
+                <com.talabat.talabatcommon.views.TalabatImageView android:id="@+id/voucherDetailsIconImageView" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside"/>
+            </androidx.cardview.widget.CardView>
+            <com.marshmallow.TalabatTag android:id="@+id/voucherDetailsTagView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ds_s" android:layout_alignBottom="@+id/voucherDetailsImageView" app:tag_bg="@color/ds_promo_10" app:tag_text_color="@color/promo"/>
+            <TextView android:id="@+id/voucherDetailsTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_l" android:layout_below="@+id/voucherDetailsImageView" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_xxs" android:layout_toStartOf="@+id/voucherDetailsIconCardView" style="@style/text_black_bold_20sp"/>
+            <TextView android:id="@+id/voucherDetailsDetailTextView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/ds_s" android:layout_marginRight="@dimen/ds_s" android:layout_below="@+id/voucherDetailsTitleTextView" android:layout_alignParentBottom="true" android:layout_marginHorizontal="@dimen/ds_s" style="@style/text_black_14sp"/>
+        </RelativeLayout>
+    </ScrollView>
+    <androidx.cardview.widget.CardView android:id="@+id/voucherDetailsLinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:cardElevation="4dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/ds_xl" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ds_s" android:paddingEnd="@dimen/ds_s">
+            <TextView android:textColor="@color/dark_gray" android:layout_gravity="center" android:id="@+id/showVoucherCodeHintTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_28dp" android:text="@string/show_this_code_at_the_store" style="@style/text_black_medium_16sp"/>
+            <com.talabat.growth.ui.loyalty.views.CouponCodeView android:id="@+id/voucherDetailsCouponCodeView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_28dp"/>
+            <com.designsystem.ds_button_v2.DSPrimaryButton android:id="@+id/voucherDetailsRedirectionToPartnerButton" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" android:textAllCaps="false" app:bt_title="@string/get_your_code"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <include android:id="@+id/progress_bar" android:visibility="invisible" layout="@layout/generic_progress_bar"/>
+</RelativeLayout>

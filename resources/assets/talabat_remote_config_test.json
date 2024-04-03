@@ -1,0 +1,32 @@
+{
+  "json_array_value": {
+    "variation": [
+      {
+        "id": "obj_2"
+      },
+      {
+        "id": "obj_1"
+      }
+    ]
+  },
+  "json_obj_value": {
+    "variation": {
+      "id": "obj_2"
+    }
+  },
+  "float_value": {
+    "variation": 68799328887989
+  },
+  "double_value": {
+    "variation": 7.9
+  },
+  "int_value": {
+    "variation": 166
+  },
+  "string_value": {
+    "variation": "splash_logo"
+  },
+  "boolean_value": {
+    "variation": true
+  }
+}

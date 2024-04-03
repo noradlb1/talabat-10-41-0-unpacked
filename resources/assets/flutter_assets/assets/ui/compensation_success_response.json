@@ -1,0 +1,43 @@
+{
+    "type": "ShowBottomSheet",
+    "layouts": [
+        {
+            "name": "default_layout",
+            "column": [
+                "compensation_success"
+            ]
+        }
+    ],
+    "widgets": {
+        "compensation_success": {
+            "type": "BasicBottomSheet",
+            "data": {
+                "title": "We have added a AED 20 voucher to your account",
+                "text": "It is available to use on any future order",
+                "image_url": "https://images.deliveryhero.io/image/talabat/poh/RIDER_COMPENSATION.png",
+                "alignment": "center",
+                "buttons": [
+                    {
+                        "type": "Secondary",
+                        "text": "View vouchers",
+                        "on_click": {
+                            "type": "DeepLink",
+                            "args": {
+                                "link": "talabat://?s=vouchers",
+                                "tracking_event_name": "view_vouchers_clicked"
+                            }
+                        }
+                    },
+                    {
+                        "type": "Primary",
+                        "text": "Track order",
+                        "on_click": {
+                            "type": "Dismiss",
+                            "args": {}
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

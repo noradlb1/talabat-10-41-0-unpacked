@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rating_nav_graph" app:startDestination="@+id/ratingFoodFragment">
+    <fragment android:label="RatingFoodFragment" android:name="com.talabat.feature.rating.presentation.ui.RatingFoodFragment" android:id="@+id/ratingFoodFragment">
+        <action android:id="@+id/action_ratingFoodFragment_to_ratingReasonFragment" app:destination="@+id/ratingReasonFragment"/>
+    </fragment>
+    <fragment android:label="RatingDeliveryFragment" android:name="com.talabat.feature.rating.presentation.ui.RatingDeliveryFragment" android:id="@+id/ratingDeliveryFragment">
+        <action android:id="@+id/action_ratingDeliveryFragment_to_ratingDeliveryReasonFragment" app:destination="@+id/ratingDeliveryReasonFragment"/>
+    </fragment>
+    <fragment android:label="RatingCommentFragment" android:name="com.talabat.feature.rating.presentation.ui.RatingCommentFragment" android:id="@+id/ratingCommentFragment">
+        <action android:id="@+id/action_ratingCommentFragment_to_ratingDeliveryFragment" app:destination="@+id/ratingDeliveryFragment"/>
+        <action android:id="@+id/action_ratingCommentFragment_to_ratingSuccessFragment" app:destination="@+id/ratingSuccessFragment"/>
+    </fragment>
+    <fragment android:label="RatingSuccessFragment" android:name="com.talabat.feature.rating.presentation.ui.RatingSuccessFragment" android:id="@+id/ratingSuccessFragment"/>
+    <fragment android:label="RatingReasonFragment" android:name="com.talabat.feature.rating.presentation.ui.RatingReasonFragment" android:id="@+id/ratingReasonFragment">
+        <action android:id="@+id/action_ratingReasonFragment_to_ratingDeliveryFragment" app:destination="@+id/ratingDeliveryFragment"/>
+        <action android:id="@+id/action_ratingReasonFragment_to_ratingCommentFragment" app:destination="@+id/ratingCommentFragment"/>
+    </fragment>
+    <fragment android:label="RatingDeliveryReasonFragment" android:name="com.talabat.feature.rating.presentation.ui.RatingDeliveryReasonFragment" android:id="@+id/ratingDeliveryReasonFragment">
+        <action android:id="@+id/action_ratingDeliveryReasonFragment_to_ratingCommentFragment" app:destination="@+id/ratingCommentFragment"/>
+        <action android:id="@+id/action_ratingDeliveryReasonFragment_to_ratingSuccessFragment" app:destination="@+id/ratingSuccessFragment" app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

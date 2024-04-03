@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <solid android:color="@color/customer_chat_quick_reply_background_selected"/>
+    <corners android:radius="@dimen/customer_chat_radius_quick_reply"/>
+    <stroke android:width="@dimen/customer_chat_border_quick_reply" android:color="@color/customer_chat_quick_reply_border"/>
+</shape>

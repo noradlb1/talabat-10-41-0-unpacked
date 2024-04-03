@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ratingImage" android:layout_width="@dimen/ds_s" android:layout_height="@dimen/ds_s" android:src="@drawable/ds_star_filled" app:tint="@color/ds_alert_100"/>
+    <TextView android:id="@+id/ratingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_xxxs" style="@style/TextAppearance.Body1"/>
+    <TextView android:textColor="@color/ds_neutral_35" android:id="@+id/reviewsAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_xxxs" style="@style/TextAppearance.Body1"/>
+</merge>

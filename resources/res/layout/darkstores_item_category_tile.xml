@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/ds_xxxs" android:paddingBottom="@dimen/ds_xxxs" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:layout_gravity="center" android:layout_width="@dimen/categories_cards_size" android:layout_height="@dimen/categories_cards_size" layout="@layout/darkstores_item_category"/>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cv_tpro_banner_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginRight="@dimen/ds_s" android:layout_marginHorizontal="@dimen/ds_s" app:cardBackgroundColor="@color/ds_primary_10" app:cardCornerRadius="@dimen/ds_xxs">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/sidemenu_tpro_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tpro_logo_framed" android:layout_marginStart="@dimen/ds_xxs"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/ds_xxs" android:layout_weight="1">
+            <com.talabat.TalabatTextView android:id="@+id/sidemenu_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Heading2"/>
+            <com.talabat.TalabatTextView android:id="@+id/sidemenu_description" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Caption"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/sidemenu_promo" android:layout_width="@dimen/_100dp" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <io.supercharge.shimmerlayout.ShimmerLayout android:id="@+id/sidemenu_shimmer" android:layout_width="match_parent" android:layout_height="match_parent" app:shimmer_animation_duration="1000" app:shimmer_auto_start="true">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardBackgroundColor="@color/ds_primary_10"/>
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+</androidx.cardview.widget.CardView>

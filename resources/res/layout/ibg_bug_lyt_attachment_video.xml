@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/instabug_attachment_video_item" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/instabug_attachemnt_thumb_background" android:padding="1dp" android:layout_width="66dp" android:layout_height="66dp" android:layout_margin="10dp">
+        <com.instabug.bug.view.CorneredImageView android:id="@+id/instabug_img_video_attachment" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerInParent="true" app:ib_bug_cornerRadius="8dp" app:ib_bug_roundedCorners="f"/>
+        <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="1dp" android:minHeight="100dp" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/instabug_btn_video_play_attachment" android:background="@drawable/ibg_bug_shape_attachment_action_circle" android:padding="8dp" android:focusable="false" android:clickable="false" android:layout_width="32dp" android:layout_height="32dp" app:srcCompat="@drawable/ibg_bug_ic_play"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/instabug_attachment_progress_bar" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-8dp" android:layout_alignRight="@+id/instabug_attachemnt_thumb_background">
+        <View android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/instabug_btn_remove_attachment_circle" android:background="@drawable/ibg_bug_shape_circle" android:padding="-4dp" android:layout_width="14dp" android:layout_height="14dp" android:layout_centerInParent="true"/>
+        <com.instabug.library.view.IconView android:textSize="22dp" android:textColor="?attr/instabug_attachment_bg_icon_color" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/instabug_btn_remove_attachment" android:layout_width="wrap_content" android:layout_height="wrap_content" app:instabug_icon="5"/>
+    </RelativeLayout>
+</RelativeLayout>

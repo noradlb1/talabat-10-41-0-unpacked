@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/timerContainer" android:background="@color/ds_neutral_white" android:paddingTop="@dimen/ds_xs" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/sand_timer" android:layout_width="@dimen/ds_l" android:layout_height="@dimen/ds_s" android:src="@drawable/gem_logo_small" android:layout_marginEnd="@dimen/ds_xxxs"/>
+    <TextView android:textColor="@color/ds_neutral_100" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/counterLabelTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remaining_time" android:lines="1" android:singleLine="true" android:layout_marginEnd="@dimen/ds_xxxs" style="@style/DSTextAppearance.Subheading1"/>
+    <TextView android:textColor="@color/ds_danger_100" android:id="@+id/counterTextView" android:layout_width="@dimen/_50txtSize" android:layout_height="wrap_content" style="@style/DSTextAppearance.Heading2"/>
+</LinearLayout>

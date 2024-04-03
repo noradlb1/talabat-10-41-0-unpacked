@@ -1,0 +1,55 @@
+{
+  "type": "ShowBottomSheet",
+  "args": {
+    "tracking_event_name": "cancel_order_failed",
+    "feature_name": "order_tracking",
+    "layouts": [
+      {
+        "name": "default_layout",
+        "column": ["cancellation_error"]
+      }
+    ],
+    "widgets": {
+      "cancellation_error": {
+        "type": "DynamicBottomSheet",
+        "data": {
+          "body": [
+            {
+              "type": "BasicInfo",
+              "style": {"background_color": "colorNeutralWhite"},
+              "data": {
+                "title": "Oh no! something went wrong",
+                "text": "We were not able to cancel your order successfully."
+              }
+            }
+          ],
+          "footer": {
+            "type": "HorizontalButtons",
+            "data": {
+              "buttons": [
+                {
+                  "type": "PrimaryButton",
+                  "data": {
+                    "text": "Get Help",
+                    "on_click": [
+                      {"type": "Dismiss", "args": {}},
+                      {
+                        "type": "DeepLink",
+                        "args": {
+                          "link": "talabat://?s=ghc&i=12345",
+                          "tracking_event_name": "helpcentre_link_clicked"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "max_height_ratio": 1.0,
+          "with_navigation_bar": true
+        }
+      }
+    }
+  }
+}

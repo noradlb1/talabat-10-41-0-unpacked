@@ -1,0 +1,688 @@
+{
+  "type": "OrderTrackingScreen",
+  "composition": {
+    "body": {
+      "extend_behind_app_bar": true,
+      "background_color": "transparent",
+      "app_bar_background_color": "transparent",
+      "show_rounded_background": true,
+      "status_bar_brightness": "light",
+      "close_button_icon_color": "neutral100",
+      "close_button": null,
+      "layout": "body"
+    },
+    "bottom_sheet": {
+      "layout": "bottom_sheet"
+    },
+    "floating_action_button": null
+  },
+  "common_tracking_event_attributes": {
+    "shop_name": "Abu Dhabi Co-operative Society",
+    "order_id": "938110824",
+    "order_pickup": false
+  },
+  "widgets": {
+    "order_delivering_map": {
+      "type": "Map",
+      "data": {
+        "pins": [
+          {
+            "type": "destination",
+            "latitude": 24.4579287618557,
+            "longitude": 54.3585249781609,
+            "rotation": 0.0,
+            "text": "🏠 Apartment",
+            "link": null,
+            "link_text": null,
+            "linkText": null,
+            "icon": "https://images.deliveryhero.io/image/talabat/poh/CUSTOMER_DESTINATION_MAP_IMAGE.png",
+            "leading_content": {
+              "type": "Text",
+              "data": {
+                "text": "0 min"
+              },
+              "style": {
+                "text_color": "primary100",
+                "background_color": "neutralWhite",
+                "corner_radius": 20.0,
+                "image_height": null
+              }
+            },
+            "style": {
+              "link_text_color": "transparent",
+              "text_color": "neutralWhite",
+              "background_color": "primary100",
+              "corner_radius": 20.0,
+              "image_height": null
+            }
+          },
+          {
+            "type": "source",
+            "latitude": 24.4580288,
+            "longitude": 54.3583295,
+            "rotation": 0.0,
+            "text": "",
+            "link": null,
+            "link_text": null,
+            "linkText": null,
+            "icon": "https://images.deliveryhero.io/image/talabat/poh/RIDER_SCALE_07A.png",
+            "leading_content": null,
+            "style": null
+          }
+        ],
+        "paths": []
+      }
+    },
+    "order_progress_update": {
+      "type": "OrderProgress",
+      "data": {
+        "progress_badge": {
+          "text": null,
+          "color": null
+        },
+        "header": "Estimated arrival",
+        "title": "2:15PM-2:25PM",
+        "footer": "Order is on the way",
+        "progress_bars": [
+          {
+            "width": 1,
+            "fill": 1.0
+          },
+          {
+            "width": 2,
+            "fill": 1.0
+          },
+          {
+            "width": 1,
+            "fill": 0.87
+          }
+        ]
+      }
+    },
+    "xx_small_divider": {
+      "type": "Divider",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "rider_info": {
+      "type": "BasicInfo",
+      "data": {
+        "header": null,
+        "title": "Ameer",
+        "subtitle": "is your delivery hero for today",
+        "text": "",
+        "image_url": "https://images.deliveryhero.io/image/talabat/poh/RIDER_DEFAULT_IMAGE.png",
+        "actions": [
+          {
+            "type": "ShowBottomSheet",
+            "text": "Contact",
+            "args": {
+              "widgets": {
+                "rider_contact": {
+                  "type": "BasicBottomSheet",
+                  "data": {
+                    "title": "How would you like to get in touch?",
+                    "text": "Ameer is on the road. To ensure their safety, they may not answer immediately.",
+                    "image_url": "https://images.deliveryhero.io/image/talabat/poh/RIDER_ON_BIKE_IMAGE.png",
+                    "alignment": "center",
+                    "buttons": [
+                      {
+                        "type": "Secondary",
+                        "text": "Chat",
+                        "icon": "dsMessage",
+                        "on_click": {
+                          "type": "DeepLink",
+                          "text": "Chat",
+                          "args": {
+                            "link": "talabat://?s=rc&orderId=938110824",
+                            "deeplink": "riderchat/home?orderId=938110824",
+                            "tracking_event_name": "contact_option_clicked",
+                            "tracking_event_attributes": {}
+                          }
+                        }
+                      },
+                      {
+                        "type": "Primary",
+                        "text": "Call",
+                        "icon": "dsPhoneFilled",
+                        "on_click": {
+                          "type": "Dialer",
+                          "text": "Call",
+                          "args": {
+                            "phone_number": "+971502097415",
+                            "tracking_event_name": "contact_option_clicked",
+                            "tracking_event_attributes": {
+                              "contactOption": "call_rider"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "layouts": [
+                {
+                  "name": "rider_contact_layout",
+                  "column": [
+                    "rider_contact"
+                  ],
+                  "header": null
+                }
+              ]
+            }
+          }
+        ],
+        "actions_messages": []
+      },
+      "style": {
+        "text_color": null,
+        "background_color": null,
+        "corner_radius": 0.0,
+        "image_height": null
+      }
+    },
+    "rider_tip": {
+      "type": "RiderTip",
+      "style": {
+        "text_color": null,
+        "background_color": "neutral4",
+        "corner_radius": 0.0,
+        "image_height": null
+      },
+      "data": {
+        "title": "Thank him with a tip",
+        "on_info_click": {
+          "type": "DeepLink",
+          "args": {
+            "link": "talabat://?s=rti&order_id=938110824"
+          },
+          "tracking": {
+            "uri": "tracking:order_tracking.rider_tip_on_info_click",
+            "attributes": null
+          }
+        },
+        "chips": [
+          {
+            "text": "AED 4 🍦",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?s=rt&order_id=938110824&tip_value=4.0000"
+              },
+              "tracking": {
+                "uri": "tracking:order_tracking.tip_rider_clicked",
+                "attributes": null
+              }
+            }
+          },
+          {
+            "text": "AED 8 🌯",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?s=rt&order_id=938110824&tip_value=8.0000"
+              },
+              "tracking": {
+                "uri": "tracking:order_tracking.tip_rider_clicked",
+                "attributes": null
+              }
+            }
+          },
+          {
+            "text": "AED 10 🍔",
+            "on_click": {
+              "type": "DeepLink",
+              "args": {
+                "link": "talabat://?s=rt&order_id=938110824&tip_value=10.0000"
+              },
+              "tracking": {
+                "uri": "tracking:order_tracking.tip_rider_clicked",
+                "attributes": null
+              }
+            }
+          }
+        ]
+      }
+    },
+    "delivery_address": {
+      "type": "BasicInfo",
+      "data": {
+        "header": "Delivering to",
+        "title": "🏠 Apartment",
+        "subtitle": null,
+        "text": "20,  1,  4, روح الورد",
+        "image_url": null,
+        "actions": [],
+        "actions_messages": []
+      },
+      "style": {
+        "text_color": null,
+        "background_color": null,
+        "corner_radius": 0.0,
+        "image_height": null
+      }
+    },
+    "grocery_looking_glass": {
+      "type": "LookingGlass",
+      "style": {
+        "text_color": null,
+        "background_color": "alert30",
+        "corner_radius": 0.0,
+        "image_height": null
+      },
+      "data": {
+        "title": "Groceries in 30 mins",
+        "text": "Shop from talabat's own store",
+        "image_url": "https://images.deliveryhero.io/image/talabat/restaurants/logo_637719678427669982.png",
+        "on_click": {
+          "type": "DeepLink",
+          "text": "",
+          "args": {
+            "link": "talabat://?c=ae&s=ds",
+            "tracking_event_name": "shop_clicked",
+            "tracking_event_attributes": {
+              "screenName": "\"looking_glass\"",
+              "screenType": "\"order_tracking\"",
+              "shopId": 604750,
+              "listingPageType": "\"darkstore\"",
+              "widgetType": "\"looking_glass\"",
+              "widgetName": "\"item_carousel\"",
+              "itemNumber": 10,
+              "configId": "34136cd9-bd76-4f83-afe4-2eaa1edf2d8c",
+              "eventOrigin": "\"looking_glass\"",
+              "shopClickOrigin": "\"looking_glass\""
+            }
+          }
+        },
+        "on_load": {
+          "type": "None",
+          "tracking": {
+            "uri": "tracking:<order_tracking>.<looking_glass_on_load>",
+            "attributes": {
+              "tracking_attributes": {
+                "screenName": "looking_glass",
+                "shopId": 604750,
+                "listingPageType": "darkstore",
+                "itemNumber": 10,
+                "screenType": "order_confirmation",
+                "widgetType": "looking_glass",
+                "widgetName": "grocery_looking_glass",
+                "configId": "34136cd9-bd76-4f83-afe4-2eaa1edf2d8c"
+              },
+              "tracking_event_name": "widget_shown",
+              "feature_name": "looking_glass"
+            }
+          }
+        },
+        "items": [
+          {
+            "title": "AED 17.75",
+            "text": "Alpro Almond Unsweetened Drink 1 ltr",
+            "image_url": "https://images.deliveryhero.io/image/darkstores/groceries-catalog/products-uae/UAE_5411188112709v1.jpg",
+            "on_click": {
+              "type": "DeepLink",
+              "text": "",
+              "args": {
+                "link": "talabat://?c=ae&s=ds&t=5&i=900961",
+                "tracking_event_name": "shop_clicked",
+                "tracking_event_attributes": {
+                  "screenName": "\"looking_glass\"",
+                  "screenType": "\"order_tracking\"",
+                  "shopId": 604750,
+                  "listingPageType": "\"darkstore\"",
+                  "widgetType": "\"looking_glass\"",
+                  "widgetName": "\"item_carousel\"",
+                  "itemNumber": 10,
+                  "configId": "34136cd9-bd76-4f83-afe4-2eaa1edf2d8c",
+                  "eventOrigin": "\"looking_glass\"",
+                  "shopClickOrigin": "\"looking_glass\""
+                }
+              }
+            }
+          },
+          {
+            "title": "AED 1",
+            "text": "Coriander Bunch UAE 70 g",
+            "image_url": "https://images.deliveryhero.io/image/darkstores/groceries-catalog/products-uae/UAE_10503001v6.jpg",
+            "on_click": {
+              "type": "DeepLink",
+              "text": "",
+              "args": {
+                "link": "talabat://?c=ae&s=ds&t=5&i=900766",
+                "tracking_event_name": "shop_clicked",
+                "tracking_event_attributes": {
+                  "screenName": "\"looking_glass\"",
+                  "screenType": "\"order_tracking\"",
+                  "shopId": 604750,
+                  "listingPageType": "\"darkstore\"",
+                  "widgetType": "\"looking_glass\"",
+                  "widgetName": "\"item_carousel\"",
+                  "itemNumber": 10,
+                  "configId": "34136cd9-bd76-4f83-afe4-2eaa1edf2d8c",
+                  "eventOrigin": "\"looking_glass\"",
+                  "shopClickOrigin": "\"looking_glass\""
+                }
+              }
+            }
+          },
+          {
+            "title": "AED 31.25",
+            "text": "Flex Series Cable Lightning 2.4 A 1 M - White",
+            "image_url": "https://images.deliveryhero.io/image/darkstores/groceries-catalog/products-uae/UAE_736542559132.jpg",
+            "on_click": {
+              "type": "DeepLink",
+              "text": "",
+              "args": {
+                "link": "talabat://?c=ae&s=ds&t=5&i=907733",
+                "tracking_event_name": "shop_clicked",
+                "tracking_event_attributes": {
+                  "screenName": "\"looking_glass\"",
+                  "screenType": "\"order_tracking\"",
+                  "shopId": 604750,
+                  "listingPageType": "\"darkstore\"",
+                  "widgetType": "\"looking_glass\"",
+                  "widgetName": "\"item_carousel\"",
+                  "itemNumber": 10,
+                  "configId": "34136cd9-bd76-4f83-afe4-2eaa1edf2d8c",
+                  "eventOrigin": "\"looking_glass\"",
+                  "shopClickOrigin": "\"looking_glass\""
+                }
+              }
+            }
+          },
+          {
+            "title": "AED 22.9",
+            "text": "Kitekat Mackerel Cat Food 1.4 kg",
+            "image_url": "https://images.deliveryhero.io/image/darkstores/groceries-catalog/products-uae/UAE_8853301150668.jpg",
+            "on_click": {
+              "type": "DeepLink",
+              "text": "",
+              "args": {
+                "link": "talabat://?c=ae&s=ds&t=5&i=502826",
+                "tracking_event_name": "shop_clicked",
+                "tracking_event_attributes": {
+                  "screenName": "\"looking_glass\"",
+                  "screenType": "\"order_tracking\"",
+                  "shopId": 604750,
+                  "listingPageType": "\"darkstore\"",
+                  "widgetType": "\"looking_glass\"",
+                  "widgetName": "\"item_carousel\"",
+                  "itemNumber": 10,
+                  "configId": "34136cd9-bd76-4f83-afe4-2eaa1edf2d8c",
+                  "eventOrigin": "\"looking_glass\"",
+                  "shopClickOrigin": "\"looking_glass\""
+                }
+              }
+            }
+          },
+          {
+            "title": "AED 1.7",
+            "text": "Al Arz Arabic Bread Small (17cm) 5 Loaf",
+            "image_url": "https://images.deliveryhero.io/image/darkstores/groceries-catalog/products-uae/UAE_6291100800056.jpg",
+            "on_click": {
+              "type": "DeepLink",
+              "text": "",
+              "args": {
+                "link": "talabat://?c=ae&s=ds&t=5&i=505349",
+                "tracking_event_name": "shop_clicked",
+                "tracking_event_attributes": {
+                  "screenName": "\"looking_glass\"",
+                  "screenType": "\"order_tracking\"",
+                  "shopId": 604750,
+                  "listingPageType": "\"darkstore\"",
+                  "widgetType": "\"looking_glass\"",
+                  "widgetName": "\"item_carousel\"",
+                  "itemNumber": 10,
+                  "configId": "34136cd9-bd76-4f83-afe4-2eaa1edf2d8c",
+                  "eventOrigin": "\"looking_glass\"",
+                  "shopClickOrigin": "\"looking_glass\""
+                }
+              }
+            }
+          },
+          {
+            "title": "AED 13.15",
+            "text": "Alpro Unsweetened Soya Milk 1 ltr",
+            "image_url": "https://images.deliveryhero.io/image/darkstores/groceries-catalog/products-uae/UAE_5411188543398v1.jpg",
+            "on_click": {
+              "type": "DeepLink",
+              "text": "",
+              "args": {
+                "link": "talabat://?c=ae&s=ds&t=5&i=900965",
+                "tracking_event_name": "shop_clicked",
+                "tracking_event_attributes": {
+                  "screenName": "\"looking_glass\"",
+                  "screenType": "\"order_tracking\"",
+                  "shopId": 604750,
+                  "listingPageType": "\"darkstore\"",
+                  "widgetType": "\"looking_glass\"",
+                  "widgetName": "\"item_carousel\"",
+                  "itemNumber": 10,
+                  "configId": "34136cd9-bd76-4f83-afe4-2eaa1edf2d8c",
+                  "eventOrigin": "\"looking_glass\"",
+                  "shopClickOrigin": "\"looking_glass\""
+                }
+              }
+            }
+          },
+          {
+            "title": "AED 8.4",
+            "text": "Maltesers Chocolate 85 g",
+            "image_url": "https://images.deliveryhero.io/image/darkstores/groceries-catalog/products-uae/UAE_5000159417365.png",
+            "on_click": {
+              "type": "DeepLink",
+              "text": "",
+              "args": {
+                "link": "talabat://?c=ae&s=ds&t=5&i=901464",
+                "tracking_event_name": "shop_clicked",
+                "tracking_event_attributes": {
+                  "screenName": "\"looking_glass\"",
+                  "screenType": "\"order_tracking\"",
+                  "shopId": 604750,
+                  "listingPageType": "\"darkstore\"",
+                  "widgetType": "\"looking_glass\"",
+                  "widgetName": "\"item_carousel\"",
+                  "itemNumber": 10,
+                  "configId": "34136cd9-bd76-4f83-afe4-2eaa1edf2d8c",
+                  "eventOrigin": "\"looking_glass\"",
+                  "shopClickOrigin": "\"looking_glass\""
+                }
+              }
+            }
+          },
+          {
+            "title": "AED 19.15",
+            "text": "Alpro Original Coconut Drink 1 ltr",
+            "image_url": "https://images.deliveryhero.io/image/darkstores/groceries-catalog/products-uae/UAE_5411188116592v1.jpg",
+            "on_click": {
+              "type": "DeepLink",
+              "text": "",
+              "args": {
+                "link": "talabat://?c=ae&s=ds&t=5&i=900963",
+                "tracking_event_name": "shop_clicked",
+                "tracking_event_attributes": {
+                  "screenName": "\"looking_glass\"",
+                  "screenType": "\"order_tracking\"",
+                  "shopId": 604750,
+                  "listingPageType": "\"darkstore\"",
+                  "widgetType": "\"looking_glass\"",
+                  "widgetName": "\"item_carousel\"",
+                  "itemNumber": 10,
+                  "configId": "34136cd9-bd76-4f83-afe4-2eaa1edf2d8c",
+                  "eventOrigin": "\"looking_glass\"",
+                  "shopClickOrigin": "\"looking_glass\""
+                }
+              }
+            }
+          },
+          {
+            "title": "AED 19.25",
+            "text": "Alpro Coconut Almond Drink 1 ltr",
+            "image_url": "https://images.deliveryhero.io/image/darkstores/groceries-catalog/products-uae/UAE_5411188118732v1.png",
+            "on_click": {
+              "type": "DeepLink",
+              "text": "",
+              "args": {
+                "link": "talabat://?c=ae&s=ds&t=5&i=900962",
+                "tracking_event_name": "shop_clicked",
+                "tracking_event_attributes": {
+                  "screenName": "\"looking_glass\"",
+                  "screenType": "\"order_tracking\"",
+                  "shopId": 604750,
+                  "listingPageType": "\"darkstore\"",
+                  "widgetType": "\"looking_glass\"",
+                  "widgetName": "\"item_carousel\"",
+                  "itemNumber": 10,
+                  "configId": "34136cd9-bd76-4f83-afe4-2eaa1edf2d8c",
+                  "eventOrigin": "\"looking_glass\"",
+                  "shopClickOrigin": "\"looking_glass\""
+                }
+              }
+            }
+          },
+          {
+            "title": "AED 5.75",
+            "text": "Cucumber UAE 1 kg",
+            "image_url": "https://images.deliveryhero.io/image/darkstores/groceries-catalog/products-uae/UAE_10116001v11.jpg",
+            "on_click": {
+              "type": "DeepLink",
+              "text": "",
+              "args": {
+                "link": "talabat://?c=ae&s=ds&t=5&i=900778",
+                "tracking_event_name": "shop_clicked",
+                "tracking_event_attributes": {
+                  "screenName": "\"looking_glass\"",
+                  "screenType": "\"order_tracking\"",
+                  "shopId": 604750,
+                  "listingPageType": "\"darkstore\"",
+                  "widgetType": "\"looking_glass\"",
+                  "widgetName": "\"item_carousel\"",
+                  "itemNumber": 10,
+                  "configId": "34136cd9-bd76-4f83-afe4-2eaa1edf2d8c",
+                  "eventOrigin": "\"looking_glass\"",
+                  "shopClickOrigin": "\"looking_glass\""
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "order_details": {
+      "type": "OrderDetails",
+      "data": {
+        "header": "Your order from",
+        "title": "Abu Dhabi Co-operative Society",
+        "subtitle": "Al Khalidiyah",
+        "text": null,
+        "image_url": "https://images.deliveryhero.io/image/talabat/restaurants/logo_(1)_637685101838402930.jpg",
+        "items": [
+          {
+            "text": "Lamb Mince - Australia, 1kg",
+            "quantity": 1,
+            "subtext": ""
+          },
+          {
+            "text": "Fresh Butternut Pumpkin, 1kg",
+            "quantity": 1,
+            "subtext": ""
+          }
+        ],
+        "actions": [],
+        "actions_messages": []
+      }
+    },
+    "payment_details": {
+      "type": "ListInfo",
+      "data": {
+        "title": "Payment details",
+        "rows": [
+          {
+            "label": "Total",
+            "value": "AED 74.73",
+            "text": "AED 74.73"
+          }
+        ]
+      }
+    },
+    "support": {
+      "type": "BasicInfo",
+      "data": {
+        "header": null,
+        "title": "Support",
+        "subtitle": null,
+        "text": "Order #938110824",
+        "image_url": null,
+        "actions": [
+          {
+            "type": "DeepLink",
+            "text": "Help Center",
+            "args": {
+              "link": "talabat://?s=ghc&i=938110824",
+              "tracking_event_name": "helpcentre_link_clicked",
+              "tracking_event_attributes": {}
+            }
+          }
+        ],
+        "actions_messages": []
+      },
+      "style": {
+        "text_color": null,
+        "background_color": null,
+        "corner_radius": 0.0,
+        "image_height": null
+      }
+    }
+  },
+  "layouts": [
+    {
+      "name": "body",
+      "column": [
+        "order_delivering_map"
+      ],
+      "header": null
+    },
+    {
+      "name": "bottom_sheet",
+      "column": [
+        "order_progress_update",
+        "xx_small_divider",
+        "rider_info",
+        "rider_tip",
+        "xx_small_divider",
+        "delivery_address",
+        "grocery_looking_glass",
+        "order_details",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support"
+      ],
+      "header": null
+    },
+    {
+      "name": "order_tracking_screen_default_layout",
+      "column": [
+        "order_delivering_map",
+        "order_progress_update",
+        "rider_info",
+        "rider_tip",
+        "xx_small_divider",
+        "xx_small_divider",
+        "delivery_address",
+        "grocery_looking_glass",
+        "order_details",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support"
+      ],
+      "header": null
+    }
+  ],
+  "meta": {
+    "polling_interval_milliseconds": 500000
+  }
+}

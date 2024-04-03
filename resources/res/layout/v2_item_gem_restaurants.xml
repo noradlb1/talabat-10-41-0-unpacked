@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginEnd="16dp">
+            <RelativeLayout android:background="@drawable/item_image_bg_res_list" android:layout_width="56dp" android:layout_height="56dp">
+                <ProgressBar android:id="@+id/imageProgressBar" android:visibility="gone" android:layout_width="@dimen/cart_item_progress_bar_height_width" android:layout_height="@dimen/cart_item_progress_bar_height_width" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall"/>
+                <ImageView android:id="@+id/imageView_restaurantLogo" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#262626" android:ellipsize="end" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/vendorName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:singleLine="true" style="@style/Titles18Medium"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <TextView android:textColor="#838383" android:ellipsize="end" android:id="@+id/textView_cuisines" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:singleLine="true" style="@style/Content12Regular"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <TextView android:textSize="10sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/imageView_newTag" android:background="@drawable/bg_vendor_new_tag_gems" android:paddingTop="2dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="@string/vendor_new" android:paddingStart="6dp" android:paddingEnd="6dp" android:layout_marginEnd="12dp" style="@style/Content10Bold"/>
+                <com.talabat.talabatcommon.views.ratings.SmallStarRatingView android:id="@+id/smallStarRating" android:layout_width="wrap_content" android:layout_height="wrap_content" app:notRatedTextColor="@color/neutral_grey" app:ratingTextColor="@color/neutral_grey" app:reviewTextColor="@color/neutral_grey" app:textStyle="normal|bold|italic"/>
+                <ImageView android:id="@+id/vendorRateAvatar" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="4dp" android:layout_marginEnd="4dp" app:srcCompat="@drawable/ds_rating_okay"/>
+                <TextView android:textColor="@color/vendor_rate_count" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/vendorRateStatus" android:layout_width="wrap_content" android:layout_height="match_parent" android:lines="1" android:singleLine="true" style="@style/Content12Regular"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <TextView android:textColor="@color/neutral_grey" android:id="@+id/textView_averageDeliveryTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:layout_marginEnd="12dp" style="@style/Content12Regular"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/neutral_grey" android:id="@+id/textView_deliveryCost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:layout_marginEnd="12dp" style="@style/Content12Regular"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/neutral_grey" android:id="@+id/minimumAmountTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" style="@style/Content12Regular"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/divider_gray" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="16dp" android:layout_marginStart="16dp"/>
+</LinearLayout>

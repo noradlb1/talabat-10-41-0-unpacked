@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageButton android:layout_gravity="end" android:id="@+id/imageButton_close" android:background="@drawable/bg_close_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/radius_dialog" android:paddingLeft="@dimen/ds_xxxs" android:paddingRight="@dimen/ds_xxxs" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/ds_s" android:paddingStart="@dimen/ds_xxxs" android:paddingEnd="@dimen/ds_xxxs">
+        <TextView android:textColor="#de000000" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/subscription_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_l" style="@style/Titles20Bold"/>
+        <TextView android:textColor="#de000000" android:id="@+id/subscription_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ds_s" android:lineSpacingExtra="12sp" style="@style/Content16Medium"/>
+    </LinearLayout>
+</FrameLayout>

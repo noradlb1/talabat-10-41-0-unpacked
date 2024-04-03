@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.talabat.darkstores.feature.home.banner.BannerView android:id="@+id/banner_view" android:paddingTop="@dimen/ds_xxs" android:paddingBottom="@dimen/ds_xxs" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

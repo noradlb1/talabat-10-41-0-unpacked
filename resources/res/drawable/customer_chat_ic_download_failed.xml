@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@drawable/customer_chat_ic_error" android:left="@dimen/customer_chat_layout_30dp" android:top="@dimen/customer_chat_layout_30dp" android:right="@dimen/customer_chat_layout_30dp" android:bottom="@dimen/customer_chat_layout_30dp"/>
+</layer-list>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="colors">
+        <item>@color/neutral_35</item>
+        <item>@color/ds_alert_100</item>
+        <item>@color/lighter_green</item>
+        <item>@color/ds_success_100</item>
+    </array>
+    <array name="com_braze_internal_sdk_metadata">
+        <item>FLUTTER</item>
+    </array>
+    <array name="ibg_bug_annotation_colors_names_content_description">
+        <item>Red color</item>
+        <item>Green color</item>
+        <item>Purple color</item>
+        <item>Blue color</item>
+        <item>Orange color</item>
+        <item>Yellow color</item>
+        <item>Grey color</item>
+    </array>
+    <array name="live_chat_language_choices">
+        <item>English</item>
+        <item>عربى</item>
+        <item>Kurdish (Sorani)</item>
+        <item>Kurdish (Badini)</item>
+    </array>
+    <array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+    <array name="res_tab_array">
+        <item>All restaurants</item>
+        <item>talabatGO</item>
+    </array>
+    <array name="res_tab_array_pager">
+        <item>ALL_RESTAURANTS</item>
+        <item>talabatGO</item>
+    </array>
+    <array name="tags">
+        <item>(Terrible)</item>
+        <item>(Bad)</item>
+        <item>(Ok)</item>
+        <item>(Good)</item>
+        <item>(Excellent)</item>
+    </array>
+</resources>

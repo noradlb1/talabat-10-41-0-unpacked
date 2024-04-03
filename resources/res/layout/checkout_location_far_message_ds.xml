@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.designsystem.ds_alert.DSAlert xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:at_alert_type="1" app:at_descriptor="@string/checkout_location_far_msg" app:at_with_leading_icon="true"/>

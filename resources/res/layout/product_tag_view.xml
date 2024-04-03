@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tag_root" android:background="@color/ds_neutral_white" android:layout_width="wrap_content" android:layout_height="@dimen/l">
+        <TextView android:layout_gravity="center" android:id="@+id/txt_product_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_xxs" android:layout_marginEnd="@dimen/ds_xxs" style="@style/DSTextAppearance.Subheading2"/>
+        <TextView android:layout_gravity="center" android:id="@+id/more_product_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_xxs" android:layout_marginEnd="@dimen/ds_xxs" style="@style/DSTextAppearance.Body1"/>
+    </LinearLayout>
+</merge>

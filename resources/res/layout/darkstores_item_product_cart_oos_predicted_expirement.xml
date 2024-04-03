@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/warning_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_low_stock_indicator" android:layout_marginEnd="@dimen/ds_xxs"/>
+    <TextView android:textAppearance="@style/DSTextAppearance.Tag" android:textColor="@color/neutral_70" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ds_item_oos_predicted_title"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

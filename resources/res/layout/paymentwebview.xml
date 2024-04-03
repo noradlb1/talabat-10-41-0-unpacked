@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/gem_footer_view">
+        <com.talabat.helpers.TalabatToolBar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/toolbar_elevation" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <RelativeLayout style="@style/toolbar_background_style">
+                <RelativeLayout style="@style/toolbar_items_holder_style">
+                    <com.talabat.helpers.TalabatToolBarImageButton android:id="@+id/back" style="@style/toolbar_back_button_style"/>
+                    <com.talabat.helpers.TalabatToolBarTextView android:id="@+id/title" android:text="" style="@style/toolbar_text_style"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.talabat.helpers.TalabatToolBar>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ProgressBar android:id="@+id/webview_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

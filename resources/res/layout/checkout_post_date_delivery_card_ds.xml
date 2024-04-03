@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.designsystem.ds_simple_card.DSSimpleCard xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/post_dateDelivery" android:layout_width="match_parent" android:layout_height="wrap_content" app:sc_icon="@drawable/ds_delivery_bike" app:sc_label="@string/daily_entry_order_now"/>

@@ -1,0 +1,518 @@
+[
+  {
+    "CountryName": "KUWAIT",
+    "CountryId": 1,
+    "Collections": [
+      {
+        "Name": "Talabat Go",
+        "id": 1,
+        "iconname": "ic_collections_talabat_go",
+        "headertitle": "Delivered by us with live tracking",
+        "headerimageurl": "ic_header_talabat_go",
+        "imagecolorcode": "#1528A0",
+        "headerrightimage": "ic_collection_bg_talabatgo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "New Rest.",
+        "id": 5,
+        "iconname": "ic_collection_new_restaurants",
+        "headertitle": "Explore the latest restaurants",
+        "headerimageurl": "ic_header_new_restaurants",
+        "imagecolorcode": "#53158f",
+        "headerrightimage": "ic_collection_bg_new_restaurants",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Offers",
+        "id": 2,
+        "iconname": "ic_collections_offers",
+        "headertitle": "Explore great deals and promotions",
+        "headerimageurl": "ic_header_offers",
+        "imagecolorcode": "#e7022d",
+        "headerrightimage": "ic_collection_bg_offers",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Free Delivery",
+        "id": 6,
+        "iconname": "ic_collection_free_delivery",
+        "headertitle": "Explore restaurants with free delivery",
+        "headerimageurl": "ic_header_free_delivery",
+        "imagecolorcode": "#ffac00",
+        "headerrightimage": "ic_collection_bg_free_delivery",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Combos",
+        "id": 3,
+        "iconname": "ic_collections_combo",
+        "headertitle": "Explore Coca-Cola Combo meal deals",
+        "headerimageurl": "ic_header_combo",
+        "imagecolorcode": "#E4022C",
+        "headerrightimage": "ic_collection_bg_combo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Healthy",
+        "id": 10,
+        "iconname": "ic_collections_healthy_food",
+        "headertitle": "Explore delicious healthy food",
+        "headerimageurl": "ic_header_healthy_food",
+        "imagecolorcode": "#00B140",
+        "headerrightimage": "ic_collection_bg_healthyfood",
+        "extras": 10,
+        "collectiontype": "CUISINE"
+      },
+      {
+        "Name": "Grocery",
+        "id": 400,
+        "iconname": "ic_collections_grocery",
+        "headertitle": "Order your groceries online",
+        "headerimageurl": "ic_header_grocery",
+        "imagecolorcode": "#C1126F",
+        "headerrightimage": "ic_collection_bg_grocery",
+        "extras": 13,
+        "collectiontype": "CUISINE"
+      }
+    ]
+  },
+  {
+    "CountryName": "UAE",
+    "CountryId": 4,
+    "Collections": [
+      {
+        "Name": "Talabat Go",
+        "id": 1,
+        "iconname": "ic_collections_talabat_go",
+        "headertitle": "Delivered by us with live tracking",
+        "headerimageurl": "ic_header_talabat_go",
+        "imagecolorcode": "#1528A0",
+        "headerrightimage": "ic_collection_bg_talabatgo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "New Rest.",
+        "id": 5,
+        "iconname": "ic_collection_new_restaurants",
+        "headertitle": "Explore the latest restaurants",
+        "headerimageurl": "ic_header_new_restaurants",
+        "imagecolorcode": "#53158f",
+        "headerrightimage": "ic_collection_bg_new_restaurants",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Offers",
+        "id": 2,
+        "iconname": "ic_collections_offers",
+        "headertitle": "Explore great deals and promotions",
+        "headerimageurl": "ic_header_offers",
+        "imagecolorcode": "#e7022d",
+        "headerrightimage": "ic_collection_bg_offers",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Free Delivery",
+        "id": 6,
+        "iconname": "ic_collection_free_delivery",
+        "headertitle": "Explore restaurants with free delivery",
+        "headerimageurl": "ic_header_free_delivery",
+        "imagecolorcode": "#ffac00",
+        "headerrightimage": "ic_collection_bg_free_delivery",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Combos",
+        "id": 3,
+        "iconname": "ic_collections_combo",
+        "headertitle": "Explore Coca-Cola Combo meal deals",
+        "headerimageurl": "ic_header_combo",
+        "imagecolorcode": "#E4022C",
+        "headerrightimage": "ic_collection_bg_combo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Healthy",
+        "id": 102,
+        "iconname": "ic_collections_healthy_food",
+        "headertitle": "Explore delicious healthy food",
+        "headerimageurl": "ic_header_healthy_food",
+        "imagecolorcode": "#00B140",
+        "headerrightimage": "ic_collection_bg_healthyfood",
+        "extras": 10,
+        "collectiontype": "CUISINE"
+      }
+
+    ]
+  },
+  {
+    "CountryName": "Qatar",
+    "CountryId": 6,
+    "Collections": [
+      {
+        "Name": "Talabat Go",
+        "id": 1,
+        "iconname": "ic_collections_talabat_go",
+        "headertitle": "Delivered by us with live tracking",
+        "headerimageurl": "ic_header_talabat_go",
+        "imagecolorcode": "#1528A0",
+        "headerrightimage": "ic_collection_bg_talabatgo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "New Rest.",
+        "id": 5,
+        "iconname": "ic_collection_new_restaurants",
+        "headertitle": "Explore the latest restaurants",
+        "headerimageurl": "ic_header_new_restaurants",
+        "imagecolorcode": "#53158f",
+        "headerrightimage": "ic_collection_bg_new_restaurants",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Offers",
+        "id": 2,
+        "iconname": "ic_collections_offers",
+        "headertitle": "Explore great deals and promotions",
+        "headerimageurl": "ic_header_offers",
+        "imagecolorcode": "#e7022d",
+        "headerrightimage": "ic_collection_bg_offers",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Free Delivery",
+        "id": 6,
+        "iconname": "ic_collection_free_delivery",
+        "headertitle": "Explore restaurants with free delivery",
+        "headerimageurl": "ic_header_free_delivery",
+        "imagecolorcode": "#ffac00",
+        "headerrightimage": "ic_collection_bg_free_delivery",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Combos",
+        "id": 3,
+        "iconname": "ic_collections_combo",
+        "headertitle": "Explore Coca-Cola Combo meal deals",
+        "headerimageurl": "ic_header_combo",
+        "imagecolorcode": "#E4022C",
+        "headerrightimage": "ic_collection_bg_combo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Healthy",
+        "id": 227,
+        "iconname": "ic_collections_healthy_food",
+        "headertitle": "Explore delicious healthy food",
+        "headerimageurl": "ic_header_healthy_food",
+        "imagecolorcode": "#00B140",
+        "headerrightimage": "ic_collection_bg_healthyfood",
+        "extras": 10,
+        "collectiontype": "CUISINE"
+      }
+    ]
+  },
+  {
+    "CountryName": "Jordan",
+    "CountryId": 8,
+    "Collections": [
+      {
+        "Name": "Talabat Go",
+        "id": 1,
+        "iconname": "ic_collections_talabat_go",
+        "headertitle": "Delivered by us with live trackingo",
+        "headerimageurl": "ic_header_talabat_go",
+        "imagecolorcode": "#1528A0",
+        "headerrightimage": "ic_collection_bg_talabatgo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "New Rest.",
+        "id": 5,
+        "iconname": "ic_collection_new_restaurants",
+        "headertitle": "Explore the latest restaurants",
+        "headerimageurl": "ic_header_new_restaurants",
+        "imagecolorcode": "#53158f",
+        "headerrightimage": "ic_collection_bg_new_restaurants",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Offers",
+        "id": 2,
+        "iconname": "ic_collections_offers",
+        "headertitle": "Explore great deals and promotions",
+        "headerimageurl": "ic_header_offers",
+        "imagecolorcode": "#e7022d",
+        "headerrightimage": "ic_collection_bg_offers",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Free Delivery",
+        "id": 6,
+        "iconname": "ic_collection_free_delivery",
+        "headertitle": "Explore restaurants with free delivery",
+        "headerimageurl": "ic_header_free_delivery",
+        "imagecolorcode": "#ffac00",
+        "headerrightimage": "ic_collection_bg_free_delivery",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Combos",
+        "id": 3,
+        "iconname": "ic_collections_combo",
+        "headertitle": "Explore Coca-Cola Combo meal deals",
+        "headerimageurl": "ic_header_combo",
+        "imagecolorcode": "#E4022C",
+        "headerrightimage": "ic_collection_bg_combo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Healthy",
+        "id": 430,
+        "iconname": "ic_collections_healthy_food",
+        "headertitle": "Explore delicious healthy food",
+        "headerimageurl": "ic_header_healthy_food",
+        "imagecolorcode": "#00B140",
+        "headerrightimage": "ic_collection_bg_healthyfood",
+        "extras": 10,
+        "collectiontype": "CUISINE"
+      }
+    ]
+  },
+  {
+    "CountryName": "KSA",
+    "CountryId": 2,
+    "Collections": [
+      {
+        "Name": "Talabat Go",
+        "id": 1,
+        "iconname": "ic_collections_talabat_go",
+        "headertitle": "Delivered by us with live tracking",
+        "headerimageurl": "ic_header_talabat_go",
+        "imagecolorcode": "#1528A0",
+        "headerrightimage": "ic_collection_bg_talabatgo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "New Rest.",
+        "id": 5,
+        "iconname": "ic_collection_new_restaurants",
+        "headertitle": "Explore the latest restaurants",
+        "headerimageurl": "ic_header_new_restaurants",
+        "imagecolorcode": "#53158f",
+        "headerrightimage": "ic_collection_bg_new_restaurants",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Offers",
+        "id": 2,
+        "iconname": "ic_collections_offers",
+        "headertitle": "Explore great deals and promotions",
+        "headerimageurl": "ic_header_offers",
+        "imagecolorcode": "#e7022d",
+        "headerrightimage": "ic_collection_bg_offers",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Free Delivery",
+        "id": 6,
+        "iconname": "ic_collection_free_delivery",
+        "headertitle": "Explore restaurants with free delivery",
+        "headerimageurl": "ic_header_free_delivery",
+        "imagecolorcode": "#ffac00",
+        "headerrightimage": "ic_collection_bg_free_delivery",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Combos",
+        "id": 3,
+        "iconname": "ic_collections_combo",
+        "headertitle": "Explore Coca-Cola Combo meal deals",
+        "headerimageurl": "ic_header_combo",
+        "imagecolorcode": "#E4022C",
+        "headerrightimage": "ic_collection_bg_combo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Healthy",
+        "id": 125,
+        "iconname": "ic_collections_healthy_food",
+        "headertitle": "Explore delicious healthy food",
+        "headerimageurl": "ic_header_healthy_food",
+        "imagecolorcode": "#00B140",
+        "headerrightimage": "ic_collection_bg_healthyfood",
+        "extras": 10,
+        "collectiontype": "CUISINE"
+      }
+    ]
+  },
+  {
+    "CountryName": "Bahrain",
+    "CountryId": 3,
+    "Collections": [
+      {
+        "Name": "Talabat Go",
+        "id": 1,
+        "iconname": "ic_collections_talabat_go",
+        "headertitle": "Delivered by us with live tracking",
+        "headerimageurl": "ic_header_talabat_go",
+        "imagecolorcode": "#1528A0",
+        "headerrightimage": "ic_collection_bg_talabatgo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "New Rest.",
+        "id": 5,
+        "iconname": "ic_collection_new_restaurants",
+        "headertitle": "Explore the latest restaurants",
+        "headerimageurl": "ic_header_new_restaurants",
+        "imagecolorcode": "#53158f",
+        "headerrightimage": "ic_collection_bg_new_restaurants",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Offers",
+        "id": 2,
+        "iconname": "ic_collections_offers",
+        "headertitle": "Explore great deals and promotions",
+        "headerimageurl": "ic_header_offers",
+        "imagecolorcode": "#e7022d",
+        "headerrightimage": "ic_collection_bg_offers",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Free Delivery",
+        "id": 6,
+        "iconname": "ic_collection_free_delivery",
+        "headertitle": "Explore restaurants with free delivery",
+        "headerimageurl": "ic_header_free_delivery",
+        "imagecolorcode": "#ffac00",
+        "headerrightimage": "ic_collection_bg_free_delivery",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Combos",
+        "id": 3,
+        "iconname": "ic_collections_combo",
+        "headertitle": "Explore Coca-Cola Combo meal deals",
+        "headerimageurl": "ic_header_combo",
+        "imagecolorcode": "#E4022C",
+        "headerrightimage": "ic_collection_bg_combo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Healthy",
+        "id": 68,
+        "iconname": "ic_collections_healthy_food",
+        "headertitle": "Explore delicious healthy food",
+        "headerimageurl": "ic_header_healthy_food",
+        "imagecolorcode": "#00B140",
+        "headerrightimage": "ic_collection_bg_healthyfood",
+        "extras": 10,
+        "collectiontype": "CUISINE"
+      }
+    ]
+  },
+  {
+    "CountryName": "Oman",
+    "CountryId": 5,
+    "Collections": [
+      {
+        "Name": "Talabat Go",
+        "id": 1,
+        "iconname": "ic_collections_talabat_go",
+        "headertitle": "Delivered by us with live tracking",
+        "headerimageurl": "ic_header_talabat_go",
+        "imagecolorcode": "#1528A0",
+        "headerrightimage": "ic_collection_bg_talabatgo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "New Rest.",
+        "id": 5,
+        "iconname": "ic_collection_new_restaurants",
+        "headertitle": "Explore the latest restaurants",
+        "headerimageurl": "ic_header_new_restaurants",
+        "imagecolorcode": "#53158f",
+        "headerrightimage": "ic_collection_bg_new_restaurants",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Offers",
+        "id": 2,
+        "iconname": "ic_collections_offers",
+        "headertitle": "Explore great deals and promotions",
+        "headerimageurl": "ic_header_offers",
+        "imagecolorcode": "#e7022d",
+        "headerrightimage": "ic_collection_bg_offers",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Free Delivery",
+        "id": 6,
+        "iconname": "ic_collection_free_delivery",
+        "headertitle": "Explore restaurants with free delivery",
+        "headerimageurl": "ic_header_free_delivery",
+        "imagecolorcode": "#ffac00",
+        "headerrightimage": "ic_collection_bg_free_delivery",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Combos",
+        "id": 3,
+        "iconname": "ic_collections_combo",
+        "headertitle": "Explore Coca-Cola Combo meal deals",
+        "headerimageurl": "ic_header_combo",
+        "imagecolorcode": "#E4022C",
+        "headerrightimage": "ic_collection_bg_combo",
+        "extras": 0,
+        "collectiontype": "PROPERTY"
+      },
+      {
+        "Name": "Healthy",
+        "id": 387,
+        "iconname": "ic_collections_healthy_food",
+        "headertitle": "Explore delicious healthy food",
+        "headerimageurl": "ic_header_healthy_food",
+        "imagecolorcode": "#00B140",
+        "headerrightimage": "ic_collection_bg_healthyfood",
+        "extras": 10,
+        "collectiontype": "CUISINE"
+      }
+    ]
+  }
+]

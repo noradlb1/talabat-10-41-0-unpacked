@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/containerView" android:background="@drawable/bg_primary_mission_item" android:padding="@dimen/ds_xxs" android:layout_width="match_parent" android:layout_height="@dimen/three_primary_mission_item_height">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon" android:layout_width="@dimen/ds_m" android:layout_height="@dimen/ds_m" android:scaleType="fitXY" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textColor="@color/ds_neutral_100" android:gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs" android:maxLines="2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/icon" app:layout_constraintVertical_chainStyle="2" style="@style/DSTextAppearance.Subheading2"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

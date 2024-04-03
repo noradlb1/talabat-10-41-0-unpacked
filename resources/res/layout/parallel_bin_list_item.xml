@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="150dp" android:layout_height="200dp" android:layout_marginRight="8dp" android:layout_marginEnd="8dp" app:cardCornerRadius="3dp" app:cardElevation="2dp" app:cardUseCompatPadding="true">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/image_section" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/bin_image" android:layout_width="40dp" android:layout_height="25dp" android:layout_centerInParent="true"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/bin_image_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall"/>
+        </RelativeLayout>
+        <com.talabat.TalabatTextView android:textSize="14dp" android:textColor="@color/talabat_rebrand_black" android:gravity="center" android:id="@+id/bin_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_marginBottom="40dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" style="@style/textViewMedium"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

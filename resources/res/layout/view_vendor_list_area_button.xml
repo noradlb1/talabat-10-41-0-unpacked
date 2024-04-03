@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+    <TextView android:id="@+id/vendorsListAreaButtonHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/life_restaurants_in" style="@style/text_grey_14sp"/>
+    <LinearLayout android:gravity="center" android:id="@+id/vendorsListToolbarAreaLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@+id/vendorsListToolbarAreaTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/standard_internal_margin" android:layout_marginEnd="@dimen/standard_internal_margin" style="@style/text_actionable_medium_16sp"/>
+        <ImageView android:id="@+id/vendorsListToolbarAreaImageView" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_m_choice_chevron_down_actionable"/>
+    </LinearLayout>
+</LinearLayout>

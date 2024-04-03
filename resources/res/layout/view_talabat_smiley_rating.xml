@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RadioGroup android:orientation="horizontal" android:id="@+id/rating_radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/radio_1" android:background="@drawable/bg_rating_very_bad_state" android:layout_width="32dp" android:layout_height="32dp" android:button="@null"/>
+        <RadioButton android:id="@+id/radio_2" android:background="@drawable/bg_rating_bad_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:button="@null" android:layout_marginStart="20dp"/>
+        <RadioButton android:id="@+id/radio_3" android:background="@drawable/bg_rating_ok_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:button="@null" android:layout_marginStart="20dp"/>
+        <RadioButton android:id="@+id/radio_4" android:background="@drawable/bg_rating_good_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:button="@null" android:layout_marginStart="20dp"/>
+        <RadioButton android:id="@+id/radio_5" android:background="@drawable/bg_rating_very_good_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:button="@null" android:layout_marginStart="20dp"/>
+    </RadioGroup>
+</merge>

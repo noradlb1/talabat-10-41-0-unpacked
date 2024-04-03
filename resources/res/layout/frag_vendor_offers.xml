@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:background="@color/screen_bg_white" android:layout_width="match_parent" android:layout_height="150dp" app:contentScrim="#66000000" app:expandedTitleGravity="30" app:layout_scrollFlags="13" app:statusBarScrim="@android:color/transparent">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="150dp" app:layout_collapseMode="2">
+                <ImageView android:id="@+id/vendorOffersImageView" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                <View android:background="@drawable/vendor_offers_image_gradient" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/anim_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/tool_bar_height" android:layout_centerVertical="true">
+                    <ImageButton android:id="@+id/vendorOffersBackButton" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" style="@style/toolbar_white_back_button_style"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/tLifeVendorOffersScrollView" android:paddingBottom="@dimen/padding_60dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include layout="@layout/frag_vendor_offers_content"/>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/tLifeVendorOfferRedeemLayout" android:background="@color/screen_bg_white" android:layout_width="match_parent" android:layout_height="120dp">
+        <TextView android:gravity="center" android:id="@+id/infoDineInOffer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginTop="@dimen/standard_quarter_margin" android:layout_marginRight="@dimen/standard_margin" android:text="@string/vendorAvailableOfferDescription" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" style="@style/text_grey_12sp"/>
+        <LinearLayout android:id="@+id/tLifeVendorOfferRedeemButton" android:layout_width="match_parent" android:layout_margin="@dimen/standard_margin" style="@style/action_button">
+            <ImageView android:id="@+id/tLifeVendorOfferQRCodeImageView" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_scan_bar_code" android:layout_marginEnd="@dimen/standard_internal_margin"/>
+            <TextView android:layout_gravity="center" android:id="@+id/tLifeVendorOfferQRCodeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vendor_offers_scan_and_redeem" style="@style/text_white_medium_16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:visibility="invisible" layout="@layout/generic_progress_bar"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

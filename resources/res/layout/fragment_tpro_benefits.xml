@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_on_boarding_content" android:layout_width="match_parent" android:layout_height="@dimen/ds_zero" app:layout_constraintBottom_toTopOf="@+id/include_payment_section" app:layout_constraintTop_toTopOf="0"/>
+    <include android:id="@+id/include_payment_section" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" layout="@layout/include_payment_section"/>
+    <include android:id="@+id/shimmer" layout="@layout/view_benefits_shimmer"/>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/errorNotifyLinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_xxl" app:layout_constraintBottom_toBottomOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

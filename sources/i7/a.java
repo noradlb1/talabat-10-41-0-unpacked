@@ -1,0 +1,11 @@
+package i7;
+
+import android.os.Bundle;
+import com.google.android.exoplayer2.Bundleable;
+import com.google.android.exoplayer2.audio.AudioAttributes;
+
+public final /* synthetic */ class a implements Bundleable.Creator {
+    public final Bundleable fromBundle(Bundle bundle) {
+        return AudioAttributes.lambda$static$0(bundle);
+    }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <corners android:topLeftRadius="@dimen/dimen_7dp" android:topRightRadius="@dimen/dimen_7dp" android:bottomLeftRadius="@dimen/dimen_7dp" android:bottomRightRadius="@dimen/dimen_7dp"/>
+    <solid android:color="@color/camera_screen_middle_color"/>
+</shape>

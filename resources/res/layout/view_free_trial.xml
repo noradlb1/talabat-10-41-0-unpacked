@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/free_trial_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/ds_s" android:layout_marginRight="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s">
+    <com.talabat.TalabatTextView android:id="@+id/free_trial_info" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textViewRegular"/>
+    <com.talabat.TalabatTextView android:textColor="@color/text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/Content14Regular"/>
+</RelativeLayout>

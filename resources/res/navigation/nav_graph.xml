@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/nav_graph">
+    <fragment android:name="com.talabat.darkstores.feature.home.dynamic.DynamicHomeFragment" android:id="@+id/dynamicHomeFragment">
+        <action android:id="@+id/action_dynamicHomeFragment_to_searchFragment" app:destination="@+id/searchFragment"/>
+    </fragment>
+    <fragment android:name="com.talabat.darkstores.feature.home.HomeFragment" android:id="@+id/homeFragment">
+        <action android:id="@+id/action_homeFragment_to_categoriesOverviewBottomSheet" app:destination="@+id/categoriesOverviewBottomSheet"/>
+        <action android:id="@+id/action_homeFragment_to_categoriesFragment" app:destination="@+id/categoriesFragment"/>
+        <action android:id="@+id/action_homeFragment_to_searchResultsFragment" app:destination="@+id/searchResultsFragment"/>
+        <action android:id="@+id/action_homeFragment_to_searchFragment" app:destination="@+id/searchFragment"/>
+        <action android:id="@+id/action_homeFragment_to_subcategoriesFragmentNew" app:destination="@+id/subcategoriesFragmentNew"/>
+        <action android:id="@+id/action_homeFragment_to_flutterSearchFragment" app:destination="@+id/flutterSearchFragment"/>
+    </fragment>
+    <fragment android:name="com.talabat.darkstores.feature.search.SearchFragment" android:id="@+id/searchFragment">
+        <action android:id="@+id/action_searchFragment_to_searchResultsFragment" app:destination="@+id/searchResultsFragment"/>
+    </fragment>
+    <dialog android:name="com.talabat.darkstores.feature.categoriesOverview.CategoriesOverviewBottomSheet" android:id="@+id/categoriesOverviewBottomSheet">
+        <argument android:name="categories" app:argType="com.talabat.darkstores.model.Category[]"/>
+        <action android:id="@+id/action_categoriesOverviewBottomSheet_to_subcategoriesFragmentNew" app:destination="@+id/subcategoriesFragmentNew"/>
+        <action android:id="@+id/action_categoriesOverviewBottomSheet_to_flutterSearchFragment" app:destination="@+id/flutterSearchFragment"/>
+    </dialog>
+    <dialog android:name="com.talabat.darkstores.feature.cart.partialFulfillment.PartialFulfillmentBottomSheet" android:id="@+id/partialFulfillment">
+        <argument android:name="preferences" app:argType="com.talabat.darkstores.data.partialFulfillment.model.PreferencesResponse"/>
+        <argument android:name="selected" app:argType="string"/>
+    </dialog>
+    <dialog android:name="com.talabat.darkstores.feature.cart.ageRestriction.AgeRestrictionBottomSheet" android:id="@+id/ageRestriction">
+        <argument android:name="age" app:argType="string"/>
+    </dialog>
+    <fragment android:name="com.talabat.darkstores.feature.cart.CartFragment" android:id="@+id/cartFragment">
+        <action android:id="@+id/action_cartFragment_to_searchResultsFragment" app:destination="@+id/searchResultsFragment"/>
+        <action android:id="@+id/action_cartFragment_to_partialFulfillment" app:destination="@+id/partialFulfillment"/>
+        <action android:id="@+id/action_cartFragment_to_ageRestriction" app:destination="@+id/ageRestriction"/>
+    </fragment>
+    <fragment android:name="com.talabat.darkstores.feature.categories.CategoriesFragment" android:id="@+id/categoriesFragment">
+        <argument android:name="category" app:argType="com.talabat.darkstores.model.Category"/>
+        <argument android:name="eventOrigin" app:argType="string"/>
+        <action android:id="@+id/action_categoriesFragment_to_searchResultsFragment" app:destination="@+id/searchResultsFragment"/>
+        <action android:id="@+id/action_categoriesFragment_to_categoriesOverviewBottomSheet" app:destination="@+id/categoriesOverviewBottomSheet"/>
+        <action android:id="@+id/action_categoriesFragment_to_searchFragment" app:destination="@+id/searchFragment"/>
+        <action android:id="@+id/action_categoriesFragment_to_flutterSearchFragment" app:destination="@+id/flutterSearchFragment"/>
+    </fragment>
+    <fragment android:name="com.talabat.darkstores.feature.categories.subcategories.experiment.SubcategoriesFragmentNew" android:id="@+id/subcategoriesFragmentNew">
+        <argument android:name="categoryId" app:argType="string"/>
+        <argument android:name="categoryName" app:argType="string"/>
+        <argument android:name="eventOrigin" app:argType="string"/>
+        <action android:id="@+id/action_subcategoriesFragmentNew_to_categoriesOverviewBottomSheet" app:destination="@+id/categoriesOverviewBottomSheet"/>
+        <action android:id="@+id/action_subcategoriesFragmentNew_to_cartFragment" app:destination="@+id/cartFragment"/>
+        <action android:id="@+id/action_subcategoriesFragmentNew_to_flutterSearchFragment" app:destination="@+id/flutterSearchFragment"/>
+        <action android:id="@+id/action_subcategoriesFragmentNew_to_searchFragment" app:destination="@+id/searchFragment"/>
+        <action android:id="@+id/action_subcategoriesFragmentNew_to_categorySortBottomSheet" app:destination="@+id/categorySortBottomSheet"/>
+    </fragment>
+    <fragment android:name="com.talabat.darkstores.feature.product.ProductFragment" android:id="@+id/productFragment">
+        <argument android:name="product" app:argType="com.talabat.feature.darkstorescart.data.model.Product"/>
+        <argument android:name="shouldTrackProductOpenedEvent" android:defaultValue="true" app:argType="boolean"/>
+        <argument android:name="deeplinkUri" android:defaultValue="" app:argType="string"/>
+        <argument android:name="eventOrigin" android:defaultValue="" app:argType="string"/>
+        <argument android:name="productClickTrackingAttribute" android:defaultValue="@null" app:argType="com.talabat.darkstores.feature.home.swimlane.ProductClickTrackingAttribute" app:nullable="true"/>
+        <action android:id="@+id/action_productFragment_to_searchResultsFragment" app:destination="@+id/searchResultsFragment"/>
+        <action android:id="@+id/action_productFragment_to_cartFragment" app:destination="@+id/cartFragment"/>
+        <action android:id="@+id/action_productFragment_to_flutterSearchFragment" app:destination="@+id/flutterSearchFragment"/>
+        <argument android:name="swimlaneRequestId" android:defaultValue="" app:argType="string"/>
+        <argument android:name="searchRequestId" android:defaultValue="" app:argType="string"/>
+        <argument android:name="searchTerm" android:defaultValue="" app:argType="string"/>
+    </fragment>
+    <fragment android:name="com.talabat.darkstores.feature.searchResults.SearchResultsFragment" android:id="@+id/searchResultsFragment">
+        <argument android:name="resultsType" app:argType="com.talabat.darkstores.feature.searchResults.SearchResultsType"/>
+        <argument android:name="eventOrigin" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <action android:id="@+id/action_searchResultsFragment_to_searchFragment" app:destination="@+id/searchFragment"/>
+        <action android:id="@+id/action_searchResultsFragment_to_flutterSearchFragment" app:destination="@+id/flutterSearchFragment"/>
+    </fragment>
+    <action android:id="@+id/action_to_productFragment" app:destination="@+id/productFragment"/>
+    <fragment android:name="com.talabat.feature.nfvinvendorsearch.presentation.fragment.QCommerceFlutterFragment" android:id="@+id/flutterSearchFragment">
+        <argument android:name="configurationParams" app:argType="com.talabat.feature.nfvinvendorsearch.presentation.model.FlutterConfigurationParams"/>
+        <argument android:name="route" app:argType="com.talabat.feature.nfvinvendorsearch.presentation.navigation.FlutterRoute"/>
+    </fragment>
+    <dialog android:label="SortOptionBottomSheet" android:name="com.talabat.darkstores.feature.categories.subcategories.sort.SortOptionBottomSheet" android:id="@+id/categorySortBottomSheet">
+        <argument android:name="sortOptions" app:argType="com.talabat.darkstores.data.discovery.model.SortOption[]"/>
+    </dialog>
+</navigation>

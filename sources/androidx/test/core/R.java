@@ -1,0 +1,14 @@
+package androidx.test.core;
+
+public final class R {
+
+    public static final class id {
+        public static final int view_tree_lifecycle_owner = 2131432501;
+
+        private id() {
+        }
+    }
+
+    private R() {
+    }
+}

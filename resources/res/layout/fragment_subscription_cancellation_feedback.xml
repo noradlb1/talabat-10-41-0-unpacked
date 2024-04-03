@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/cancellation_feedback" android:visibility="gone" layout="@layout/view_subscription_cancellation_feedback"/>
+    <include android:id="@+id/initialize_subscription_cancellation" layout="@layout/view_initialize_subscription_cancellation"/>
+    <include android:id="@+id/cancel_subscription_success_container" android:visibility="gone" layout="@layout/view_subscription_cancel_success"/>
+    <include android:id="@+id/cancel_subscription_failure_container" android:visibility="gone" layout="@layout/view_subscription_cancel_failure"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

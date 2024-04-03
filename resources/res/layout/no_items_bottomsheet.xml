@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/no_items_bottom_sheet" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/white_top_rounded" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/button_view">
+        <com.designsystem.ds_empty_state.DSEmptyState android:id="@+id/design_system_empty_state" android:background="@drawable/white_top_rounded" android:layout_width="match_parent" android:layout_height="wrap_content" app:es_details="@string/restaurant_might_have_updated" app:es_image="@drawable/ic_no_area_found" app:es_title="@string/we_couldn_t_find_the_items"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/error_notification" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/close_bottomsheet" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/ds_s" android:src="@drawable/ic_close_with_background" android:layout_marginStart="@dimen/ds_s"/>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/button_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.designsystem.ds_button.DSPrimaryButton android:id="@+id/go_to_menu" android:layout_width="match_parent" android:layout_height="@dimen/btn_height" android:layout_margin="@dimen/_16margin" android:textAllCaps="false" app:ds_centerText="@string/see_restaurant_menu"/>
+    </LinearLayout>
+</RelativeLayout>

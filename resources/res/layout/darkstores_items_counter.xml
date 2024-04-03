@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/counterLinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center" android:id="@+id/btnRemove" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ds_minus" app:tint="@color/ds_primary_100"/>
+            <TextView android:textColor="@color/ds_neutral_100" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvCounter" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/DSTextAppearance.Body1"/>
+            <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center" android:id="@+id/btnAdd" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ds_plus" app:tint="@color/ds_primary_100"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/ds_danger_100" android:layout_gravity="bottom" android:id="@+id/limit_error" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_product_stock_limit_error" android:maxLines="1" style="@style/DSTextAppearance.Caption"/>
+    <TextView android:textColor="@color/ds_primary_100" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/btnAddToCart" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_to_cart" android:maxLines="1" android:drawablePadding="@dimen/ds_xxs" android:textAllCaps="false" android:drawableStart="@drawable/ds_plus" android:drawableTint="@color/ds_primary_100" style="@style/DSTextAppearance.Body1"/>
+</merge>

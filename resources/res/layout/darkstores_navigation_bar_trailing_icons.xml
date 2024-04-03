@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.designsystem.ds_icon_button.DSIconButton android:id="@+id/bagIconButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="true" app:ib_icon="@drawable/ds_bag" app:ib_show_rounded_background="true" app:ib_size="1"/>
+        <com.designsystem.ds_counter.DSCounter android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/cartCounter" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_xxs" app:ctr_value="0"/>
+    </FrameLayout>
+</merge>

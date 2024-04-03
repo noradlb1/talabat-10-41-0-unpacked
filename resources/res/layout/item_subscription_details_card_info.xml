@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/tv_card_details_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_l" android:text="@string/payment_method" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/DSTextAppearance.Heading1"/>
+    <FrameLayout android:id="@+id/paymentView" android:paddingBottom="@dimen/ds_s" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s" app:layout_constraintTop_toBottomOf="@+id/tv_card_details_header">
+        <com.talabat.talabatcommon.views.wallet.cardViewWidgets.view.DefaultCardView android:id="@+id/wallet_payment_widget" android:background="@drawable/bg_payment_card" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/tv_only_cards_accepted" app:source="tpro"/>
+        <com.talabat.talabatcommon.views.ShimmerLayout android:id="@+id/wallet_payment_loading" android:layout_width="match_parent" android:layout_height="150dp" app:shimmer_auto_start="true" app:shimmer_color="@color/ds_neutral_white">
+            <View android:background="@drawable/bg_shimmer_placeholder_orange" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </com.talabat.talabatcommon.views.ShimmerLayout>
+    </FrameLayout>
+    <View android:id="@+id/separator_subscription_details_card_bottom" android:background="@color/ds_neutral_4" android:layout_width="match_parent" android:layout_height="@dimen/xs" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/paymentView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

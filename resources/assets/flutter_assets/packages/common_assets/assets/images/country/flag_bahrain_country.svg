@@ -1,0 +1,14 @@
+<svg id="vector" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 66 66">
+    <defs>
+        <clipPath id="clip_path_0">
+            <circle cx="33" cy="33" r="31.6" />
+        </clipPath>
+    </defs>
+    <circle cx="33" cy="33" r="32" fill="transparent" stroke="#F5F5F5" stroke-width="1" />
+    <g id="g_0" clip-path="url(#clip_path_0)">
+        <path fill="#ffffff" d="M-2.8232,1.1768H103.254V64.8232H-2.8232" />
+        <path fill="#CE1126"
+            d="M103.254,1.1768H23.3425L39.6077,7.5414L23.3425,13.9061L39.6077,20.2707L23.3425,26.6354L39.6077,33L23.3425,39.3646L39.6077,45.7293L23.3425,52.0939L39.6077,58.4586L23.3425,64.8232H103.254" />
+    </g>
+    =
+</svg>

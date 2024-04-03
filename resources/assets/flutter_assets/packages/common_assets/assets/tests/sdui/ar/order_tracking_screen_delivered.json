@@ -1,0 +1,121 @@
+{
+  "type": "OrderTrackingScreen",
+  "layouts": [
+    {
+      "name": "order_tracking_screen_default_layout",
+      "column": [
+        "order_delivered",
+        "xx_small_divider",
+        "delivery_address",
+        "xx_small_divider",
+        "order_details",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support",
+        "xx_small_vertical_spacing"
+      ]
+    }
+  ],
+  "widgets": {
+    "order_delivered": {
+      "type": "OrderCompleted",
+      "data": {
+        "header": "أجل تسليم",
+        "title": "أتمنى لك وجبة شهية،\nإميلي"
+      }
+    },
+    "delivery_address": {
+      "type": "BasicInfo",
+      "data": {
+        "header": "توصيل إلى",
+        "title": "\uD83C\uDFE2 عمل",
+        "text": "الطابق 25 ، برج الأعمال المنفرد 153 ، شارع الشيخ زايد"
+      }
+    },
+    "payment_details": {
+      "type": "ListInfo",
+      "data": {
+        "title": "بيانات الدفع",
+        "rows": [
+          {
+            "label": "التكلفة الإجمالية",
+            "text": "300 درهم إماراتي"
+          },
+          {
+            "label": "طريقة الدفع او السداد",
+            "text": "xxxx-1738"
+          }
+        ]
+      }
+    },
+    "support": {
+      "type": "BasicInfo",
+      "data": {
+        "title": "الدعم",
+        "text": "Order #5678093898",
+        "actions": [
+          {
+            "type": "DeepLink",
+            "text": "مركز المساعدة",
+            "args": {
+              "link": "talabat://?s=ghc&i=12345",
+              "tracking_event_name": "helpcentre_link_clicked"
+            }
+          }
+        ]
+      }
+    },
+    "order_details": {
+      "type": "OrderDetails",
+      "data": {
+        "header": "طلبك من",
+        "title": "بيتزا دومينوز",
+        "subtitle": "خليج الأعمال",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+        "items": [
+          {
+            "quantity": 2,
+            "text": "سلطة سيزر"
+          },
+          {
+            "quantity": 1,
+            "text": "توسكان تشيكن ماك اند تشيز",
+            "subtext": "إضافة بيستو"
+          },
+          {
+            "quantity": 1,
+            "text": "توسكان تشيكن ماك اند تشيز",
+            "subtext": "إضافة بيستو"
+          },
+          {
+            "quantity": 1,
+            "text": "خبز بالثوم النباتي"
+          }
+        ],
+
+        "actions_messages": [
+          {
+            "type": "DSAlert",
+            "data": {
+              "alert_type": "warning",
+              "descriptor": "الاتصال غير متاح ، لم يتم توفير الرقم"
+            }
+          }
+        ]
+      }
+    },
+    "xx_small_divider": {
+      "type": "Divider",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "xx_small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 8.0
+      }
+    }
+  }
+}

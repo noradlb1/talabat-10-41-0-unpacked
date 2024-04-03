@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/hw_dtm_dialog_white_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="#000" android:id="@+id/hw_dtm_dialog_content_tv" android:layout_width="280dp" android:layout_height="wrap_content" android:layout_margin="24dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="24dp" android:paddingRight="24dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:textStyle="bold" android:textColor="#007dff" android:id="@+id/hw_dtm_dialog_cancel_tv" android:background="#00000000" android:paddingTop="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="0dp" android:layout_weight="1" android:textAllCaps="true"/>
+        <View android:background="#ddd" android:layout_width="0.5dp" android:layout_height="25dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+        <Button android:textSize="16sp" android:textStyle="bold" android:textColor="#007dff" android:id="@+id/hw_dtm_dialog_ok_tv" android:background="#00000000" android:paddingTop="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="0dp" android:layout_weight="1" android:textAllCaps="true"/>
+    </LinearLayout>
+</LinearLayout>

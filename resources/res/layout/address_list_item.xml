@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/ds_neutral_white" app:cardElevation="@dimen/ds_zero" app:cardMaxElevation="@dimen/ds_zero">
+    <RelativeLayout android:layout_gravity="start" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ds_xxs" android:layout_marginBottom="@dimen/MarginBottom">
+        <LinearLayout android:orientation="vertical" android:id="@+id/address_layout_view" android:paddingTop="@dimen/ds_xxs" android:paddingBottom="@dimen/ds_xxs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginRight="@dimen/ds_s">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                    <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_100" android:ellipsize="end" android:id="@+id/txtAddressProfileName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_weight="2" style="@style/DSTextAppearance.Subheading1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_100" android:id="@+id/txtAddressAreaname" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Subheading1"/>
+                </LinearLayout>
+                <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_55" android:gravity="start" android:id="@+id/txtAddressDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs" style="@style/DSTextAppearance.Body1"/>
+                <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_55" android:id="@+id/txtAddresMobile" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs" android:text="Mobile: " style="@style/DSTextAppearance.Body1"/>
+                <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_55" android:id="@+id/txtAddresPhone" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs" android:text="Phone: " style="@style/DSTextAppearance.Body1"/>
+                <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_55" android:id="@+id/txtAdditionalDirections" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs" android:text="Directions: " style="@style/DSTextAppearance.Body1"/>
+                <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_55" android:id="@+id/out_of_delivery" android:background="@drawable/ic_m_round_border_alert_10" android:paddingLeft="@dimen/ds_xxxs" android:paddingRight="@dimen/ds_xxxs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs" android:text="@string/out_delivery_zone_address" android:layout_weight="0.2" android:paddingStart="@dimen/ds_xxxs" android:paddingEnd="@dimen/ds_xxxs" style="@style/DSTextAppearance.Body1"/>
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/rectangle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/address_list_linear_height" android:layout_marginBottom="@dimen/ds_xxs" android:weightSum="1">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/address_list_edit_view" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5">
+                    <ImageView android:layout_width="@dimen/ds_m" android:layout_height="@dimen/ds_m" android:layout_marginRight="@dimen/ds_xxs" android:src="@drawable/icon_edit" android:layout_marginEnd="@dimen/ds_xxs"/>
+                </LinearLayout>
+                <FrameLayout android:background="@color/ds_neutral_10" android:paddingTop="@dimen/ds_xxxs" android:paddingBottom="@dimen/ds_xxxs" android:layout_width="@dimen/about_page_divider_height" android:layout_height="match_parent"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/address_list_delete_view" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5">
+                    <ImageView android:layout_width="@dimen/ds_m" android:layout_height="@dimen/ds_m" android:layout_marginRight="@dimen/ds_xxs" android:src="@drawable/ds_bin" android:layout_marginEnd="@dimen/ds_xxs" app:tint="@color/ds_danger_100"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@+id/rating_nav_host_fragment" android:background="@drawable/bg_rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xxxl" app:defaultNavHost="true" app:layout_constraintBottom_toBottomOf="0" app:navGraph="@navigation/rating_nav_graph"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+package com.instabug.library.networkv2.request;
+
+public final class Endpoints {
+    public static final String ADD_BUG_ATTACHMENT = "/bugs/:bug_token/attachments";
+    public static final String ADD_COMMENT = "/feature_reqs/:feature_req_id/comment";
+    public static final String ADD_CRASH_ATTACHMENT = "/crashes/:crash_token/attachments";
+    public static final String ADD_MESSAGE_ATTACHMENT = "/chats/:chat_number/messages/:message_id/attachments";
+    public static final String ADD_NEW_FEATURE = "/feature_reqs";
+    private static final String APM_DOMAIN = "https://api-apm.instabug.com";
+    public static final String APP_SETTINGS = "/features";
+    public static final String BUG_LOGS = "/bugs/:bug_token/state_logs";
+    public static final String CHAT_LOGS = "/chats/:chat_token/state_logs";
+    public static final String CRASH_LOGS = "/crashes/:crash_token/state_logs";
+    public static final String FIRST_SEEN = "/first_seen";
+    public static final String GET_ANNOUNCEMENTS = "/announcements/v2";
+    public static final String GET_FEATURES_REQUEST = "/feature_reqs";
+    public static final String GET_FEATURE_TIMELINE = "/feature_reqs/:feature_req_id/timeline";
+    public static final String GET_SURVEYS = "/surveys/v8";
+    public static final String MIGRATE_UUID = "/migrate_uuid";
+    public static final String PRODUCTION_LOGS_URL = "https://api.instabug.com/sdklogs/upload";
+    public static final String PUSH_TOKEN = "/push_token";
+    public static final String REPORT_ANR = "/crashes/anr";
+    public static final String REPORT_BUG = "/bugs";
+    public static final String REPORT_CATEGORIES = "/application_categories";
+    public static final String REPORT_CRASH = "/crashes";
+    public static final String REPORT_FATAL_HANG = "/crashes/android_fatal_hangs";
+    public static final String REPORT_USER_TERMINATION = "/crashes/android_user_termination";
+    public static final String RESOLVE_IP = "/resolve_ip";
+    private static final String SDK_PATH = "/api/sdk/v3";
+    public static final String SEARCH = "/search";
+    public static final String SEND_MESSAGE = "/chats/:chat_number/messages";
+    public static final String SEND_SESSION = "/sessions/v2";
+    private static final String SESSION_PATH = "/sessions/v3";
+    public static final String SUBMIT_ANNOUNCEMENT = "/announcements/:announcement_id/v2/responses";
+    public static final String SUBMIT_SURVEY = "/surveys/:survey_id/v8/responses";
+    public static final String SYNC_CHATS = "/chats/sync";
+    public static final String TRIGGER_CHAT = "/chats";
+    public static final String USER_ATTRIBUTES = "/users/attributes";
+    public static final String V3_SESSION = "https://api-apm.instabug.com/api/sdk/v3/sessions/v3";
+    public static final String VOTE_FEATURE = "/feature_reqs/:feature_req_id/like";
+    private static final String announcementVersion = "v2";
+    private static final String surveysVersion = "v8";
+}

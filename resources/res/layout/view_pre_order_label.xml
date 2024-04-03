@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/layout_preOrder" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/imageView_preOrderIcon" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ds_time_filled" android:scaleType="fitCenter" app:tint="@color/ds_danger_100"/>
+    <TextView android:textColor="@color/ds_danger_100" android:id="@+id/textView_preOrderLabel" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:text="@string/preorder" android:layout_marginStart="4dp"/>
+</LinearLayout>

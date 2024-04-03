@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/txtCountryCodeHeaderView" android:background="@color/app_background" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.talabat.TalabatTextView android:textSize="@dimen/text_view_text_size" android:textColor="@color/text_black" android:gravity="center_vertical" android:id="@+id/txtCountryCodeHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_common_margin" android:layout_marginRight="@dimen/content_common_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/Content16Medium"/>
+</RelativeLayout>

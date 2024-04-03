@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.designsystem.ds_navigation_bar.DSNavigationBar android:id="@+id/vouchersListNavigationBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/vouchersListNavigationBar">
+        <com.talabat.feature.referafriend.presentation.ui.PromoCodeBannerView android:id="@+id/getACodeComponentView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xs" android:layout_marginBottom="@dimen/ds_m"/>
+        <com.designsystem.ds_tabs.DSTabBar android:id="@+id/vouchersTabs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_s" app:tb_type="0"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/vouchersListRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.designsystem.ds_empty_state_v2.DSEmptyState android:id="@+id/vouchersNoResultFoundLinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:es_image="@drawable/ic_offer" app:es_v2_details="@string/vouchers_not_available_subtitle" app:es_v2_title="@string/vouchers_not_available"/>
+    <include layout="@layout/generic_progress_bar"/>
+</RelativeLayout>

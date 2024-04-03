@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <group android:pivotX="12" android:scaleX="-1">
+        <path android:fillColor="#262626" android:pathData="M15.845 16.5c-0.062 0.24-0.095 0.491-0.095 0.75c0 1.657 1.343 3 3 3s3-1.343 3-3c0-0.259-0.033-0.51-0.095-0.75H20.05c0.128 0.22 0.201 0.477 0.201 0.75c0 0.828-0.672 1.5-1.5 1.5s-1.5-0.672-1.5-1.5c0-0.273 0.073-0.53 0.2-0.75h-1.605z"/>
+        <path android:fillColor="#262626" android:pathData="M22.137 15c-0.654-1.743-2.11-2.925-3.764-2.925h-1.235S16.5 12.75 16.5 13.5S15.75 15 15 15c-0.137 0.572-0.75 1.5-0.75 1.5h8.25l-0.09-0.506c-0.063-0.347-0.155-0.68-0.273-0.994z" android:fillType="1"/>
+        <path android:fillColor="#262626" android:pathData="M3.845 16.5c-0.062 0.24-0.095 0.491-0.095 0.75c0 1.657 1.343 3 3 3s3-1.343 3-3c0-0.259-0.033-0.51-0.095-0.75H8.05c0.128 0.22 0.201 0.477 0.201 0.75c0 0.828-0.672 1.5-1.5 1.5s-1.5-0.672-1.5-1.5c0-0.273 0.073-0.53 0.2-0.75H3.846z"/>
+        <path android:fillColor="#262626" android:pathData="M1.5 16.5l0.116-0.6c0.06-0.31 0.14-0.611 0.24-0.9c0.773-2.221 2.692-3.75 4.89-3.75c2.2 0 4.124 1.53 4.897 3.75c0.1 0.289 0.182 0.59 0.241 0.9L12 16.5H1.5z" android:fillType="1"/>
+        <path android:fillColor="#262626" android:pathData="M16.5 5.25h-2.922v-1.5H18v9.715c0 1.385-0.985 2.534-2.302 2.9c-0.229 0.066-0.462 0.109-0.702 0.126l-0.014 0.001l-0.215 0.008H9.75V15h4.99l0.16-0.006c0.127-0.01 0.253-0.033 0.382-0.07l0.006-0.003l0.006-0.001c0.744-0.205 1.206-0.818 1.206-1.455V5.25z" android:fillType="1"/>
+        <path android:fillColor="#262626" android:pathData="M20.25 6.75v3h-1.5v-3h1.5z" android:fillType="1"/>
+        <path android:fillColor="#262626" android:pathData="M3.75 8.25c-1.243 0-2.25 1.007-2.25 2.25s1.007 2.25 2.25 2.25h6c1.243 0 2.25-1.007 2.25-2.25s-1.007-2.25-2.25-2.25h-6z" android:fillType="1"/>
+    </group>
+</vector>

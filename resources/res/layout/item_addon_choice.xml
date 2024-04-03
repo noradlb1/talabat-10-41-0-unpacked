@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/_16padding" android:paddingBottom="@dimen/_16padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp">
+    <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/checkbox_optionalItem" android:background="@drawable/bg_m_optional_choice_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:layout_weight="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/checkbox_optionalItem" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toStartOf="@+id/checkbox_optionalItem" android:layout_alignParentStart="true">
+        <com.talabat.TalabatTextView android:textSize="@dimen/textsize_14" android:textColor="@color/black" android:id="@+id/m_choice_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Curly chicken and wedges" style="@style/textViewMedium"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <com.talabat.TalabatTextView android:textSize="@dimen/textsize_14" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/discounted_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginEnd="5dp" style="@style/textViewMedium"/>
+            <com.talabat.TalabatTextView android:textSize="@dimen/txt_size_14" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/textView_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textViewMedium"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

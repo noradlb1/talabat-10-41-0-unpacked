@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/cart_label_container" android:padding="@dimen/ds_xs" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/cart_progress_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ds_promo_filled" android:layout_marginEnd="@dimen/ds_xxs" app:tint="@color/ds_promo_100"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/ds_promo_100" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/cart_progress_label" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/DSTextAppearance.Subheading2"/>
+        <androidx.appcompat.widget.AppCompatImageView android:gravity="end" android:id="@+id/delivery_tier_info" android:padding="@dimen/ds_xxxs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delivery_fee_tooltip" android:layout_marginEnd="@dimen/ds_xxs"/>
+    </LinearLayout>
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/cart_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginRight="@dimen/ds_s" android:max="100" android:indeterminate="false" android:layout_marginHorizontal="@dimen/ds_s" app:indicatorColor="@color/ds_promo_100" app:trackColor="@color/ds_neutral_10"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/cart_tpro_label_container" android:padding="@dimen/ds_xs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/cart_tpro_progress_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pro_logo_blue_framed_alt" android:layout_marginEnd="@dimen/ds_xxs"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/new_brand_blue" android:id="@+id/cart_tpro_progress_label" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DSTextAppearance.Subheading2"/>
+    </LinearLayout>
+</merge>

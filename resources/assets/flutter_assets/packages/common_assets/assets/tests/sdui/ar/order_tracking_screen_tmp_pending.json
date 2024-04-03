@@ -1,0 +1,173 @@
+{
+  "type": "OrderTrackingScreen",
+  "layouts": [
+    {
+      "name": "order_tracking_screen_default_layout",
+      "column": [
+        "order_status",
+        "order_progress_update",
+        "tmp_banner",
+        "delivery_address",
+        "order_details",
+        "xx_small_divider",
+        "payment_details",
+        "xx_small_divider",
+        "support",
+        "xx_small_vertical_spacing"
+      ]
+    }
+  ],
+  "widgets": {
+    "order_status": {
+      "type": "Tag",
+      "style": {
+        "text_color": "neutralWhite",
+        "background_color": "secondary100"
+      },
+      "data": {
+        "text": "في انتظار التأكيد"
+      }
+    },
+    "order_progress_update": {
+      "type": "OrderProgress",
+      "data": {
+        "header": "الوصول المتوقع",
+        "title": "8:15 مساءً - 8:45 مساءً"
+      }
+    },
+    "tmp_banner": {
+      "type": "BasicBanner",
+      "style": {
+        "background_color": "alert30"
+      },
+      "data": {
+        "title": "تم توصيل الطلب عن طريق دومينوز بيتزا",
+        "text": "اتصال الراكب والدردشة والتتبع المباشر غير متاحين",
+        "image_url": "https://images.deliveryhero.io/image/talabat/poh/RIDER_TMP_IMAGE.png"
+      }
+    },
+    "delivery_address": {
+      "type": "BasicInfo",
+      "data": {
+        "header": "توصيل إلى",
+        "title": "🏢 مكتب ",
+        "text": "طلبات ، الدور 25 ، برج الأعمال الفردي ، شارع الشيخ زايد ، الخليج التجاري"
+      }
+    },
+    "payment_details": {
+      "type": "ListInfo",
+      "data": {
+        "title": "بيانات الدفع",
+        "rows": [
+          {
+            "label": "المجموع",
+            "text": "300 درهم إماراتي"
+          },
+          {
+            "label": "طريقة الدفع",
+            "text": "xxxx-1738"
+          }
+        ]
+      }
+    },
+    "support": {
+      "type": "BasicInfo",
+      "data": {
+        "title": "الدعم",
+        "text": "الطلب #5678093898",
+        "actions": [
+          {
+            "type": "Dialer",
+            "text": "اتصل بدومينوز بيتزا",
+            "args": {
+              "phone_number": "+971501231231",
+              "tracking_event_name": "contact_option_clicked",
+              "tracking_event_attributes": {
+                "contactOption": "call_rider"
+              }
+            }
+          },
+          {
+            "type": "DeepLink",
+            "text": "مركز المساعدة",
+            "args": {
+              "link": "talabat://?s=ghc&i=12345",
+              "tracking_event_name": "helpcentre_link_clicked"
+            }
+          },
+          {
+            "type": "CancelOrder",
+            "text": "الغاء الطلب",
+            "args": {
+              "title": "هل أنت متأكد أنك تريد إلغاء؟",
+              "text": "إذا قمت بإلغاء طلبك ، فستتلقى استردادًا مباشرًا إلى رصيد طلبات الخاص بك.",
+              "secondary_button_text": "لا ، حافظ على الطلب",
+              "primary_button_text": "نعم ، قم بإلغاء الطلب",
+              "api_url": "https://poe-qa.dhhmena.com/api/v1/orders/123308/cancel"
+            }
+          }
+        ],
+        "actions_messages": [
+          {
+            "type": "DSAlert",
+            "data": {
+              "alert_type": "warning",
+              "descriptor": "الاتصال غير متاح ، لم يتم توفير الرقم"
+            }
+          }
+        ]
+      }
+    },
+    "order_details": {
+      "type": "OrderDetails",
+      "data": {
+        "header": "طلبك من",
+        "title": "بيتزا دومينوز",
+        "subtitle": "خليج الأعمال",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Domino%27s_pizza_logo.svg/1200px-Domino%27s_pizza_logo.svg.png",
+        "items": [
+          {
+            "quantity": 2,
+            "text": "سلطة سيزر"
+          },
+          {
+            "quantity": 1,
+            "text": "توسكان تشيكن ماك اند تشيز",
+            "subtext": "إضافة بيستو"
+          },
+          {
+            "quantity": 1,
+            "text": "خبز بالثوم النباتي"
+          }
+        ]
+      }
+    },
+    "xx_small_divider": {
+      "type": "Divider",
+      "style": {
+        "height": 8.0
+      }
+    },
+    "xx_small_vertical_spacing": {
+      "type": "Spacing",
+      "style": {
+        "height": 8.0
+      }
+    }
+  },
+  "common_tracking_event_attributes": {
+    "shopId": 123,
+    "shopName": "12345",
+    "chainId": 123,
+    "orderId": "12345",
+    "liveTrackingOrderCode": 12345678,
+    "orderPaymentMethod": "12345",
+    "orderPickup": true,
+    "reOrder": true,
+    "orderPreorder": true,
+    "shopDeliveryTime": 12,
+    "deliveryProvider": "12345",
+    "deliveryStatus": "12345",
+    "deliveryTime": 12
+  }
+}

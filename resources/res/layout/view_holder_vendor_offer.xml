@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/vendorOfferRootLinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s">
+    <FrameLayout android:background="@drawable/bg_offer_cell" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="12dp"/>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/ds_s" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp">
+        <ImageView android:id="@+id/vendorOfferIconImageView" android:padding="2dp" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="@dimen/standard_margin" android:src="@drawable/ic_offer" android:layout_marginEnd="@dimen/standard_margin"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/ds_neutral_100" android:ellipsize="end" android:id="@+id/vendorOfferTitleTextView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/ds_xxs" style="@style/Titles18Medium"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/vendorOfferSubTitle" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/neutral_black" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/vendorOfferRedemptionCountTextView" android:background="@drawable/bg_offer_hint" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginTop="8dp" android:maxLines="1" android:paddingStart="@dimen/ds_s" android:paddingEnd="@dimen/ds_s" style="@style/Content12Regular"/>
+</FrameLayout>

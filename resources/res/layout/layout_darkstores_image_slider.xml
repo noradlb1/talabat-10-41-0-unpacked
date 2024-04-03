@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/viewPagerContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.talabat.darkstores.feature.home.banner.LoopingViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:autoScroll="false" app:isInfinite="true" app:scrollInterval="5000" app:wrap_content="true"/>
+        </FrameLayout>
+        <FrameLayout android:background="@color/product_image_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.rd.PageIndicatorView android:layout_gravity="center" android:id="@+id/pageIndicatorView" android:visibility="gone" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs" android:layout_marginBottom="@dimen/ds_xxs" app:piv_animationType="1" app:piv_interactiveAnimation="true" app:piv_radius="@dimen/ds_xxxs" app:piv_selectedColor="@color/ds_neutral_55" app:piv_unselectedColor="@color/ds_neutral_10"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/bottomContainer" android:background="@color/product_image_bg" android:paddingLeft="@dimen/ds_s" android:paddingTop="@dimen/ds_xxxs" android:paddingRight="@dimen/ds_s" android:paddingBottom="@dimen/ds_xxs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/ds_s">
+            <TextView android:textColor="@color/ds_neutral_70" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/pageNumberText" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Tag"/>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

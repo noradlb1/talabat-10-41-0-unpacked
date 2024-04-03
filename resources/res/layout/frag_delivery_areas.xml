@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.talabat.helpers.TalabatToolBarRelativeLayoutContainer xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/ds_neutral_white" android:paddingTop="@dimen/ds_s" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/location_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@+id/gps_enable_container" android:visibility="visible" layout="@layout/place_search_gps_enable_container"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/area_list_view" android:background="@color/ds_neutral_white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ds_s" android:layout_below="@+id/location_container">
+        <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_55" android:id="@+id/address_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/ds_s" android:layout_marginBottom="@dimen/ds_s" android:text="@string/our_delivey_areas" android:layout_marginStart="@dimen/ds_s" style="@style/DSTextAppearance.Body1"/>
+        <FrameLayout android:background="@color/ds_neutral_10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.8dp" android:layout_marginLeft="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s"/>
+        <ExpandableListView android:id="@+id/area_exp_list" android:background="@color/ds_neutral_white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:groupIndicator="@null" android:divider="@color/ds_neutral_white" android:dividerHeight="@dimen/ds_zero" android:transitionName="@string/transition_area"/>
+    </LinearLayout>
+</com.talabat.helpers.TalabatToolBarRelativeLayoutContainer>

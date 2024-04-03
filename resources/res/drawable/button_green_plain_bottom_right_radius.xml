@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="@color/talabat_rebrand_green"/>
+            <gradient android:startColor="#008b33" android:endColor="#008b33" android:angle="-90"/>
+            <corners android:bottomRightRadius="12dp"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="@color/talabat_rebrand_green"/>
+            <solid android:color="@color/talabat_rebrand_green"/>
+            <corners android:bottomRightRadius="12dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/talabat_rebrand_50_percent"/>
+            <corners android:bottomRightRadius="12dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="@color/talabat_rebrand_green"/>
+            <solid android:color="@color/talabat_rebrand_green"/>
+            <corners android:bottomRightRadius="12dp"/>
+        </shape>
+    </item>
+</selector>

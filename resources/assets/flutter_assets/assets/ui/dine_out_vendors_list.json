@@ -1,0 +1,438 @@
+{
+  "base_url": "https://images.deliveryhero.io/image-nocache/talabat-staging/",
+  "page_no": 1,
+  "page_size": 10,
+  "vendors": [
+    {
+      "all_order_discount_text": "",
+      "chain_id": 6772,
+      "chain_logo": "Bait-Al-Dana_636195649932169707.jpg",
+      "chain_name": "Bait Al Dana Cafe",
+      "cover_photo": "Notes_Cafe_cover_pho_637383089797216877.jpg",
+      "cuisines": [
+        {
+          "id": 109,
+          "is_primary": true,
+          "name": "Lebanese"
+        },
+        {
+          "id": 351,
+          "is_primary": false,
+          "name": "Arabic"
+        }
+      ],
+      "cuisines_text": "Lebanese, Arabic",
+      "discount_text": "10% OFF selected items",
+      "distance": {
+        "straightline_in_km": 0.85
+      },
+      "is_discount_available": true,
+      "is_new_vendor": false,
+      "more_discounts": 0,
+      "pickup_discount_text": "Additional 15% off on Pickup",
+      "pickup_minutes": 18,
+      "pickup_time_text": "18",
+      "pickup_voucher_code": null,
+      "pickup_voucher_text": null,
+      "price_tag": 0,
+      "rating": 4,
+      "rating_text": "4.0",
+      "ratings_total": 9,
+      "status_text": "open",
+      "status_type": 0,
+      "vendor_id": 13241,
+      "vendor_location": {
+        "lat": 25.218859,
+        "lon": 55.278857
+      },
+      "vendor_name": "Bait Al Dana Restaurant & Cafe, Business Bay"
+    },
+    {
+      "all_order_discount_text": "",
+      "chain_id": 3997,
+      "chain_logo": "Zahr-El-Rouman-(1)_635912078621727111.jpg",
+      "chain_name": "Zahr El Rouman",
+      "cover_photo": "autohero_Shawarma&Doner_10.jpg",
+      "cuisines": [
+        {
+          "id": 351,
+          "is_primary": true,
+          "name": "Arabic"
+        },
+        {
+          "id": 97,
+          "is_primary": false,
+          "name": "Desserts"
+        },
+        {
+          "id": 109,
+          "is_primary": false,
+          "name": "Lebanese"
+        }
+      ],
+      "cuisines_text": "Arabic, Desserts, Lebanese",
+      "discount_text": "10% OFF all orders",
+      "distance": {
+        "straightline_in_km": 4.31
+      },
+      "is_discount_available": true,
+      "is_new_vendor": false,
+      "more_discounts": 0,
+      "pickup_discount_text": "Additional 15% off on Pickup",
+      "pickup_minutes": 18,
+      "pickup_time_text": "18",
+      "pickup_voucher_code": "PCK15",
+      "pickup_voucher_text": "Additional 15% off on Pickup",
+      "price_tag": 0,
+      "rating": 4.8,
+      "rating_text": "4.8",
+      "ratings_total": 29,
+      "status_text": "open",
+      "status_type": 0,
+      "vendor_id": 7995,
+      "vendor_location": {
+        "lat": 25.1831647,
+        "lon": 55.27288699999997
+      },
+      "vendor_name": "Zahr El Rouman, Business Bay"
+    },
+    {
+      "all_order_discount_text": "AED 5.00 off",
+      "chain_id": 5888,
+      "chain_logo": "Tim-Hortons_636085220786073044.jpg",
+      "chain_name": "Tim Hortons",
+      "cover_photo": "autohero_Arabic_2.jpg",
+      "cuisines": [
+        {
+          "id": 91,
+          "is_primary": true,
+          "name": "Breakfast"
+        },
+        {
+          "id": 97,
+          "is_primary": false,
+          "name": "Desserts"
+        },
+        {
+          "id": 115,
+          "is_primary": false,
+          "name": "Sandwiches"
+        },
+        {
+          "id": 915,
+          "is_primary": false,
+          "name": "Argentinian"
+        },
+        {
+          "id": 917,
+          "is_primary": false,
+          "name": "Biryani"
+        },
+        {
+          "id": 938,
+          "is_primary": false,
+          "name": "Arabic sweets"
+        },
+        {
+          "id": 980,
+          "is_primary": false,
+          "name": "Bahraini"
+        },
+        {
+          "id": 986,
+          "is_primary": false,
+          "name": "Bbq"
+        }
+      ],
+      "cuisines_text": "Breakfast, Desserts, Sandwiches, Argentinian, Biryani, Arabic sweets, Bahraini, Bbq",
+      "discount_text": "AED 5.00 OFF all orders",
+      "distance": {
+        "straightline_in_km": 1.04
+      },
+      "is_discount_available": true,
+      "is_new_vendor": false,
+      "more_discounts": 1,
+      "pickup_discount_text": "Additional 15% off on Pickup",
+      "pickup_minutes": 18,
+      "pickup_time_text": "18",
+      "pickup_voucher_code": "PCK15",
+      "pickup_voucher_text": "Additional 15% off on Pickup",
+      "price_tag": 0,
+      "rating": 3.3,
+      "rating_text": "3.3",
+      "ratings_total": 58,
+      "status_text": "closed",
+      "status_type": 1,
+      "vendor_id": 11778,
+      "vendor_location": {
+        "lat": 25.221449,
+        "lon": 55.281183
+      },
+      "vendor_name": "Tim Hortons, Dubai World Trade Centre"
+    },
+    {
+      "all_order_discount_text": "",
+      "chain_id": 2617,
+      "chain_logo": "Caliburger_636201681403910543.jpg",
+      "chain_name": "Caliburger",
+      "cover_photo": "autohero_Arabic_4.jpg",
+      "cuisines": [
+        {
+          "id": 93,
+          "is_primary": true,
+          "name": "Burgers"
+        },
+        {
+          "id": 89,
+          "is_primary": false,
+          "name": "American"
+        }
+      ],
+      "cuisines_text": "Burgers, American",
+      "discount_text": "",
+      "distance": {
+        "straightline_in_km": 0.9
+      },
+      "is_discount_available": false,
+      "is_new_vendor": false,
+      "more_discounts": 0,
+      "pickup_discount_text": "Additional 15% off on Pickup",
+      "pickup_minutes": 18,
+      "pickup_time_text": "18",
+      "pickup_voucher_code": "PCK15",
+      "pickup_voucher_text": "Additional 15% off on Pickup",
+      "price_tag": 0,
+      "rating": 4.3,
+      "rating_text": "4.3",
+      "ratings_total": 35,
+      "status_text": "closed",
+      "status_type": 1,
+      "vendor_id": 8177,
+      "vendor_location": {
+        "lat": 25.217442,
+        "lon": 55.278537
+      },
+      "vendor_name": "Caliburger, Sheikh Zayed Road"
+    },
+    {
+      "all_order_discount_text": "",
+      "chain_id": 6135,
+      "chain_logo": "Sofraji-Logo-OL_636121263499529993.jpg",
+      "chain_name": "Sofraji",
+      "cover_photo": "autohero_Arabic_5.jpg",
+      "cuisines": [
+        {
+          "id": 109,
+          "is_primary": true,
+          "name": "Lebanese"
+        },
+        {
+          "id": 351,
+          "is_primary": false,
+          "name": "Arabic"
+        },
+        {
+          "id": 970,
+          "is_primary": false,
+          "name": "Middle eastern"
+        }
+      ],
+      "cuisines_text": "Lebanese, Arabic, Middle eastern",
+      "discount_text": "",
+      "distance": {
+        "straightline_in_km": 2.3
+      },
+      "is_discount_available": false,
+      "is_new_vendor": false,
+      "more_discounts": 0,
+      "pickup_discount_text": "Additional 15% off on Pickup",
+      "pickup_minutes": 18,
+      "pickup_time_text": "18",
+      "pickup_voucher_code": "PCK15",
+      "pickup_voucher_text": "Additional 15% off on Pickup",
+      "price_tag": 0,
+      "rating": 4.0,
+      "rating_text": "4.0",
+      "ratings_total": 16,
+      "status_text": "closed",
+      "status_type": 1,
+      "vendor_id": 12159,
+      "vendor_location": {
+        "lat": 25.201369,
+        "lon": 55.269548
+      },
+      "vendor_name": "Sofraji, Al Safa"
+    },
+    {
+      "all_order_discount_text": "",
+      "chain_id": 4123,
+      "chain_logo": "Logo-2-_635942747938112336.jpg",
+      "chain_name": "Saudi kitchen VIP",
+      "cover_photo": "autohero_Arabic_10.jpg",
+      "cuisines": [
+        {
+          "id": 211,
+          "is_primary": true,
+          "name": "Mandi"
+        },
+        {
+          "id": 351,
+          "is_primary": false,
+          "name": "Arabic"
+        }
+      ],
+      "cuisines_text": "Mandi, Arabic",
+      "discount_text": "",
+      "distance": {
+        "straightline_in_km": 3.57
+      },
+      "is_discount_available": false,
+      "is_new_vendor": false,
+      "more_discounts": 0,
+      "pickup_discount_text": "Additional 15% off on Pickup",
+      "pickup_minutes": 18,
+      "pickup_time_text": "18",
+      "pickup_voucher_code": "PCK15",
+      "pickup_voucher_text": "Additional 15% off on Pickup",
+      "price_tag": 0,
+      "rating": 3.3,
+      "rating_text": "3.3",
+      "ratings_total": 19,
+      "status_text": "closed",
+      "status_type": 1,
+      "vendor_id": 8232,
+      "vendor_location": {
+        "lat": 25.206524,
+        "lon": 55.243621
+      },
+      "vendor_name": "Saudi kitchen, Jumeirah"
+    },
+    {
+      "all_order_discount_text": "10% off",
+      "chain_id": 6025,
+      "chain_logo": "NKD-Pizza-Logo-RGB-01_636107431156300605.jpg",
+      "chain_name": "NKD Pizza",
+      "cover_photo": "autohero_Arabic_2.jpg",
+      "cuisines": [
+        {
+          "id": 112,
+          "is_primary": true,
+          "name": "Pizzas"
+        },
+        {
+          "id": 106,
+          "is_primary": false,
+          "name": "Italian"
+        }
+      ],
+      "cuisines_text": "Pizzas, Italian",
+      "discount_text": "10% OFF all orders",
+      "distance": {
+        "straightline_in_km": 4.25
+      },
+      "is_discount_available": true,
+      "is_new_vendor": false,
+      "more_discounts": 0,
+      "pickup_discount_text": "Additional 15% off on Pickup",
+      "pickup_minutes": 18,
+      "pickup_time_text": "18",
+      "pickup_voucher_code": "PCK15",
+      "pickup_voucher_text": "Additional 15% off on Pickup",
+      "price_tag": 0,
+      "rating": 4,
+      "rating_text": "4.0",
+      "ratings_total": 25,
+      "status_text": "closed",
+      "status_type": 1,
+      "vendor_id": 11990,
+      "vendor_location": {
+        "lat": 25.184444,
+        "lon": 55.263985
+      },
+      "vendor_name": "NKD Pizza, Business Bay"
+    },
+    {
+      "all_order_discount_text": "",
+      "chain_id": 9732,
+      "chain_logo": "Notes_Cafe_Logo_637383089692698097.jpg",
+      "chain_name": "Islam tamer",
+      "cover_photo": "autohero_Desserts_5.jpg",
+      "cuisines": [
+        {
+          "id": 112,
+          "is_primary": true,
+          "name": "Pizzas"
+        }
+      ],
+      "cuisines_text": "Pizzas",
+      "discount_text": "",
+      "distance": {
+        "straightline_in_km": 4.31
+      },
+      "is_discount_available": false,
+      "is_new_vendor": false,
+      "more_discounts": 0,
+      "pickup_discount_text": "Additional 15% off on Pickup",
+      "pickup_minutes": 18,
+      "pickup_time_text": "18",
+      "pickup_voucher_code": "PCK15",
+      "pickup_voucher_text": "Additional 15% off on Pickup",
+      "price_tag": 0,
+      "rating": 0,
+      "rating_text": "0.0",
+      "ratings_total": 0,
+      "status_text": "closed",
+      "status_type": 1,
+      "vendor_id": 19743,
+      "vendor_location": {
+        "lat": 25.1831647,
+        "lon": 55.27288699999997
+      },
+      "vendor_name": "islam tamer"
+    },
+    {
+      "all_order_discount_text": "",
+      "chain_id": 3726,
+      "chain_logo": "Samad-Al-Iraqi_635874979688305873.jpg",
+      "chain_name": "Samad Al Iraqi Restaurant",
+      "cover_photo": "autohero_Arabic_5.jpg",
+      "cuisines": [
+        {
+          "id": 351,
+          "is_primary": true,
+          "name": "Arabic"
+        },
+        {
+          "id": 116,
+          "is_primary": false,
+          "name": "Seafood"
+        }
+      ],
+      "cuisines_text": "Arabic, Seafood",
+      "discount_text": "",
+      "distance": {
+        "straightline_in_km": 4.55
+      },
+      "is_discount_available": false,
+      "is_new_vendor": false,
+      "more_discounts": 0,
+      "pickup_discount_text": "Additional 15% off on Pickup",
+      "pickup_minutes": 18,
+      "pickup_time_text": "18",
+      "pickup_voucher_code": "PCK15",
+      "pickup_voucher_text": "Additional 15% off on Pickup",
+      "price_tag": 0,
+      "rating": 4.3,
+      "rating_text": "4.3",
+      "ratings_total": 31,
+      "status_text": "closed",
+      "status_type": 1,
+      "vendor_id": 7489,
+      "vendor_location": {
+        "lat": 25.198219,
+        "lon": 55.238419
+      },
+      "vendor_name": "Samad AL Iraqi Restaurant, Jumeirah 1"
+    }
+  ]
+}

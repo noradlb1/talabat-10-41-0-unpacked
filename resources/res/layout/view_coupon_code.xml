@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_coupon_code" android:padding="@dimen/margin_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/couponTitleTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10margin" android:text="@string/save_the_code_by_copying_it_or_taking_a_screenshot" style="@style/text_black_14sp"/>
+    <TextView android:textStyle="bold" android:id="@+id/couponCodeTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/_12padding" app:drawableEndCompat="@drawable/ic_copy_to_clipboard" style="@style/text_black_medium_16sp"/>
+</LinearLayout>

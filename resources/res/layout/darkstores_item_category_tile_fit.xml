@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/ds_xxxs" android:paddingBottom="@dimen/ds_xxxs" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/ds_zero" android:layout_margin="@dimen/ds_xxs" app:layout_constraintDimensionRatio="1:1.2" layout="@layout/darkstores_item_category_fit"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

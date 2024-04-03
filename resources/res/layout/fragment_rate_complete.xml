@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxl" android:src="@drawable/ic_m_rating_completed_star"/>
+        <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_100" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" android:text="@string/thank_you" style="@style/TextAppearance.Heading1"/>
+        <com.talabat.TalabatTextView android:textColor="@color/ds_neutral_100" android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxs" android:layout_marginBottom="@dimen/ds_xl" android:text="@string/we_really_appreciate_your_help_it_means_a_lot_to_us" style="@style/TextAppearance.Body1"/>
+    </LinearLayout>
+</RelativeLayout>

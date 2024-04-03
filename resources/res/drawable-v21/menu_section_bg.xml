@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ripple android:color="?attr/colorControlHighlight">
+        <item android:drawable="?attr/colorPrimary"/>
+    </ripple>
+    <item android:state_activated="true">
+        <shape>
+            <solid android:color="#f0f0f0"/>
+        </shape>
+    </item>
+    <item android:state_activated="false">
+        <shape>
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+</selector>

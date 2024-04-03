@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/delivery_campaign_row_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/delivery_campaign_row" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ds_m" android:paddingTop="@dimen/ds_l" android:paddingBottom="@dimen/ds_l" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ds_m">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/parallel_bin_image" android:layout_width="@dimen/ds_m" android:layout_height="@dimen/ds_m" app:tint="@color/ds_promo_100"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/ds_promo_100" android:ellipsize="end" android:gravity="start" android:layout_gravity="center" android:id="@+id/delivery_campaign_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:text="@string/delivery_campaign_home_row_text" android:maxLines="1" android:lines="1" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ds_s" style="@style/DSTextAppearance.Body1"/>
+        </LinearLayout>
+        <View android:background="@color/ds_neutral_10" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+    <com.talabat.darkstores.feature.home.campaign.CampaignView android:id="@+id/campaign_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

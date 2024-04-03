@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1824" android:versionName="10.41.0" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="com.talabat" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="33"/>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.appboy.AppboyGcmReceiver"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.ACTION_VIEW"/>
+            <data android:scheme="geo"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.google.android.apps.mapslite"/>
+        <package android:name="com.autonavi.minimap"/>
+        <package android:name="com.baidu.BaiduMap"/>
+        <package android:name="com.waze"/>
+        <package android:name="ru.yandex.yandexnavi"/>
+        <package android:name="ru.yandex.yandexmaps"/>
+        <package android:name="com.citymapper.app.release"/>
+        <package android:name="com.mapswithme.maps.pro"/>
+        <package android:name="net.osmand"/>
+        <package android:name="net.osmand.plus"/>
+        <package android:name="ru.dublgis.dgismobile"/>
+        <package android:name="com.tencent.map"/>
+        <package android:name="com.here.app.maps"/>
+        <package android:name="com.huawei.maps.app"/>
+        <package android:name="com.alk.copilot.mapviewer"/>
+        <package android:name="com.tomtom.gplay.navapp"/>
+        <package android:name="com.tomtom.gplay.navapp.gofleet"/>
+        <package android:name="com.sygic.truck"/>
+        <package android:name="nl.flitsmeister"/>
+        <package android:name="nl.flitsmeister.flux"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+        <package android:name="com.huawei.hff"/>
+        <package android:name="com.huawei.hms"/>
+        <package android:name="com.huawei.hwid"/>
+        <package android:name="com.huawei.hwid.tv"/>
+        <intent>
+            <action android:name="com.huawei.hms.core"/>
+        </intent>
+        <package android:name="com.huawei.works"/>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <permission android:name="com.talabat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.talabat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <permission android:name="com.talabat.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
+    <permission android:name="com.talabat.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
+    <permission android:name="com.talabat.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.talabat.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="com.talabat.permission.PUSH_PROVIDER"/>
+    <application android:theme="@style/AppThemeMarshmallow" android:label="@string/talabat_app_name" android:icon="@mipmap/ic_launcher" android:name="com.talabat.helpers.TalabatApplication" android:allowBackup="false" android:largeHeap="true" android:supportsRtl="true" android:extractNativeLibs="false" android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="false">
+        <meta-data android:name="com.google.android.backup.api_key" android:value="unused"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="true"/>
+        <activity android:theme="@style/AppTheme.Translucent" android:name="com.talabat.darkstores.view.DarkstoresBridgeActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="talabat.action.Verticals.darkstores.bridge"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.design_system_gallery.DesignSystemGalleryActivity" android:exported="false"/>
+        <activity android:name="com.talabat.design_system_gallery.EmptyStateActivity" android:exported="false"/>
+        <activity android:name="com.talabat.design_system_gallery.BottomSheetActivity" android:exported="false"/>
+        <activity android:name="com.talabat.design_system_gallery.ColorsActivity" android:exported="false"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="true"/>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="true"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <meta-data android:name="search-engine" android:resource="@xml/noindex"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <activity android:theme="@style/AppThemeMarshmallowLanding" android:name="com.talabat.LandingScreen" android:exported="true" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="talabat" android:host="*"/>
+                <data android:scheme="talabatweb" android:host="*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/kuwait"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/bahrain"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/ksa"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/oman"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/uae"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/qatar"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/egypt"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/jordan"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/iraq"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/ar/kuwait"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/ar/bahrain"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/ar/ksa"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/ar/oman"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/ar/qatar"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/ar/uae"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/ar/egypt"/>
+                <data android:scheme="https" android:host="www.talabat.com" android:pathPrefix="/ar/jordan"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.home.HomeScreenActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="talabat.action.homeScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.flutter.charity.CharityDonationsFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="talabat.action.charity.donations"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppThemeMarshmallowTransparentStatus" android:name="com.talabat.splash.presentation.ui.SplashActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.talabat.LoginScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="talabat.action.LoginScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.ForgotPasswordScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="talabat.action.userandlocation.ForgotPassword"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.restaurants.RestaurantsListScreenRefactor" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.SQSquad.vendorList"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.restaurants.v2.ui.activities.FavouriteRestaurantsActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="talabat.action.SQSquad.favouriteList"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.RegistrationScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="talabat.action.userandlocation.Registration"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.CheckOutScreen" android:exported="false" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="talabat.action.CheckoutScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.AddressList" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="talabat.action.AddressListScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.ChooseCityScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.talabat.ChooseAreaScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.talabat.RestaurantInfoActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.talabat.RestaurantReviewActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.talabat.PlacesSearchScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name="com.talabat.SortScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.ItemChoiceScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.CartScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="talabar.action.CartScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.adscreen.AdScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.QuickFindRestaurantScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible" android:parentActivityName="com.talabat.home.HomeScreenActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.HomeScreenActivity"/>
+            <intent-filter>
+                <action android:name="talabar.action.QuickFindRestaurantScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.RestaurantsSearchActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustPan" android:parentActivityName="com.talabat.restaurants.RestaurantsListScreenRefactor">
+            <intent-filter>
+                <action android:name="talabat.action.RestaurantsSearchActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".restaurants.RestaurantsListScreenRefactor"/>
+        </activity>
+        <activity android:name="com.talabat.FreeItemList" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.FreeItemDetails" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.AddAddressScreen2" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/FlutterThemeFullscreen" android:name="com.talabat.ul.addressform.FlutterAddressFormActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="talabat.action.FlutterAddressFormScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterThemeFullscreen" android:name="com.talabat.ul.addressform.FlutterCartAddressFormActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="talabat.action.FlutterCartAddressFormScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.QuickOrderScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.talabat.OrderDetailsScreen" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.OrderDetailsScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.AccountInfoScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.talabat.OffersListScreen" android:exported="false" android:screenOrientation="portrait" android:parentActivityName="com.talabat.home.HomeScreenActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.HomeScreenActivity"/>
+            <intent-filter>
+                <action android:name="talabat.action.offersListScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.OrderListScreen" android:exported="false" android:screenOrientation="portrait" android:parentActivityName="com.talabat.home.HomeScreenActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.HomeScreenActivity"/>
+            <intent-filter>
+                <action android:name="talabat.action.orderListScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.SettingsScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="talabat.action.settings"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.ChangeEmailScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.ChangePasswordScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.RateMyOrderScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.talabat.GiftVoucherList" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.giftVoucherList"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.GiftVoucherDetailsScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.talabat.PaymentWebViewScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.talabat.PaymentErrorScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.TWebViewScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="talabat.action.main.FAQ"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.DeepLinkWebViewScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.talabat.RedeemTalabatVoucher" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.TalabatCreditStatementScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.TThankyouScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.BrandingScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.PurchaseTalabatCredit" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.AppFeedBackScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.talabat.helpers.NoNetworkActivity" android:exported="false" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name="com.talabat.AboutUsScreen" android:exported="false" android:screenOrientation="portrait" android:parentActivityName="com.talabat.home.HomeScreenActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.HomeScreenActivity"/>
+            <intent-filter>
+                <action android:name="talabat.action.aboutUsScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.FranchiseSelectionScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.appboy.Notifications" android:exported="false" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.HomeScreenActivity"/>
+            <intent-filter>
+                <action android:name="talabat.action.notifications"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MobileNoVerificationDialogTheme" android:name="com.talabat.MobileNumberVerification" android:exported="false"/>
+        <activity android:name="com.facebook.LoginActivity" android:exported="false"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:label="@string/talabat_app_name" android:name="com.facebook.FacebookActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <receiver android:name="com.adjust.sdk.AdjustReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.talabat.firebase.TalabatFirebaseMessagingService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyC7jP4a2yahYCy1PmlWymuvYQdCWaTK9q8"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:name="com.appboy.services.AppboyLocationService"/>
+        <activity android:name="com.talabat.MapsActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.talabat.PayfortCardPaymentListScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.talabat.LiveTrackingOnWebView" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppThemeMarshmallowTransparent" android:label="" android:name="com.talabat.checkoutdotcom.CheckoutTokenScreen" android:exported="false" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.talabat.InforMapScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.talabat.ChooseCountryCodeScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/AppThemeMarshmallowTransparentStatus" android:name="com.talabat.RestaurantMenuScreenR" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.talabat.MenuSearchActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="talabat.action.menuSearchScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.ItemDetailsActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:theme="@style/AppThemeMarshmallowTransparentStatus" android:name="com.talabat.ItemDetailsRevampedActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:theme="@style/AppThemeMarshmallow" android:name="com.talabat.HomeScreenMap" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.HomeScreenMap"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppThemeMarshmallowTransparent" android:label="" android:name="com.talabat.Adyen.AdyenCheckoutScreen" android:exported="false" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppThemeMarshmallowTransparent" android:label="" android:name="com.talabat.ChooseSavedAddressScreen" android:exported="false" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="talabat.action.ChooseSavedAddressScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.HomeMapPlaceSearchScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name="com.talabat.TalabatCreditStatementListScreenRefactor" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/AppThemeMarshmallowTransparentStatus" android:name="com.talabat.GroceryMenuScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.talabat.GroceryDetailsViewScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:label="" android:name="com.talabat.GroceryMenuSearchActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppThemeMarshmallowTransparent" android:label="" android:name="com.talabat.NewRateActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.talabat.wallet.screens.goToWallet.view.GoToWalletScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.wallet.screens.walletDashboard.view.WalletTransactionDashboardScreen" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.talabat.wallet.screens.walletDashboardDetail.view.WalletTransactionDetailScreen" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.WalletTransactionDetailScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.screens.walletManageCard.view.WalletManageCreditCardsScreen" android:exported="false" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".wallet.screens.walletDashboard.view.WalletTransactionDashboardScreen"/>
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.WalletManageCreditCardsScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.screens.walletAddCard.view.WalletAddCreditCardScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.addcard"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.screens.walletAddCard.view.CheckoutWebView" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.CheckoutWebView"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.screens.walletTopupCardList.view.WalletTopupCardListScreen" android:exported="false" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".wallet.screens.walletDashboard.view.WalletTransactionDashboardScreen"/>
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.topupCardListScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.screens.walletTopUp.view.WalletTopUpScreen" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.talabat.wallet.screens.walletTopUpResponse.view.WalletTopUpResponseScreen" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.topUpResponseScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppThemeMarshmallowLoadingTransparent" android:name="com.talabat.ListingMenuBridgeActivity" android:exported="false" android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.talabat.menu.bridgeactivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppThemeMarshmallowTransparentStatus" android:name="io.flutter.embedding.android.FlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.flutter.SmartLunchFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.flutter.HomeSearchFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.flutter.VendorListSearchFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.talabat.VendorListSearchFlutterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.flutter.groceryhome.presentation.activity.GroceryHomeFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.talabat.GroceryHomeFlutterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.flutter.CollectionFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.talabat.CollectionFlutterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.flutter.GemCollectionFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.talabat.GemCollectionFlutterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.flutter.FoodListFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.talabat.FoodListFlutterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.flutter.ItemReplacementFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.talabat.ItemReplacementFlutterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.Checkout.Internal.Translucent" android:name="com.adyen.checkout.ui.internal.common.activity.RedirectHandlerActivity" android:exported="false" android:launchMode="singleTask" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="checkout" android:host="com.talabat"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Dialog" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/ic_launcher"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.core.flutter.binding.presentation.DeeplinkFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.talabat.DeeplinkFlutterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/NoAnimationFlutterTheme" android:name="com.talabat.feature.activecarts.presentation.BasketListActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.talabat.BasketListActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.feature.bnpldashboard.presentation.BNPLDashboardFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="talabat.action.bnpl.BNPLDashboardFlutterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.trackorder.presentation.OrderTrackingFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="talabat.action.OrderTrackingFlutterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.userandlocation.choosecountry.ui.activity.ChooseCountryHostActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="talabat.action.userandlocation.choosecountry"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.userandlocation.login.ui.activity.EmailLoginActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/TransparentTheme" android:label="" android:name="com.talabat.userandlocation.login.ui.activity.LoginOptionIntegrationActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="talabat.action.userandlocation.LoginOptions"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="android.test.runner" android:required="false"/>
+        <activity android:name="com.talabat.growth.ui.loyalty.dashboard.LoyaltyDashboardActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Growth.loyalty.dashboard"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.growth.ui.loyalty.history.LoyaltyHistoryActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Growth.loyalty.history"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.growth.ui.loyalty.burn.burnOptionsDetails.BurnOptionsDetailsActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Growth.loyalty.burnOptionsDetails"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.growth.ui.loyalty.burn.burnConfirmation.RedeemConformationActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Growth.loyalty.burnOptionsRedeem"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.growth.ui.loyalty.howItWorks.HowItWorksActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Growth.loyalty.howItWorks"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.growth.ui.vouchers.list.VouchersListActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Growth.vouchers.list"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.Translucent" android:name="com.talabat.growth.ui.vouchers.list.VouchersListBridgeActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="talabat.action.Growth.vouchers.list.bridge"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.growth.ui.loyalty.burn.list.FeaturedListActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Growth.loyalty.featured.list"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.growth.ui.appFeedBack.AppFeedBackActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Growth.app.feedback"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.growth.ui.vouchers.details.VoucherDetailsActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="talabat.action.Growth.vouchers.details"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.ui.qrCodeScanner.view.QRCodeScannerActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.qrCodeScanner"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/WalletTheme" android:name="com.talabat.wallet.ui.walletDashboard.view.WalletDashboardActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.walletDashboard"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.ui.paymentThreeDs.view.WalletPaymentThreeDsActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.walletPaymentThreeDs"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.ui.walletTopUp.view.walletTopUpCardList.WalletTopUpCardListActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.walletTopUpCardList"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.ui.walletTopUp.view.walletTopUpScreen.WalletTopUpScreenActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.walletTopUpScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.ui.walletTopUp.view.walletTopUpResponseScreen.WalletTopUpResponseScreenActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.walletTopUpResponseScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.ui.subscriptionManagement.view.SubscriptionManagementActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.SubscriptionManagementActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.ui.subscriptionManagement.view.SubscriptionPlanActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.SubscriptionPlanActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.ui.subscriptionManagement.view.activity.SubscriptionDetailActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.SubscriptionDetailActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.ui.walletTransactionDetail.view.WalletTransactionDetailActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.WalletTransactionDetailActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.ui.walletCardManagement.view.walletAddCard.WalletAddCardActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.WalletAddCardActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/WalletTheme" android:name="com.talabat.wallet.ui.walletCardManagement.view.walletCardList.WalletCardManagementActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.WalletCardManagementActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.ui.navigateToWallet.view.NavigateToWallet" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.NavigateToWallet"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.ui.webView.WalletWebViewActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.WalletWebViewActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.wallet.bnplorderdetail.ui.BNPLOrderDetailActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.BNPLOrderDetailActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <provider android:name="com.flutterwebviewplugin.FlutterWebViewPluginFileProvider" android:exported="false" android:authorities="com.talabat.flutter_inappwebview.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.feature.pharmacy.presentation.PrescriptionFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.talabat.PrescriptionFlutterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/NoAnimationFlutterTheme" android:name="com.talabat.feature.ulaccountinfo.presentation.AccountInfoFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true" android:usesCleartextTraffic="false">
+            <intent-filter>
+                <action android:name="talabat.action.AccountInfoFlutterActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppThemeFullyTransparentStatus" android:name="com.talabat.feature.pickup.presentation.PickupActivity" android:exported="false" android:screenOrientation="portrait" android:allowBackup="false">
+            <intent-filter>
+                <action android:name="com.talabat.feature.pickup.presentation.PickupActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/OfferCollectionTheme" android:name="com.talabat.offering.ui.OfferCollectionActivity" android:exported="false"/>
+        <activity android:name="com.talabat.collectiondetails.ui.quickfilter.SubscribeCollectionActivity" android:exported="false"/>
+        <activity android:name="com.talabat.collectiondetails.ui.quickfilter.UnsubscribeCollectionActivity" android:exported="false"/>
+        <activity android:theme="@style/Theme.BottomSheet" android:label="" android:name="com.talabat.cuisines.presentation.CuisinesActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="talabat.components.cuisines"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.cuisines.navigation.SampleCuisinesActivity" android:exported="false"/>
+        <activity android:theme="@style/Theme.BottomSheet" android:label="" android:name="com.talabat.filters.presentation.FiltersActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="talabat.components.filters"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.filters.navigation.SampleFiltersActivity"/>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.vendormenu.presentation.flutter.VendorItemDetailsFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.vendormenu.presentation.flutter.VendorItemDetailsWithChoiceFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.vendormenu.presentation.flutter.VendorMenuFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="talabat.action.flutter.vendorMenu"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppThemeMarshmallowTransparentFullScreen" android:label="" android:name="com.talabat.gem.adapters.presentation.offer.GemOfferActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="talabat.action.gem.gemOfferScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppThemeMarshmallow" android:label="" android:name="com.talabat.gem.adapters.presentation.collections.list.GemCollectionActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="talabat.action.gem.gemCollectionScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="com.talabat.gem.adapters.presentation.offer.GemOfferMainActivity"/>
+        <service android:name="com.talabat.core.hms.push.presentation.HmsPushService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="push_kit_auto_init_enabled" android:value="true"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="100450669"/>
+        <activity android:theme="@style/AppThemeMarshmallowTransparent" android:name="com.talabat.feature.rating.presentation.RatingFeedbackActivity" android:exported="false" android:allowBackup="false">
+            <intent-filter>
+                <action android:name="com.talabat.feature.pickup.presentation.RatingFeedbackActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/LibTheme" android:name="com.talabat.darkstores.feature.main.DarkstoresMainActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="talabat.action.darkstores.main"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.talabatlife.ui.vendorList.VendorsListActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.talabat.life.vendors"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.talabatlife.ui.vendorOffers.VendorOffersActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.talabat.life.vendors.offers"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.talabatlife.ui.redeemAndPay.RedeemAndPayActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.talabat.life.vendor.payment"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.talabatlife.ui.redeemConfirmation.OfferRedeemConformationActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.talabat.life.vendor.payment.conformation"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.talabatlife.ui.onBoarding.TLifeOnBoardingActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.talabat.life.on.boarding"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.talabatlife.ui.tLifeTermsAndConditions.TLifeTermsAndConditionsActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.talabat.life.termsandconditions"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.BottomSheet" android:label="" android:name="com.talabat.talabatlife.ui.cuisine.CuisineActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.talabatlife.ui.onBoarding.TDineOnboardingFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="talabat.action.flutter.life.on.boarding"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.talabatlife.ui.vendorList.TDineOnBoardingDetailsFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="talabat.action.flutter.life.on.boarding.details"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.feature.tpro.presentation.benefits.TproBenefitsActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.tpro.benefitsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.feature.tpro.presentation.management.details.TproSubscriptionDetailsActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="talabat.action.tpro.subscriptionDetailsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.feature.walletaddcard.presentation.WalletFlutterAddCardActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.WalletFlutterAddCardActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.feature.walletaddcard.presentation.Wallet3DsActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="talabat.action.Wallet.Wallet3DsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.opsquad.ui.orderDetail.OrderDetailsActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="com.opsquad.screens.orderDetail.OrderDetailScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppThemeMarshmallowLoadingTransparent" android:name="com.talabat.riderinfo.presentation.activity.RiderChatDeepLinkActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="com.talabat.riderinfo.deeplink.riderchat"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/VendorsListTheme" android:name="com.talabat.sdsquad.ui.restaurantssearch.VendorSearchActivity" android:exported="false"/>
+        <activity android:theme="@style/TransparentTheme" android:label="" android:name="com.talabat.sdsquad.ui.cuisines.CuisinesActivity" android:exported="false"/>
+        <activity android:theme="@style/TransparentTheme" android:label="" android:name="com.talabat.sdsquad.ui.filters.FiltersActivity" android:exported="false" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/VendorsListTheme" android:label="" android:name="com.talabat.sdsquad.ui.collections.CollectionsActivity" android:exported="false"/>
+        <activity android:theme="@style/VendorsListTheme" android:name="com.talabat.sdsquad.ui.vendorslist.VendorsListActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.talabat.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.helpcenter.presentation.flutter.HelpCenterFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="talabat.action.HelpCenterScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.talabat.helpcenter.presentation.webview.GlobalHelpCenterWebViewActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="talabat.action.GlobalHelpCenterScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.talabat.helpcenter.presentation.activity.GuestMessageForGhcWithLoginAction" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="talabat.action.GlobalHelpCenterGuestUserScreen"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.Translucent" android:name="com.talabat.userandlocation.compliance.status.ui.activity.CheckUserAllowedToOrderActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="talabat.action.userandlocation.compliance.status"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.userandlocation.compliance.verification.ui.activity.UserVerificationHostActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="talabat.action.userandlocation.compliance.verification"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/NoAnimationFlutterTheme" android:name="com.talabat.feature.nfvinvendorsearch.presentation.activity.QCommerceFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/AppThemeMarshmallowLoadingTransparent" android:name="com.talabat.feature.darkstores.presentation.activity.DarkStoresDeepLinkActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="com.talabat.feature.darkstores.deeplink"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.feature.referafriend.presentation.ui.ReferAFriendReceiverFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/FlutterTheme" android:name="com.talabat.feature.referafriend.presentation.ui.ReferAFriendSenderFlutterActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="talabat.action.Growth.incentives.referfriend.sender"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.talabat.feature.unwrapped.presentation.UnwrappedFlutterActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="talabat.action.unwrapped.activity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="flutterProjectType" android:value="module"/>
+        <activity android:name="com.deliveryhero.chatui.view.root.CustomerChatActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <provider android:name="com.deliveryhero.customerchat.provider.CustomerChatFileProvider" android:exported="false" android:authorities="com.talabat.com.deliveryhero.customerchat.image.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/customer_chat_image_provider_paths"/>
+        </provider>
+        <activity android:theme="@style/PlacesAutocompleteOverlay" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme.Checkout.Internal.Translucent" android:label="@string/checkout_title" android:name="com.adyen.checkout.ui.internal.common.activity.CheckoutActivity" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/AppTheme.Checkout.Internal" android:name="com.adyen.checkout.ui.internal.card.CardDetailsActivity" android:screenOrientation="@integer/checkout_screenOrientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme.Checkout.Internal" android:name="com.adyen.checkout.ui.internal.card.CupSecurePlusOneClickDetailsActivity" android:screenOrientation="@integer/checkout_screenOrientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme.Checkout.Internal" android:label="@string/checkout_card_cup_secure_plus_details_activity_title" android:name="com.adyen.checkout.ui.internal.card.CupSecurePlusDetailsActivity" android:screenOrientation="@integer/checkout_screenOrientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme.Checkout.Internal" android:name="com.adyen.checkout.ui.internal.doku.DokuDetailsActivity" android:screenOrientation="@integer/checkout_screenOrientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme.Checkout.Internal" android:name="com.adyen.checkout.ui.internal.giropay.GiroPayDetailsActivity" android:screenOrientation="@integer/checkout_screenOrientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme.Checkout.Internal" android:name="com.adyen.checkout.ui.internal.issuer.IssuerDetailsActivity" android:screenOrientation="@integer/checkout_screenOrientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme.Checkout.Internal" android:name="com.adyen.checkout.ui.internal.qiwiwallet.QiwiWalletPaymentDetailsActivity" android:screenOrientation="@integer/checkout_screenOrientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme.Checkout.Internal" android:name="com.adyen.checkout.ui.internal.sepadirectdebit.SddDetailsActivity" android:screenOrientation="@integer/checkout_screenOrientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppTheme.Checkout.Internal" android:name="com.adyen.checkout.ui.internal.openinvoice.OpenInvoiceDetailsActivity" android:screenOrientation="@integer/checkout_screenOrientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/Dexter.Internal.Theme.Transparent" android:name="com.karumi.dexter.DexterActivity"/>
+        <activity android:theme="@style/Base.Theme" android:name="com.talabat.secure_payment_redirection.SecurePaymentRedirectionWebViewActivity" android:exported="false"/>
+        <activity android:theme="@style/InstabugTranslucentSdkTheme" android:name="com.instabug.survey.ui.SurveyActivity" android:launchMode="singleTask" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/InstabugTranslucentSdkTheme" android:name="com.instabug.survey.announcements.ui.activity.AnnouncementActivity" android:launchMode="singleTask" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <provider android:name="com.instabug.crash.CrashContentProvider" android:exported="false" android:authorities="com.talabat.instabug.CrashContentProvider" android:initOrder="2147483646"/>
+        <activity android:theme="@style/InstabugSdkTheme" android:name="com.instabug.bug.view.reporting.ReportingContainerActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/InstabugSdkTheme" android:name="com.instabug.chat.ui.ChatActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.instabug.featuresrequest.ui.FeaturesRequestActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <provider android:name="com.instabug.apm.contentprovider.APMContentProvider" android:exported="false" android:authorities="com.talabat.applaunch.contentprovider.AppLaunchContentProvider" android:initOrder="2147483647"/>
+        <activity android:theme="@style/InstabugTranslucentSdkTheme" android:name="com.instabug.library.internal.video.RequestPermissionActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/InstabugTranslucentSdkTheme" android:name="com.instabug.library.invocation.invocationdialog.InstabugDialogActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/InstabugTranslucentSdkTheme" android:name="com.instabug.library.ui.onboarding.OnboardingActivity" android:exported="false" android:launchMode="singleTask"/>
+        <provider android:name="com.instabug.library.internal.contentprovider.InstabugContentProvider" android:enabled="true" android:exported="false" android:authorities="com.talabat.internal.contentprovider.InstabugContentProvider" android:initOrder="2147483644"/>
+        <service android:name="com.instabug.library.internal.video.ScreenRecordingService" android:enabled="true" android:exported="false" android:foregroundServiceType="20"/>
+        <service android:name="com.instabug.library.screenshot.ScreenshotCaptureService" android:enabled="true" android:exported="false" android:foregroundServiceType="20"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="fbconnect" android:host="cct.com.talabat"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="androidx.compose.ui.tooling.PreviewActivity" android:exported="true"/>
+        <activity android:name="com.appboy.ui.AppboyWebViewActivity" android:exported="false"/>
+        <activity android:name="com.braze.ui.BrazeWebViewActivity" android:exported="false"/>
+        <activity android:name="com.appboy.ui.activities.AppboyFeedActivity" android:exported="false"/>
+        <activity android:name="com.appboy.ui.activities.AppboyContentCardsActivity" android:exported="false"/>
+        <activity android:name="com.braze.ui.activities.ContentCardsActivity" android:exported="false"/>
+        <activity android:theme="@style/Braze.PushTrampoline.Transparent" android:name="com.braze.push.NotificationTrampolineActivity" android:exported="false" android:launchMode="singleInstance"/>
+        <receiver android:name="com.braze.push.BrazePushReceiver" android:exported="false"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:name="com.baseflow.geolocator.GeolocatorLocationService" android:enabled="true" android:exported="false" android:foregroundServiceType="8"/>
+        <provider android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider" android:exported="false" android:authorities="com.talabat.flutter.image_provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_image_picker_file_paths"/>
+        </provider>
+        <activity android:theme="@style/AppTheme" android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity" android:exported="false" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|screenSize|layoutDirection|fontScale"/>
+        <activity android:theme="@style/ThemeTransparent" android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity" android:exported="false"/>
+        <activity android:theme="@style/ThemeTransparent" android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity" android:exported="false"/>
+        <activity android:theme="@style/ThemeTransparent" android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance" android:exported="false" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/ThemeTransparent" android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance" android:exported="false" android:launchMode="singleInstance"/>
+        <receiver android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver" android:enabled="true" android:exported="false"/>
+        <meta-data android:name="io.flutter.embedded_views_preview" android:value="true"/>
+        <provider android:name="dev.fluttercommunity.plus.share.ShareFileProvider" android:exported="false" android:authorities="com.talabat.flutter.share_provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_share_file_paths"/>
+        </provider>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="io.flutter.plugins.urllauncher.WebViewActivity" android:exported="false"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="genericidp" android:host="firebase.auth" android:path="/"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="recaptcha" android:host="firebase.auth" android:path="/"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.huawei.wearengine.sdk.api_level" android:value="5"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.huawei.wearengine.ClientHubActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="uiMode|fontScale"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="com.talabat.mobileadsinitprovider" android:initOrder="100"/>
+        <service android:name="com.google.android.gms.ads.AdService" android:enabled="true" android:exported="false"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.talabat.androidx-startup">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true" android:visibleToInstantApps="true"/>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="com.talabat.FacebookInitProvider"/>
+        <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.tagmanager.TagManagerService" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity" android:exported="true" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.talabat"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <activity android:theme="@style/FragmentScenarioEmptyFragmentActivityTheme" android:name="androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity" android:exported="true" android:taskAffinity="" android:multiprocess="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.talabat.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+        <receiver android:name="com.braze.receivers.BrazeActionReceiver" android:exported="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:location" android:value="location:6.7.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:location:location" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.bi.setting" android:value="true"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:com.huawei.hms:location:location" android:value="1"/>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <provider android:name="com.squareup.picasso.PicassoProvider" android:exported="false" android:authorities="com.talabat.com.squareup.picasso"/>
+        <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <service android:name="com.uxcam.service.HttpPostService"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:hianalytics" android:value="hianalytics:6.9.0.302"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:hianalytics:hianalytics" android:value="1"/>
+        <receiver android:name="com.huawei.hms.analytics.receiver.HiAnalyticsSvcEvtReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.hms.analytics.pps.event"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.huawei.hms.analytics.provider.AnalyticsInitializeProvider" android:exported="false" android:authorities="com.talabat.AnalyticsKitInitializeProvider"/>
+        <service android:name="com.huawei.agconnect.core.ServiceDiscovery" android:exported="false">
+            <meta-data android:name="com.huawei.agconnect.credential.CredentialServiceRegistrar:100" android:value="com.huawei.agconnect.core.ServiceRegistrar"/>
+        </service>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.visa.checkout.CheckoutWebViewActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.visa.checkout.l" android:configChanges="orientation|screenSize"/>
+        <receiver android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.talabat.permission.PROCESS_PUSH_MSG" android:exported="true" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.talabat.permission.PROCESS_PUSH_MSG" android:exported="true" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:enabled="true" android:exported="true" android:process=":pushservice" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.huawei.hms.support.api.push.PushProvider" android:readPermission="com.talabat.permission.PUSH_PROVIDER" android:writePermission="com.talabat.permission.PUSH_WRITE_PROVIDER" android:exported="true" android:authorities="com.talabat.huawei.push.provider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:6.7.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <activity android:name="com.huawei.hms.support.api.push.TransActivity" android:exported="false"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:dtm-api" android:value="dtm-api:6.6.0.302"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:dtm-api:huawei_module_hwdtm" android:value="1"/>
+        <activity android:name="com.huawei.hms.dtm.PreviewActivity" android:exported="true" android:noHistory="true">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui"/>
+            <intent-filter>
+                <data android:scheme="dtm.configuration.com.talabat"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.huawei.hms.dtm.VisualActivity" android:exported="true" android:noHistory="true">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui"/>
+            <intent-filter>
+                <data android:scheme="dtm.visual.com.talabat"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.huawei.hms.map.version" android:value="6.2.0.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:maps" android:value="maps:6.11.2.301"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:maps:huawei_module_huaweimaps" android:value="24"/>
+        <provider android:name="com.huawei.hms.aaid.InitProvider" android:exported="false" android:authorities="com.talabat.aaidinitprovider" android:initOrder="500"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:6.7.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:6.11.0.302"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-identifier" android:value="ads-identifier:3.4.62.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:dynamic-api" android:value="dynamic-api:1.0.25.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:dynamic-api:huawei_module_dynamicloader" android:value="11"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <provider android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider" android:exported="false" android:authorities="com.talabat.AGCInitializeProvider"/>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:exported="false" android:stateNotNeeded="true"/>
+        <activity android:theme="@style/Base_Translucent" android:name="com.huawei.hms.activity.BridgeActivity" android:exported="false" android:excludeFromRecents="true" android:screenOrientation="behind" android:configChanges="locale|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:hardwareAccelerated="true">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:name="com.huawei.hms.activity.EnableServiceActivity" android:exported="false" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

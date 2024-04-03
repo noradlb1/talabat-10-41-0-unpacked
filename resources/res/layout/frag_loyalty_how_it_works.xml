@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.designsystem.ds_navigation_bar.DSNavigationBarWithActionButton android:id="@+id/navBarHowItWork" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationZ="1dp" app:nb_title="How it works"/>
+    <ScrollView android:id="@+id/scroller" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/howItWorksBackButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/how_it_works_bg" android:scaleType="fitXY"/>
+            <com.talabat.talabatcommon.views.titleViewMoreGridView.TitleViewMoreGridView android:id="@+id/howItWorksTitleViewMoreGridView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ds_s" android:layout_marginRight="@dimen/ds_s" android:layout_below="@+id/howItWorksBackButton" android:layout_marginHorizontal="@dimen/ds_s" app:title="@string/loyaty_how_to_earn_points"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

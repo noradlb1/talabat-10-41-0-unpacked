@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:layout_marginEnd="3dp" app:cardCornerRadius="8dp" app:cardUseCompatPadding="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/vertical_image" android:background="@color/default_vertical_background" android:paddingTop="3dp" android:layout_width="100dp" android:layout_height="wrap_content" android:minWidth="102dp" android:minHeight="60dp" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_16" android:textColor="@color/vertical_item_text_color" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="@dimen/vertical_item_text_margin_top" android:layout_marginBottom="@dimen/vertical_item_text_margin_bottom" android:lines="1" android:lineSpacingExtra="4sp" android:layout_marginStart="12dp" style="@style/textViewRegular"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

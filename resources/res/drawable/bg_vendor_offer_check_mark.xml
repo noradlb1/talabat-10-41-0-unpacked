@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="ring" android:thicknessRatio="2" android:useLevel="false" android:innerRadius="0dp">
+            <solid android:color="@color/ds_primary_100"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_offer_check_mark" android:left="6dp" android:top="4dp" android:right="6dp" android:bottom="4dp"/>
+</layer-list>

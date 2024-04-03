@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/loadingLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/fluid_home_loading"/>
+    <com.deliveryhero.fluid.widgets.collections.list.ListWidget android:id="@+id/componentList" android:background="@color/ds_neutral_white" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

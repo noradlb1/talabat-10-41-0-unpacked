@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.designsystem.ds_alert.DSAlert xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/dsAlert" android:layout_width="match_parent" android:layout_height="wrap_content" app:at_alert_type="2" style="@style/DSTextAppearance.Body1"/>

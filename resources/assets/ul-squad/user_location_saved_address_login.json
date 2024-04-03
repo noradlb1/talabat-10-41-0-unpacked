@@ -1,0 +1,51 @@
+{
+  "boolean_experiments": {
+    "can_select_address_on_home": {
+      "true": true,
+      "false": false
+    },
+    "canShowDeliveryAddressMapCheckout": {
+      "true": true,
+      "false": false
+    },
+    "canEnableListingDHSearch": {
+      "true": false,
+      "false": true
+    },
+    "canShowDishSuggestion": {
+      "true": true,
+      "false": false
+    },
+    "canShowGroceryHomeScreen": {
+      "true": true,
+      "false": false
+    },
+    "canUseNewMicroServiceForAddressActions": {
+      "true": true,
+      "false": false
+    }
+  },
+  "int_experiments": {
+    "VerticalLauncherExperiment": {
+      "1": false,
+      "0": true,
+      "2": false
+    }
+  },
+  "string_experiments":{
+    "exp_user_flutter_address_form_version": {
+      "Control": true
+    },
+    "exp_menu_vendor_bff": {
+      "Control": true
+    },
+    "exp_homepage_flutter_home_aa_test": {
+      "Control": true,
+      "Variation1": false
+    },
+    "exp_homepage_flutter_account_tab_aa_test": {
+      "Control": true,
+      "Variation1": false
+    }
+  }
+}

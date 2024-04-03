@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/shelf_item_width" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/shelfItemImage" android:background="@drawable/bg_m_item_tile" android:layout_width="@dimen/shelf_item_width" android:layout_height="@dimen/shelf_item_height"/>
+    <TextView android:textColor="@color/ds_neutral_100" android:ellipsize="end" android:gravity="center" android:id="@+id/shelfItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs" android:maxLines="2" style="@style/DSTextAppearance.Body1"/>
+    <TextView android:textColor="@color/ds_neutral_100" android:ellipsize="end" android:gravity="center" android:id="@+id/shelfItemNameSelected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs" android:maxLines="2" style="@style/DSTextAppearance.Tag"/>
+</LinearLayout>

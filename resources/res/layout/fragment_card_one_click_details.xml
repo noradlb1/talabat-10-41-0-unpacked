@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/scrollView_container" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_horizontal" android:id="@+id/textView_securityCodePrompt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_double_margin" android:layout_marginTop="@dimen/standard_double_margin" android:layout_marginRight="@dimen/standard_double_margin" android:text="@string/checkout_card_one_click_security_code_prompt" android:layout_marginStart="@dimen/standard_double_margin" android:layout_marginEnd="@dimen/standard_double_margin"/>
+            <com.adyen.checkout.ui.internal.card.CodeView android:textSize="35sp" android:layout_gravity="center_horizontal" android:id="@+id/codeView_securityCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_margin" app:codeView_length="3"/>
+            <Button android:id="@+id/button_pay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginRight="@dimen/standard_margin" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin"/>
+            <TextView android:layout_gravity="center_horizontal" android:id="@+id/textView_surcharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false" style="@style/Checkout.TextAppearance.Tertiary"/>
+            <Button android:id="@+id/button_selectOtherPaymentMethod" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginRight="@dimen/standard_margin" android:text="@string/checkout_select_other_payment_method" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin" style="@style/Checkout.Button.Inverse"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.adyen.checkout.ui.internal.card.NumpadView android:id="@+id/numpadView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scrollView_container" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/standard_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@+id/textView_smsCodePrompt" android:padding="@dimen/standard_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/checkout_card_cup_secure_plus_sms_code_prompt"/>
+        <com.adyen.checkout.ui.internal.common.view.CustomTextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:customTextInputLayout_caption="@string/checkout_card_cup_secure_plus_sms_code_caption">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/editText_smsCode" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"/>
+        </com.adyen.checkout.ui.internal.common.view.CustomTextInputLayout>
+        <Button android:id="@+id/button_pay" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:layout_gravity="center_horizontal" android:id="@+id/textView_surcharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="false" style="@style/Checkout.TextAppearance.Tertiary"/>
+    </LinearLayout>
+</ScrollView>

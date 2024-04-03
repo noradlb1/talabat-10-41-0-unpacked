@@ -1,0 +1,474 @@
+package com.talabat.app.di;
+
+import com.talabat.app.App;
+import com.talabat.app.App_MembersInjector;
+import com.talabat.app.di.AppComponent;
+import com.talabat.authentication.aaa.di.AaaCoreLibApi;
+import com.talabat.authentication.aaa.di.SecretCoreLibApi;
+import com.talabat.authentication.authenticate.domain.AuthenticationCoreLibApi;
+import com.talabat.authentication.natives.di.JwtTokenCoreLibApi;
+import com.talabat.authentication.token.data.di.TokenCoreLibDataApi;
+import com.talabat.authentication.token.domain.TokenCoreLibApi;
+import com.talabat.configuration.di.ConfigurationLocalCoreLibApi;
+import com.talabat.configuration.di.ConfigurationRemoteCoreLibApi;
+import com.talabat.configuration.di.MutableConfigurationLocalCoreLibApi;
+import com.talabat.configuration.di.MutableConfigurationRemoteCoreLibApi;
+import com.talabat.configuration.di.flutter.ConfigurationRemoteCoreLibFlutterApi;
+import com.talabat.core.advertisement.google.domain.GoogleAdvertisementCoreLibApi;
+import com.talabat.core.context.domain.ContextCoreLibApi;
+import com.talabat.core.deeplink.domain.DeepLinkCoreLibApi;
+import com.talabat.core.di.Api;
+import com.talabat.core.dispatcher.domain.DispatcherCoreLibApi;
+import com.talabat.core.experiment.domain.ExperimentCoreLibApi;
+import com.talabat.core.facebook.login.domain.FacebookLoginCoreLibApi;
+import com.talabat.core.featureflag.domain.FeatureFlagCoreLibApi;
+import com.talabat.core.flutter.binding.domain.di.FlutterBindingCoreLibApi;
+import com.talabat.core.flutter.binding.domain.di.FlutterBindingFeatureLibApi;
+import com.talabat.core.flutter.channels.domain.di.DeeplinkNavigationChannelCoreImplLibApi;
+import com.talabat.core.flutter.channels.domain.di.DeeplinkNavigationChannelCoreLibApi;
+import com.talabat.core.flutter.channels.domain.di.FlutterChannelsCoreImplLibApi;
+import com.talabat.core.flutter.channels.domain.di.FlutterChannelsCoreLibApi;
+import com.talabat.core.flutter.channels.domain.di.FlutterChannelsFeatureImplLibApi;
+import com.talabat.core.flutter.channels.domain.di.FlutterChannelsFeatureLibApi;
+import com.talabat.core.flutter.channels.domain.di.QCommerceMethodChannelFeatureLibApi;
+import com.talabat.core.flutter.channels.domain.di.QCommerceMethodChannelFeatureLibImplApi;
+import com.talabat.core.flutter.engine.domain.di.FlutterEngineCoreLibApi;
+import com.talabat.core.fwf.domain.di.FWFCoreLibApi;
+import com.talabat.core.gms.base.domain.GmsBaseCoreLibApi;
+import com.talabat.core.gms.location.domain.GmsLocationCoreLibApi;
+import com.talabat.core.google.login.domain.GoogleLoginCoreLibApi;
+import com.talabat.core.hms.base.domain.HmsBaseCoreLibApi;
+import com.talabat.core.hms.location.domain.HmsLocationCoreLibApi;
+import com.talabat.core.navigation.domain.NavigationCoreLibApi;
+import com.talabat.core.network.domain.NetworkCoreLibApi;
+import com.talabat.core.observabilityNew.domain.ObservabilityCoreLibApi;
+import com.talabat.core.parser.domain.ParserCoreLibApi;
+import com.talabat.core.perseus.domain.TalabatPerseusCoreLibApi;
+import com.talabat.core.pinless.checkout.domain.PinlessCheckoutCoreLibApi;
+import com.talabat.core.safety.domain.SafetyCoreLibApi;
+import com.talabat.core.social.login.domain.SocialLoginCoreLibApi;
+import com.talabat.core.tracking.domain.TrackingCoreLibApi;
+import com.talabat.core.wearable.huawei.domain.HuaweiWatchCoreLibApi;
+import com.talabat.customer.domain.di.CustomerCoreLibApi;
+import com.talabat.domain.address.di.AddressFeatureApi;
+import com.talabat.feature.activecarts.domain.di.ActiveCartsApi;
+import com.talabat.feature.bnplcore.domain.BnplCoreFeatureApi;
+import com.talabat.feature.cancellationpolicy.domain.HelpCenterFeatureApi;
+import com.talabat.feature.darkstores.domain.DarkstoresFeatureApi;
+import com.talabat.feature.darkstores.swimlanes.domain.SwimlanesFeatureApi;
+import com.talabat.feature.darkstores.vendorlanding.domain.VendorLandingFeatureApi;
+import com.talabat.feature.darkstorescampaignmessage.domain.CampaignMessagingApi;
+import com.talabat.feature.darkstorescart.data.di.DarkstoresCartApi;
+import com.talabat.feature.darkstorescartlist.domain.di.DarkstoresCartListApi;
+import com.talabat.feature.darkstoresflutter.domain.DarkstoresFlutterCartApi;
+import com.talabat.feature.darkstoresscheduleddelivery.domain.DarkstoresScheduledDeliveryFeatureApi;
+import com.talabat.feature.darkstoresvendor.domain.DarkstoresVendorApi;
+import com.talabat.feature.fees.domain.FeesFeatureApi;
+import com.talabat.feature.foodcart2.domain.di.FoodCartFeatureApi;
+import com.talabat.feature.incentiveautoapplydiscounts.domain.di.IncentiveAutoApplyDiscountsFeatureApi;
+import com.talabat.feature.mission.control.domain.MissionControlFeatureApi;
+import com.talabat.feature.nfvinvendorsearch.domain.di.QCommerceFlutterFeatureApi;
+import com.talabat.feature.pickup.domain.PickupFeatureApi;
+import com.talabat.feature.rating.domain.RatingFeatureApi;
+import com.talabat.feature.referafriend.domain.di.ReferAFriendFeatureApi;
+import com.talabat.feature.rewards.domain.RewardsFeatureApi;
+import com.talabat.feature.ridertips.domain.RiderTipFeatureApi;
+import com.talabat.feature.subscriptions.domain.di.SubscriptionsFeatureApi;
+import com.talabat.feature.tmart.growth.domain.TMartGrowthFeatureApi;
+import com.talabat.feature.tokenization.domain.TokenizationFeatureApi;
+import com.talabat.feature.ulaccountinfo.domain.AccountInfoFeatureApi;
+import com.talabat.feature.uladdressform.domain.AddressFormFeatureApi;
+import com.talabat.feature.ulcampaign.domain.CampaignMigratorFeatureApi;
+import com.talabat.feature.walletaddcard.domain.WalletAddCardFeatureApi;
+import com.talabat.feature.walletcobrandedcc.domain.WalletCobrandedCcFeatureApi;
+import com.talabat.features.swimlanevoucherslist.domain.di.CustomerVouchersSwimLaneFeaturesApi;
+import com.talabat.flutter.secrets.domain.FlutterSecretsCoreLibApi;
+import com.talabat.gdm.owin.domain.GdmOwinTokenApi;
+import com.talabat.gms.maps.domain.di.GmsMapsCoreLibApi;
+import com.talabat.hms.maps.domain.di.HmsMapsCoreLibApi;
+import com.talabat.location.domain.di.LocationCoreLibApi;
+import com.talabat.maps.domain.di.MapsCoreLibApi;
+import com.talabat.onboarding.domain.di.OnBoardingExperimentApi;
+import com.talabat.talabatremoteconfiguration.di.RemoteConfigCoreLibApi;
+import dagger.internal.DaggerGenerated;
+import dagger.internal.MapBuilder;
+import dagger.internal.MapFactory;
+import dagger.internal.Preconditions;
+import dagger.internal.SingleCheck;
+import java.util.Map;
+import javax.inject.Provider;
+
+@DaggerGenerated
+public final class DaggerAppComponent {
+
+    public static final class AppComponentImpl implements AppComponent {
+        private Provider<AaaCoreLibApi> aaaCoreLibApiProvider;
+        private Provider<Api> aaaCoreLibApiProvider2;
+        private Provider<AccountInfoFeatureApi> accountInfoFeatureApiProvider;
+        private Provider<ActiveCartsApi> activeCartsApiProvider;
+        private Provider<AddressFeatureApi> addressFeatureApiProvider;
+        private Provider<AddressFormFeatureApi> addressFormFeatureApiProvider;
+        private final AppComponentImpl appComponentImpl;
+        private Provider<AuthenticationCoreLibApi> authenticationCoreLibApiProvider;
+        private Provider<Api> authenticationCoreLibApiProvider2;
+        private Provider<BnplCoreFeatureApi> bnplCoreFeatureApiProvider;
+        private Provider<CampaignMigratorFeatureApi> campaignMigratorFeatureApiProvider;
+        private Provider<ConfigurationLocalCoreLibApi> configurationLocalCoreLibApiProvider;
+        private Provider<Api> configurationLocalCoreLibApiProvider2;
+        private Provider<ConfigurationRemoteCoreLibApi> configurationRemoteCoreLibApiProvider;
+        private Provider<Api> configurationRemoteCoreLibApiProvider2;
+        private Provider<ConfigurationRemoteCoreLibFlutterApi> configurationRemoteCoreLibFlutterApiProvider;
+        private Provider<Api> configurationRemoteCoreLibFlutterApiProvider2;
+        private Provider<ContextCoreLibApi> contextCoreLibApiProvider;
+        private Provider<Api> contextCoreLibApiProvider2;
+        private Provider<Map<Class<?>, Api>> coreApisMapOfClassOfAndApiProvider;
+        private Provider<CustomerCoreLibApi> customerCoreLibApiProvider;
+        private Provider<Api> customerCoreLibApiProvider2;
+        private Provider<CustomerVouchersSwimLaneFeaturesApi> customerVouchersSwimLaneFeaturesApiProvider;
+        private Provider<VendorLandingFeatureApi> darkstoreVandorLandingApiProvider;
+        private Provider<CampaignMessagingApi> darkstoresCampaignMessageProvider;
+        private Provider<DarkstoresCartApi> darkstoresCartApiProvider;
+        private Provider<DarkstoresCartListApi> darkstoresCartListApiProvider;
+        private Provider<DarkstoresFeatureApi> darkstoresFeatureApiProvider;
+        private Provider<DarkstoresFlutterCartApi> darkstoresFlutterCartApiProvider;
+        private Provider<DarkstoresScheduledDeliveryFeatureApi> darkstoresScheduledDeliveryFeatureApiProvider;
+        private Provider<DarkstoresVendorApi> darkstoresVendorApiProvider;
+        private Provider<DeepLinkCoreLibApi> deepLinkCoreLibApiProvider;
+        private Provider<Api> deepLinkCoreLibApiProvider2;
+        private Provider<DeeplinkNavigationChannelCoreImplLibApi> deeplinkNavigationChannelCoreImplLibApiProvider;
+        private Provider<Api> deeplinkNavigationChannelCoreImplLibApiProvider2;
+        private Provider<DeeplinkNavigationChannelCoreLibApi> deeplinkNavigationChannelCoreLibApiProvider;
+        private Provider<Api> deeplinkNavigationChannelCoreLibApiProvider2;
+        private Provider<Api> dispatcherApiProvider;
+        private Provider<DispatcherCoreLibApi> dispatcherCoreLibApiProvider;
+        private Provider<ExperimentCoreLibApi> experimentCoreLibApiProvider;
+        private Provider<Api> experimentCoreLibApiProvider2;
+        private Provider<FacebookLoginCoreLibApi> facebookLoginCoreLibApiProvider;
+        private Provider<Api> facebookLoginCoreLibApiProvider2;
+        private Provider<FeatureFlagCoreLibApi> featureFlagCoreLibApiProvider;
+        private Provider<Api> featureFlagCoreLibApiProvider2;
+        private Provider<FeesFeatureApi> feesFeatureApiProvider;
+        private Provider<FlutterBindingCoreLibApi> flutterBindingCoreLibApiProvider;
+        private Provider<Api> flutterBindingCoreLibApiProvider2;
+        private Provider<FlutterBindingFeatureLibApi> flutterBindingFeatureLibApiProvider;
+        private Provider<FlutterChannelsCoreImplLibApi> flutterChannelsCoreImplLibApiProvider;
+        private Provider<Api> flutterChannelsCoreImplLibApiProvider2;
+        private Provider<FlutterChannelsCoreLibApi> flutterChannelsCoreLibApiProvider;
+        private Provider<Api> flutterChannelsCoreLibApiProvider2;
+        private Provider<FlutterChannelsFeatureImplLibApi> flutterChannelsFeatureImplLibApiProvider;
+        private Provider<FlutterChannelsFeatureLibApi> flutterChannelsFeatureLibApiProvider;
+        private Provider<FlutterEngineCoreLibApi> flutterEngineCoreLibApiProvider;
+        private Provider<Api> flutterEngineCoreLibApiProvider2;
+        private Provider<FlutterSecretsCoreLibApi> flutterSecretsCoreLibApiProvider;
+        private Provider<Api> flutterSecretsCoreLibApiProvider2;
+        private Provider<FoodCartFeatureApi> foodCartFeatureApiProvider;
+        private Provider<FWFCoreLibApi> fwfCoreLibApiProvider;
+        private Provider<Api> fwfCoreLibApiProvider2;
+        private Provider<Api> gdmOwinCoreLibApiProvider;
+        private Provider<GdmOwinTokenApi> gdmOwinTokenCoreLibApiProvider;
+        private Provider<GmsBaseCoreLibApi> gmsBaseCoreLibApiProvider;
+        private Provider<Api> gmsCoreLibApiProvider;
+        private Provider<GmsLocationCoreLibApi> gmsLocationCoreLibApiProvider;
+        private Provider<Api> gmsLocationCoreLibApiProvider2;
+        private Provider<GmsMapsCoreLibApi> gmsMapsCoreLibApiProvider;
+        private Provider<Api> gmsMapsCoreLibApiProvider2;
+        private Provider<GoogleAdvertisementCoreLibApi> googleAdvertisementCoreLibApiProvider;
+        private Provider<Api> googleAdvertisementCoreLibApiProvider2;
+        private Provider<GoogleLoginCoreLibApi> googleLoginCoreLibApiProvider;
+        private Provider<Api> googleLoginCoreLibApiProvider2;
+        private Provider<HelpCenterFeatureApi> helpCenterFeatureApiProvider;
+        private Provider<HmsBaseCoreLibApi> hmsBaseCoreLibApiProvider;
+        private Provider<Api> hmsCoreLibApiProvider;
+        private Provider<HmsLocationCoreLibApi> hmsLocationCoreLibApiProvider;
+        private Provider<Api> hmsLocationCoreLibApiProvider2;
+        private Provider<HmsMapsCoreLibApi> hmsMapsCoreLibApiProvider;
+        private Provider<Api> hmsMapsCoreLibApiProvider2;
+        private Provider<HuaweiWatchCoreLibApi> huaweiWatchCoreLibApiProvider;
+        private Provider<Api> huaweiWatchCoreLibApiProvider2;
+        private Provider<IncentiveAutoApplyDiscountsFeatureApi> incentiveAutoApplyDiscountsFeatureApiProvider;
+        private Provider<JwtTokenCoreLibApi> jwtTokenCoreLibApiProvider;
+        private Provider<Api> jwtTokenCoreLibApiProvider2;
+        private Provider<LocationCoreLibApi> locationCoreLibApiProvider;
+        private Provider<Api> locationCoreLibApiProvider2;
+        private Provider<MapsCoreLibApi> mapsCoreLibApiProvider;
+        private Provider<Api> mapsCoreLibApiProvider2;
+        private Provider<MissionControlFeatureApi> missionControlFeatureApiProvider;
+        private Provider<MutableConfigurationLocalCoreLibApi> mutableConfigurationLocalCoreLibApiProvider;
+        private Provider<Api> mutableConfigurationLocalCoreLibApiProvider2;
+        private Provider<MutableConfigurationRemoteCoreLibApi> mutableConfigurationRemoteCoreLibApiProvider;
+        private Provider<Api> mutableConfigurationRemoteCoreLibApiProvider2;
+        private Provider<NavigationCoreLibApi> navigationCoreLibApiProvider;
+        private Provider<Api> navigationCoreLibApiProvider2;
+        private Provider<NetworkCoreLibApi> networkCoreLibApiProvider;
+        private Provider<Api> networkCoreLibApiProvider2;
+        private Provider<ObservabilityCoreLibApi> observabilityCoreLibApiProvider;
+        private Provider<Api> observabilityCoreLibApiProvider2;
+        private Provider<OnBoardingExperimentApi> onBoardingExperimentApiProvider;
+        private Provider<Api> onBoardingExperimentApiProvider2;
+        private Provider<ParserCoreLibApi> parserCoreLibApiProvider;
+        private Provider<Api> parserCoreLibApiProvider2;
+        private Provider<TalabatPerseusCoreLibApi> perseusCoreLibApiProvider;
+        private Provider<Api> perseusCoreLibApiProvider2;
+        private Provider<PickupFeatureApi> pickupFeatureApiProvider;
+        private Provider<PinlessCheckoutCoreLibApi> pinlessCheckoutCoreLibApiProvider;
+        private Provider<Api> pinlessCheckoutCoreLibApiProvider2;
+        private Provider<QCommerceFlutterFeatureApi> qCommerceFlutterFeatureApiProvider;
+        private Provider<QCommerceMethodChannelFeatureLibApi> qCommerceMethodChannelFeatureLibApiProvider;
+        private Provider<QCommerceMethodChannelFeatureLibImplApi> qCommerceMethodChannelFeatureLibImplApiProvider;
+        private Provider<RatingFeatureApi> ratingFeatureApiProvider;
+        private Provider<ReferAFriendFeatureApi> referAFriendFeatureApiProvider;
+        private Provider<RemoteConfigCoreLibApi> remoteConfigCoreLibApiProvider;
+        private Provider<Api> remoteConfigCoreLibApiProvider2;
+        private Provider<RewardsFeatureApi> rewardsFeatureApiProvider;
+        private Provider<RiderTipFeatureApi> riderTipFeatureApiProvider;
+        private Provider<SafetyCoreLibApi> safetyCoreLibApiProvider;
+        private Provider<Api> safetyCoreLibApiProvider2;
+        private Provider<SecretCoreLibApi> secretCoreLibApiProvider;
+        private Provider<Api> secretCoreLibApiProvider2;
+        private Provider<SocialLoginCoreLibApi> socialLoginCoreLibApiProvider;
+        private Provider<Api> socialLoginCoreLibApiProvider2;
+        private Provider<SubscriptionsFeatureApi> subscriptionsFeatureApiProvider;
+        private Provider<SwimlanesFeatureApi> swimlanesFeatureApiProvider;
+        private Provider<TMartGrowthFeatureApi> tmartGrowthFeatureApiProvider;
+        private Provider<TokenCoreLibApi> tokenCoreLibApiProvider;
+        private Provider<Api> tokenCoreLibApiProvider2;
+        private Provider<TokenCoreLibDataApi> tokenCoreLibDataApiProvider;
+        private Provider<Api> tokenCoreLibDataApiProvider2;
+        private Provider<TokenizationFeatureApi> tokenizationFeatureApiProvider;
+        private Provider<TrackingCoreLibApi> trackerCoreLibApiProvider;
+        private Provider<Api> trackingCoreLibApiProvider;
+        private Provider<WalletAddCardFeatureApi> walletAddCardFeatureApiProvider;
+        private Provider<WalletCobrandedCcFeatureApi> walletCobrandedCcFeatureApiProvider;
+
+        private AppComponentImpl(CoreLibsModule coreLibsModule) {
+            this.appComponentImpl = this;
+            initialize(coreLibsModule);
+            initialize2(coreLibsModule);
+        }
+
+        private Map<Class<?>, Provider<Api>> coreApisMapOfClassOfAndProviderOfApi() {
+            return MapBuilder.newMapBuilder(49).put(AaaCoreLibApi.class, this.aaaCoreLibApiProvider2).put(AuthenticationCoreLibApi.class, this.authenticationCoreLibApiProvider2).put(ConfigurationLocalCoreLibApi.class, this.configurationLocalCoreLibApiProvider2).put(MutableConfigurationLocalCoreLibApi.class, this.mutableConfigurationLocalCoreLibApiProvider2).put(ConfigurationRemoteCoreLibApi.class, this.configurationRemoteCoreLibApiProvider2).put(ConfigurationRemoteCoreLibFlutterApi.class, this.configurationRemoteCoreLibFlutterApiProvider2).put(MutableConfigurationRemoteCoreLibApi.class, this.mutableConfigurationRemoteCoreLibApiProvider2).put(ContextCoreLibApi.class, this.contextCoreLibApiProvider2).put(CustomerCoreLibApi.class, this.customerCoreLibApiProvider2).put(DeepLinkCoreLibApi.class, this.deepLinkCoreLibApiProvider2).put(DeeplinkNavigationChannelCoreLibApi.class, this.deeplinkNavigationChannelCoreLibApiProvider2).put(FlutterBindingCoreLibApi.class, this.flutterBindingCoreLibApiProvider2).put(FlutterChannelsCoreLibApi.class, this.flutterChannelsCoreLibApiProvider2).put(FlutterChannelsCoreImplLibApi.class, this.flutterChannelsCoreImplLibApiProvider2).put(DeeplinkNavigationChannelCoreImplLibApi.class, this.deeplinkNavigationChannelCoreImplLibApiProvider2).put(FlutterEngineCoreLibApi.class, this.flutterEngineCoreLibApiProvider2).put(FlutterSecretsCoreLibApi.class, this.flutterSecretsCoreLibApiProvider2).put(DispatcherCoreLibApi.class, this.dispatcherApiProvider).put(FeatureFlagCoreLibApi.class, this.featureFlagCoreLibApiProvider2).put(GoogleAdvertisementCoreLibApi.class, this.googleAdvertisementCoreLibApiProvider2).put(GoogleLoginCoreLibApi.class, this.googleLoginCoreLibApiProvider2).put(GdmOwinTokenApi.class, this.gdmOwinCoreLibApiProvider).put(GmsBaseCoreLibApi.class, this.gmsCoreLibApiProvider).put(GmsLocationCoreLibApi.class, this.gmsLocationCoreLibApiProvider2).put(GmsMapsCoreLibApi.class, this.gmsMapsCoreLibApiProvider2).put(HmsBaseCoreLibApi.class, this.hmsCoreLibApiProvider).put(HmsLocationCoreLibApi.class, this.hmsLocationCoreLibApiProvider2).put(HmsMapsCoreLibApi.class, this.hmsMapsCoreLibApiProvider2).put(HuaweiWatchCoreLibApi.class, this.huaweiWatchCoreLibApiProvider2).put(JwtTokenCoreLibApi.class, this.jwtTokenCoreLibApiProvider2).put(LocationCoreLibApi.class, this.locationCoreLibApiProvider2).put(PinlessCheckoutCoreLibApi.class, this.pinlessCheckoutCoreLibApiProvider2).put(MapsCoreLibApi.class, this.mapsCoreLibApiProvider2).put(FacebookLoginCoreLibApi.class, this.facebookLoginCoreLibApiProvider2).put(NavigationCoreLibApi.class, this.navigationCoreLibApiProvider2).put(NetworkCoreLibApi.class, this.networkCoreLibApiProvider2).put(ObservabilityCoreLibApi.class, this.observabilityCoreLibApiProvider2).put(ParserCoreLibApi.class, this.parserCoreLibApiProvider2).put(TalabatPerseusCoreLibApi.class, this.perseusCoreLibApiProvider2).put(RemoteConfigCoreLibApi.class, this.remoteConfigCoreLibApiProvider2).put(SafetyCoreLibApi.class, this.safetyCoreLibApiProvider2).put(SecretCoreLibApi.class, this.secretCoreLibApiProvider2).put(TokenCoreLibDataApi.class, this.tokenCoreLibDataApiProvider2).put(TokenCoreLibApi.class, this.tokenCoreLibApiProvider2).put(SocialLoginCoreLibApi.class, this.socialLoginCoreLibApiProvider2).put(TrackingCoreLibApi.class, this.trackingCoreLibApiProvider).put(ExperimentCoreLibApi.class, this.experimentCoreLibApiProvider2).put(FWFCoreLibApi.class, this.fwfCoreLibApiProvider2).put(OnBoardingExperimentApi.class, this.onBoardingExperimentApiProvider2).build();
+        }
+
+        private Map<Class<?>, Provider<Api>> featureApisMapOfClassOfAndProviderOfApi() {
+            return MapBuilder.newMapBuilder(35).put(AccountInfoFeatureApi.class, this.accountInfoFeatureApiProvider).put(ActiveCartsApi.class, this.activeCartsApiProvider).put(AddressFeatureApi.class, this.addressFeatureApiProvider).put(AddressFormFeatureApi.class, this.addressFormFeatureApiProvider).put(BnplCoreFeatureApi.class, this.bnplCoreFeatureApiProvider).put(CampaignMigratorFeatureApi.class, this.campaignMigratorFeatureApiProvider).put(DarkstoresFeatureApi.class, this.darkstoresFeatureApiProvider).put(DarkstoresCartApi.class, this.darkstoresCartApiProvider).put(DarkstoresCartListApi.class, this.darkstoresCartListApiProvider).put(DarkstoresFlutterCartApi.class, this.darkstoresFlutterCartApiProvider).put(DarkstoresScheduledDeliveryFeatureApi.class, this.darkstoresScheduledDeliveryFeatureApiProvider).put(DarkstoresVendorApi.class, this.darkstoresVendorApiProvider).put(VendorLandingFeatureApi.class, this.darkstoreVandorLandingApiProvider).put(CampaignMessagingApi.class, this.darkstoresCampaignMessageProvider).put(FeesFeatureApi.class, this.feesFeatureApiProvider).put(FoodCartFeatureApi.class, this.foodCartFeatureApiProvider).put(IncentiveAutoApplyDiscountsFeatureApi.class, this.incentiveAutoApplyDiscountsFeatureApiProvider).put(MissionControlFeatureApi.class, this.missionControlFeatureApiProvider).put(QCommerceFlutterFeatureApi.class, this.qCommerceFlutterFeatureApiProvider).put(QCommerceMethodChannelFeatureLibImplApi.class, this.qCommerceMethodChannelFeatureLibImplApiProvider).put(QCommerceMethodChannelFeatureLibApi.class, this.qCommerceMethodChannelFeatureLibApiProvider).put(PickupFeatureApi.class, this.pickupFeatureApiProvider).put(RatingFeatureApi.class, this.ratingFeatureApiProvider).put(ReferAFriendFeatureApi.class, this.referAFriendFeatureApiProvider).put(RewardsFeatureApi.class, this.rewardsFeatureApiProvider).put(RiderTipFeatureApi.class, this.riderTipFeatureApiProvider).put(SubscriptionsFeatureApi.class, this.subscriptionsFeatureApiProvider).put(SwimlanesFeatureApi.class, this.swimlanesFeatureApiProvider).put(TMartGrowthFeatureApi.class, this.tmartGrowthFeatureApiProvider).put(TokenizationFeatureApi.class, this.tokenizationFeatureApiProvider).put(WalletAddCardFeatureApi.class, this.walletAddCardFeatureApiProvider).put(HelpCenterFeatureApi.class, this.helpCenterFeatureApiProvider).put(CustomerVouchersSwimLaneFeaturesApi.class, this.customerVouchersSwimLaneFeaturesApiProvider).put(FlutterBindingFeatureLibApi.class, this.flutterBindingFeatureLibApiProvider).put(WalletCobrandedCcFeatureApi.class, this.walletCobrandedCcFeatureApiProvider).build();
+        }
+
+        private void initialize(CoreLibsModule coreLibsModule) {
+            Provider<AaaCoreLibApi> provider = SingleCheck.provider(CoreLibsModule_AaaCoreLibApiFactory.create(coreLibsModule));
+            this.aaaCoreLibApiProvider = provider;
+            this.aaaCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_AaaCoreLibApiFactory.create(provider));
+            this.contextCoreLibApiProvider = SingleCheck.provider(CoreLibsModule_ContextCoreLibApiFactory.create(coreLibsModule));
+            this.dispatcherCoreLibApiProvider = SingleCheck.provider(CoreLibsModule_DispatcherCoreLibApiFactory.create(coreLibsModule));
+            this.featureFlagCoreLibApiProvider = SingleCheck.provider(CoreLibsModule_FeatureFlagCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider));
+            this.gdmOwinTokenCoreLibApiProvider = SingleCheck.provider(CoreLibsModule_GdmOwinTokenCoreLibApiFactory.create(coreLibsModule));
+            this.parserCoreLibApiProvider = SingleCheck.provider(CoreLibsModule_ParserCoreLibApiFactory.create(coreLibsModule));
+            this.secretCoreLibApiProvider = SingleCheck.provider(CoreLibsModule_SecretCoreLibApiFactory.create(coreLibsModule));
+            Provider<MutableConfigurationLocalCoreLibApi> provider2 = SingleCheck.provider(CoreLibsModule_MutableConfigurationLocalCoreLibApiFactory.create(coreLibsModule));
+            this.mutableConfigurationLocalCoreLibApiProvider = provider2;
+            this.configurationLocalCoreLibApiProvider = SingleCheck.provider(CoreLibsModule_ConfigurationLocalCoreLibApiFactory.create(coreLibsModule, provider2));
+            Provider<NetworkCoreLibApi> provider3 = SingleCheck.provider(CoreLibsModule_NetworkCoreLibApiFactory.create(coreLibsModule, this.parserCoreLibApiProvider));
+            this.networkCoreLibApiProvider = provider3;
+            Provider<MutableConfigurationRemoteCoreLibApi> provider4 = SingleCheck.provider(CoreLibsModule_MutableConfigurationRemoteCoreLibApiFactory.create(coreLibsModule, this.configurationLocalCoreLibApiProvider, this.contextCoreLibApiProvider, this.featureFlagCoreLibApiProvider, provider3, this.parserCoreLibApiProvider));
+            this.mutableConfigurationRemoteCoreLibApiProvider = provider4;
+            Provider<ConfigurationRemoteCoreLibApi> provider5 = SingleCheck.provider(CoreLibsModule_ConfigurationRemoteCoreLibApiFactory.create(coreLibsModule, provider4));
+            this.configurationRemoteCoreLibApiProvider = provider5;
+            Provider<TalabatPerseusCoreLibApi> provider6 = SingleCheck.provider(CoreLibsModule_PerseusCoreLibApiFactory.create(coreLibsModule, provider5, this.contextCoreLibApiProvider, this.dispatcherCoreLibApiProvider));
+            this.perseusCoreLibApiProvider = provider6;
+            Provider<ObservabilityCoreLibApi> provider7 = SingleCheck.provider(CoreLibsModule_ObservabilityCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider, provider6));
+            this.observabilityCoreLibApiProvider = provider7;
+            CoreLibsModule coreLibsModule2 = coreLibsModule;
+            Provider<TokenCoreLibDataApi> provider8 = SingleCheck.provider(CoreLibsModule_TokenCoreLibDataApiFactory.create(coreLibsModule2, this.aaaCoreLibApiProvider, this.contextCoreLibApiProvider, this.featureFlagCoreLibApiProvider, this.parserCoreLibApiProvider, this.secretCoreLibApiProvider, provider7));
+            this.tokenCoreLibDataApiProvider = provider8;
+            Provider<AuthenticationCoreLibApi> provider9 = SingleCheck.provider(CoreLibsModule_AuthenticationCoreLibApiFactory.create(coreLibsModule2, this.aaaCoreLibApiProvider, this.contextCoreLibApiProvider, this.dispatcherCoreLibApiProvider, this.featureFlagCoreLibApiProvider, this.gdmOwinTokenCoreLibApiProvider, this.parserCoreLibApiProvider, this.secretCoreLibApiProvider, provider8, this.observabilityCoreLibApiProvider));
+            this.authenticationCoreLibApiProvider = provider9;
+            this.authenticationCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_AuthenticationCoreLibApiFactory.create(provider9));
+            this.configurationLocalCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_ConfigurationLocalCoreLibApiFactory.create(this.configurationLocalCoreLibApiProvider));
+            this.mutableConfigurationLocalCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_MutableConfigurationLocalCoreLibApiFactory.create(this.mutableConfigurationLocalCoreLibApiProvider));
+            this.configurationRemoteCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_ConfigurationRemoteCoreLibApiFactory.create(this.configurationRemoteCoreLibApiProvider));
+            Provider<ConfigurationRemoteCoreLibFlutterApi> provider10 = SingleCheck.provider(CoreLibsModule_ConfigurationRemoteCoreLibFlutterApiFactory.create(coreLibsModule, this.configurationRemoteCoreLibApiProvider));
+            this.configurationRemoteCoreLibFlutterApiProvider = provider10;
+            this.configurationRemoteCoreLibFlutterApiProvider2 = SingleCheck.provider(CoreApiModule_ConfigurationRemoteCoreLibFlutterApiFactory.create(provider10));
+            this.mutableConfigurationRemoteCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_MutableConfigurationRemoteCoreLibApiFactory.create(this.mutableConfigurationRemoteCoreLibApiProvider));
+            this.contextCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_ContextCoreLibApiFactory.create(this.contextCoreLibApiProvider));
+            Provider<CustomerCoreLibApi> provider11 = SingleCheck.provider(CoreLibsModule_CustomerCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider));
+            this.customerCoreLibApiProvider = provider11;
+            this.customerCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_CustomerCoreLibApiFactory.create(provider11));
+            this.experimentCoreLibApiProvider = SingleCheck.provider(CoreLibsModule_ExperimentCoreLibApiFactory.create(coreLibsModule));
+            this.navigationCoreLibApiProvider = SingleCheck.provider(CoreLibsModule_NavigationCoreLibApiFactory.create(coreLibsModule));
+            this.gmsBaseCoreLibApiProvider = SingleCheck.provider(CoreLibsModule_GmsBaseCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider));
+            Provider<HmsBaseCoreLibApi> provider12 = SingleCheck.provider(CoreLibsModule_HmsBaseCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider));
+            this.hmsBaseCoreLibApiProvider = provider12;
+            Provider<TrackingCoreLibApi> provider13 = SingleCheck.provider(CoreLibsModule_TrackerCoreLibApiFactory.create(coreLibsModule2, this.configurationLocalCoreLibApiProvider, this.contextCoreLibApiProvider, this.featureFlagCoreLibApiProvider, this.gmsBaseCoreLibApiProvider, provider12, this.observabilityCoreLibApiProvider, this.perseusCoreLibApiProvider));
+            this.trackerCoreLibApiProvider = provider13;
+            Provider<PinlessCheckoutCoreLibApi> provider14 = SingleCheck.provider(CoreLibsModule_PinlessCheckoutCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider, provider13));
+            this.pinlessCheckoutCoreLibApiProvider = provider14;
+            this.flutterChannelsCoreImplLibApiProvider = SingleCheck.provider(CoreLibsModule_FlutterChannelsCoreImplLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider, this.featureFlagCoreLibApiProvider, this.observabilityCoreLibApiProvider, this.experimentCoreLibApiProvider, this.secretCoreLibApiProvider, this.tokenCoreLibDataApiProvider, provider14, this.navigationCoreLibApiProvider, this.trackerCoreLibApiProvider, this.parserCoreLibApiProvider, this.mutableConfigurationLocalCoreLibApiProvider, this.mutableConfigurationRemoteCoreLibApiProvider));
+            Provider<FlutterSecretsCoreLibApi> provider15 = SingleCheck.provider(CoreLibsModule_FlutterSecretsCoreLibApiFactory.create(coreLibsModule, this.secretCoreLibApiProvider));
+            this.flutterSecretsCoreLibApiProvider = provider15;
+            this.flutterChannelsCoreLibApiProvider = SingleCheck.provider(CoreLibsModule_FlutterChannelsCoreLibApiFactory.create(coreLibsModule, this.flutterChannelsCoreImplLibApiProvider, provider15, this.dispatcherCoreLibApiProvider, this.observabilityCoreLibApiProvider));
+            Provider<FlutterEngineCoreLibApi> provider16 = SingleCheck.provider(CoreLibsModule_FlutterEngineCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider));
+            this.flutterEngineCoreLibApiProvider = provider16;
+            Provider<DeepLinkCoreLibApi> provider17 = SingleCheck.provider(CoreLibsModule_DeepLinkCoreLibApiFactory.create(coreLibsModule, this.featureFlagCoreLibApiProvider, this.experimentCoreLibApiProvider, this.navigationCoreLibApiProvider, this.observabilityCoreLibApiProvider, this.flutterChannelsCoreLibApiProvider, provider16, this.dispatcherCoreLibApiProvider, this.customerCoreLibApiProvider));
+            this.deepLinkCoreLibApiProvider = provider17;
+            this.deepLinkCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_DeepLinkCoreLibApiFactory.create(provider17));
+            Provider<DeeplinkNavigationChannelCoreImplLibApi> provider18 = SingleCheck.provider(CoreLibsModule_DeeplinkNavigationChannelCoreImplLibApiFactory.create(coreLibsModule, this.deepLinkCoreLibApiProvider));
+            this.deeplinkNavigationChannelCoreImplLibApiProvider = provider18;
+            Provider<DeeplinkNavigationChannelCoreLibApi> provider19 = SingleCheck.provider(CoreLibsModule_DeeplinkNavigationChannelCoreLibApiFactory.create(coreLibsModule, provider18, this.dispatcherCoreLibApiProvider));
+            this.deeplinkNavigationChannelCoreLibApiProvider = provider19;
+            this.deeplinkNavigationChannelCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_DeeplinkNavigationChannelCoreLibApiFactory.create(provider19));
+            Provider<FlutterBindingCoreLibApi> provider20 = SingleCheck.provider(CoreLibsModule_FlutterBindingCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider, this.deeplinkNavigationChannelCoreLibApiProvider, this.flutterChannelsCoreLibApiProvider, this.flutterEngineCoreLibApiProvider));
+            this.flutterBindingCoreLibApiProvider = provider20;
+            this.flutterBindingCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_FlutterBindingCoreLibApiFactory.create(provider20));
+            this.flutterChannelsCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_FlutterChannelsCoreLibApiFactory.create(this.flutterChannelsCoreLibApiProvider));
+            this.flutterChannelsCoreImplLibApiProvider2 = SingleCheck.provider(CoreApiModule_FlutterChannelsCoreImplLibApiFactory.create(this.flutterChannelsCoreImplLibApiProvider));
+            this.deeplinkNavigationChannelCoreImplLibApiProvider2 = SingleCheck.provider(CoreApiModule_DeeplinkNavigationChannelCoreImplLibApiFactory.create(this.deeplinkNavigationChannelCoreImplLibApiProvider));
+            this.flutterEngineCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_FlutterEngineCoreLibApiFactory.create(this.flutterEngineCoreLibApiProvider));
+            this.flutterSecretsCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_FlutterSecretsCoreLibApiFactory.create(this.flutterSecretsCoreLibApiProvider));
+            this.dispatcherApiProvider = SingleCheck.provider(CoreApiModule_DispatcherApiFactory.create(this.dispatcherCoreLibApiProvider));
+            this.featureFlagCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_FeatureFlagCoreLibApiFactory.create(this.featureFlagCoreLibApiProvider));
+            Provider<GoogleAdvertisementCoreLibApi> provider21 = SingleCheck.provider(CoreLibsModule_GoogleAdvertisementCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider));
+            this.googleAdvertisementCoreLibApiProvider = provider21;
+            this.googleAdvertisementCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_GoogleAdvertisementCoreLibApiFactory.create(provider21));
+            Provider<GoogleLoginCoreLibApi> provider22 = SingleCheck.provider(CoreLibsModule_GoogleLoginCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider));
+            this.googleLoginCoreLibApiProvider = provider22;
+            this.googleLoginCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_GoogleLoginCoreLibApiFactory.create(provider22));
+            this.gdmOwinCoreLibApiProvider = SingleCheck.provider(CoreApiModule_GdmOwinCoreLibApiFactory.create(this.gdmOwinTokenCoreLibApiProvider));
+            this.gmsCoreLibApiProvider = SingleCheck.provider(CoreApiModule_GmsCoreLibApiFactory.create(this.gmsBaseCoreLibApiProvider));
+            Provider<GmsLocationCoreLibApi> provider23 = SingleCheck.provider(CoreLibsModule_GmsLocationCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider));
+            this.gmsLocationCoreLibApiProvider = provider23;
+            this.gmsLocationCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_GmsLocationCoreLibApiFactory.create(provider23));
+            Provider<GmsMapsCoreLibApi> provider24 = SingleCheck.provider(CoreLibsModule_GmsMapsCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider, this.observabilityCoreLibApiProvider));
+            this.gmsMapsCoreLibApiProvider = provider24;
+            this.gmsMapsCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_GmsMapsCoreLibApiFactory.create(provider24));
+            this.hmsCoreLibApiProvider = SingleCheck.provider(CoreApiModule_HmsCoreLibApiFactory.create(this.hmsBaseCoreLibApiProvider));
+            Provider<HmsLocationCoreLibApi> provider25 = SingleCheck.provider(CoreLibsModule_HmsLocationCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider));
+            this.hmsLocationCoreLibApiProvider = provider25;
+            this.hmsLocationCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_HmsLocationCoreLibApiFactory.create(provider25));
+            Provider<HmsMapsCoreLibApi> provider26 = SingleCheck.provider(CoreLibsModule_HmsMapsCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider, this.observabilityCoreLibApiProvider));
+            this.hmsMapsCoreLibApiProvider = provider26;
+            this.hmsMapsCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_HmsMapsCoreLibApiFactory.create(provider26));
+            Provider<HuaweiWatchCoreLibApi> provider27 = SingleCheck.provider(CoreLibsModule_HuaweiWatchCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider));
+            this.huaweiWatchCoreLibApiProvider = provider27;
+            this.huaweiWatchCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_HuaweiWatchCoreLibApiFactory.create(provider27));
+            Provider<RemoteConfigCoreLibApi> provider28 = SingleCheck.provider(CoreLibsModule_RemoteConfigCoreLibApiFactory.create(coreLibsModule));
+            this.remoteConfigCoreLibApiProvider = provider28;
+            Provider<JwtTokenCoreLibApi> provider29 = SingleCheck.provider(CoreLibsModule_JwtTokenCoreLibApiFactory.create(coreLibsModule, this.aaaCoreLibApiProvider, this.authenticationCoreLibApiProvider, this.dispatcherCoreLibApiProvider, this.experimentCoreLibApiProvider, this.featureFlagCoreLibApiProvider, this.observabilityCoreLibApiProvider, provider28, this.secretCoreLibApiProvider, this.tokenCoreLibDataApiProvider));
+            this.jwtTokenCoreLibApiProvider = provider29;
+            this.jwtTokenCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_JwtTokenCoreLibApiFactory.create(provider29));
+            Provider<LocationCoreLibApi> provider30 = SingleCheck.provider(CoreLibsModule_LocationCoreLibApiFactory.create(coreLibsModule, this.gmsBaseCoreLibApiProvider, this.gmsLocationCoreLibApiProvider, this.hmsBaseCoreLibApiProvider, this.hmsLocationCoreLibApiProvider));
+            this.locationCoreLibApiProvider = provider30;
+            this.locationCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_LocationCoreLibApiFactory.create(provider30));
+            this.pinlessCheckoutCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_PinlessCheckoutCoreLibApiFactory.create(this.pinlessCheckoutCoreLibApiProvider));
+            Provider<MapsCoreLibApi> provider31 = SingleCheck.provider(CoreLibsModule_MapsCoreLibApiFactory.create(coreLibsModule, this.gmsBaseCoreLibApiProvider, this.gmsMapsCoreLibApiProvider, this.hmsBaseCoreLibApiProvider, this.hmsMapsCoreLibApiProvider));
+            this.mapsCoreLibApiProvider = provider31;
+            this.mapsCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_MapsCoreLibApiFactory.create(provider31));
+            Provider<FacebookLoginCoreLibApi> provider32 = SingleCheck.provider(CoreLibsModule_FacebookLoginCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider));
+            this.facebookLoginCoreLibApiProvider = provider32;
+            this.facebookLoginCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_FacebookLoginCoreLibApiFactory.create(provider32));
+            this.navigationCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_NavigationCoreLibApiFactory.create(this.navigationCoreLibApiProvider));
+            this.networkCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_NetworkCoreLibApiFactory.create(this.networkCoreLibApiProvider));
+            this.observabilityCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_ObservabilityCoreLibApiFactory.create(this.observabilityCoreLibApiProvider));
+            this.parserCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_ParserCoreLibApiFactory.create(this.parserCoreLibApiProvider));
+            this.perseusCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_PerseusCoreLibApiFactory.create(this.perseusCoreLibApiProvider));
+            this.remoteConfigCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_RemoteConfigCoreLibApiFactory.create(this.remoteConfigCoreLibApiProvider));
+            Provider<SafetyCoreLibApi> provider33 = SingleCheck.provider(CoreLibsModule_SafetyCoreLibApiFactory.create(coreLibsModule, this.configurationLocalCoreLibApiProvider, this.configurationRemoteCoreLibApiProvider, this.contextCoreLibApiProvider, this.googleAdvertisementCoreLibApiProvider, this.gmsBaseCoreLibApiProvider, this.dispatcherCoreLibApiProvider, this.networkCoreLibApiProvider, this.observabilityCoreLibApiProvider, this.secretCoreLibApiProvider, this.perseusCoreLibApiProvider));
+            this.safetyCoreLibApiProvider = provider33;
+            this.safetyCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_SafetyCoreLibApiFactory.create(provider33));
+            this.secretCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_SecretCoreLibApiFactory.create(this.secretCoreLibApiProvider));
+            this.tokenCoreLibDataApiProvider2 = SingleCheck.provider(CoreApiModule_TokenCoreLibDataApiFactory.create(this.tokenCoreLibDataApiProvider));
+            Provider<TokenCoreLibApi> provider34 = SingleCheck.provider(CoreLibsModule_TokenCoreLibApiFactory.create(coreLibsModule, this.tokenCoreLibDataApiProvider));
+            this.tokenCoreLibApiProvider = provider34;
+            this.tokenCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_TokenCoreLibApiFactory.create(provider34));
+            Provider<SocialLoginCoreLibApi> provider35 = SingleCheck.provider(CoreLibsModule_SocialLoginCoreLibApiFactory.create(coreLibsModule, this.authenticationCoreLibApiProvider, this.googleLoginCoreLibApiProvider, this.facebookLoginCoreLibApiProvider));
+            this.socialLoginCoreLibApiProvider = provider35;
+            this.socialLoginCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_SocialLoginCoreLibApiFactory.create(provider35));
+            this.trackingCoreLibApiProvider = SingleCheck.provider(CoreApiModule_TrackingCoreLibApiFactory.create(this.trackerCoreLibApiProvider));
+            this.experimentCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_ExperimentCoreLibApiFactory.create(this.experimentCoreLibApiProvider));
+            Provider<FWFCoreLibApi> provider36 = SingleCheck.provider(CoreLibsModule_FwfCoreLibApiFactory.create(coreLibsModule, this.contextCoreLibApiProvider, this.configurationLocalCoreLibApiProvider, this.gmsBaseCoreLibApiProvider));
+            this.fwfCoreLibApiProvider = provider36;
+            this.fwfCoreLibApiProvider2 = SingleCheck.provider(CoreApiModule_FwfCoreLibApiFactory.create(provider36));
+            Provider<OnBoardingExperimentApi> provider37 = SingleCheck.provider(CoreLibsModule_OnBoardingExperimentApiFactory.create(coreLibsModule, this.dispatcherCoreLibApiProvider, this.experimentCoreLibApiProvider));
+            this.onBoardingExperimentApiProvider = provider37;
+            this.onBoardingExperimentApiProvider2 = SingleCheck.provider(CoreApiModule_OnBoardingExperimentApiFactory.create(provider37));
+            MapFactory build = MapFactory.builder(49).put((Object) AaaCoreLibApi.class, (Provider) this.aaaCoreLibApiProvider2).put((Object) AuthenticationCoreLibApi.class, (Provider) this.authenticationCoreLibApiProvider2).put((Object) ConfigurationLocalCoreLibApi.class, (Provider) this.configurationLocalCoreLibApiProvider2).put((Object) MutableConfigurationLocalCoreLibApi.class, (Provider) this.mutableConfigurationLocalCoreLibApiProvider2).put((Object) ConfigurationRemoteCoreLibApi.class, (Provider) this.configurationRemoteCoreLibApiProvider2).put((Object) ConfigurationRemoteCoreLibFlutterApi.class, (Provider) this.configurationRemoteCoreLibFlutterApiProvider2).put((Object) MutableConfigurationRemoteCoreLibApi.class, (Provider) this.mutableConfigurationRemoteCoreLibApiProvider2).put((Object) ContextCoreLibApi.class, (Provider) this.contextCoreLibApiProvider2).put((Object) CustomerCoreLibApi.class, (Provider) this.customerCoreLibApiProvider2).put((Object) DeepLinkCoreLibApi.class, (Provider) this.deepLinkCoreLibApiProvider2).put((Object) DeeplinkNavigationChannelCoreLibApi.class, (Provider) this.deeplinkNavigationChannelCoreLibApiProvider2).put((Object) FlutterBindingCoreLibApi.class, (Provider) this.flutterBindingCoreLibApiProvider2).put((Object) FlutterChannelsCoreLibApi.class, (Provider) this.flutterChannelsCoreLibApiProvider2).put((Object) FlutterChannelsCoreImplLibApi.class, (Provider) this.flutterChannelsCoreImplLibApiProvider2).put((Object) DeeplinkNavigationChannelCoreImplLibApi.class, (Provider) this.deeplinkNavigationChannelCoreImplLibApiProvider2).put((Object) FlutterEngineCoreLibApi.class, (Provider) this.flutterEngineCoreLibApiProvider2).put((Object) FlutterSecretsCoreLibApi.class, (Provider) this.flutterSecretsCoreLibApiProvider2).put((Object) DispatcherCoreLibApi.class, (Provider) this.dispatcherApiProvider).put((Object) FeatureFlagCoreLibApi.class, (Provider) this.featureFlagCoreLibApiProvider2).put((Object) GoogleAdvertisementCoreLibApi.class, (Provider) this.googleAdvertisementCoreLibApiProvider2).put((Object) GoogleLoginCoreLibApi.class, (Provider) this.googleLoginCoreLibApiProvider2).put((Object) GdmOwinTokenApi.class, (Provider) this.gdmOwinCoreLibApiProvider).put((Object) GmsBaseCoreLibApi.class, (Provider) this.gmsCoreLibApiProvider).put((Object) GmsLocationCoreLibApi.class, (Provider) this.gmsLocationCoreLibApiProvider2).put((Object) GmsMapsCoreLibApi.class, (Provider) this.gmsMapsCoreLibApiProvider2).put((Object) HmsBaseCoreLibApi.class, (Provider) this.hmsCoreLibApiProvider).put((Object) HmsLocationCoreLibApi.class, (Provider) this.hmsLocationCoreLibApiProvider2).put((Object) HmsMapsCoreLibApi.class, (Provider) this.hmsMapsCoreLibApiProvider2).put((Object) HuaweiWatchCoreLibApi.class, (Provider) this.huaweiWatchCoreLibApiProvider2).put((Object) JwtTokenCoreLibApi.class, (Provider) this.jwtTokenCoreLibApiProvider2).put((Object) LocationCoreLibApi.class, (Provider) this.locationCoreLibApiProvider2).put((Object) PinlessCheckoutCoreLibApi.class, (Provider) this.pinlessCheckoutCoreLibApiProvider2).put((Object) MapsCoreLibApi.class, (Provider) this.mapsCoreLibApiProvider2).put((Object) FacebookLoginCoreLibApi.class, (Provider) this.facebookLoginCoreLibApiProvider2).put((Object) NavigationCoreLibApi.class, (Provider) this.navigationCoreLibApiProvider2).put((Object) NetworkCoreLibApi.class, (Provider) this.networkCoreLibApiProvider2).put((Object) ObservabilityCoreLibApi.class, (Provider) this.observabilityCoreLibApiProvider2).put((Object) ParserCoreLibApi.class, (Provider) this.parserCoreLibApiProvider2).put((Object) TalabatPerseusCoreLibApi.class, (Provider) this.perseusCoreLibApiProvider2).put((Object) RemoteConfigCoreLibApi.class, (Provider) this.remoteConfigCoreLibApiProvider2).put((Object) SafetyCoreLibApi.class, (Provider) this.safetyCoreLibApiProvider2).put((Object) SecretCoreLibApi.class, (Provider) this.secretCoreLibApiProvider2).put((Object) TokenCoreLibDataApi.class, (Provider) this.tokenCoreLibDataApiProvider2).put((Object) TokenCoreLibApi.class, (Provider) this.tokenCoreLibApiProvider2).put((Object) SocialLoginCoreLibApi.class, (Provider) this.socialLoginCoreLibApiProvider2).put((Object) TrackingCoreLibApi.class, (Provider) this.trackingCoreLibApiProvider).put((Object) ExperimentCoreLibApi.class, (Provider) this.experimentCoreLibApiProvider2).put((Object) FWFCoreLibApi.class, (Provider) this.fwfCoreLibApiProvider2).put((Object) OnBoardingExperimentApi.class, (Provider) this.onBoardingExperimentApiProvider2).build();
+            this.coreApisMapOfClassOfAndApiProvider = build;
+            this.accountInfoFeatureApiProvider = SingleCheck.provider(FeaturesModule_AccountInfoFeatureApiFactory.create(build));
+        }
+
+        private void initialize2(CoreLibsModule coreLibsModule) {
+            this.darkstoresCartListApiProvider = SingleCheck.provider(FeaturesModule_DarkstoresCartListApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            Provider<DarkstoresCartApi> provider = SingleCheck.provider(FeaturesModule_DarkstoresCartApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.darkstoresCartApiProvider = provider;
+            Provider<DarkstoresFeatureApi> provider2 = SingleCheck.provider(FeaturesModule_DarkstoresFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider, provider));
+            this.darkstoresFeatureApiProvider = provider2;
+            this.activeCartsApiProvider = SingleCheck.provider(FeaturesModule_ActiveCartsApiFactory.create(this.coreApisMapOfClassOfAndApiProvider, this.darkstoresCartListApiProvider, provider2));
+            this.addressFeatureApiProvider = SingleCheck.provider(FeaturesModule_AddressFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.addressFormFeatureApiProvider = SingleCheck.provider(FeaturesModule_AddressFormFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.bnplCoreFeatureApiProvider = SingleCheck.provider(FeaturesModule_BnplCoreFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.campaignMigratorFeatureApiProvider = SingleCheck.provider(FeaturesModule_CampaignMigratorFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.darkstoresFlutterCartApiProvider = SingleCheck.provider(FeaturesModule_DarkstoresFlutterCartApiFactory.create(this.coreApisMapOfClassOfAndApiProvider, this.darkstoresCartApiProvider));
+            this.darkstoresScheduledDeliveryFeatureApiProvider = SingleCheck.provider(FeaturesModule_DarkstoresScheduledDeliveryFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.darkstoresVendorApiProvider = SingleCheck.provider(FeaturesModule_DarkstoresVendorApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.darkstoreVandorLandingApiProvider = SingleCheck.provider(FeaturesModule_DarkstoreVandorLandingApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.darkstoresCampaignMessageProvider = SingleCheck.provider(FeaturesModule_DarkstoresCampaignMessageFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.feesFeatureApiProvider = SingleCheck.provider(FeaturesModule_FeesFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.foodCartFeatureApiProvider = SingleCheck.provider(FeaturesModule_FoodCartFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.incentiveAutoApplyDiscountsFeatureApiProvider = SingleCheck.provider(FeaturesModule_IncentiveAutoApplyDiscountsFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.missionControlFeatureApiProvider = SingleCheck.provider(FeaturesModule_MissionControlFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.qCommerceFlutterFeatureApiProvider = SingleCheck.provider(FeaturesModule_QCommerceFlutterFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            Provider<QCommerceMethodChannelFeatureLibImplApi> provider3 = SingleCheck.provider(FeaturesModule_QCommerceMethodChannelFeatureLibImplApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.qCommerceMethodChannelFeatureLibImplApiProvider = provider3;
+            this.qCommerceMethodChannelFeatureLibApiProvider = SingleCheck.provider(FeaturesModule_QCommerceMethodChannelFeatureLibApiFactory.create(provider3));
+            this.pickupFeatureApiProvider = SingleCheck.provider(FeaturesModule_PickupFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.ratingFeatureApiProvider = SingleCheck.provider(FeaturesModule_RatingFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.referAFriendFeatureApiProvider = SingleCheck.provider(FeaturesModule_ReferAFriendFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.rewardsFeatureApiProvider = SingleCheck.provider(FeaturesModule_RewardsFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.riderTipFeatureApiProvider = SingleCheck.provider(FeaturesModule_RiderTipFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.subscriptionsFeatureApiProvider = SingleCheck.provider(FeaturesModule_SubscriptionsFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.swimlanesFeatureApiProvider = SingleCheck.provider(FeaturesModule_SwimlanesFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.tmartGrowthFeatureApiProvider = SingleCheck.provider(FeaturesModule_TmartGrowthFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            Provider<TokenizationFeatureApi> provider4 = SingleCheck.provider(FeaturesModule_TokenizationFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.tokenizationFeatureApiProvider = provider4;
+            this.walletAddCardFeatureApiProvider = SingleCheck.provider(FeaturesModule_WalletAddCardFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider, provider4));
+            this.helpCenterFeatureApiProvider = SingleCheck.provider(FeaturesModule_HelpCenterFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            this.customerVouchersSwimLaneFeaturesApiProvider = SingleCheck.provider(FeaturesModule_CustomerVouchersSwimLaneFeaturesApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+            Provider<FlutterChannelsFeatureImplLibApi> provider5 = SingleCheck.provider(FeaturesModule_FlutterChannelsFeatureImplLibApiFactory.create(this.coreApisMapOfClassOfAndApiProvider, this.subscriptionsFeatureApiProvider));
+            this.flutterChannelsFeatureImplLibApiProvider = provider5;
+            Provider<FlutterChannelsFeatureLibApi> provider6 = SingleCheck.provider(FeaturesModule_FlutterChannelsFeatureLibApiFactory.create(this.dispatcherCoreLibApiProvider, provider5));
+            this.flutterChannelsFeatureLibApiProvider = provider6;
+            this.flutterBindingFeatureLibApiProvider = SingleCheck.provider(FeaturesModule_FlutterBindingFeatureLibApiFactory.create(provider6));
+            this.walletCobrandedCcFeatureApiProvider = SingleCheck.provider(FeaturesModule_WalletCobrandedCcFeatureApiFactory.create(this.coreApisMapOfClassOfAndApiProvider));
+        }
+
+        private App injectApp(App app) {
+            App_MembersInjector.injectMergedMap(app, mergedMap());
+            return app;
+        }
+
+        public void inject(App app) {
+            injectApp(app);
+        }
+
+        public Map<Class<?>, Provider<Api>> mergedMap() {
+            return AppModule_MergedMapFactory.mergedMap(coreApisMapOfClassOfAndProviderOfApi(), featureApisMapOfClassOfAndProviderOfApi());
+        }
+    }
+
+    public static final class Factory implements AppComponent.Factory {
+        private Factory() {
+        }
+
+        public AppComponent create(CoreLibsModule coreLibsModule) {
+            Preconditions.checkNotNull(coreLibsModule);
+            return new AppComponentImpl(coreLibsModule);
+        }
+    }
+
+    private DaggerAppComponent() {
+    }
+
+    public static AppComponent.Factory factory() {
+        return new Factory();
+    }
+}

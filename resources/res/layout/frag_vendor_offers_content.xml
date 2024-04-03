@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginRight="@dimen/standard_margin" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin">
+        <TextView android:id="@+id/tLifeVendorListTitleTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin" android:maxLines="2" style="@style/text_black_bold_20sp"/>
+        <TextView android:id="@+id/tLifeVendorListCousinTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_half_margin" android:layout_marginBottom="@dimen/standard_half_margin" android:maxLines="1" style="@style/text_grey_14sp"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginTop="@dimen/standard_margin" android:layout_marginRight="@dimen/standard_margin" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin">
+        <ProgressBar android:id="@+id/vendorOffersBranchesProgressBar" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerInParent="true"/>
+        <RelativeLayout android:id="@+id/vendorOffersBranchViews" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.talabat.talabatlife.ui.vendorOffers.views.branch.VendorBranchView android:id="@+id/vendorOffersVendorBranchView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/vendorOffersBranchCountLinearLayout" android:layout_toStartOf="@+id/vendorOffersBranchCountLinearLayout"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/vendorOffersBranchCountLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_half_margin" android:layout_marginRight="@dimen/standard_half_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/standard_half_margin" android:layout_marginEnd="@dimen/standard_half_margin" android:layout_alignParentEnd="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginRight="@dimen/standard_margin" android:src="@drawable/ic_outlet_orange" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin"/>
+                <TextView android:id="@+id/vendorOffersBranchCount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_actionable_medium_14sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_margin" android:layout_marginTop="32dp" android:layout_marginRight="@dimen/standard_margin" android:layout_marginStart="@dimen/standard_margin" android:layout_marginEnd="@dimen/standard_margin">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vendorAvailableOffers" style="@style/text_black_bold_18sp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.talabat.talabatcommon.views.wallet.dsalert.DSAlertView android:id="@+id/limitWarning" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_margin" app:alertDescriptor="@string/tpro_free_coffee_monthly_limit_message" app:alertType="1" app:canDismiss="false" app:isFullDescriptor="true"/>
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/vendorOffersRecyclerView" android:paddingBottom="70dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin" android:overScrollMode="never"/>
+        <ProgressBar android:id="@+id/vendorOffersProgressBar" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

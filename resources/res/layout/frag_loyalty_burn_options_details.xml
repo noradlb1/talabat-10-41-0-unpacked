@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/toolbar_elevation" app:contentInsetLeft="@dimen/ds_zero" app:contentInsetStart="@dimen/ds_zero" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/tool_bar_height">
+            <ImageButton android:id="@+id/burnDetailsBackButton" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" style="@style/toolbar_white_back_button_style"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/burnDetailsRedeemLinearLayout">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.talabat.talabatcommon.views.TalabatImageView android:id="@+id/burnDetailsImageView" android:layout_width="match_parent" android:layout_height="200dp"/>
+            <View android:background="@drawable/burn_option_image_shadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/burnDetailsImageView" android:layout_alignBottom="@+id/burnDetailsImageView"/>
+            <androidx.cardview.widget.CardView android:layout_width="@dimen/loyalty_burn_details_icon_width_height" android:layout_height="@dimen/loyalty_burn_details_icon_width_height" android:layout_marginTop="155dp" android:layout_marginRight="@dimen/ds_s" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/ds_s" android:layout_alignParentEnd="true" app:cardCornerRadius="@dimen/ds_xxs" app:cardElevation="@dimen/ds_xxxs">
+                <com.talabat.talabatcommon.views.TalabatImageView android:id="@+id/burnDetailsIconImageView" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside"/>
+            </androidx.cardview.widget.CardView>
+            <com.marshmallow.TalabatTag android:id="@+id/burnDetailsTagView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ds_s" android:layout_alignBottom="@+id/burnDetailsImageView" app:tag_bg="@color/ds_promo_10" app:tag_text_color="@color/promo"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="216dp" android:layout_marginRight="@dimen/ds_s" android:layout_marginBottom="@dimen/ds_s" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="106dp" android:layout_marginEnd="106dp">
+                        <TextView android:id="@+id/burnDetailsTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Heading1"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xs">
+                            <TextView android:textColor="@color/ds_neutral_30" android:id="@+id/burnDetailsItemPointsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Body1"/>
+                            <TextView android:textColor="@color/ds_neutral_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_xxxs" android:text="@string/loyalty_points" android:layout_marginStart="@dimen/ds_xxxs" style="@style/DSTextAppearance.Body1"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:id="@+id/burnDetailsDetailTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_l" style="@style/DSTextAppearance.Body1"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <androidx.cardview.widget.CardView android:id="@+id/burnDetailsRedeemLinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:cardElevation="@dimen/ds_xxxs">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/ds_xl" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ds_s" android:paddingEnd="@dimen/ds_s">
+            <TextView android:textColor="@color/ds_neutral_30" android:id="@+id/burnDetailsAvailablePointsTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_xxxs" android:layout_marginTop="@dimen/ds_s" android:text="@string/loyalty_current_points" android:paddingStart="@dimen/ds_xxxs" style="@style/DSTextAppearance.Body1"/>
+            <TextView android:textColor="@color/text_red" android:id="@+id/burnDetailsNeededPointsTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" style="@style/DSTextAppearance.BodyMedium"/>
+            <com.designsystem.ds_button_v2.DSPrimaryButton android:id="@+id/burnDetailsRedeemButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_s" app:bt_is_enabled="false" app:bt_title="@string/loyalty_redeem_for_points"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/burnDetailsCurrentPointsLinearLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="42dp" android:layout_alignBottom="@+id/burnDetailsRedeemLinearLayout"/>
+    <include android:visibility="invisible" layout="@layout/generic_progress_bar"/>
+</RelativeLayout>

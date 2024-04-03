@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.designsystem.ds_navigation_bar.DSNavigationBar android:id="@+id/loyaltyPointsHistoryNavigationBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:nb_title="@string/loyalty_history"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/loyaltyPointsHistoryNavigationBar">
+        <com.talabat.growth.ui.loyalty.views.LoyaltyPointsSummaryView android:id="@+id/loyaltyHistorySummaryView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_l" android:layout_marginBottom="@dimen/ds_l"/>
+        <com.designsystem.ds_tabs.DSTabBar android:id="@+id/pointsHistoryTabs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_s" app:tb_type="0"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/loyaltyHistoryRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.designsystem.ds_empty_state_v2.DSEmptyState android:id="@+id/loyaltyHistoryEmptyView" android:layout_width="match_parent" android:layout_height="wrap_content" app:es_v2_details="@string/loyalty_no_points_des" app:es_v2_title="@string/loyalty_no_points"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/generic_progress_bar"/>
+</RelativeLayout>

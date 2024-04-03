@@ -1,0 +1,95 @@
+{
+  "result" : {
+    "category" : "B2B",
+    "activeSubscription" : false,
+    "freeTrialTitle" : "Two weeks free trial",
+    "products" : [
+      {
+        "id" : "0e64e2f7-26b2-4cfe-ad8f-e079e59a5a64",
+        "title" : "Free delivery on food",
+        "icon" : "https://images.deliveryhero.io/image/talabat/TPro/tproBurger/Vector@2x.png",
+        "description" : "On orders above AED 30 at most restaurants"
+      },
+      {
+        "id" : "1e01a3fb-fa79-414c-aaf0-613f4f4520d5",
+        "title" : "Double the rewards points",
+        "icon" : "https://images.deliveryhero.io/image/talabat/TPro/tproRewards/Vector@2x.png",
+        "description" : "You can use to unlock exclusive pro rewards, raffles and more"
+      },
+      {
+        "id" : "302c31d4-7508-4441-a088-f313a6a21b9c",
+        "title" : "Free delivery on groceries",
+        "icon" : "https://images.deliveryhero.io/image/talabat/TPro/tproGroceries/Vector@2x.png",
+        "description" : "On talabat Mart and participating partners when you spend above AED 50"
+      }
+    ],
+    "partner" : null,
+    "termsUrl" : "https://www.talabat.com/uae/terms",
+    "plans" : [
+      {
+        "udf" : [
+          {
+            "key" : "minimumDeliveryFee",
+            "value" : "30"
+          }
+        ],
+        "category" : "B2B",
+        "periodPrice" : "AED 29 / month",
+        "termsUrl" : "https://www.talabat.com/uae/terms",
+        "title" : "talabat pro",
+        "amount" : 29,
+        "country" : "ARE",
+        "tags" : [
+          ""
+        ],
+        "durationDays" : 31,
+        "planPeriod" : "Monthly plan",
+        "currency" : "AED",
+        "freeTrialEligible" : true,
+        "activeSubscription" : false,
+        "products" : [
+          {
+            "id" : "0e64e2f7-26b2-4cfe-ad8f-e079e59a5a64",
+            "title" : "Free delivery on food",
+            "icon" : "https://images.deliveryhero.io/image/talabat/TPro/tproBurger/Vector@2x.png",
+            "description" : "On orders above AED 30 at most restaurants"
+          },
+          {
+            "id" : "1e01a3fb-fa79-414c-aaf0-613f4f4520d5",
+            "title" : "Double the rewards points",
+            "icon" : "https://images.deliveryhero.io/image/talabat/TPro/tproRewards/Vector@2x.png",
+            "description" : "You can use to unlock exclusive pro rewards, raffles and more"
+          },
+          {
+            "id" : "302c31d4-7508-4441-a088-f313a6a21b9c",
+            "title" : "Free delivery on groceries",
+            "icon" : "https://images.deliveryhero.io/image/talabat/TPro/tproGroceries/Vector@2x.png",
+            "description" : "On talabat Mart and participating partners when you spend above AED 50"
+          }
+        ],
+        "freeTrialTitle" : "Two weeks free trial",
+        "imageUrl" : "https://images.deliveryhero.io/image/talabat/talabatPro_assets/pro-plan-page-logo-01-blue.png",
+        "id" : "94a02bf2-4317-4541-a5cc-a3dfd20381a4",
+        "freeTrialDays" : 14,
+        "paymentText" : "AED 29 / month",
+        "freeTrialText" : "Your first payment will occur on November 23 2022",
+        "billingCycle" : "Billed every month",
+        "order" : 1,
+        "description" : "Exclusive pro benefits"
+      }
+    ],
+    "onboardingLink" : "tpro",
+    "freeTrialEligible" : true,
+    "freeTrialDays" : 14,
+    "udf" : [
+      {
+        "key" : "minimumDeliveryFee",
+        "value" : "30"
+      }
+    ]
+  },
+  "errors" : [
+
+  ],
+  "errorCode" : null
+}

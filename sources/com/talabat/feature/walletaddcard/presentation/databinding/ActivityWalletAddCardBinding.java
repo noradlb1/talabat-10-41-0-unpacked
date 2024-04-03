@@ -1,0 +1,50 @@
+package com.talabat.feature.walletaddcard.presentation.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.viewbinding.ViewBinding;
+import com.talabat.feature.walletaddcard.presentation.R;
+
+public final class ActivityWalletAddCardBinding implements ViewBinding {
+    @NonNull
+    private final FrameLayout rootView;
+    @NonNull
+    public final FrameLayout walletAddCardFragmentContainer;
+
+    private ActivityWalletAddCardBinding(@NonNull FrameLayout frameLayout, @NonNull FrameLayout frameLayout2) {
+        this.rootView = frameLayout;
+        this.walletAddCardFragmentContainer = frameLayout2;
+    }
+
+    @NonNull
+    public static ActivityWalletAddCardBinding bind(@NonNull View view) {
+        if (view != null) {
+            FrameLayout frameLayout = (FrameLayout) view;
+            return new ActivityWalletAddCardBinding(frameLayout, frameLayout);
+        }
+        throw new NullPointerException("rootView");
+    }
+
+    @NonNull
+    public static ActivityWalletAddCardBinding inflate(@NonNull LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, (ViewGroup) null, false);
+    }
+
+    @NonNull
+    public static ActivityWalletAddCardBinding inflate(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, boolean z11) {
+        View inflate = layoutInflater.inflate(R.layout.activity_wallet_add_card, viewGroup, false);
+        if (z11) {
+            viewGroup.addView(inflate);
+        }
+        return bind(inflate);
+    }
+
+    @NonNull
+    public FrameLayout getRoot() {
+        return this.rootView;
+    }
+}

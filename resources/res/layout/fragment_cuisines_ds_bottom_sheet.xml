@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.designsystem.ds_search_field.DSSearchField android:id="@+id/searchField" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_s" app:sf_hint="@string/hint_search_cuisine"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/cuisineRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/searchField"/>
+</LinearLayout>

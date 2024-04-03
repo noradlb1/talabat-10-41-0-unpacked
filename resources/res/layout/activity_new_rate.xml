@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ds_xxxl">
+        <com.talabat.designhelpers.WrappingViewPager android:layout_gravity="bottom" android:id="@+id/viewPager" android:background="@drawable/bg_rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/continue_container"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/continue_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/ds_s" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.designsystem.ds_button.DSSecondaryButton android:layout_gravity="center" android:id="@+id/button_back" android:visibility="gone" android:layout_width="@dimen/ds_zero" android:layout_height="wrap_content" android:layout_weight="0.5" android:layout_marginEnd="@dimen/ds_s" app:ds_centerText="@string/back"/>
+                <com.designsystem.ds_button.DSPrimaryButton android:layout_gravity="center" android:id="@+id/button_submit" android:layout_width="@dimen/ds_zero" android:layout_height="wrap_content" android:layout_weight="0.5" app:ds_centerText="@string/rate_continue"/>
+                <com.designsystem.ds_button.DSTertiaryButton android:layout_gravity="center" android:id="@+id/button_finish" android:visibility="gone" android:layout_width="@dimen/ds_zero" android:layout_height="wrap_content" android:layout_weight="0.5" app:ds_centerText="@string/close"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

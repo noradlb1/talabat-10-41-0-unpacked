@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.fragment.app.FragmentContainerView android:id="@+id/prescription_fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView_restaurantsList" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </LinearLayout>
+    <include android:id="@+id/progressShimmer" android:visibility="gone" layout="@layout/fragment_skeleton"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/scrollView_noRestaurantsContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:id="@+id/imageView_noRestaurants" android:background="@color/ds_transparent_fill" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:src="@drawable/ic_m_vendor_empty_state"/>
+            <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/no_result_found" style="@style/DSTextAppearance.Heading0"/>
+            <TextView android:textColor="@color/ds_neutral_55" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginTop="4dp" android:layout_marginRight="60dp" android:text="@string/please_change_filter" android:layout_marginStart="60dp" android:layout_marginEnd="60dp" style="@style/DSTextAppearance.Body1"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

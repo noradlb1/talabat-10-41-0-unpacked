@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialogTheme">
+        <item name="android:textAppearanceLarge">@style/textViewRegular</item>
+        <item name="android:textAppearanceMedium">@style/textViewRegular</item>
+        <item name="android:textAppearanceSmall">@style/textViewRegular</item>
+        <item name="android:windowTitleStyle">@style/textViewTitleStyleAlert</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+    <style name="AppThemeMarshmallow">
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppThemeMarshmallowLanding">
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:typeface">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Activity</item>
+        <item name="actionBarStyle">@style/CustomActionBarStyle</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="postSplashScreenTheme">@style/AppThemeMarshmallowTransparentStatus</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_landing</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+        <item name="windowSplashScreenBackground">@color/ds_white</item>
+    </style>
+    <style name="AppThemeMarshmallowLoadingTransparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="AppThemeMarshmallowTranslucentStatus">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="AppThemeMarshmallowTransparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Activity</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+    <style name="AppThemeMarshmallowTransparentStatus">
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:progressBarStyle">@style/ProgressBar</item>
+        <item name="android:typeface">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Activity</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="actionBarStyle">@style/CustomActionBarStyle</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+    </style>
+    <style name="BasketItemTitleStyle">
+    </style>
+    <style name="Content10Bold">
+        <item name="android:textSize">@dimen/_10txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="Content10Medium">
+        <item name="android:textSize">@dimen/_10txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="Content10Regular">
+        <item name="android:textSize">@dimen/_10txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="Content12Bold">
+        <item name="android:textSize">@dimen/_12txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="Content12Medium">
+        <item name="android:textSize">@dimen/_12txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="Content12Regular">
+        <item name="android:textSize">@dimen/_12txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="Content14Bold">
+        <item name="android:textSize">@dimen/_14txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="Content14Medium">
+        <item name="android:textSize">@dimen/_14txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="Content14Regular">
+        <item name="android:textSize">@dimen/_14txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="Content16Bold">
+        <item name="android:textSize">@dimen/_16txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="Content16Medium">
+        <item name="android:textSize">@dimen/_16txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="Content16Regular">
+        <item name="android:textSize">@dimen/_16txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="DSTextAppearance.Body0">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_regular</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_regular</item>
+        <item name="lineHeight">28sp</item>
+    </style>
+    <style name="DSTextAppearance.Body0Bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">28sp</item>
+    </style>
+    <style name="DSTextAppearance.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_regular</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_regular</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="DSTextAppearance.Body1Bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="DSTextAppearance.Body1Compact">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_regular</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_regular</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="DSTextAppearance.BodyMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_regular</item>
+        <item name="fontFamily">@font/gedinarone_regular</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="DSTextAppearance.BodyMediumCompact">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_regular</item>
+        <item name="fontFamily">@font/gedinarone_regular</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="DSTextAppearance.BodySmall">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_regular</item>
+        <item name="fontFamily">@font/gedinarone_regular</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="DSTextAppearance.BodySmallCompact">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_regular</item>
+        <item name="fontFamily">@font/gedinarone_regular</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+    <style name="DSTextAppearance.BodyXSmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_regular</item>
+        <item name="fontFamily">@font/gedinarone_regular</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+    <style name="DSTextAppearance.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ds_primary_100</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="DSTextAppearance.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ds_neutral_70</item>
+        <item name="android:fontFamily">@font/gedinarone_regular</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_regular</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+    <style name="DSTextAppearance.Heading0">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">36sp</item>
+    </style>
+    <style name="DSTextAppearance.Heading1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">32sp</item>
+    </style>
+    <style name="DSTextAppearance.Heading2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="DSTextAppearance.HeadingLarge">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="DSTextAppearance.HeadingMedium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="DSTextAppearance.HeadingXLarge">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">28sp</item>
+    </style>
+    <style name="DSTextAppearance.HeadingXXLarge">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">32sp</item>
+    </style>
+    <style name="DSTextAppearance.Link">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ds_primary_100</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="DSTextAppearance.LinkMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="DSTextAppearance.LinkMediumCompact">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="DSTextAppearance.LinkSmall">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="DSTextAppearance.LinkXSmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+    <style name="DSTextAppearance.Subheading1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="DSTextAppearance.Subheading2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="DSTextAppearance.SubheadingLarge">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="DSTextAppearance.SubheadingMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="DSTextAppearance.SubheadingSmall">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+    <style name="DSTextAppearance.SubheadingXSmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ds_neutral_100</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+    <style name="DSTextAppearance.Tag">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ds_secondary_100</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+    <style name="DatePickerDialogTheme">
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="android:textAppearanceLarge">@style/textViewRegular</item>
+        <item name="android:textAppearanceMedium">@style/textViewRegular</item>
+        <item name="android:textAppearanceSmall">@style/textViewRegular</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowTitleStyle">@style/textViewTitleStyleAlert</item>
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    <style name="MUXRtextViewLight">
+        <item name="android:textSize">@dimen/txt_size_15</item>
+        <item name="android:textColor">@color/muxr_text_color</item>
+    </style>
+    <style name="MUXRtextViewMedium">
+        <item name="android:textSize">@dimen/txt_size_15</item>
+        <item name="android:textColor">@color/muxr_text_color</item>
+    </style>
+    <style name="MUXRtextViewMediumBoldAr">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MUXRtextViewMediumSmallerAr">
+        <item name="android:textSize">@dimen/txt_size_14</item>
+        <item name="android:textColor">@color/muxr_text_color</item>
+    </style>
+    <style name="MUXRtextViewRegular">
+        <item name="android:textSize">@dimen/txt_size_15</item>
+        <item name="android:textColor">@color/muxr_text_color</item>
+    </style>
+    <style name="MUXRtextViewRegularBoldAr">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MobileNoVerificationDialogTheme">
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:windowEnterAnimation">@anim/dialog_grow</item>
+        <item name="android:windowExitAnimation">@anim/dialog_shrink</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="MyDatePickerDialogTheme">
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyDatePickerStyle">
+        <item name="android:headerBackground">@color/colorPrimary</item>
+        <item name="android:dayOfWeekBackground">@color/colorPrimary</item>
+        <item name="android:yearListSelectorColor">@color/colorPrimary</item>
+        <item name="android:calendarTextColor">@color/colorPrimary</item>
+    </style>
+    <style name="NegativeButtonStyle">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="PopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/animation_on</item>
+        <item name="android:windowExitAnimation">@anim/animation_off</item>
+    </style>
+    <style name="PositiveButtonStyle">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="ProgressBar">
+        <item name="android:indeterminateTint">@color/colorSecondary</item>
+        <item name="android:indeterminateTintMode">src_in</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+    </style>
+    <style name="RadioButtonFilter">
+        <item name="android:button">@drawable/radio</item>
+        <item name="android:buttonTint">@null</item>
+    </style>
+    <style name="TextAppearance.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/gedinarone_regular</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_regular</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="TextAppearance.Body2">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/gedinarone_regular</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_regular</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="TextAppearance.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="TextAppearance.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/gedinarone_regular</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_regular</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+    <style name="TextAppearance.Heading0">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">32sp</item>
+    </style>
+    <style name="TextAppearance.Heading1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">28sp</item>
+    </style>
+    <style name="TextAppearance.Heading2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="TextAppearance.Link">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="TextAppearance.Subheading1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="TextAppearance.Subheading2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/gedinarone_medium</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_medium</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="TextAppearance.Tag">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/gedinarone_bold</item>
+        <item name="android:letterSpacing">@null</item>
+        <item name="fontFamily">@font/gedinarone_bold</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+    <style name="TextInputField">
+        <item name="android:textSize">@dimen/text_input_field_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:lineSpacingExtra">@dimen/_4txtSize</item>
+        <item name="android:letterSpacing">@null</item>
+    </style>
+    <style name="Titles18Bold">
+        <item name="android:textSize">@dimen/_18txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="Titles18Medium">
+        <item name="android:textSize">@dimen/_18txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="Titles18Regular">
+        <item name="android:textSize">@dimen/_18txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="Titles20Bold">
+        <item name="android:textSize">@dimen/_20txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="Titles20Medium">
+        <item name="android:textSize">@dimen/_20txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="Titles20Regular">
+        <item name="android:textSize">@dimen/_20txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="Titles24Bold">
+        <item name="android:textSize">@dimen/_24txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="Titles24Medium">
+        <item name="android:textSize">@dimen/_24txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="Titles24Regular">
+        <item name="android:textSize">@dimen/_24txtSize</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="UnifiedTrackingMap">
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:typeface">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="actionBarStyle">@style/CustomActionBarStyle</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+    </style>
+    <style name="UpdateAlertDialogStyle">
+        <item name="android:textColorPrimary">@color/talabat_black</item>
+        <item name="android:windowBackground">@color/dialog_transpearnt</item>
+        <item name="android:background">@color/talabat_white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Widget">
+    </style>
+    <style name="Widget.ProgressBar.CircularProgressBar">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="cpb_hasShadow">true</item>
+        <item name="cpb_progressColor">@color/circular_progress_default_progress</item>
+        <item name="cpb_strokeWidth">20</item>
+        <item name="cpb_subtitleColor">@color/circular_progress_default_subtitle</item>
+        <item name="cpb_titleColor">@color/circular_progress_default_title</item>
+    </style>
+    <style name="Widget.ProgressBar.Holo.CircularProgressBar">
+        <item name="cpb_hasShadow">false</item>
+        <item name="cpb_strokeWidth">5</item>
+    </style>
+    <style name="area_btn_style">
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+    <style name="buttonBold">
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="buttonMedium">
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="buttonRegular">
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="check_box">
+        <item name="android:button">@drawable/check_box</item>
+        <item name="android:buttonTint">@null</item>
+    </style>
+    <style name="chipTextAppearance">
+        <item name="android:textStyle">@null</item>
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="city_selection_button_style">
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+    <style name="dialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="link12Bold">
+        <item name="android:textSize">@dimen/_12txtSize</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="link12Medium">
+        <item name="android:textSize">@dimen/_12txtSize</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="link12Regular">
+        <item name="android:textSize">@dimen/_12txtSize</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="link14Bold">
+        <item name="android:textSize">@dimen/_14txtSize</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="link14Medium">
+        <item name="android:textSize">@dimen/_14txtSize</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="link14Regular">
+        <item name="android:textSize">@dimen/_14txtSize</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:paddingTop">@dimen/_4margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_4linespacing</item>
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="textViewBold">
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="textViewMedium">
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="textViewMedium_sub">
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="textViewRegular">
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="textViewRobotoBlackBold">
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="textViewUserGuideMedium">
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="textViewUserGuideRegular">
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="text_bold_base">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="text_medium_base">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+    </style>
+    <style name="text_regular_base">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/ge_dinar_regular</item>
+    </style>
+    <style name="toolbar_back_button_style">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">@dimen/_16margin</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingRight">36dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_m_back_black</item>
+        <item name="android:minWidth">20dp</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingStart">@dimen/_16margin</item>
+        <item name="android:paddingEnd">36dp</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+    <style name="toolbar_card_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+    <style name="toolbar_done_button">
+        <item name="android:textSize">@dimen/tool_bar_txt_size</item>
+        <item name="android:textColor">@color/toolbar_txt_color</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:fontFamily">@font/ge_dinar_medium</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="toolbar_navigation_icon_style">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingRight">36dp</item>
+        <item name="android:paddingBottom">22dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_m_hamburger</item>
+        <item name="android:minWidth">20dp</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">36dp</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+    <style name="toolbar_text_style">
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:fontFamily">@font/ge_dinar_bold</item>
+    </style>
+    <style name="wallet_toolbar_back_button_style">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">20dp</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">32dp</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/instabug_success_dialog_container" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ib_success_layout" android:background="@drawable/ibg_core_bg_card" android:paddingLeft="20dp" android:paddingTop="32dp" android:paddingRight="20dp" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="16dp" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:id="@+id/instabug_img_thanks" android:background="@drawable/ibg_bug_shape_thanks_background" android:layout_width="104dp" android:layout_height="104dp" android:layout_marginBottom="8dp" app:srcCompat="@drawable/ibg_bug_ic_done"/>
+            <TextView android:textSize="25sp" android:id="@+id/instabug_fragment_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/instabug_custom_survey_thanks_title"/>
+            <TextView android:textSize="15sp" android:textColor="?attr/ibg_bug_thanks_subtitle_color" android:gravity="center" android:id="@+id/instabug_txt_success_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/instabug_str_success_note" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" layout="@layout/instabug_lyt_pbi"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.designsystem.ds_navigation_bar.DSNavigationBar android:id="@+id/getHelpDetailsDSNavigationBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/ds_l" android:layout_marginRight="@dimen/ds_s" android:layout_marginHorizontal="@dimen/ds_s">
+        <TextView android:id="@+id/loyaltyFAQDetailQuestionTextView" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DSTextAppearance.Heading1"/>
+        <TextView android:id="@+id/loyaltyFAQDetailAnswerTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_l" android:lineSpacingExtra="@dimen/ds_xxxs" style="@style/DSTextAppearance.Subheading2"/>
+    </LinearLayout>
+</LinearLayout>

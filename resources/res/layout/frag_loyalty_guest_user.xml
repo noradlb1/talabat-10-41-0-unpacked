@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/toolbar_elevation" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/tool_bar_height" android:layout_centerVertical="true">
+            <ImageButton android:id="@+id/loyaltyGuestBackButton" style="@style/toolbar_black_back_button_style"/>
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/standard_margin" android:text="@string/loyalty_rewards" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/standard_margin" style="@style/DSTextAppearance.HeadingMedium"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_gift_large"/>
+            <TextView android:textColor="@color/ds_neutral_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46dp" android:text="@string/loyalty_guest_login" style="@style/DSTextAppearance.Body1"/>
+            <com.designsystem.ds_button_v2.DSPrimaryButton android:id="@+id/loyaltyGuestLoginButton" android:layout_width="180dp" android:layout_height="wrap_content" android:layout_marginTop="30dp" app:bt_title="@string/loyalty_login"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

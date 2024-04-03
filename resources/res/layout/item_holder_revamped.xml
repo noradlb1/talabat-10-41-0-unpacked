@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/row_parent_container" android:paddingLeft="@dimen/ds_s" android:paddingTop="@dimen/ds_m" android:paddingRight="@dimen/ds_m" android:paddingBottom="@dimen/ds_m" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ds_s" android:paddingEnd="@dimen/ds_s">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_xxs">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.constraintlayout.helper.widget.Flow android:id="@+id/flow" android:layout_width="match_parent" android:layout_height="wrap_content" app:constraint_referenced_ids="sectionName,tv_selection_criteria" app:flow_horizontalBias="0" app:flow_horizontalGap="@dimen/ds_xxxs" app:flow_horizontalStyle="2" app:flow_verticalGap="@dimen/ds_xxxs" app:flow_wrapMode="1"/>
+            <com.talabat.TalabatTextView android:textColor="@color/black" android:id="@+id/sectionName" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Titles18Bold"/>
+            <com.talabat.TalabatTextView android:textColor="@color/ds_primary_100" android:id="@+id/tv_selection_criteria" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Content12Bold"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <com.google.android.material.card.MaterialCardView android:theme="@style/Theme.MaterialComponents.Light" android:orientation="horizontal" android:id="@+id/card_section" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:outlineSpotShadowColor="@color/ds_neutral_10" app:cardCornerRadius="8dp" app:strokeWidth="1dp">
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView_choices" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

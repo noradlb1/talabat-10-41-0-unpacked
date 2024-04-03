@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/card_list_container" android:background="@drawable/wallet_bottom_sheet_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="360dp" android:transitionName="CardListSelection">
+    <ProgressBar android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/ds_neutral_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ds_xxs" android:minHeight="?attr/actionBarSize" app:contentInsetLeft="@dimen/ds_zero" app:contentInsetStart="@dimen/ds_zero" app:layout_constraintTop_toTopOf="0" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <RelativeLayout android:id="@+id/talabat_toolbar" android:background="@color/ds_neutral_white" android:layout_height="wrap_content" style="@style/toolbar_background_style">
+                <RelativeLayout android:visibility="visible" style="@style/toolbar_items_holder_style">
+                    <ImageButton android:id="@+id/back" android:src="@drawable/ds_arrow_back" style="@style/wallet_toolbar_back_button_style"/>
+                    <TextView android:textColor="@color/wallet_text_color" android:id="@+id/title" android:visibility="visible" android:text="@string/wallet_payment_method" style="@style/toolbar_text_style"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.talabat.talabatcommon.views.wallet.dsalert.DSAlertView android:id="@+id/alert" android:visibility="gone" android:layout_width="@dimen/ds_zero" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxs" android:layout_marginStart="@dimen/ds_xxs" android:layout_marginEnd="@dimen/ds_xxs" app:alertDescriptor="@string/wallet_payment_cards_deflection_info_descriptor_qpay" app:alertType="2" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/header"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/credit_card_list" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/ds_zero" android:layout_marginTop="@dimen/ds_xxs" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/alert"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

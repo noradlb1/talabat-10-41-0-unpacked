@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.talabat.darkstores.common.customScrollingViews.CustomVerticalCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/ds_neutral_white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.talabat.darkstores.common.view.BlockableAppBarLayout android:theme="@style/HomeToolbarTheme" android:id="@+id/appBar" android:background="@color/ds_neutral_white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:liftOnScroll="true">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar" android:gravity="center" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/ds_zero" app:contentInsetStart="@dimen/ds_zero" app:layout_collapseMode="1" app:navigationIcon="@drawable/ic_m_back_white_bg">
+            <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/home_title_only" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="talabat mart" android:maxLength="25" style="@style/DSTextAppearance.Heading1"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/logo_and_title_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/ds_xs">
+                <ImageView android:id="@+id/home_logo" android:visibility="gone" android:layout_width="@dimen/ds_xxl" android:layout_height="@dimen/ds_xxl" android:scaleType="fitCenter" android:layout_marginEnd="@dimen/ds_xxs"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/ds_neutral_100" android:ellipsize="end" android:id="@+id/home_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:maxLength="25" app:layout_constraintTop_toTopOf="0" style="@style/DSTextAppearance.Heading2"/>
+                    <TextView android:textColor="@color/ds_neutral_70" android:ellipsize="end" android:id="@+id/home_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:maxLength="25" app:layout_constraintTop_toTopOf="0" style="@style/DSTextAppearance.Caption"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.talabat.darkstores.common.view.BlockableAppBarLayout>
+    <include android:id="@+id/content" layout="@layout/darkstores_fragment_home_content"/>
+</com.talabat.darkstores.common.customScrollingViews.CustomVerticalCoordinatorLayout>

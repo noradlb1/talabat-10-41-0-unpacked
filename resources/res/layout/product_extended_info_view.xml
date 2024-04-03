@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/ds_xs" android:paddingBottom="@dimen/ds_xs" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/ds_xs">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llContentUnit" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_xxs" android:layout_marginRight="@dimen/ds_xxs" android:layout_weight="1" android:layout_marginHorizontal="@dimen/ds_xxs">
+            <TextView android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/product_pack_size" style="@style/DSTextAppearance.Caption"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/txtContentUnit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs" style="@style/DSTextAppearance.Subheading2"/>
+        </LinearLayout>
+        <View android:id="@+id/contentUnitDivider" android:background="@color/ds_neutral_10" android:visibility="gone" android:layout_width="@dimen/divider_width" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llStoredAt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_xxs" android:layout_marginRight="@dimen/ds_xxs" android:layout_weight="1" android:layout_marginHorizontal="@dimen/ds_xxs">
+            <TextView android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/product_stored_at" style="@style/DSTextAppearance.Caption"/>
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs">
+                <TextView android:gravity="center_horizontal" android:id="@+id/txtStoredAt" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSTextAppearance.Subheading2"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/infoIcon" android:layout_width="@dimen/ds_s" android:layout_height="@dimen/ds_s" android:src="@drawable/ds_tooltip" android:layout_marginStart="@dimen/ds_xxxs"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@+id/storedAtDivider" android:background="@color/ds_neutral_10" android:visibility="gone" android:layout_width="@dimen/divider_width" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llCountry" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_xxs" android:layout_marginRight="@dimen/ds_xxs" android:layout_weight="1" android:layout_marginHorizontal="@dimen/ds_xxs">
+            <TextView android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/product_country" style="@style/DSTextAppearance.Caption"/>
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxxs">
+                <ImageView android:id="@+id/imgCountry" android:layout_width="@dimen/ds_s" android:layout_height="@dimen/ds_s"/>
+                <TextView android:id="@+id/txtCountry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_xxxs" style="@style/DSTextAppearance.Subheading2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/shelfLifeDivider" android:background="@color/ds_neutral_10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+    <LinearLayout android:id="@+id/llShelfLife" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_xxs" android:layout_marginTop="@dimen/ds_xxs" android:layout_marginRight="@dimen/ds_xxs" android:layout_marginBottom="@dimen/ds_xxs" android:layout_marginHorizontal="@dimen/ds_xxs" android:layout_marginVertical="@dimen/ds_xxs">
+        <TextView android:gravity="center_horizontal" android:id="@+id/txtShelfLife" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DSTextAppearance.Caption"/>
+    </LinearLayout>
+</merge>

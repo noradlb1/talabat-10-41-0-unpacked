@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="live_chat_language_choices">
+        <item>ئینگلیزی</item>
+        <item>عەرەبی</item>
+        <item>کوردی (سۆرانی)</item>
+        <item>کوردی (بادینی)</item>
+    </array>
+    <array name="months">
+        <item>کانوونی دووەم</item>
+        <item>شوبات</item>
+        <item>مارت</item>
+        <item>نیسان</item>
+        <item>ئایار</item>
+        <item>حوزەیران</item>
+        <item>تەمووز</item>
+        <item>ئاب</item>
+        <item>ئەیلول</item>
+        <item>تشرینی یەکەم</item>
+        <item>تشرینی دووەم</item>
+        <item>کانوونی یەکەم</item>
+    </array>
+    <array name="res_tab_array">
+        <item>هەموو ڕێستۆرانتەکان</item>
+        <item>تەڵەبات‌گۆ</item>
+    </array>
+    <array name="res_tab_array_pager">
+        <item>هەموو_ڕێستۆرانتەکان</item>
+        <item>تەڵەبات‌گۆ</item>
+    </array>
+    <array name="tags">
+        <item>(زۆر خراپە)</item>
+        <item>(خراپە)</item>
+        <item>(ئاساییە)</item>
+        <item>(باشە)</item>
+        <item>(نایابە)</item>
+    </array>
+</resources>

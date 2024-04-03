@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="@dimen/ds_xxs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ds_xxs" app:cardCornerRadius="@dimen/ds_xxs" app:cardElevation="@dimen/ds_xxs">
+    <ImageView android:id="@+id/vendorImage" android:padding="@dimen/ds_xxxs" android:layout_width="@dimen/fav_vendor_item_size" android:layout_height="@dimen/fav_vendor_item_size"/>
+</androidx.cardview.widget.CardView>

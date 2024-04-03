@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.talabat.talabatcommon.views.ShimmerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" app:shimmer_angle="20" app:shimmer_auto_start="true" app:shimmer_color="@color/app_background">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/toolBar" android:background="@color/ds_primary_10" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <View android:id="@+id/heroBanner" android:background="@color/ds_primary_10" android:layout_width="match_parent" android:layout_height="@dimen/loading_hero_banner_height" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolBar"/>
+        <com.google.android.material.card.MaterialCardView android:theme="@style/Theme.MaterialComponents.Light" android:id="@+id/cardView" android:layout_width="match_parent" android:layout_height="0dp" android:translationZ="@dimen/ds_xxxs" app:cardBackgroundColor="@color/ds_neutral_white" app:cardElevation="@dimen/ds_xxxs" app:cardPreventCornerOverlap="false" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="@+id/heroBanner" app:layout_constraintTop_toBottomOf="@+id/heroBanner">
+            <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/ds_m" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:id="@+id/entryPointTitle" android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_title_width" android:layout_height="@dimen/loading_title_height" android:layout_marginLeft="@dimen/ds_s" android:layout_marginRight="@dimen/ds_s" android:layout_marginHorizontal="@dimen/ds_s" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/entryPointLargeContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xs" android:layout_marginRight="@dimen/ds_s" android:layout_marginHorizontal="@dimen/ds_s" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/entryPointTitle">
+                    <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="0dp" android:layout_height="@dimen/loading_large_entry_point_height" android:layout_weight="0.5" android:layout_marginEnd="@dimen/ds_xs"/>
+                    <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="0dp" android:layout_height="@dimen/loading_large_entry_point_height" android:layout_weight="0.5"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/entryPointSmallContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xs" android:layout_marginRight="@dimen/ds_s" android:weightSum="1" android:layout_marginHorizontal="@dimen/ds_s" app:layout_constraintTop_toBottomOf="@+id/entryPointLargeContainer">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.25" android:layout_marginEnd="@dimen/ds_xs">
+                        <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="match_parent" android:layout_height="@dimen/loading_small_entry_point_item_height"/>
+                        <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_item_text_width" android:layout_height="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxs"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.25" android:layout_marginEnd="@dimen/ds_xs">
+                        <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="match_parent" android:layout_height="@dimen/loading_small_entry_point_item_height"/>
+                        <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_item_text_width" android:layout_height="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxs"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.25" android:layout_marginEnd="@dimen/ds_xs">
+                        <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="match_parent" android:layout_height="@dimen/loading_small_entry_point_item_height"/>
+                        <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_item_text_width" android:layout_height="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxs"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.25">
+                        <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="match_parent" android:layout_height="@dimen/loading_small_entry_point_item_height"/>
+                        <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_item_text_width" android:layout_height="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxs"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:id="@+id/shortCutsTitle" android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_title_width" android:layout_height="@dimen/loading_title_height" android:layout_marginLeft="@dimen/ds_s" android:layout_marginTop="@dimen/loading_shortcuts_title_margin_top" android:layout_marginRight="@dimen/ds_s" android:layout_marginHorizontal="@dimen/ds_s" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/entryPointSmallContainer"/>
+                <HorizontalScrollView android:id="@+id/shortCutsContainer" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xs" app:layout_constraintTop_toBottomOf="@+id/shortCutsTitle">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/loading_shortcuts_item_size" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_s" android:layout_marginEnd="@dimen/ds_xs">
+                            <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="match_parent" android:layout_height="@dimen/loading_shortcuts_item_size"/>
+                            <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_item_text_width" android:layout_height="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxs"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/loading_shortcuts_item_size" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ds_xs">
+                            <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="match_parent" android:layout_height="@dimen/loading_shortcuts_item_size"/>
+                            <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_item_text_width" android:layout_height="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxs"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/loading_shortcuts_item_size" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ds_xs">
+                            <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="match_parent" android:layout_height="@dimen/loading_shortcuts_item_size"/>
+                            <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_item_text_width" android:layout_height="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxs"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/loading_shortcuts_item_size" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ds_xs">
+                            <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="match_parent" android:layout_height="@dimen/loading_shortcuts_item_size"/>
+                            <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_item_text_width" android:layout_height="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxs"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/loading_shortcuts_item_size" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ds_xs">
+                            <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="match_parent" android:layout_height="@dimen/loading_shortcuts_item_size"/>
+                            <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_item_text_width" android:layout_height="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxs"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/loading_shortcuts_item_size" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ds_xs">
+                            <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="match_parent" android:layout_height="@dimen/loading_shortcuts_item_size"/>
+                            <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_item_text_width" android:layout_height="@dimen/ds_s" android:layout_marginTop="@dimen/ds_xxs"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <HorizontalScrollView android:id="@+id/bannerContainer" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_xxl" app:layout_constraintTop_toBottomOf="@+id/shortCutsContainer">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_s">
+                        <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_banner_width" android:layout_height="@dimen/loading_banner_height" android:layout_marginEnd="@dimen/ds_xs"/>
+                        <View android:background="@drawable/shimmer_placeholder_rounded" android:layout_width="@dimen/loading_banner_width" android:layout_height="@dimen/loading_banner_height"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <View android:id="@+id/cardCornerBackground" android:background="@color/ds_primary_10" android:layout_width="match_parent" android:layout_height="@dimen/ds_xxs" android:translationZ="0dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/cardView"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.talabat.talabatcommon.views.ShimmerLayout>

@@ -1,0 +1,37 @@
+{
+  "int_experiments": {
+    "VerticalLauncherExperiment": {
+      "1": false,
+      "0": true,
+      "2": false
+    }
+  },
+  "string_experiments": {
+  },
+  "boolean_experiments": {
+    "canShowNewGemComponent": {
+      "true": true,
+      "false": false
+    },
+    "showItemDetailsBottomSheet": {
+      "true": false,
+      "false": true
+    },
+    "shouldShowCPCPresearchComponent": {
+      "true": false,
+      "false": true
+    },
+    "canShowFlutterMenu": {
+      "true": true,
+      "false": false
+    },
+    "canShowFlutterItemDetails": {
+      "true": true,
+      "false": false
+    },
+    "canShowFlutterItemDetailsWithChoice": {
+      "true": true,
+      "false": false
+    }
+  }
+}

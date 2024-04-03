@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/topExtendedInfoBackground" android:background="@color/product_image_bg" android:layout_width="match_parent" android:layout_height="@dimen/ds_xxxl"/>
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_s" android:layout_marginRight="@dimen/ds_s" android:layout_marginHorizontal="@dimen/ds_s" app:cardCornerRadius="@dimen/ds_xxs" app:cardElevation="@dimen/ds_xxxs">
+        <com.talabat.darkstores.feature.product.views.ProductExtendedInfoView android:id="@+id/productExtendedInfo" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.google.android.material.card.MaterialCardView>
+</merge>

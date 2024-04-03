@@ -1,0 +1,40 @@
+package com.talabat.darkstores.feature.cart.views;
+
+import android.animation.Animator;
+import com.talabat.darkstores.feature.campaigns.CampaignProgressState;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(d1 = {"\u0000\u0019\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0007\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\b\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016¨\u0006\t¸\u0006\n"}, d2 = {"androidx/core/animation/AnimatorKt$addListener$listener$1", "Landroid/animation/Animator$AnimatorListener;", "onAnimationCancel", "", "animator", "Landroid/animation/Animator;", "onAnimationEnd", "onAnimationRepeat", "onAnimationStart", "core-ktx_release", "androidx/core/animation/AnimatorKt$doOnRepeat$$inlined$addListener$default$1"}, k = 1, mv = {1, 6, 0}, xi = 48)
+/* renamed from: com.talabat.darkstores.feature.cart.views.CartProgressView$createAnimator$lambda-5$$inlined$doOnRepeat$1  reason: invalid class name */
+public final class CartProgressView$createAnimator$lambda5$$inlined$doOnRepeat$1 implements Animator.AnimatorListener {
+
+    /* renamed from: a  reason: collision with root package name */
+    public final /* synthetic */ CartProgressView f56289a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final /* synthetic */ CampaignProgressState f56290b;
+
+    public CartProgressView$createAnimator$lambda5$$inlined$doOnRepeat$1(CartProgressView cartProgressView, CampaignProgressState campaignProgressState) {
+        this.f56289a = cartProgressView;
+        this.f56290b = campaignProgressState;
+    }
+
+    public void onAnimationCancel(@NotNull Animator animator) {
+        Intrinsics.checkNotNullParameter(animator, "animator");
+    }
+
+    public void onAnimationEnd(@NotNull Animator animator) {
+        Intrinsics.checkNotNullParameter(animator, "animator");
+    }
+
+    public void onAnimationRepeat(@NotNull Animator animator) {
+        Intrinsics.checkNotNullParameter(animator, "animator");
+        this.f56289a.updateState(this.f56290b);
+    }
+
+    public void onAnimationStart(@NotNull Animator animator) {
+        Intrinsics.checkNotNullParameter(animator, "animator");
+    }
+}

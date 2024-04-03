@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ds_talabat" android:id="@+id/home_nav" android:title="@string/home_menu_Item"/>
+    <item android:icon="@drawable/ds_search" android:id="@+id/search_nav" android:title="@string/search"/>
+    <item android:icon="@drawable/ic_offer_zone" android:id="@+id/home_of_offers_nav" android:title="@string/offers"/>
+    <item android:icon="@drawable/ds_receipt" android:id="@+id/order_list_nav" android:title="@string/orders_tab_bar"/>
+    <item android:icon="@drawable/ds_profile_filled" android:id="@+id/account_nav" android:title="@string/account_menu_Item"/>
+</menu>

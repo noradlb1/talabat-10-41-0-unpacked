@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/bg_ds_item_promo_new" android:padding="@dimen/ds_xxxs" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/ds_promo_100" android:id="@+id/promo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ds_xxxs" android:text="@string/special_offer" android:textAlignment="center" android:layout_marginStart="@dimen/ds_xxxs" android:layout_marginEnd="@dimen/ds_xxxs" style="@style/DSTextAppearance.Tag"/>
+</RelativeLayout>
